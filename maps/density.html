@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turizm Yoğunluk Haritası — Turizmin Mekansal Dağılışı</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="../scripts/nav.js"></script>
+<style>
+  html, body { height: 100%; margin: 0; padding: 0; background: var(--bg-primary); }
+  .navbar { position: relative; }
+  #map-container { height: calc(100vh - var(--nav-height, 72px) - 60px); display: flex; flex-direction: column; }
+  #map { flex: 1; min-height: 500px; }
+  #stats-panel { display: flex; gap: 16px; padding: 12px 20px; background: var(--bg-card); border-top: 1px solid var(--border); flex-wrap: wrap; justify-content: center; }
+  .stat-item { text-align: center; min-width: 120px; }
+  .stat-item .value { font-size: 20px; font-weight: 700; color: var(--accent); }
+  .stat-item .label { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+  .legend-container { position: absolute; bottom: 30px; right: 20px; z-index: 1000; background: rgba(10,14,23,0.9); padding: 12px 16px; border-radius: 8px; border: 1px solid var(--border); min-width: 180px; }
+  .legend-title { font-size: 12px; color: var(--text-secondary); margin-bottom: 6px; font-weight: 600; }
+  .legend-gradient { height: 14px; width: 100%; border-radius: 4px; margin-bottom: 4px; }
+  .legend-labels { display: flex; justify-content: space-between; font-size: 10px; color: var(--text-muted); }
+  .leaflet-control-layers { background: rgba(10,14,23,0.9) !important; color: var(--text-primary) !important; border: 1px solid var(--border) !important; border-radius: 8px !important; }
+  .leaflet-control-layers-list { color: var(--text-primary); }
+  .leaflet-control-layers-base label, .leaflet-control-layers-overlays label { color: var(--text-secondary); }
+  @media (max-width: 768px) { #map-container { height: calc(100vh - 72px); } }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-brand"><a href="../index.html">Turizmin Mekansal Dağılışı</a></div>
+  <button class="nav-toggle" id="navToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Ana Sayfa</a></li>
+    <li><a href="../harita.html">Haritalar</a></li>
+    <li><a href="../grafikler.html">Grafikler</a></li>
+    <li><a href="../analizler.html">Mekansal Analiz</a></li>
+    <li><a href="../yogunluk.html" class="active">Yoğunluk</a></li>
+    <li><a href="../veri.html">Veri Kaynakları</a></li>
+  </ul>
+</nav>
+
+<div id="map-container">
+  <div id="stats-panel">
+    <div class="stat-item"><div class="value" id="totalPois">—</div><div class="label">Toplam POI</div></div>
+    <div class="stat-item"><div class="value" id="topRayon">—</div><div class="label">En Yoğun Rayon</div></div>
+    <div class="stat-item"><div class="value" id="densityRange">—</div><div class="label">Yoğunluk Aralığı</div></div>
+    <div class="stat-item"><div class="value" id="hotCells">—</div><div class="label">Yoğun Hücre</div></div>
+  </div>
+  <div id="map"></div>
+  <div class="legend-container">
+    <div class="legend-title">🔥 Turizm Yoğunluğu</div>
+    <div class="legend-gradient" style="background: linear-gradient(to right, #0000ff00, #0000ff, #00ff00, #ffff00, #ff0000, #ff00ff);"></div>
+    <div class="legend-labels"><span>Düşük</span><span>Orta</span><span>Yüksek</span></div>
+  </div>
+</div>
+
+<script>
+const map = L.map('map', {
+  center: [40.3, 49.0],
+  zoom: 7,
+  zoomControl: true,
+  attributionControl: true
+});
+
+// Dark base map
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+  maxZoom: 19
+}).addTo(map);
+
+// Layer control
+const overlayMaps = {};
+const heatGroup = L.layerGroup().addTo(map);
+overlayMaps['🔥 Isı Haritası'] = heatGroup;
+
+// Load density grid and create heatmap
+fetch('../data/processed/density_grid.geojson')
+  .then(r => r.json())
+  .then(data => {
+    const heatPoints = [];
+    data.features.forEach(f => {
+      const coords = f.geometry.coordinates;
+      const density = f.properties.density || f.properties.weighted_density || 0;
+      if (coords && density > 0) {
+        const lat = coords[1];
+        const lng = coords[0];
+        heatPoints.push([lat, lng, density]);
+      }
+    });
+    
+    const heat = L.heatLayer(heatPoints, {
+      minOpacity: 0.3,
+      maxZoom: 15,
+      max: 2.1,
+      radius: 25,
+      blur: 15,
+      gradient: { 0.0: '#0000ff', 0.2: '#00ffff', 0.4: '#00ff00', 0.6: '#ffff00', 0.8: '#ff6600', 1.0: '#ff0000' }
+    });
+    
+    heatGroup.addLayer(heat);
+  })
+  .catch(e => console.error('Heat grid load error:', e));
+
+// Rayon boundaries
+let rayonGroup = L.layerGroup();
+overlayMaps['🗺️ Rayon Sınırları'] = rayonGroup;
+
+fetch('../data/geojson/azerbaijan_rayon_boundaries.geojson')
+  .then(r => r.json())
+  .then(data => {
+    const layer = L.geoJSON(data, {
+      style: { color: '#3b82f6', weight: 1, fillOpacity: 0.05, opacity: 0.6 },
+      onEachFeature: (feature, layer) => {
+        const name = feature.properties?.adm1_name || feature.properties?.name || 'Bilinmeyen';
+        layer.bindPopup(`<strong>${name}</strong>`);
+        layer.on('mouseover', () => layer.setStyle({ weight: 2, color: '#60a5fa', fillOpacity: 0.1 }));
+        layer.on('mouseout', () => layer.setStyle({ weight: 1, color: '#3b82f6', fillOpacity: 0.05 }));
+      }
+    });
+    rayonGroup.addLayer(layer);
+  })
+  .catch(e => console.error('Rayon load error:', e));
+
+// POI markers (cluster)
+let poiGroup = L.layerGroup();
+overlayMaps['📍 Turizm Noktaları'] = poiGroup;
+
+fetch('../data/geojson/all_tourism_points.geojson')
+  .then(r => r.json())
+  .then(data => {
+    const markers = [];
+    data.features.forEach(f => {
+      const coords = f.geometry.coordinates;
+      const name = f.properties?.name || 'Turizm Noktası';
+      const cat = f.properties?.category || '';
+      const color = { Otel: '#ef4444', Tarihi_Anit: '#f59e0b', Doga_Alani: '#22c55e', Kultur_Merkezi: '#3b82f6', Ulasim: '#8b5cf6', Turizm_Bolgesi: '#ec4899', Destinasyon: '#14b8a6', Diger_Tesis: '#64748b' }[cat] || '#64748b';
+      const marker = L.circleMarker([coords[1], coords[0]], {
+        radius: 4, color: color, fillColor: color, fillOpacity: 0.8, weight: 1
+      });
+      marker.bindPopup(`<strong>${name}</strong><br>${cat}`);
+      markers.push(marker);
+    });
+    const group = L.featureGroup(markers);
+    poiGroup.addLayer(group);
+  })
+  .catch(e => console.error('POI load error:', e));
+
+// Add layer control
+L.control.layers(null, overlayMaps, { position: 'topright', collapsed: false }).addTo(map);
+
+// Load stats
+fetch('../data/processed/density_by_rayon.csv')
+  .then(r => r.text())
+  .then(text => {
+    const lines = text.trim().split('\n').slice(1);
+    let totalPois = 0, topRayon = '', topDensity = 0;
+    lines.forEach(l => {
+      const parts = l.split(',');
+      const rayon = parts[0];
+      const density = parseFloat(parts[1]) || 0;
+      const pois = parseInt(parts[2]) || 0;
+      totalPois += pois;
+      if (density > topDensity) { topDensity = density; topRayon = rayon; }
+    });
+    const densities = lines.map(l => parseFloat(l.split(',')[1]) || 0);
+    const minD = Math.min(...densities.filter(d => d > 0));
+    const maxD = Math.max(...densities);
+    
+    document.getElementById('totalPois').textContent = totalPois.toLocaleString();
+    document.getElementById('topRayon').textContent = topRayon;
+    document.getElementById('densityRange').textContent = `${minD.toFixed(1)}–${maxD.toFixed(1)}`;
+    
+    // Count hot cells
+    fetch('../data/processed/density_grid.geojson')
+      .then(r => r.json())
+      .then(d => document.getElementById('hotCells').textContent = d.features.length)
+      .catch(() => {});
+  })
+  .catch(e => console.error('Stats error:', e));
+</script>
+</body>
+</html>

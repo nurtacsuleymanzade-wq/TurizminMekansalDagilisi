@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turizm Yoğunluk Analizi — Turizmin Mekansal Dağılışı</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<script src="scripts/nav.js"></script>
+<style>
+  .map-frame { width: 100%; height: 550px; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin: 20px 0; }
+  .map-frame iframe { width: 100%; height: 100%; border: none; }
+  .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; }
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+  .chart-card.full { grid-column: 1 / -1; }
+  .chart-card h2 { font-size: 16px; margin: 0 0 16px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  .chart-card p { font-size: 13px; color: var(--text-muted); margin: -8px 0 16px; }
+  .chart-wrapper { position: relative; height: 350px; }
+  .stat-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .stat-summary .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; text-align: center; }
+  .stat-summary .stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+  .stat-summary .stat-card .lbl { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+  .stat-summary .stat-card .emoji { font-size: 24px; margin-bottom: 8px; }
+  .density-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 14px; }
+  .density-table th { background: var(--surface); color: var(--text-muted); font-weight: 600; padding: 10px 12px; text-align: left; border-bottom: 2px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .density-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text); }
+  .density-table tr:hover td { background: var(--surface); }
+  .density-table .rank { color: var(--accent); font-weight: 700; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .badge-high { background: rgba(239,68,68,0.2); color: #ef4444; }
+  .badge-mid { background: rgba(234,179,8,0.2); color: #eab308; }
+  .badge-low { background: rgba(34,197,94,0.2); color: #22c55e; }
+  @media (max-width: 768px) { .chart-grid { grid-template-columns: 1fr; } .map-frame { height: 350px; } }
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-brand"><a href="index.html">Turizmin Mekansal Dağılışı</a></div>
+  <button class="nav-toggle" id="navToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="harita.html">Haritalar</a></li>
+    <li><a href="grafikler.html">Grafikler</a></li>
+    <li><a href="analizler.html">Mekansal Analiz</a></li>
+    <li><a href="yogunluk.html" class="active">Yoğunluk</a></li>
+    <li><a href="veri.html">Veri Kaynakları</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <header class="page-header">
+    <h1>🔥 Turizm Yoğunluk Analizi</h1>
+    <p class="subtitle">Azerbaycan genelinde turistik kaynakların mekansal yoğunluk analizi — OSM verisi temelli ağırlıklandırılmış yoğunluk hesaplaması.</p>
+  </header>
+
+  <!-- Interactive Density Map -->
+  <div class="map-frame">
+    <iframe src="maps/density.html" title="Turizm Yoğunluk Haritası"></iframe>
+  </div>
+
+  <!-- Summary Stats -->
+  <div class="stat-summary" id="summaryStats">
+    <div class="stat-card"><div class="emoji">📍</div><div class="num">-</div><div class="lbl">Toplam POI</div></div>
+    <div class="stat-card"><div class="emoji">🏆</div><div class="num">-</div><div class="lbl">En Yoğun Rayon</div></div>
+    <div class="stat-card"><div class="emoji">📐</div><div class="num">-</div><div class="lbl">Yoğunluk Aralığı</div></div>
+    <div class="stat-card"><div class="emoji">🔲</div><div class="num">-</div><div class="lbl">Yoğun Hücre (1km²)</div></div>
+  </div>
+
+  <div class="chart-grid">
+    <!-- Top 10 Rayons by Density -->
+    <div class="chart-card full">
+      <h2>🏙️ En Yoğun 10 Rayon</h2>
+      <p>Ağırlıklandırılmış turizm yoğunluk skoruna göre ilk 10 rayon.</p>
+      <div class="chart-wrapper tall"><canvas id="top10Chart"></canvas></div>
+    </div>
+
+    <!-- Category Breakdown -->
+    <div class="chart-card">
+      <h2>🥧 Kategori Ağırlıkları</h2>
+      <p>Yoğunluk hesaplamasında kullanılan kategori ağırlık dağılımı.</p>
+      <div class="chart-wrapper"><canvas id="categoryPie"></canvas></div>
+    </div>
+
+    <!-- Density Distribution -->
+    <div class="chart-card">
+      <h2>📊 Yoğunluk Dağılımı</h2>
+      <p>Rayonların yoğunluk skorlarına göre dağılımı.</p>
+      <div class="chart-wrapper"><canvas id="distributionChart"></canvas></div>
+    </div>
+
+    <!-- Density Table -->
+    <div class="chart-card full">
+      <h2>📋 Rayon Bazında Yoğunluk Skorları</h2>
+      <p>Tüm rayonlar için ağırlıklandırılmış turizm yoğunluk değerleri.</p>
+      <div style="max-height: 500px; overflow-y: auto;">
+        <table class="density-table" id="densityTable">
+          <thead><tr><th>#</th><th>Rayon</th><th>Yoğunluk Skoru</th><th>POI Sayısı</th><th>Seviye</th></tr></thead>
+          <tbody id="densityTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>Azerbaycan'da Turizm Faaliyetlerinin Mekansal Dağılışı &copy; 2026</p>
+  <p class="footer-meta">Yoğunluk analizi: OSM verisi + ağırlıklandırma (Konaklama 0.35, Çekicilik 0.25, Yiyecek 0.15, Tarihi 0.10, Doğa 0.08, Kültür 0.05, Ulaşım 0.02)</p>
+</footer>
+
+<script>
+Chart.register(ChartDataLabels);
+
+const textColor = '#e0e0e0';
+const gridColor = 'rgba(255,255,255,0.08)';
+const densityColors = ['#ef4444','#eab308','#22c55e','#3b82f6','#8b5cf6','#ec4899','#14b8a6','#f97316','#06b6d4','#a855f7'];
+
+// Load density data from CSV
+async function loadData() {
+  try {
+    const resp = await fetch('data/processed/density_by_rayon.csv');
+    const text = await resp.text();
+    const lines = text.trim().split('\n').slice(1);
+    
+    const data = lines.map(l => {
+      const parts = l.split(',');
+      return { rayon: parts[0], density: parseFloat(parts[1]) || 0, pois: parseInt(parts[2]) || 0 };
+    }).filter(d => d.density > 0).sort((a, b) => b.density - a.density);
+    
+    // Update stats
+    const totalPois = data.reduce((s, d) => s + d.pois, 0);
+    const topRayon = data[0]?.rayon || '-';
+    const minD = data[data.length - 1]?.density?.toFixed(1) || '0';
+    const maxD = data[0]?.density?.toFixed(1) || '0';
+    
+    document.querySelectorAll('#summaryStats .stat-card')[0].querySelector('.num').textContent = totalPois.toLocaleString();
+    document.querySelectorAll('#summaryStats .stat-card')[1].querySelector('.num').textContent = topRayon;
+    document.querySelectorAll('#summaryStats .stat-card')[2].querySelector('.num').textContent = `${minD}–${maxD}`;
+    document.querySelectorAll('#summaryStats .stat-card')[3].querySelector('.num').textContent = '500';
+    
+    // Top 10 chart
+    const top10 = data.slice(0, 10).reverse(); // reverse for horizontal bar
+    new Chart(document.getElementById('top10Chart'), {
+      type: 'bar',
+      data: {
+        labels: top10.map(d => d.rayon),
+        datasets: [{
+          label: 'Yoğunluk Skoru',
+          data: top10.map(d => d.density),
+          backgroundColor: densityColors.slice(0, 10).reverse(),
+          borderColor: 'transparent',
+          borderRadius: 4,
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          datalabels: { display: false }
+        },
+        scales: {
+          x: { grid: { color: gridColor }, ticks: { color: textColor } },
+          y: { grid: { display: false }, ticks: { color: textColor } }
+        }
+      }
+    });
+    
+    // Distribution chart
+    const bins = [0, 1, 2, 3, 5, 8, 12, 20];
+    const binLabels = ['0-1','1-2','2-3','3-5','5-8','8-12','12-20'];
+    const binCounts = bins.slice(0, -1).map((b, i) => data.filter(d => d.density >= b && d.density < bins[i+1]).length);
+    
+    new Chart(document.getElementById('distributionChart'), {
+      type: 'bar',
+      data: { labels: binLabels, datasets: [{ label: 'Rayon Sayısı', data: binCounts, backgroundColor: '#3b82f6', borderRadius: 4 }] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, datalabels: { color: textColor, anchor: 'end', align: 'end' } },
+        scales: { x: { grid: { color: gridColor }, ticks: { color: textColor } }, y: { grid: { color: gridColor }, ticks: { color: textColor, stepSize: 1 } } }
+      }
+    });
+    
+    // Density table
+    const tbody = document.getElementById('densityTableBody');
+    data.forEach((d, i) => {
+      const level = d.density >= 8 ? 'high' : d.density >= 3 ? 'mid' : 'low';
+      const label = d.density >= 8 ? '🔥 Yüksek' : d.density >= 3 ? '⚡ Orta' : '🌱 Düşük';
+      const badgeClass = d.density >= 8 ? 'badge-high' : d.density >= 3 ? 'badge-mid' : 'badge-low';
+      tbody.innerHTML += `<tr><td class="rank">${i+1}</td><td>${d.rayon}</td><td>${d.density.toFixed(2)}</td><td>${d.pois}</td><td><span class="badge ${badgeClass}">${label}</span></td></tr>`;
+    });
+    
+  } catch(e) {
+    console.error('Data load error:', e);
+  }
+}
+
+// Category weights pie chart
+new Chart(document.getElementById('categoryPie'), {
+  type: 'pie',
+  data: {
+    labels: ['Konaklama (0.35)', 'Çekicilik (0.25)', 'Yiyecek-İçecek (0.15)', 'Tarihi (0.10)', 'Doğal (0.08)', 'Kültür (0.05)', 'Ulaşım (0.02)'],
+    datasets: [{
+      data: [0.35, 0.25, 0.15, 0.10, 0.08, 0.05, 0.02],
+      backgroundColor: ['#ef4444','#f59e0b','#22c55e','#a855f7','#3b82f6','#ec4899','#14b8a6'],
+      borderColor: 'transparent'
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { color: textColor, font: { size: 11 } } },
+      datalabels: { color: '#fff', font: { weight: 'bold', size: 11 }, formatter: v => (v*100).toFixed(0)+'%' }
+    }
+  }
+});
+
+loadData();
+</script>
+</body>
+</html>

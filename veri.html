@@ -107,12 +107,25 @@
     <p style="margin-top:12px;font-size:13px;color:var(--text-muted);">
       <b>Hot spot classification:</b> Z-skoru &gt; 1.5 → Hot Spot, 0.5–1.5 → Warm Spot, 
       -0.5–0.5 → Not Significant, -1.5–(-0.5) → Cold Spot, &lt; -1.5 → Very Cold Spot.
-      Güven seviyesi (confidence): 0.90, 0.95, 0.99.
-    </p>
-  </div>
+ Güven seviyesi (confidence): 0.90, 0.95, 0.99.
+ </p>
+ </div>
 
-  <div class="panel-box">
-    <h3>🌐 İdari Sınırlar (GeoJSON, 3 seviye)</h3>
+ <div class="panel-box">
+ <h3>🔥 Turizm Yoğunluk Endeksi (GeoJSON + CSV)</h3>
+ <div class="cols">
+ <span class="col">density_grid.geojson (500 hücre)</span>
+ <span class="col">density_by_rayon.csv (71 rayon)</span>
+ <span class="col">tourism_density (weighted score)</span>
+ </div>
+ <p style="margin-top:12px;font-size:13px;color:var(--text-muted);">
+ <b>Ağırlıklandırma:</b> Konaklama (0.35), Çekim Noktası (0.25), Yeme-İçme (0.15), Tarihi (0.10), Doğal (0.08), Kültür (0.05), Ulaşım (0.02).
+ 1km² grid üzerinde 14.234 POI analiz edildi. <a href="yogunluk.html" target="_blank">Yoğunluk Sayfası →</a>
+ </p>
+ </div>
+
+ <div class="panel-box">
+ <h3>🌐 İdari Sınırlar (GeoJSON, 3 seviye)</h3>
     <div class="cols">
       <span class="col">azerbaijan_rayon_boundaries (74 rayon)</span>
       <span class="col">aze_economicregion (14 bölge)</span>
