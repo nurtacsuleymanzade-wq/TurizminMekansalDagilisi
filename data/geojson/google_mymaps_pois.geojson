@@ -1,0 +1,7951 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8546486,
+          38.7576905
+        ]
+      },
+      "properties": {
+        "Name": "Boranı Restoran (Lənkəran Filialı)",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8251412,
+          38.7787079
+        ]
+      },
+      "properties": {
+        "Name": "Xan Lenkaran restaurant",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4459184,
+          38.8153391
+        ]
+      },
+      "properties": {
+        "Name": "Şəfalı Göl istirahət mərkəzi",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7692972,
+          38.5619934
+        ]
+      },
+      "properties": {
+        "Name": "Gölkənd Astara",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8027779,
+          38.6384685
+        ]
+      },
+      "properties": {
+        "Name": "Ceyran Bulaq Ailevi Restoran",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6364961,
+          38.8971048
+        ]
+      },
+      "properties": {
+        "Name": "Qamo İstirahət Mərkəzi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.846025,
+          38.4804111
+        ]
+      },
+      "properties": {
+        "Name": "Savalan Otel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0334293,
+          40.7713007
+        ]
+      },
+      "properties": {
+        "Name": "Mingecevir Çinar Restoranı",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0462247,
+          40.7484104
+        ]
+      },
+      "properties": {
+        "Name": "Kur",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0448177,
+          40.7480521
+        ]
+      },
+      "properties": {
+        "Name": "Restaurant Gartal",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0416469,
+          40.7490073
+        ]
+      },
+      "properties": {
+        "Name": "Ada Restaurant & Beach",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4349638,
+          41.2203682
+        ]
+      },
+      "properties": {
+        "Name": "Yaşıl göl Restoranı",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.160612,
+          40.9243449
+        ]
+      },
+      "properties": {
+        "Name": "NARIN QALA",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.816681,
+          41.4708003
+        ]
+      },
+      "properties": {
+        "Name": "Bal Evi İstirahət Mərkəzi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6733306,
+          41.765484
+        ]
+      },
+      "properties": {
+        "Name": "Maral Gol restaurant and hotel",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6633065,
+          41.7775364
+        ]
+      },
+      "properties": {
+        "Name": "Fontan Nabran Restoran",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.649881,
+          41.6668099
+        ]
+      },
+      "properties": {
+        "Name": "Soyuq bulaq",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7252542,
+          41.732388
+        ]
+      },
+      "properties": {
+        "Name": "Otel UGUR",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6924309,
+          41.764818
+        ]
+      },
+      "properties": {
+        "Name": "Palermo",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6929542,
+          41.7653649
+        ]
+      },
+      "properties": {
+        "Name": "Bora Bora",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7762076,
+          41.4855261
+        ]
+      },
+      "properties": {
+        "Name": "Çənlibel Restoran",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7954375,
+          41.4630625
+        ]
+      },
+      "properties": {
+        "Name": "Sevimli soba",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7840928,
+          41.4633877
+        ]
+      },
+      "properties": {
+        "Name": "\"XXI Əsr\" restoranı",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7864395,
+          41.4524825
+        ]
+      },
+      "properties": {
+        "Name": "Çeşmə Restoran",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4368167,
+          41.4174116
+        ]
+      },
+      "properties": {
+        "Name": "Qaça-Quç Resdoran",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.422166,
+          41.421898
+        ]
+      },
+      "properties": {
+        "Name": "MAER's Coffee",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.401641,
+          41.4106089
+        ]
+      },
+      "properties": {
+        "Name": "Xidir Restoran",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4803745,
+          41.4481547
+        ]
+      },
+      "properties": {
+        "Name": "Restoran KARVAN",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5026555,
+          41.3269718
+        ]
+      },
+      "properties": {
+        "Name": "The Challette Steakhouse",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5455288,
+          41.3367183
+        ]
+      },
+      "properties": {
+        "Name": "Quba Deyirman Restoran",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.9301549,
+          40.9566107
+        ]
+      },
+      "properties": {
+        "Name": "Karvan Restoranı",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6592975,
+          41.7950175
+        ]
+      },
+      "properties": {
+        "Name": "Şahdağ kafe restoran",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8586041,
+          40.9990378
+        ]
+      },
+      "properties": {
+        "Name": "Qəbələ Restoran Alıbəy Bulağı",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8561276,
+          40.9977328
+        ]
+      },
+      "properties": {
+        "Name": "Fərid Sərin bag Ailəvi Restoran",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8544755,
+          40.9958736
+        ]
+      },
+      "properties": {
+        "Name": "Qızıl Qaya Restoranı",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4376726,
+          41.437359
+        ]
+      },
+      "properties": {
+        "Name": "Heydər Əliyev Mərkəzi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8401199,
+          40.3694979
+        ]
+      },
+      "properties": {
+        "Name": "Azerbaycan Ulusal Tarih Müzesi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8358238,
+          40.3599298
+        ]
+      },
+      "properties": {
+        "Name": "Azerbaycan Halı Müzesi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.378386,
+          40.1114461
+        ]
+      },
+      "properties": {
+        "Name": "Kobustan Millî Parkı",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3830434,
+          40.0977829
+        ]
+      },
+      "properties": {
+        "Name": "Gobustan National Park Museum",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8104286,
+          39.0384061
+        ]
+      },
+      "properties": {
+        "Name": "Qızılağac Məscidi",
+        "category": "Dini Yerler",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.705351,
+          38.9266098
+        ]
+      },
+      "properties": {
+        "Name": "Boradigah Məscidi",
+        "category": "Dini Yerler",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8563889,
+          38.7541667
+        ]
+      },
+      "properties": {
+        "Name": "Khan Palace (Lankaran Museum of History and Ethnography)",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5472707,
+          38.5887859
+        ]
+      },
+      "properties": {
+        "Name": "Gəlinqaya( gelin gaya)",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6988621,
+          38.9353273
+        ]
+      },
+      "properties": {
+        "Name": "Mollaoba Məscidi",
+        "category": "Dini Yerler",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3390374,
+          38.982092
+        ]
+      },
+      "properties": {
+        "Name": "Abi-Dərdə (Abudərdə) türbəsi",
+        "category": "Dini Yerler",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.890208,
+          40.502236
+        ]
+      },
+      "properties": {
+        "Name": "Yanardağ Tarix-Mədəniyyət və Təbiət Qoruğu",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.424274,
+          38.719659
+        ]
+      },
+      "properties": {
+        "Name": "Buzeyir mağarası",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.1294394,
+          40.6001759
+        ]
+      },
+      "properties": {
+        "Name": "Matsnaberd Albanian Monastery",
+        "category": "Dini Yerler",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.0893349,
+          40.5693875
+        ]
+      },
+      "properties": {
+        "Name": "Targmanchats Monastery",
+        "category": "Dini Yerler",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.9011718,
+          40.5477429
+        ]
+      },
+      "properties": {
+        "Name": "Namerdgala",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.7528351,
+          40.4887219
+        ]
+      },
+      "properties": {
+        "Name": "Koroğlu qalası",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.7514794,
+          40.530785
+        ]
+      },
+      "properties": {
+        "Name": "Qanlı körpü",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.2322854,
+          41.1420448
+        ]
+      },
+      "properties": {
+        "Name": "Damjili cave",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1976291,
+          41.2044097
+        ]
+      },
+      "properties": {
+        "Name": "Şəki Xan Sarayı (The Palace of Shaki Khans)",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1902822,
+          41.2026429
+        ]
+      },
+      "properties": {
+        "Name": "Shakikhanovs' Palace",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.2285706,
+          41.2633509
+        ]
+      },
+      "properties": {
+        "Name": "Galarsan-Gorarsan Fortress",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.9213243,
+          41.388982
+        ]
+      },
+      "properties": {
+        "Name": "Kurmukhi Church",
+        "category": "Dini Yerler",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.125882,
+          41.4731815
+        ]
+      },
+      "properties": {
+        "Name": "İlisu Hamam",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.9110143,
+          41.4584857
+        ]
+      },
+      "properties": {
+        "Name": "Gum Basilica",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1407111,
+          40.4921315
+        ]
+      },
+      "properties": {
+        "Name": "Mərdəkan Qalası",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4164112,
+          41.4565408
+        ]
+      },
+      "properties": {
+        "Name": "Khudat Fortress",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4996689,
+          40.6815991
+        ]
+      },
+      "properties": {
+        "Name": "Ağsuçay Körpüsü",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3900829,
+          40.7527158
+        ]
+      },
+      "properties": {
+        "Name": "Baskal körpü / Basgal Brdige",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4030624,
+          40.7518054
+        ]
+      },
+      "properties": {
+        "Name": "Baskal",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3914404,
+          40.7516601
+        ]
+      },
+      "properties": {
+        "Name": "Baskal silk center “Kelagayi”",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3905118,
+          40.7553097
+        ]
+      },
+      "properties": {
+        "Name": "Basgal State Historical-Cultural Reserve",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1883749,
+          40.8782139
+        ]
+      },
+      "properties": {
+        "Name": "Mikayil Mushvig Home Museum",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2320538,
+          40.9578634
+        ]
+      },
+      "properties": {
+        "Name": "Beshbarmaq",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.759415,
+          41.206151
+        ]
+      },
+      "properties": {
+        "Name": "Kilvar village Albanian Church",
+        "category": "Dini Yerler",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4061719,
+          39.2050375
+        ]
+      },
+      "properties": {
+        "Name": "Mümine Hatun Türbesi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4067087,
+          39.2153144
+        ]
+      },
+      "properties": {
+        "Name": "Heydər Əliyev Muzeyi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8419465,
+          40.3374314
+        ]
+      },
+      "properties": {
+        "Name": "\"SURAKHANI\" SHIP-MUSEUM",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8349644,
+          40.366267
+        ]
+      },
+      "properties": {
+        "Name": "İçerişehir",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8678151,
+          40.3958984
+        ]
+      },
+      "properties": {
+        "Name": "Heydər Əliyev Mərkəzi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8317364,
+          40.3631683
+        ]
+      },
+      "properties": {
+        "Name": "Azerbaycan Ulusal Güzel Sanatlar Müzesi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.169066,
+          40.439652
+        ]
+      },
+      "properties": {
+        "Name": "Arkeoloji ve Etnografya Müze Kompleksi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9800156,
+          40.4561375
+        ]
+      },
+      "properties": {
+        "Name": "Ramana Qalası",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8582907,
+          40.9832067
+        ]
+      },
+      "properties": {
+        "Name": "Səkkizguşəli Məscid",
+        "category": "Dini Yerler",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.6527631,
+          40.9157554
+        ]
+      },
+      "properties": {
+        "Name": "Azerbaijan Udi Hearth",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.69213,
+          40.8916595
+        ]
+      },
+      "properties": {
+        "Name": "Çukur Gebele",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4127244,
+          39.2151673
+        ]
+      },
+      "properties": {
+        "Name": "Hüseyn Cavidin ev müzeyi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4122332,
+          39.2115176
+        ]
+      },
+      "properties": {
+        "Name": "Nakhchivan State History Museum",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4121,
+          39.2127064
+        ]
+      },
+      "properties": {
+        "Name": "Bahruz Kangarli House-Museum",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4077141,
+          39.2143911
+        ]
+      },
+      "properties": {
+        "Name": "Nakhchivan State Carpet Museum",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8362405,
+          40.3698521
+        ]
+      },
+      "properties": {
+        "Name": "Nizâmî-i Gencevî 'nin adını taşıyan Azerbaycan Edebiyat Müzesi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8293763,
+          40.3705554
+        ]
+      },
+      "properties": {
+        "Name": "Cəlil Məmmədquluzadə ev muzeyi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9638482,
+          40.3466571
+        ]
+      },
+      "properties": {
+        "Name": "Cəmşid Naxçıvanski adına Hərbi Lisey",
+        "category": "Spor",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4083701,
+          39.2147652
+        ]
+      },
+      "properties": {
+        "Name": "Nakhchivan State Musical Dramatic Theatre",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9745749,
+          40.391822
+        ]
+      },
+      "properties": {
+        "Name": "Bakı Uşaq Teatrı",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.5892626,
+          39.2206727
+        ]
+      },
+      "properties": {
+        "Name": "Ashab-i Kehf",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4138478,
+          39.2019092
+        ]
+      },
+      "properties": {
+        "Name": "Yusif ibn Kuseyir Mausoleum",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.412395,
+          39.1970743
+        ]
+      },
+      "properties": {
+        "Name": "Naxçıvan Qala Tarix Memarlıq Abidəsi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.1923586,
+          39.4302808
+        ]
+      },
+      "properties": {
+        "Name": "Mausoleum in Garabaghlar",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.7154643,
+          39.1888756
+        ]
+      },
+      "properties": {
+        "Name": "Sheikh Khorasan (Fazlullah Naimi) Xanəgahı",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.696861,
+          39.194415
+        ]
+      },
+      "properties": {
+        "Name": "Əlincə Qalası",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.6708439,
+          39.1682063
+        ]
+      },
+      "properties": {
+        "Name": "Goydere Mescidi",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.0162482,
+          39.5736807
+        ]
+      },
+      "properties": {
+        "Name": "Cəlilkənd Buzxanası XIX əsrə aid Memarlıq Abidəsi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.0523514,
+          39.5895345
+        ]
+      },
+      "properties": {
+        "Name": "Oğlanqala buzxanası",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.0196015,
+          38.9048714
+        ]
+      },
+      "properties": {
+        "Name": "Ordubad Buzxanası",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.7030834,
+          39.2337822
+        ]
+      },
+      "properties": {
+        "Name": "Qazançı Körpüsü",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.8224189,
+          38.9291266
+        ]
+      },
+      "properties": {
+        "Name": "Aza Körpüsü",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.773512,
+          38.936997
+        ]
+      },
+      "properties": {
+        "Name": "Remnants of Ancient Settlement",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3159209,
+          40.1540476
+        ]
+      },
+      "properties": {
+        "Name": "Gobustan Rock Art Cultural Landscape",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2965126,
+          40.1652318
+        ]
+      },
+      "properties": {
+        "Name": "Mud volcano",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3818283,
+          40.1418775
+        ]
+      },
+      "properties": {
+        "Name": "Mud volcano",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.236749,
+          40.1847366
+        ]
+      },
+      "properties": {
+        "Name": "Mud volcano tourist park",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1256621,
+          40.2357027
+        ]
+      },
+      "properties": {
+        "Name": "Mud volcanoes",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.4027473,
+          39.9963154
+        ]
+      },
+      "properties": {
+        "Name": "Gobustan Mud Volcano",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8731087,
+          39.159489
+        ]
+      },
+      "properties": {
+        "Name": "Gizil-Agach State Reserve",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6927919,
+          38.4742521
+        ]
+      },
+      "properties": {
+        "Name": "Hirkan Millî Parkı",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4785139,
+          38.9480289
+        ]
+      },
+      "properties": {
+        "Name": "Takdam waterfall",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5006604,
+          38.9384433
+        ]
+      },
+      "properties": {
+        "Name": "Tıptıpənə şəlaləsi",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.464713,
+          38.9361498
+        ]
+      },
+      "properties": {
+        "Name": "Kanyon 001",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8418731,
+          38.7830975
+        ]
+      },
+      "properties": {
+        "Name": "Sahil parkı",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5542923,
+          38.9729398
+        ]
+      },
+      "properties": {
+        "Name": "İstisu",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.396378,
+          38.7268206
+        ]
+      },
+      "properties": {
+        "Name": "Büzeyir",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.879507,
+          38.4554225
+        ]
+      },
+      "properties": {
+        "Name": "Astara boulevard",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7188107,
+          38.6408387
+        ]
+      },
+      "properties": {
+        "Name": "Biləsər şəlaləsi",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5918598,
+          38.7007812
+        ]
+      },
+      "properties": {
+        "Name": "Qəbəlin şəlaləsi",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9223709,
+          38.9598765
+        ]
+      },
+      "properties": {
+        "Name": "Qızılağac milli parkı",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1218388,
+          39.5801052
+        ]
+      },
+      "properties": {
+        "Name": "Shirvan National Park",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.4081126,
+          40.7727092
+        ]
+      },
+      "properties": {
+        "Name": "Türyançay devlet qoruğu",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0383242,
+          40.7696866
+        ]
+      },
+      "properties": {
+        "Name": "Mingəçevir Şəhəri Sahil Parkı",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.6451808,
+          41.0799671
+        ]
+      },
+      "properties": {
+        "Name": "Qanix çayının sahili",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.1826541,
+          41.3099115
+        ]
+      },
+      "properties": {
+        "Name": "Gara-Yaz State Reserve",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.3177201,
+          41.2616224
+        ]
+      },
+      "properties": {
+        "Name": "Tuqay Meşələri",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3272297,
+          40.8432592
+        ]
+      },
+      "properties": {
+        "Name": "Namazgah Kanyonu",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4031118,
+          40.7542274
+        ]
+      },
+      "properties": {
+        "Name": "Baskal",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3856023,
+          40.8493459
+        ]
+      },
+      "properties": {
+        "Name": "Lahıc",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5115311,
+          40.7835912
+        ]
+      },
+      "properties": {
+        "Name": "Pirqulu State Reserve",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.2551854,
+          40.9266814
+        ]
+      },
+      "properties": {
+        "Name": "Şahdağ Milli Parki",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.0585137,
+          40.9586665
+        ]
+      },
+      "properties": {
+        "Name": "Ismailli State Reserve",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.913748,
+          40.9753297
+        ]
+      },
+      "properties": {
+        "Name": "Yeddi Gozel Waterfall",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.9643422,
+          41.0049854
+        ]
+      },
+      "properties": {
+        "Name": "Soyuq Bulaq Şəlaləsi-Waterfall",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8867653,
+          41.0538241
+        ]
+      },
+      "properties": {
+        "Name": "Durja Waterfall",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.0032446,
+          40.968037
+        ]
+      },
+      "properties": {
+        "Name": "Waterfall-Qazan",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.8185679,
+          40.5235087
+        ]
+      },
+      "properties": {
+        "Name": "Naftalan",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1259412,
+          41.1862001
+        ]
+      },
+      "properties": {
+        "Name": "Kınalık",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.6562754,
+          40.9563531
+        ]
+      },
+      "properties": {
+        "Name": "Nic",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.8518384,
+          41.4833468
+        ]
+      },
+      "properties": {
+        "Name": "Mamirli Waterfall (\"Green Moss\")",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.8257002,
+          41.5286157
+        ]
+      },
+      "properties": {
+        "Name": "Zərnə Şəlaləsi",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.5874204,
+          41.6968992
+        ]
+      },
+      "properties": {
+        "Name": "Gabızdere",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.4666497,
+          41.7524185
+        ]
+      },
+      "properties": {
+        "Name": "Qaracay",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.5586048,
+          41.7870543
+        ]
+      },
+      "properties": {
+        "Name": "Zagatala State Reserve",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0215224,
+          41.4991547
+        ]
+      },
+      "properties": {
+        "Name": "İlisy Devlet Rezervi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5973244,
+          40.7980886
+        ]
+      },
+      "properties": {
+        "Name": "Pirgulu",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0273549,
+          40.8762849
+        ]
+      },
+      "properties": {
+        "Name": "Altıağac Millî Parkı",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6009994,
+          41.0898417
+        ]
+      },
+      "properties": {
+        "Name": "Gonagkend",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.2998066,
+          41.2405864
+        ]
+      },
+      "properties": {
+        "Name": "Grizdehne",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1844502,
+          41.2044339
+        ]
+      },
+      "properties": {
+        "Name": "Galahudat",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.0113889,
+          41.2777778
+        ]
+      },
+      "properties": {
+        "Name": "Şahdağ",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.624018,
+          41.2368572
+        ]
+      },
+      "properties": {
+        "Name": "Tengealtı",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6130316,
+          41.1717646
+        ]
+      },
+      "properties": {
+        "Name": "Afurca şelalesi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.7418434,
+          39.7656861
+        ]
+      },
+      "properties": {
+        "Name": "Şuşa",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.702618,
+          40.0147388
+        ]
+      },
+      "properties": {
+        "Name": "Ağ Göl Millî Parkı",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.4750894,
+          39.998775
+        ]
+      },
+      "properties": {
+        "Name": "Palçıq vulkanı",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6224446,
+          41.7862196
+        ]
+      },
+      "properties": {
+        "Name": "Samur-Yalama parkı",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6373379,
+          41.3949354
+        ]
+      },
+      "properties": {
+        "Name": "Həsən Bəy Zərdabi Parkı",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1312058,
+          40.8900559
+        ]
+      },
+      "properties": {
+        "Name": "Altıağac Qoruğu",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.199701,
+          40.8769103
+        ]
+      },
+      "properties": {
+        "Name": "Candy Cane Mountains",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6245641,
+          41.2286164
+        ]
+      },
+      "properties": {
+        "Name": "Tengealtı",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5900491,
+          39.1323762
+        ]
+      },
+      "properties": {
+        "Name": "Xan Çinar restoranı",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7910243,
+          40.4653057
+        ]
+      },
+      "properties": {
+        "Name": "Mud Volcano",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.4438614,
+          40.4162422
+        ]
+      },
+      "properties": {
+        "Name": "Mud volcano",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.4257736,
+          40.3263278
+        ]
+      },
+      "properties": {
+        "Name": "Mud volcano",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.8018771,
+          39.5413124
+        ]
+      },
+      "properties": {
+        "Name": "Batabat gölü",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6537292,
+          41.7983939
+        ]
+      },
+      "properties": {
+        "Name": "Bulaq",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6974734,
+          41.7606205
+        ]
+      },
+      "properties": {
+        "Name": "Sahil",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6933113,
+          41.7650645
+        ]
+      },
+      "properties": {
+        "Name": "El Faro Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7296785,
+          41.7265576
+        ]
+      },
+      "properties": {
+        "Name": "Flaqman Nabran",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6602428,
+          41.7791916
+        ]
+      },
+      "properties": {
+        "Name": "Green Ville",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6592421,
+          41.7958774
+        ]
+      },
+      "properties": {
+        "Name": "Orman İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6356618,
+          41.8146684
+        ]
+      },
+      "properties": {
+        "Name": "Elay",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3283006,
+          40.4576344
+        ]
+      },
+      "properties": {
+        "Name": "MİRACLE GARDEN İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.2088572,
+          40.8045042
+        ]
+      },
+      "properties": {
+        "Name": "Talistan Forest Park (İsmayıllı İstirahət Mərkəzi)",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3164351,
+          40.7905258
+        ]
+      },
+      "properties": {
+        "Name": "Qızıl Dərə İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.3283308,
+          41.1652961
+        ]
+      },
+      "properties": {
+        "Name": "Küngüt İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.692991,
+          41.7589212
+        ]
+      },
+      "properties": {
+        "Name": "Palma",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.32654,
+          40.456738
+        ]
+      },
+      "properties": {
+        "Name": "Lotos Goygol",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.692991,
+          41.7589212
+        ]
+      },
+      "properties": {
+        "Name": "qoşa çinar",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6855483,
+          41.7598042
+        ]
+      },
+      "properties": {
+        "Name": "Sun Set Forest",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7799609,
+          41.6687643
+        ]
+      },
+      "properties": {
+        "Name": "\"Batabat\" Guest House",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.75916,
+          38.765326
+        ]
+      },
+      "properties": {
+        "Name": "Lənkəran İstisu və Sağlamlıq Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.75385,
+          38.7997832
+        ]
+      },
+      "properties": {
+        "Name": "NILADO GREEN HOTEL",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4055625,
+          40.7256875
+        ]
+      },
+      "properties": {
+        "Name": "Basqal Resort & Spa",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.9959233,
+          41.4462243
+        ]
+      },
+      "properties": {
+        "Name": "\"BERGS HOTEL AND RESTAURANT\"",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.132736,
+          40.8485786
+        ]
+      },
+      "properties": {
+        "Name": "İsmayıllı Castle Resort & Spa Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.2024773,
+          41.2450584
+        ]
+      },
+      "properties": {
+        "Name": "Marxal Resort & Spa",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1366446,
+          41.3192786
+        ]
+      },
+      "properties": {
+        "Name": "Shahdag Hotel & Spa",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.2245526,
+          41.3514599
+        ]
+      },
+      "properties": {
+        "Name": "Deluxe Park Qusar Resort & Spa Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3259893,
+          40.4151349
+        ]
+      },
+      "properties": {
+        "Name": "Hotel Goy Gol",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.9528362,
+          40.9843915
+        ]
+      },
+      "properties": {
+        "Name": "White Boutique Hotel Gabala",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8432975,
+          40.9761696
+        ]
+      },
+      "properties": {
+        "Name": "Gabala City Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6769867,
+          41.7788808
+        ]
+      },
+      "properties": {
+        "Name": "Caspian Sea Resort Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4996677,
+          41.3596078
+        ]
+      },
+      "properties": {
+        "Name": "Gold Hotel Quba",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.0639123,
+          40.5771739
+        ]
+      },
+      "properties": {
+        "Name": "Bilgah Beach Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8971725,
+          40.4178313
+        ]
+      },
+      "properties": {
+        "Name": "Global Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.93736,
+          41.08939
+        ]
+      },
+      "properties": {
+        "Name": "QALAALTI HOTEL & SPA",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1975659,
+          41.1996558
+        ]
+      },
+      "properties": {
+        "Name": "Ilgars Hostel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8024635,
+          40.306343
+        ]
+      },
+      "properties": {
+        "Name": "Ramada by Wyndham Baku",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8496777,
+          40.372112
+        ]
+      },
+      "properties": {
+        "Name": "Hilton Baku",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.856755,
+          40.374715
+        ]
+      },
+      "properties": {
+        "Name": "JW Marriott Absheron Baku Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8047283,
+          40.3543531
+        ]
+      },
+      "properties": {
+        "Name": "Badamdar Hotel & Residence",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.6439402,
+          40.2586544
+        ]
+      },
+      "properties": {
+        "Name": "Montenegro",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8349176,
+          38.7965484
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz Sahil Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8258761,
+          38.7945401
+        ]
+      },
+      "properties": {
+        "Name": "Mandarin Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8672981,
+          38.7108688
+        ]
+      },
+      "properties": {
+        "Name": "Khazar Palace Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8740059,
+          38.4907731
+        ]
+      },
+      "properties": {
+        "Name": "Khazri Qonaq evi / Guest House / Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8749253,
+          38.4486524
+        ]
+      },
+      "properties": {
+        "Name": "Shindan Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8790141,
+          38.4498653
+        ]
+      },
+      "properties": {
+        "Name": "Book Inn",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7606753,
+          38.7670489
+        ]
+      },
+      "properties": {
+        "Name": "Lankaran Springs Wellness Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5243347,
+          38.9650852
+        ]
+      },
+      "properties": {
+        "Name": "Masalli qala istirahet merkezi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5494057,
+          38.969217
+        ]
+      },
+      "properties": {
+        "Name": "Dəmirağac İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5591408,
+          38.9786884
+        ]
+      },
+      "properties": {
+        "Name": "Şıxlar kəndi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5834215,
+          38.9882067
+        ]
+      },
+      "properties": {
+        "Name": "Vilesh Palace Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5465905,
+          38.7888093
+        ]
+      },
+      "properties": {
+        "Name": "Cenub Istirahet Merkezi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5510758,
+          38.7805247
+        ]
+      },
+      "properties": {
+        "Name": "\"Dost qapısı\" ailəvi istirahət mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.596901,
+          38.7585141
+        ]
+      },
+      "properties": {
+        "Name": "Lerik House",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6112173,
+          38.7404685
+        ]
+      },
+      "properties": {
+        "Name": "Tebessum Istirahet Merkezi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8413514,
+          38.7674869
+        ]
+      },
+      "properties": {
+        "Name": "Starway Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8745238,
+          38.4552954
+        ]
+      },
+      "properties": {
+        "Name": "Mandarinnart",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0356159,
+          40.7690642
+        ]
+      },
+      "properties": {
+        "Name": "Agsaray Deluxe Hotel&SPA",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0351006,
+          40.7652469
+        ]
+      },
+      "properties": {
+        "Name": "River Side Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0386111,
+          40.7622222
+        ]
+      },
+      "properties": {
+        "Name": "Kur Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0350356,
+          40.7626651
+        ]
+      },
+      "properties": {
+        "Name": "Semeni Hotel & Restaurant",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0351359,
+          40.7621034
+        ]
+      },
+      "properties": {
+        "Name": "Serin Restaurant & Otel",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.3431887,
+          41.0862972
+        ]
+      },
+      "properties": {
+        "Name": "Qazax Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.3223616,
+          41.1420234
+        ]
+      },
+      "properties": {
+        "Name": "Avey Motel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4263033,
+          41.2324034
+        ]
+      },
+      "properties": {
+        "Name": "Damma Kamp Alanı",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.6433543,
+          40.9887757
+        ]
+      },
+      "properties": {
+        "Name": "AYAN PALACE",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.0383459,
+          40.9809063
+        ]
+      },
+      "properties": {
+        "Name": "Runaway House - Qalacıq",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8868809,
+          41.0331223
+        ]
+      },
+      "properties": {
+        "Name": "Tufandag Mountain Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.828871,
+          40.9794711
+        ]
+      },
+      "properties": {
+        "Name": "Gabala Garden Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.0638402,
+          40.9323883
+        ]
+      },
+      "properties": {
+        "Name": "Green House Ismayilli",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0384426,
+          41.4640979
+        ]
+      },
+      "properties": {
+        "Name": "SangarGala Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.9781245,
+          41.4374578
+        ]
+      },
+      "properties": {
+        "Name": "El Resort Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7377162,
+          41.7044935
+        ]
+      },
+      "properties": {
+        "Name": "Vogue Hotel Nabran",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7039112,
+          41.7435842
+        ]
+      },
+      "properties": {
+        "Name": "Atlant İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7605766,
+          41.6898126
+        ]
+      },
+      "properties": {
+        "Name": "RAHAT HOTEL",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7369559,
+          41.7108261
+        ]
+      },
+      "properties": {
+        "Name": "Ulduz Istirahet Merkezi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7070648,
+          41.7514144
+        ]
+      },
+      "properties": {
+        "Name": "Flamingo",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6894643,
+          41.7669426
+        ]
+      },
+      "properties": {
+        "Name": "Lotos",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6889044,
+          41.7675058
+        ]
+      },
+      "properties": {
+        "Name": "Rabitəçi istirahət bazası",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6873766,
+          41.7684215
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz bulaq",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6703746,
+          41.7782417
+        ]
+      },
+      "properties": {
+        "Name": "River Inn Boutique Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.66638,
+          41.788165
+        ]
+      },
+      "properties": {
+        "Name": "Dostluq istirahət mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6539893,
+          41.7982999
+        ]
+      },
+      "properties": {
+        "Name": "Булаг",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7157265,
+          41.5824217
+        ]
+      },
+      "properties": {
+        "Name": "Choban Bulaq",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7822431,
+          41.6626552
+        ]
+      },
+      "properties": {
+        "Name": "Lazy Seal Cottages Nabran",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7790737,
+          41.6686706
+        ]
+      },
+      "properties": {
+        "Name": "Deniz Guest House",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4256647,
+          41.4222879
+        ]
+      },
+      "properties": {
+        "Name": "ILK INN HOTEL",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.423579,
+          41.4182068
+        ]
+      },
+      "properties": {
+        "Name": "Villa Premium Qusar",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.2184832,
+          41.257478
+        ]
+      },
+      "properties": {
+        "Name": "Narin Qala Otel & Restaurant",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4167855,
+          41.4184855
+        ]
+      },
+      "properties": {
+        "Name": "Park Qusar Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4173495,
+          41.4169854
+        ]
+      },
+      "properties": {
+        "Name": "Fraish Air Boutigue",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4249267,
+          41.4126183
+        ]
+      },
+      "properties": {
+        "Name": "Qusar Göl - Ailəvi istirahət mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4215087,
+          41.4121712
+        ]
+      },
+      "properties": {
+        "Name": "Qusar Qala Hotel and Restaurant",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4351373,
+          41.4177093
+        ]
+      },
+      "properties": {
+        "Name": "Ladera Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4390572,
+          41.4385174
+        ]
+      },
+      "properties": {
+        "Name": "Qusar Olimpik Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4482668,
+          41.4387262
+        ]
+      },
+      "properties": {
+        "Name": "Selena Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4155857,
+          41.4262419
+        ]
+      },
+      "properties": {
+        "Name": "CHALET WOODS GUSAR",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3823514,
+          41.4058615
+        ]
+      },
+      "properties": {
+        "Name": "Chateau Qusar",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.369673,
+          41.398065
+        ]
+      },
+      "properties": {
+        "Name": "Zengezur Hotel&Restaurant",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4679698,
+          41.4430723
+        ]
+      },
+      "properties": {
+        "Name": "Hello Qusar Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5392811,
+          41.3870594
+        ]
+      },
+      "properties": {
+        "Name": "Fayton Otel&Restoran",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4989785,
+          41.3321064
+        ]
+      },
+      "properties": {
+        "Name": "Quba Palace Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4747736,
+          40.6474537
+        ]
+      },
+      "properties": {
+        "Name": "Silent Lake Shamakhy",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4692383,
+          40.6253882
+        ]
+      },
+      "properties": {
+        "Name": "Shamakhi Palace Sharadil",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3887595,
+          40.7307462
+        ]
+      },
+      "properties": {
+        "Name": "Basqal Restaurant/Hotel",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3961077,
+          40.748153
+        ]
+      },
+      "properties": {
+        "Name": "BASQAL QONAQ EVI. GUEST HOUSE",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.2617111,
+          40.746805
+        ]
+      },
+      "properties": {
+        "Name": "Lakeside Garden - Ismayilli",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.858713,
+          40.3989447
+        ]
+      },
+      "properties": {
+        "Name": "Abu Arena Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8429326,
+          40.4064474
+        ]
+      },
+      "properties": {
+        "Name": "Admiral Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.847205,
+          40.4016952
+        ]
+      },
+      "properties": {
+        "Name": "Alp Inn Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.831445,
+          40.4003525
+        ]
+      },
+      "properties": {
+        "Name": "Ambassador Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8297455,
+          40.3817041
+        ]
+      },
+      "properties": {
+        "Name": "Amber Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.843456,
+          40.408179
+        ]
+      },
+      "properties": {
+        "Name": "Ambiance Hotel Baku",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8418833,
+          40.3830318
+        ]
+      },
+      "properties": {
+        "Name": "AF HOTEL",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7771339,
+          40.5748008
+        ]
+      },
+      "properties": {
+        "Name": "AF Hotel & Aqua Park",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9339701,
+          40.3960431
+        ]
+      },
+      "properties": {
+        "Name": "Astoria Baku Fitness & Spa",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.793447,
+          40.3055218
+        ]
+      },
+      "properties": {
+        "Name": "Aysberq Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8351019,
+          40.372752
+        ]
+      },
+      "properties": {
+        "Name": "Baku Palace Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.872574,
+          40.3779413
+        ]
+      },
+      "properties": {
+        "Name": "Boulevard Side Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8376885,
+          40.3694539
+        ]
+      },
+      "properties": {
+        "Name": "Bristol Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8511471,
+          40.3746814
+        ]
+      },
+      "properties": {
+        "Name": "Bulvar Inn Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8288974,
+          40.3853361
+        ]
+      },
+      "properties": {
+        "Name": "Caspian Palace Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.841149,
+          40.3790549
+        ]
+      },
+      "properties": {
+        "Name": "Central Park Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8006106,
+          40.3068525
+        ]
+      },
+      "properties": {
+        "Name": "The Crescent Beach Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8604064,
+          40.4086105
+        ]
+      },
+      "properties": {
+        "Name": "Emerald Suite Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8261691,
+          40.3602613
+        ]
+      },
+      "properties": {
+        "Name": "Fairmont Bakü",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8349304,
+          40.3632536
+        ]
+      },
+      "properties": {
+        "Name": "Four Seasons Hotel Baku",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8311798,
+          40.3756678
+        ]
+      },
+      "properties": {
+        "Name": "Grand Hotel Baku Central Park",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8586661,
+          40.3759084
+        ]
+      },
+      "properties": {
+        "Name": "Holiday Inn Baku, an IHG Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8243976,
+          40.3877884
+        ]
+      },
+      "properties": {
+        "Name": "Hyatt Regency Baku",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.0611458,
+          40.5781441
+        ]
+      },
+      "properties": {
+        "Name": "Jumeirah Bilgah Beach Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9852752,
+          40.5913505
+        ]
+      },
+      "properties": {
+        "Name": "Sea Breeze Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8289378,
+          40.368739
+        ]
+      },
+      "properties": {
+        "Name": "Sapphire Inn Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8351914,
+          40.3497607
+        ]
+      },
+      "properties": {
+        "Name": "Riviera Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8170061,
+          40.3962515
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz Baku City Hotel & Residences",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8243596,
+          40.3883723
+        ]
+      },
+      "properties": {
+        "Name": "Park Hyatt",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4127656,
+          52.523125
+        ]
+      },
+      "properties": {
+        "Name": "Park Inn by Radisson Berlin Alexanderplatz",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8364893,
+          40.3665548
+        ]
+      },
+      "properties": {
+        "Name": "Museum Inn",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8175634,
+          40.3949909
+        ]
+      },
+      "properties": {
+        "Name": "Chirag Plaza Hotel & Business Center",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1673699,
+          40.5120998
+        ]
+      },
+      "properties": {
+        "Name": "Dalga Beach Aquapark Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1538399,
+          40.5159742
+        ]
+      },
+      "properties": {
+        "Name": "Dream Beach Baku",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9194347,
+          40.8537207
+        ]
+      },
+      "properties": {
+        "Name": "Jannat Baghi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5531768,
+          41.3571998
+        ]
+      },
+      "properties": {
+        "Name": "Barpa SPA Center",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4708333,
+          41.3519444
+        ]
+      },
+      "properties": {
+        "Name": "\"Quba\" İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6159708,
+          41.1657544
+        ]
+      },
+      "properties": {
+        "Name": "Dağ havası istirahət mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6071155,
+          41.1631132
+        ]
+      },
+      "properties": {
+        "Name": "Nur Ailəvi İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.315955,
+          41.2458136
+        ]
+      },
+      "properties": {
+        "Name": "Nazli Bulaq Istirahet Merkezi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5391865,
+          41.3097064
+        ]
+      },
+      "properties": {
+        "Name": "\"CƏNNƏT BAĞI\" Quba istirahət mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4824625,
+          41.3573529
+        ]
+      },
+      "properties": {
+        "Name": "Terrace Hotel Quba",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.518546,
+          41.3605494
+        ]
+      },
+      "properties": {
+        "Name": "Quba-Nügədi yolu",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5260863,
+          41.3643139
+        ]
+      },
+      "properties": {
+        "Name": "Sane Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4954828,
+          41.4508965
+        ]
+      },
+      "properties": {
+        "Name": "Ladera Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.134169,
+          41.319593
+        ]
+      },
+      "properties": {
+        "Name": "Park Chalet, Shahdag, Autograph Collection",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.135354,
+          41.318179
+        ]
+      },
+      "properties": {
+        "Name": "Pik Palace, Shahdag, Autograph Collection",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6370969,
+          41.8128589
+        ]
+      },
+      "properties": {
+        "Name": "Khazar",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7438283,
+          41.6811131
+        ]
+      },
+      "properties": {
+        "Name": "Təhsil İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.799862,
+          41.4620213
+        ]
+      },
+      "properties": {
+        "Name": "Ulduz Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.6245738,
+          41.6307133
+        ]
+      },
+      "properties": {
+        "Name": "Is Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.6385064,
+          41.6308099
+        ]
+      },
+      "properties": {
+        "Name": "Grata hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.6544953,
+          41.6327323
+        ]
+      },
+      "properties": {
+        "Name": "Turqut Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.6517794,
+          41.6404632
+        ]
+      },
+      "properties": {
+        "Name": "Zaqatala Olympic Complex",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1748702,
+          41.2037848
+        ]
+      },
+      "properties": {
+        "Name": "Issam Hotel & Spa",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.19336,
+          41.2010549
+        ]
+      },
+      "properties": {
+        "Name": "Karvansaray",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.2093254,
+          41.253305
+        ]
+      },
+      "properties": {
+        "Name": "Sheki Park",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1781698,
+          41.2030826
+        ]
+      },
+      "properties": {
+        "Name": "Sheki Saray Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1623376,
+          41.1609881
+        ]
+      },
+      "properties": {
+        "Name": "Sheki Olimpiya Hotel & Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1952556,
+          41.2004218
+        ]
+      },
+      "properties": {
+        "Name": "Sheki Palace Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.9538846,
+          40.9866204
+        ]
+      },
+      "properties": {
+        "Name": "Duyma Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8887036,
+          41.0150276
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz Resort Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8827454,
+          41.0055762
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz Riverside Resort Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8288783,
+          40.9796433
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz Sport Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.9385887,
+          40.9546638
+        ]
+      },
+      "properties": {
+        "Name": "Semerana",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3170566,
+          40.4274292
+        ]
+      },
+      "properties": {
+        "Name": "Cənnət Məkan",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.3346477,
+          39.275815
+        ]
+      },
+      "properties": {
+        "Name": "Duzdag Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4012397,
+          39.1972983
+        ]
+      },
+      "properties": {
+        "Name": "Elsevər Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4336548,
+          39.1921975
+        ]
+      },
+      "properties": {
+        "Name": "Nəqşicahan",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4101611,
+          39.2092274
+        ]
+      },
+      "properties": {
+        "Name": "5 Təbriz",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.417019,
+          39.1994054
+        ]
+      },
+      "properties": {
+        "Name": "Saat Meydani Nakhchivan",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.7206297,
+          39.445059
+        ]
+      },
+      "properties": {
+        "Name": "Ağbulaq İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.8202883,
+          40.4997478
+        ]
+      },
+      "properties": {
+        "Name": "Chinar Hotel & SPA Naftalan",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3881798,
+          40.6835251
+        ]
+      },
+      "properties": {
+        "Name": "Emon Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.360456,
+          40.6733324
+        ]
+      },
+      "properties": {
+        "Name": "Cinema Boutique Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.376542,
+          40.6776392
+        ]
+      },
+      "properties": {
+        "Name": "Deluxe Hotel GANJA",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3746009,
+          40.7058254
+        ]
+      },
+      "properties": {
+        "Name": "El Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.4094874,
+          40.6849704
+        ]
+      },
+      "properties": {
+        "Name": "KarvanSaray",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3593861,
+          40.6730154
+        ]
+      },
+      "properties": {
+        "Name": "Kəpəz Mehmanxanası",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3647489,
+          40.6739355
+        ]
+      },
+      "properties": {
+        "Name": "MY WAY Boulevard HOTEL",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.338567,
+          40.687923
+        ]
+      },
+      "properties": {
+        "Name": "Ramada Plaza by Wyndham Gence",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3578676,
+          40.6779337
+        ]
+      },
+      "properties": {
+        "Name": "Vego Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7925248,
+          40.3059835
+        ]
+      },
+      "properties": {
+        "Name": "Panorama Villa Lux Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8426706,
+          40.4050465
+        ]
+      },
+      "properties": {
+        "Name": "Premier Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8836253,
+          40.3748784
+        ]
+      },
+      "properties": {
+        "Name": "Baku Marriott Hotel Boulevard",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.0946229,
+          40.404248
+        ]
+      },
+      "properties": {
+        "Name": "Dreamland Golf Club",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8700341,
+          40.999743
+        ]
+      },
+      "properties": {
+        "Name": "Javid's villas",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8663573,
+          40.9994472
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz Suite Paradise Chalet",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8704496,
+          41.0015263
+        ]
+      },
+      "properties": {
+        "Name": "Green Family villa",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8651007,
+          40.9940523
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz Suite Bluesky",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8677785,
+          40.996829
+        ]
+      },
+      "properties": {
+        "Name": "Fortuna Resort Qebele",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8573294,
+          40.9947301
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz Suite Fairy Tale",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8535295,
+          40.9907836
+        ]
+      },
+      "properties": {
+        "Name": "Gabala Guest House",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8453142,
+          40.9879283
+        ]
+      },
+      "properties": {
+        "Name": "Private Holiday Villa in Gabala City - Fits up to 30 People - 8 Bedrooms",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8562744,
+          40.9815796
+        ]
+      },
+      "properties": {
+        "Name": "Regnum Family Villas",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8624529,
+          40.983577
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz Suite Mountain Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8628656,
+          40.9870107
+        ]
+      },
+      "properties": {
+        "Name": "Fairy Tale chalet",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8656279,
+          40.9866259
+        ]
+      },
+      "properties": {
+        "Name": "Manor Linode Aframe",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8471407,
+          40.9891715
+        ]
+      },
+      "properties": {
+        "Name": "A Yard Or Villa İn Gabala",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8480012,
+          40.9864753
+        ]
+      },
+      "properties": {
+        "Name": "Qafqaz Mini Villa",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.578824,
+          40.795586
+        ]
+      },
+      "properties": {
+        "Name": "Dağlar Qoynunda hotel and restaurant",
+        "category": "Yeme-İçme",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6366208,
+          40.625831
+        ]
+      },
+      "properties": {
+        "Name": "Dədə Qorqud",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.580514,
+          40.717653
+        ]
+      },
+      "properties": {
+        "Name": "Göy Qurşağı Ailəvi İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.455075,
+          40.614827
+        ]
+      },
+      "properties": {
+        "Name": "PALIDLI MEŞƏ Ailəvi İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7002086,
+          38.8801153
+        ]
+      },
+      "properties": {
+        "Name": "Baba Bulağı İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6666059,
+          39.033931
+        ]
+      },
+      "properties": {
+        "Name": "Masally Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5508728,
+          38.9730115
+        ]
+      },
+      "properties": {
+        "Name": "Orand Masallı Istirahet Merkezi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.576945,
+          38.9825934
+        ]
+      },
+      "properties": {
+        "Name": "Masalli hotel isti su",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5733902,
+          38.9808292
+        ]
+      },
+      "properties": {
+        "Name": "Nagil Dunyasi istirahet merkezi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4935964,
+          38.9463758
+        ]
+      },
+      "properties": {
+        "Name": "Qala Istirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6071986,
+          38.7436799
+        ]
+      },
+      "properties": {
+        "Name": "Relax Istirahet merkezi.",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6082296,
+          38.7434452
+        ]
+      },
+      "properties": {
+        "Name": "Meşəbəyi.Ailəvi İstirahət Mərkəzi.Lənkəran",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7965445,
+          38.6543926
+        ]
+      },
+      "properties": {
+        "Name": "Xanbulan İstirahət Mərkəzi",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8034793,
+          38.6586051
+        ]
+      },
+      "properties": {
+        "Name": "Xan Hotel (Lenkeran )",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8554287,
+          38.7561917
+        ]
+      },
+      "properties": {
+        "Name": "Luxe Lankaran Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8656164,
+          38.7302533
+        ]
+      },
+      "properties": {
+        "Name": "Palidli Sahil Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8620353,
+          38.7345839
+        ]
+      },
+      "properties": {
+        "Name": "Palmalife Lankaran Resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.85274,
+          38.7532691
+        ]
+      },
+      "properties": {
+        "Name": "Qızıl Tac Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4159543,
+          39.1998454
+        ]
+      },
+      "properties": {
+        "Name": "Grand Hotel",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4003646,
+          39.219439
+        ]
+      },
+      "properties": {
+        "Name": "QOMU MOTEL",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.867971,
+          38.7442804
+        ]
+      },
+      "properties": {
+        "Name": "Dahne Beach",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8664694,
+          38.7373662
+        ]
+      },
+      "properties": {
+        "Name": "Beluga Beach",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8663851,
+          38.7348222
+        ]
+      },
+      "properties": {
+        "Name": "Mona Beach",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8654216,
+          38.7296947
+        ]
+      },
+      "properties": {
+        "Name": "Palidli Beach Resort Lenkoran",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7741912,
+          40.5760288
+        ]
+      },
+      "properties": {
+        "Name": "Novxanı Çimərliyi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8983996,
+          40.5741305
+        ]
+      },
+      "properties": {
+        "Name": "Pirshagi BEACH",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.0639851,
+          40.5877825
+        ]
+      },
+      "properties": {
+        "Name": "Amburan Beach Club",
+        "category": "Alışveriş-Eğlence",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1224342,
+          40.5227481
+        ]
+      },
+      "properties": {
+        "Name": "Buzovna Çimərliyi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.227796,
+          40.3496344
+        ]
+      },
+      "properties": {
+        "Name": "Qızıl Qum çimәrliyi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7724185,
+          40.3002184
+        ]
+      },
+      "properties": {
+        "Name": "Shikh Beach",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.3353898,
+          40.4888942
+        ]
+      },
+      "properties": {
+        "Name": "Pirallahı Paradise",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2211729,
+          40.5005423
+        ]
+      },
+      "properties": {
+        "Name": "Mayak Beach",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.5480025,
+          40.7749497
+        ]
+      },
+      "properties": {
+        "Name": "Blueplanet Kite Beach",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6364203,
+          41.808152
+        ]
+      },
+      "properties": {
+        "Name": "Ulduz İstirahət Mərkəzi Nabran Yalama",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7013314,
+          41.7577457
+        ]
+      },
+      "properties": {
+        "Name": "Otel \"REY\"",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7636549,
+          41.6850936
+        ]
+      },
+      "properties": {
+        "Name": "Xəzər Dəniz Gəmiçiliyi QSC Dənizçi İstirahət Mərkəzi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7304616,
+          41.7127007
+        ]
+      },
+      "properties": {
+        "Name": "Ulfet Istirahet Merkezi - Ülfət İstirahət Mərkəzi",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7172241,
+          41.7253721
+        ]
+      },
+      "properties": {
+        "Name": "Palma Resort Beach",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.7274538,
+          41.7295544
+        ]
+      },
+      "properties": {
+        "Name": "El Faro Hotel & Aqua Park",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6937596,
+          41.7638432
+        ]
+      },
+      "properties": {
+        "Name": "Sunset resort",
+        "category": "Otel/Konaklama",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5419418,
+          41.3965504
+        ]
+      },
+      "properties": {
+        "Name": "vladimirovka balıq gölü",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4092724,
+          40.7557997
+        ]
+      },
+      "properties": {
+        "Name": "Dream Garden Ismayilli",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1947034,
+          40.7937288
+        ]
+      },
+      "properties": {
+        "Name": "Alachiq_az",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.610595,
+          41.8294542
+        ]
+      },
+      "properties": {
+        "Name": "Chimera family camping spot",
+        "category": "Tarihi-Kültürel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4350337,
+          41.3816941
+        ]
+      },
+      "properties": {
+        "Name": "ALPAN APPLE GARDEN TIS",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.299873,
+          40.405564
+        ]
+      },
+      "properties": {
+        "Name": "Zirə Mədəniyyət Mərkəzi - EKO Park",
+        "category": "Park-Plaj-Doğa",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "description": ""
+      }
+    }
+  ],
+  "metadata": {
+    "source": "Google My Maps - Bütov Azerbaycan",
+    "count": 418
+  }
+}

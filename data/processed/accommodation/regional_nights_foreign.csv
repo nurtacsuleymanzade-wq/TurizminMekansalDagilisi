@@ -1,0 +1,970 @@
+rayon,year,value
+Bakı şəhəri,2006,527521.0
+Bakı şəhəri,2007,536793.0
+Bakı şəhəri,2008,586516.0
+Bakı şəhəri,2009,504266.0
+Bakı şəhəri,2010,397695.0
+Bakı şəhəri,2011,492001.0
+Bakı şəhəri,2012,570820.0
+Bakı şəhəri,2013,707050.0
+Bakı şəhəri,2014,688532.0
+Bakı şəhəri,2015,825509.0
+Bakı şəhəri,2016,1039479.0
+Bakı şəhəri,2017,1357566.0
+Bakı şəhəri,2018,1521893.0
+Bakı şəhəri,2019,1725564.0
+Bakı şəhəri,2020,325089.0
+Bakı şəhəri,2021,335875.0
+Bakı şəhəri,2022,1109745.0
+Bakı şəhəri,2023,1537150.0
+Bakı şəhəri,2024,1911551.0
+Binəqədi rayonu,2006,19033.0
+Binəqədi rayonu,2007,19049.0
+Binəqədi rayonu,2008,19072.0
+Binəqədi rayonu,2009,5373.0
+Binəqədi rayonu,2010,14895.0
+Binəqədi rayonu,2011,12958.0
+Binəqədi rayonu,2012,4906.0
+Binəqədi rayonu,2013,18883.0
+Binəqədi rayonu,2014,2760.0
+Binəqədi rayonu,2015,5539.0
+Binəqədi rayonu,2016,3027.0
+Binəqədi rayonu,2017,1776.0
+Binəqədi rayonu,2018,6762.0
+Binəqədi rayonu,2019,12496.0
+Binəqədi rayonu,2020,1788.0
+Binəqədi rayonu,2021,2693.0
+Binəqədi rayonu,2022,7630.0
+Binəqədi rayonu,2023,8355.0
+Binəqədi rayonu,2024,6597.0
+Xətai rayonu,2006,7906.0
+Xətai rayonu,2007,7906.0
+Xətai rayonu,2008,8060.0
+Xətai rayonu,2009,14310.0
+Xətai rayonu,2010,14211.0
+Xətai rayonu,2011,12202.0
+Xətai rayonu,2012,16453.0
+Xətai rayonu,2013,23616.0
+Xətai rayonu,2014,24066.0
+Xətai rayonu,2015,29591.0
+Xətai rayonu,2016,25924.0
+Xətai rayonu,2017,32416.0
+Xətai rayonu,2018,25554.0
+Xətai rayonu,2019,77054.0
+Xətai rayonu,2020,4171.0
+Xətai rayonu,2021,4917.0
+Xətai rayonu,2022,12662.0
+Xətai rayonu,2023,11386.0
+Xətai rayonu,2024,13139.0
+Xəzər rayonu,2016,1050.0
+Xəzər rayonu,2017,1420.0
+Xəzər rayonu,2018,589.0
+Xəzər rayonu,2019,1365.0
+Xəzər rayonu,2020,33270.0
+Xəzər rayonu,2021,33244.0
+Xəzər rayonu,2022,34729.0
+Xəzər rayonu,2023,46470.0
+Xəzər rayonu,2024,63377.0
+Qaradağ rayonu,2006,351.0
+Qaradağ rayonu,2007,817.0
+Qaradağ rayonu,2008,19098.0
+Qaradağ rayonu,2009,20532.0
+Qaradağ rayonu,2010,18612.0
+Qaradağ rayonu,2011,83975.0
+Qaradağ rayonu,2012,62418.0
+Qaradağ rayonu,2013,49430.0
+Qaradağ rayonu,2014,66288.0
+Qaradağ rayonu,2015,100428.0
+Qaradağ rayonu,2016,184655.0
+Qaradağ rayonu,2017,72339.0
+Qaradağ rayonu,2018,47941.0
+Qaradağ rayonu,2019,47907.0
+Qaradağ rayonu,2020,144.0
+Qaradağ rayonu,2021,282.0
+Qaradağ rayonu,2022,175.0
+Qaradağ rayonu,2023,376.0
+Qaradağ rayonu,2024,719.0
+Nərimanov rayonu,2006,8071.0
+Nərimanov rayonu,2007,9025.0
+Nərimanov rayonu,2008,15162.0
+Nərimanov rayonu,2009,14309.0
+Nərimanov rayonu,2010,11266.0
+Nərimanov rayonu,2011,13840.0
+Nərimanov rayonu,2012,14645.0
+Nərimanov rayonu,2013,18529.0
+Nərimanov rayonu,2014,41519.0
+Nərimanov rayonu,2015,65348.0
+Nərimanov rayonu,2016,60191.0
+Nərimanov rayonu,2017,86107.0
+Nərimanov rayonu,2018,97368.0
+Nərimanov rayonu,2019,164154.0
+Nərimanov rayonu,2020,15608.0
+Nərimanov rayonu,2021,28145.0
+Nərimanov rayonu,2022,169779.0
+Nərimanov rayonu,2023,228053.0
+Nərimanov rayonu,2024,247117.0
+Nəsimi rayonu,2006,95327.0
+Nəsimi rayonu,2007,99334.0
+Nəsimi rayonu,2008,119157.0
+Nəsimi rayonu,2009,118251.0
+Nəsimi rayonu,2010,94527.0
+Nəsimi rayonu,2011,102472.0
+Nəsimi rayonu,2012,112749.0
+Nəsimi rayonu,2013,89420.0
+Nəsimi rayonu,2014,116557.0
+Nəsimi rayonu,2015,155071.0
+Nəsimi rayonu,2016,284302.0
+Nəsimi rayonu,2017,426855.0
+Nəsimi rayonu,2018,425699.0
+Nəsimi rayonu,2019,677249.0
+Nəsimi rayonu,2020,113311.0
+Nəsimi rayonu,2021,103346.0
+Nəsimi rayonu,2022,473216.0
+Nəsimi rayonu,2023,722392.0
+Nəsimi rayonu,2024,956293.0
+Nizami rayonu,2006,5673.0
+Nizami rayonu,2007,8025.0
+Nizami rayonu,2008,8055.0
+Nizami rayonu,2009,5706.0
+Nizami rayonu,2010,2605.0
+Nizami rayonu,2011,3563.0
+Nizami rayonu,2012,177.0
+Nizami rayonu,2013,3047.0
+Nizami rayonu,2014,7834.0
+Nizami rayonu,2015,33633.0
+Nizami rayonu,2016,15098.0
+Nizami rayonu,2017,20325.0
+Nizami rayonu,2018,20954.0
+Nizami rayonu,2019,33291.0
+Nizami rayonu,2020,1378.0
+Nizami rayonu,2021,422.0
+Nizami rayonu,2024,3850.0
+Sabunçu rayonu,2009,370.0
+Sabunçu rayonu,2010,577.0
+Sabunçu rayonu,2011,1969.0
+Sabunçu rayonu,2012,1222.0
+Sabunçu rayonu,2013,66210.0
+Sabunçu rayonu,2014,49739.0
+Sabunçu rayonu,2015,118808.0
+Sabunçu rayonu,2016,46065.0
+Sabunçu rayonu,2017,44372.0
+Sabunçu rayonu,2018,42956.0
+Sabunçu rayonu,2019,49446.0
+Sabunçu rayonu,2020,8180.0
+Sabunçu rayonu,2021,10062.0
+Sabunçu rayonu,2022,22447.0
+Sabunçu rayonu,2023,25443.0
+Sabunçu rayonu,2024,33824.0
+Səbail rayonu,2006,98060.0
+Səbail rayonu,2007,99216.0
+Səbail rayonu,2008,103718.0
+Səbail rayonu,2009,113276.0
+Səbail rayonu,2010,181992.0
+Səbail rayonu,2011,183364.0
+Səbail rayonu,2012,275028.0
+Səbail rayonu,2013,334815.0
+Səbail rayonu,2014,297961.0
+Səbail rayonu,2015,254609.0
+Səbail rayonu,2016,341330.0
+Səbail rayonu,2017,578527.0
+Səbail rayonu,2018,587203.0
+Səbail rayonu,2019,585506.0
+Səbail rayonu,2020,117474.0
+Səbail rayonu,2021,125594.0
+Səbail rayonu,2022,350146.0
+Səbail rayonu,2023,442147.0
+Səbail rayonu,2024,518577.0
+Suraxanı rayonu,2007,260.0
+Suraxanı rayonu,2008,808.0
+Suraxanı rayonu,2024,662.0
+Yasamal rayonu,2006,293100.0
+Yasamal rayonu,2007,293161.0
+Yasamal rayonu,2008,293386.0
+Yasamal rayonu,2009,212139.0
+Yasamal rayonu,2010,59010.0
+Yasamal rayonu,2011,77658.0
+Yasamal rayonu,2012,83222.0
+Yasamal rayonu,2013,103100.0
+Yasamal rayonu,2014,81808.0
+Yasamal rayonu,2015,62482.0
+Yasamal rayonu,2016,77837.0
+Yasamal rayonu,2017,93429.0
+Yasamal rayonu,2018,266867.0
+Yasamal rayonu,2019,77096.0
+Yasamal rayonu,2020,29765.0
+Yasamal rayonu,2021,27170.0
+Yasamal rayonu,2022,38961.0
+Yasamal rayonu,2023,52528.0
+Yasamal rayonu,2024,67396.0
+Abşeron iqtisadi rayonu,2006,1956.0
+Abşeron iqtisadi rayonu,2007,1523.0
+Abşeron iqtisadi rayonu,2008,1835.0
+Abşeron iqtisadi rayonu,2009,3592.0
+Abşeron iqtisadi rayonu,2010,3312.0
+Abşeron iqtisadi rayonu,2011,11208.0
+Abşeron iqtisadi rayonu,2012,44979.0
+Abşeron iqtisadi rayonu,2013,1985.0
+Abşeron iqtisadi rayonu,2014,1346.0
+Abşeron iqtisadi rayonu,2015,2953.0
+Abşeron iqtisadi rayonu,2016,3986.0
+Abşeron iqtisadi rayonu,2017,5888.0
+Abşeron iqtisadi rayonu,2018,10669.0
+Abşeron iqtisadi rayonu,2019,4645.0
+Abşeron iqtisadi rayonu,2020,462.0
+Abşeron iqtisadi rayonu,2021,550.0
+Abşeron iqtisadi rayonu,2022,2910.0
+Abşeron iqtisadi rayonu,2023,4956.0
+Abşeron iqtisadi rayonu,2024,5280.0
+Sumqayıt şəhəri,2006,742.0
+Sumqayıt şəhəri,2007,787.0
+Sumqayıt şəhəri,2008,1058.0
+Sumqayıt şəhəri,2009,2752.0
+Sumqayıt şəhəri,2010,2925.0
+Sumqayıt şəhəri,2011,10743.0
+Sumqayıt şəhəri,2012,44832.0
+Sumqayıt şəhəri,2013,1891.0
+Sumqayıt şəhəri,2014,1224.0
+Sumqayıt şəhəri,2015,2646.0
+Sumqayıt şəhəri,2016,3564.0
+Sumqayıt şəhəri,2017,3196.0
+Sumqayıt şəhəri,2018,7401.0
+Sumqayıt şəhəri,2019,797.0
+Sumqayıt şəhəri,2020,202.0
+Sumqayıt şəhəri,2021,32.0
+Sumqayıt şəhəri,2022,762.0
+Sumqayıt şəhəri,2023,2033.0
+Sumqayıt şəhəri,2024,1789.0
+Abşeron rayonu,2006,848.0
+Abşeron rayonu,2007,147.0
+Abşeron rayonu,2008,147.0
+Abşeron rayonu,2009,416.0
+Abşeron rayonu,2010,310.0
+Abşeron rayonu,2011,445.0
+Abşeron rayonu,2012,112.0
+Abşeron rayonu,2013,50.0
+Abşeron rayonu,2014,96.0
+Abşeron rayonu,2015,301.0
+Abşeron rayonu,2016,402.0
+Abşeron rayonu,2017,2672.0
+Abşeron rayonu,2018,3136.0
+Abşeron rayonu,2019,3752.0
+Abşeron rayonu,2020,256.0
+Abşeron rayonu,2021,518.0
+Abşeron rayonu,2022,2148.0
+Abşeron rayonu,2023,2923.0
+Abşeron rayonu,2024,3491.0
+Xızı rayonu,2006,366.0
+Xızı rayonu,2007,589.0
+Xızı rayonu,2008,630.0
+Xızı rayonu,2009,424.0
+Xızı rayonu,2010,77.0
+Xızı rayonu,2011,20.0
+Xızı rayonu,2012,35.0
+Xızı rayonu,2013,44.0
+Xızı rayonu,2014,26.0
+Xızı rayonu,2015,6.0
+Xızı rayonu,2016,20.0
+Xızı rayonu,2017,20.0
+Xızı rayonu,2018,132.0
+Xızı rayonu,2019,96.0
+Xızı rayonu,2020,4.0
+Dağlıq Şirvan iqtisadi rayonu,2006,45.0
+Dağlıq Şirvan iqtisadi rayonu,2007,150.0
+Dağlıq Şirvan iqtisadi rayonu,2008,128.0
+Dağlıq Şirvan iqtisadi rayonu,2009,80.0
+Dağlıq Şirvan iqtisadi rayonu,2010,173.0
+Dağlıq Şirvan iqtisadi rayonu,2011,1774.0
+Dağlıq Şirvan iqtisadi rayonu,2012,194.0
+Dağlıq Şirvan iqtisadi rayonu,2013,133.0
+Dağlıq Şirvan iqtisadi rayonu,2014,850.0
+Dağlıq Şirvan iqtisadi rayonu,2015,644.0
+Dağlıq Şirvan iqtisadi rayonu,2016,1273.0
+Dağlıq Şirvan iqtisadi rayonu,2017,2940.0
+Dağlıq Şirvan iqtisadi rayonu,2018,4065.0
+Dağlıq Şirvan iqtisadi rayonu,2019,3701.0
+Dağlıq Şirvan iqtisadi rayonu,2020,506.0
+Dağlıq Şirvan iqtisadi rayonu,2021,2144.0
+Dağlıq Şirvan iqtisadi rayonu,2022,6593.0
+Dağlıq Şirvan iqtisadi rayonu,2023,8212.0
+Dağlıq Şirvan iqtisadi rayonu,2024,7764.0
+Ağsu rayonu,2024,7.0
+İsmayıllı rayonu,2006,45.0
+İsmayıllı rayonu,2007,150.0
+İsmayıllı rayonu,2008,95.0
+İsmayıllı rayonu,2009,80.0
+İsmayıllı rayonu,2010,65.0
+İsmayıllı rayonu,2015,124.0
+İsmayıllı rayonu,2016,248.0
+İsmayıllı rayonu,2017,660.0
+İsmayıllı rayonu,2018,219.0
+İsmayıllı rayonu,2019,451.0
+İsmayıllı rayonu,2020,196.0
+İsmayıllı rayonu,2021,1097.0
+İsmayıllı rayonu,2022,2069.0
+İsmayıllı rayonu,2023,1953.0
+İsmayıllı rayonu,2024,2234.0
+Şamaxı rayonu,2008,33.0
+Şamaxı rayonu,2010,108.0
+Şamaxı rayonu,2011,1774.0
+Şamaxı rayonu,2012,194.0
+Şamaxı rayonu,2013,133.0
+Şamaxı rayonu,2014,850.0
+Şamaxı rayonu,2015,520.0
+Şamaxı rayonu,2016,1025.0
+Şamaxı rayonu,2017,2280.0
+Şamaxı rayonu,2018,3846.0
+Şamaxı rayonu,2019,3250.0
+Şamaxı rayonu,2020,310.0
+Şamaxı rayonu,2021,1047.0
+Şamaxı rayonu,2022,4524.0
+Şamaxı rayonu,2023,6259.0
+Şamaxı rayonu,2024,5523.0
+Gəncə-Daşkəsən iqtisadi rayonu,2006,3027.0
+Gəncə-Daşkəsən iqtisadi rayonu,2007,1596.0
+Gəncə-Daşkəsən iqtisadi rayonu,2008,7166.0
+Gəncə-Daşkəsən iqtisadi rayonu,2009,6735.0
+Gəncə-Daşkəsən iqtisadi rayonu,2010,1951.0
+Gəncə-Daşkəsən iqtisadi rayonu,2011,10899.0
+Gəncə-Daşkəsən iqtisadi rayonu,2012,26162.0
+Gəncə-Daşkəsən iqtisadi rayonu,2013,26941.0
+Gəncə-Daşkəsən iqtisadi rayonu,2014,30454.0
+Gəncə-Daşkəsən iqtisadi rayonu,2015,42811.0
+Gəncə-Daşkəsən iqtisadi rayonu,2016,34810.0
+Gəncə-Daşkəsən iqtisadi rayonu,2017,58174.0
+Gəncə-Daşkəsən iqtisadi rayonu,2018,89508.0
+Gəncə-Daşkəsən iqtisadi rayonu,2019,81362.0
+Gəncə-Daşkəsən iqtisadi rayonu,2020,17131.0
+Gəncə-Daşkəsən iqtisadi rayonu,2021,8516.0
+Gəncə-Daşkəsən iqtisadi rayonu,2022,43873.0
+Gəncə-Daşkəsən iqtisadi rayonu,2023,73523.0
+Gəncə-Daşkəsən iqtisadi rayonu,2024,98201.0
+Gəncə  şəhəri,2006,2906.0
+Gəncə  şəhəri,2007,1596.0
+Gəncə  şəhəri,2008,7166.0
+Gəncə  şəhəri,2009,5628.0
+Gəncə  şəhəri,2010,1061.0
+Gəncə  şəhəri,2011,1136.0
+Gəncə  şəhəri,2012,1643.0
+Gəncə  şəhəri,2013,1573.0
+Gəncə  şəhəri,2014,690.0
+Gəncə  şəhəri,2015,10261.0
+Gəncə  şəhəri,2016,8708.0
+Gəncə  şəhəri,2017,15879.0
+Gəncə  şəhəri,2018,13515.0
+Gəncə  şəhəri,2019,14508.0
+Gəncə  şəhəri,2020,1504.0
+Gəncə  şəhəri,2021,734.0
+Gəncə  şəhəri,2022,3072.0
+Gəncə  şəhəri,2023,7118.0
+Gəncə  şəhəri,2024,6608.0
+Naftalan  şəhəri,2006,121.0
+Naftalan  şəhəri,2009,1107.0
+Naftalan  şəhəri,2010,890.0
+Naftalan  şəhəri,2011,9699.0
+Naftalan  şəhəri,2012,24419.0
+Naftalan  şəhəri,2013,25219.0
+Naftalan  şəhəri,2014,29462.0
+Naftalan  şəhəri,2015,31611.0
+Naftalan  şəhəri,2016,25968.0
+Naftalan  şəhəri,2017,42148.0
+Naftalan  şəhəri,2018,75993.0
+Naftalan  şəhəri,2019,66854.0
+Naftalan  şəhəri,2020,15627.0
+Naftalan  şəhəri,2021,7782.0
+Naftalan  şəhəri,2022,36689.0
+Naftalan  şəhəri,2023,66291.0
+Naftalan  şəhəri,2024,90708.0
+Daşkəsən rayonu,2013,1.0
+Daşkəsən rayonu,2014,15.0
+Goranboy rayonu,2011,64.0
+Goranboy rayonu,2012,100.0
+Goranboy rayonu,2013,143.0
+Goranboy rayonu,2014,275.0
+Goranboy rayonu,2015,304.0
+Goranboy rayonu,2016,101.0
+Goranboy rayonu,2017,115.0
+Goranboy rayonu,2023,34.0
+Goranboy rayonu,2024,708.0
+Göygöl rayonu,2013,5.0
+Göygöl rayonu,2014,12.0
+Göygöl rayonu,2015,635.0
+Göygöl rayonu,2016,33.0
+Göygöl rayonu,2017,32.0
+Göygöl rayonu,2022,4112.0
+Göygöl rayonu,2023,80.0
+Göygöl rayonu,2024,177.0
+Qarabağ iqtisadi rayonu,2021,222.0
+Qarabağ iqtisadi rayonu,2022,2920.0
+Qarabağ iqtisadi rayonu,2023,3373.0
+Qarabağ iqtisadi rayonu,2024,3043.0
+Ağcabədi rayonu,2022,190.0
+Ağcabədi rayonu,2023,377.0
+Ağcabədi rayonu,2024,638.0
+Bərdə rayonu,2022,169.0
+Bərdə rayonu,2023,131.0
+Bərdə rayonu,2024,97.0
+Şuşa rayonu,2021,222.0
+Şuşa rayonu,2022,2561.0
+Şuşa rayonu,2023,2865.0
+Şuşa rayonu,2024,2308.0
+Qazax-Tovuz iqtisadi rayonu,2006,483.0
+Qazax-Tovuz iqtisadi rayonu,2007,557.0
+Qazax-Tovuz iqtisadi rayonu,2008,695.0
+Qazax-Tovuz iqtisadi rayonu,2009,602.0
+Qazax-Tovuz iqtisadi rayonu,2010,436.0
+Qazax-Tovuz iqtisadi rayonu,2011,1301.0
+Qazax-Tovuz iqtisadi rayonu,2012,2027.0
+Qazax-Tovuz iqtisadi rayonu,2013,2586.0
+Qazax-Tovuz iqtisadi rayonu,2014,1828.0
+Qazax-Tovuz iqtisadi rayonu,2015,1377.0
+Qazax-Tovuz iqtisadi rayonu,2016,2013.0
+Qazax-Tovuz iqtisadi rayonu,2017,8315.0
+Qazax-Tovuz iqtisadi rayonu,2018,1897.0
+Qazax-Tovuz iqtisadi rayonu,2019,1114.0
+Qazax-Tovuz iqtisadi rayonu,2020,146.0
+Qazax-Tovuz iqtisadi rayonu,2021,12.0
+Qazax-Tovuz iqtisadi rayonu,2022,346.0
+Qazax-Tovuz iqtisadi rayonu,2023,99.0
+Qazax-Tovuz iqtisadi rayonu,2024,107.0
+Ağstafa rayonu,2006,483.0
+Ağstafa rayonu,2007,535.0
+Ağstafa rayonu,2008,554.0
+Ağstafa rayonu,2009,351.0
+Ağstafa rayonu,2010,143.0
+Ağstafa rayonu,2011,183.0
+Ağstafa rayonu,2012,565.0
+Ağstafa rayonu,2013,178.0
+Ağstafa rayonu,2014,480.0
+Ağstafa rayonu,2015,380.0
+Ağstafa rayonu,2016,452.0
+Ağstafa rayonu,2017,1554.0
+Ağstafa rayonu,2018,890.0
+Ağstafa rayonu,2019,414.0
+Ağstafa rayonu,2020,108.0
+Ağstafa rayonu,2021,12.0
+Ağstafa rayonu,2022,89.0
+Ağstafa rayonu,2023,75.0
+Ağstafa rayonu,2024,34.0
+Gədəbəy rayonu,2010,74.0
+Gədəbəy rayonu,2011,373.0
+Gədəbəy rayonu,2012,447.0
+Gədəbəy rayonu,2013,210.0
+Gədəbəy rayonu,2014,139.0
+Gədəbəy rayonu,2015,106.0
+Gədəbəy rayonu,2016,54.0
+Gədəbəy rayonu,2017,59.0
+Gədəbəy rayonu,2018,74.0
+Gədəbəy rayonu,2019,77.0
+Gədəbəy rayonu,2023,13.0
+Qazax rayonu,2007,22.0
+Qazax rayonu,2008,24.0
+Qazax rayonu,2009,210.0
+Qazax rayonu,2010,188.0
+Qazax rayonu,2011,723.0
+Qazax rayonu,2012,765.0
+Qazax rayonu,2013,1507.0
+Qazax rayonu,2014,285.0
+Qazax rayonu,2015,245.0
+Qazax rayonu,2016,584.0
+Qazax rayonu,2017,1825.0
+Qazax rayonu,2018,109.0
+Qazax rayonu,2019,457.0
+Qazax rayonu,2020,5.0
+Qazax rayonu,2022,4.0
+Qazax rayonu,2023,8.0
+Şəmkir rayonu,2008,117.0
+Şəmkir rayonu,2009,41.0
+Şəmkir rayonu,2010,31.0
+Şəmkir rayonu,2011,22.0
+Şəmkir rayonu,2012,50.0
+Şəmkir rayonu,2013,29.0
+Şəmkir rayonu,2014,59.0
+Şəmkir rayonu,2016,480.0
+Şəmkir rayonu,2017,3086.0
+Şəmkir rayonu,2018,824.0
+Şəmkir rayonu,2019,116.0
+Şəmkir rayonu,2020,33.0
+Şəmkir rayonu,2022,253.0
+Şəmkir rayonu,2023,1.0
+Şəmkir rayonu,2024,27.0
+Tovuz rayonu,2012,200.0
+Tovuz rayonu,2013,662.0
+Tovuz rayonu,2014,865.0
+Tovuz rayonu,2015,646.0
+Tovuz rayonu,2016,443.0
+Tovuz rayonu,2017,1791.0
+Tovuz rayonu,2019,50.0
+Tovuz rayonu,2023,2.0
+Tovuz rayonu,2024,46.0
+Quba-Xaçmaz iqtisadi rayonu,2006,559.0
+Quba-Xaçmaz iqtisadi rayonu,2007,498.0
+Quba-Xaçmaz iqtisadi rayonu,2008,1863.0
+Quba-Xaçmaz iqtisadi rayonu,2009,2691.0
+Quba-Xaçmaz iqtisadi rayonu,2010,112486.0
+Quba-Xaçmaz iqtisadi rayonu,2011,91917.0
+Quba-Xaçmaz iqtisadi rayonu,2012,88011.0
+Quba-Xaçmaz iqtisadi rayonu,2013,5181.0
+Quba-Xaçmaz iqtisadi rayonu,2014,7075.0
+Quba-Xaçmaz iqtisadi rayonu,2015,8924.0
+Quba-Xaçmaz iqtisadi rayonu,2016,28061.0
+Quba-Xaçmaz iqtisadi rayonu,2017,72456.0
+Quba-Xaçmaz iqtisadi rayonu,2018,129690.0
+Quba-Xaçmaz iqtisadi rayonu,2019,118813.0
+Quba-Xaçmaz iqtisadi rayonu,2020,35176.0
+Quba-Xaçmaz iqtisadi rayonu,2021,29686.0
+Quba-Xaçmaz iqtisadi rayonu,2022,112695.0
+Quba-Xaçmaz iqtisadi rayonu,2023,142928.0
+Quba-Xaçmaz iqtisadi rayonu,2024,196556.0
+Xaçmaz rayonu,2006,115.0
+Xaçmaz rayonu,2008,1004.0
+Xaçmaz rayonu,2009,749.0
+Xaçmaz rayonu,2010,99303.0
+Xaçmaz rayonu,2011,90364.0
+Xaçmaz rayonu,2012,82967.0
+Xaçmaz rayonu,2013,975.0
+Xaçmaz rayonu,2014,1277.0
+Xaçmaz rayonu,2015,916.0
+Xaçmaz rayonu,2016,613.0
+Xaçmaz rayonu,2017,371.0
+Xaçmaz rayonu,2018,1359.0
+Xaçmaz rayonu,2019,1585.0
+Xaçmaz rayonu,2020,254.0
+Xaçmaz rayonu,2021,134.0
+Xaçmaz rayonu,2022,490.0
+Xaçmaz rayonu,2023,971.0
+Xaçmaz rayonu,2024,1549.0
+Quba rayonu,2006,444.0
+Quba rayonu,2007,498.0
+Quba rayonu,2008,859.0
+Quba rayonu,2009,996.0
+Quba rayonu,2010,12961.0
+Quba rayonu,2011,417.0
+Quba rayonu,2012,1827.0
+Quba rayonu,2013,2729.0
+Quba rayonu,2014,2687.0
+Quba rayonu,2015,2450.0
+Quba rayonu,2016,7176.0
+Quba rayonu,2017,35544.0
+Quba rayonu,2018,61998.0
+Quba rayonu,2019,76901.0
+Quba rayonu,2020,8581.0
+Quba rayonu,2021,10767.0
+Quba rayonu,2022,55248.0
+Quba rayonu,2023,67825.0
+Quba rayonu,2024,74865.0
+Qusar rayonu,2009,946.0
+Qusar rayonu,2010,222.0
+Qusar rayonu,2011,1136.0
+Qusar rayonu,2012,3217.0
+Qusar rayonu,2013,1477.0
+Qusar rayonu,2014,3111.0
+Qusar rayonu,2015,5558.0
+Qusar rayonu,2016,20272.0
+Qusar rayonu,2017,36541.0
+Qusar rayonu,2018,66333.0
+Qusar rayonu,2019,38135.0
+Qusar rayonu,2020,25508.0
+Qusar rayonu,2021,12327.0
+Qusar rayonu,2022,47241.0
+Qusar rayonu,2023,65018.0
+Qusar rayonu,2024,107034.0
+Şabran rayonu,2019,2192.0
+Şabran rayonu,2020,833.0
+Şabran rayonu,2021,6458.0
+Şabran rayonu,2022,9716.0
+Şabran rayonu,2023,9114.0
+Şabran rayonu,2024,13108.0
+Lənkəran iqtisadi rayonu,2006,3063.0
+Lənkəran iqtisadi rayonu,2007,5570.0
+Lənkəran iqtisadi rayonu,2008,6933.0
+Lənkəran iqtisadi rayonu,2009,2910.0
+Lənkəran iqtisadi rayonu,2010,2923.0
+Lənkəran iqtisadi rayonu,2011,4410.0
+Lənkəran iqtisadi rayonu,2012,3352.0
+Lənkəran iqtisadi rayonu,2013,1732.0
+Lənkəran iqtisadi rayonu,2014,1465.0
+Lənkəran iqtisadi rayonu,2015,1415.0
+Lənkəran iqtisadi rayonu,2016,1034.0
+Lənkəran iqtisadi rayonu,2017,3881.0
+Lənkəran iqtisadi rayonu,2018,4040.0
+Lənkəran iqtisadi rayonu,2019,3933.0
+Lənkəran iqtisadi rayonu,2020,492.0
+Lənkəran iqtisadi rayonu,2021,1063.0
+Lənkəran iqtisadi rayonu,2022,1436.0
+Lənkəran iqtisadi rayonu,2023,3938.0
+Lənkəran iqtisadi rayonu,2024,8294.0
+Astara rayonu,2006,912.0
+Astara rayonu,2007,1022.0
+Astara rayonu,2008,1558.0
+Astara rayonu,2009,1485.0
+Astara rayonu,2010,1698.0
+Astara rayonu,2011,845.0
+Astara rayonu,2012,409.0
+Astara rayonu,2013,418.0
+Astara rayonu,2014,70.0
+Astara rayonu,2015,177.0
+Astara rayonu,2016,470.0
+Astara rayonu,2017,2607.0
+Astara rayonu,2018,2501.0
+Astara rayonu,2019,1638.0
+Astara rayonu,2020,212.0
+Astara rayonu,2021,87.0
+Astara rayonu,2022,154.0
+Astara rayonu,2023,343.0
+Astara rayonu,2024,349.0
+Cəlilabad rayonu,2006,569.0
+Cəlilabad rayonu,2007,524.0
+Cəlilabad rayonu,2008,531.0
+Cəlilabad rayonu,2009,25.0
+Cəlilabad rayonu,2010,140.0
+Cəlilabad rayonu,2011,136.0
+Cəlilabad rayonu,2012,157.0
+Cəlilabad rayonu,2013,91.0
+Cəlilabad rayonu,2014,96.0
+Cəlilabad rayonu,2015,43.0
+Cəlilabad rayonu,2016,57.0
+Cəlilabad rayonu,2017,49.0
+Cəlilabad rayonu,2018,12.0
+Cəlilabad rayonu,2020,6.0
+Cəlilabad rayonu,2022,173.0
+Cəlilabad rayonu,2023,57.0
+Cəlilabad rayonu,2024,64.0
+Lerik rayonu,2006,392.0
+Lerik rayonu,2007,216.0
+Lerik rayonu,2008,230.0
+Lerik rayonu,2018,51.0
+Lerik rayonu,2019,204.0
+Lənkəran rayonu,2006,1183.0
+Lənkəran rayonu,2007,798.0
+Lənkəran rayonu,2008,1527.0
+Lənkəran rayonu,2009,1400.0
+Lənkəran rayonu,2010,829.0
+Lənkəran rayonu,2011,1015.0
+Lənkəran rayonu,2012,1948.0
+Lənkəran rayonu,2013,1185.0
+Lənkəran rayonu,2014,1269.0
+Lənkəran rayonu,2015,1176.0
+Lənkəran rayonu,2016,495.0
+Lənkəran rayonu,2017,1207.0
+Lənkəran rayonu,2018,1457.0
+Lənkəran rayonu,2019,2062.0
+Lənkəran rayonu,2020,270.0
+Lənkəran rayonu,2021,976.0
+Lənkəran rayonu,2022,1018.0
+Lənkəran rayonu,2023,2996.0
+Lənkəran rayonu,2024,7010.0
+Masallı rayonu,2006,7.0
+Masallı rayonu,2007,3010.0
+Masallı rayonu,2008,3087.0
+Masallı rayonu,2010,256.0
+Masallı rayonu,2011,2414.0
+Masallı rayonu,2012,838.0
+Masallı rayonu,2013,38.0
+Masallı rayonu,2014,30.0
+Masallı rayonu,2015,19.0
+Masallı rayonu,2016,12.0
+Masallı rayonu,2017,18.0
+Masallı rayonu,2018,19.0
+Masallı rayonu,2019,29.0
+Masallı rayonu,2020,4.0
+Masallı rayonu,2022,91.0
+Masallı rayonu,2023,534.0
+Masallı rayonu,2024,813.0
+Yardımlı rayonu,2023,8.0
+Yardımlı rayonu,2024,58.0
+Mərkəzi Aran iqtisadi rayonu,2006,437.0
+Mərkəzi Aran iqtisadi rayonu,2007,1869.0
+Mərkəzi Aran iqtisadi rayonu,2008,1900.0
+Mərkəzi Aran iqtisadi rayonu,2009,313.0
+Mərkəzi Aran iqtisadi rayonu,2010,274.0
+Mərkəzi Aran iqtisadi rayonu,2011,2343.0
+Mərkəzi Aran iqtisadi rayonu,2012,5673.0
+Mərkəzi Aran iqtisadi rayonu,2013,6893.0
+Mərkəzi Aran iqtisadi rayonu,2014,2793.0
+Mərkəzi Aran iqtisadi rayonu,2015,9168.0
+Mərkəzi Aran iqtisadi rayonu,2016,17625.0
+Mərkəzi Aran iqtisadi rayonu,2017,23091.0
+Mərkəzi Aran iqtisadi rayonu,2018,9443.0
+Mərkəzi Aran iqtisadi rayonu,2019,14468.0
+Mərkəzi Aran iqtisadi rayonu,2020,2880.0
+Mərkəzi Aran iqtisadi rayonu,2021,1268.0
+Mərkəzi Aran iqtisadi rayonu,2022,2387.0
+Mərkəzi Aran iqtisadi rayonu,2023,1465.0
+Mərkəzi Aran iqtisadi rayonu,2024,570.0
+Mingəçevir şəhəri,2006,371.0
+Mingəçevir şəhəri,2007,1842.0
+Mingəçevir şəhəri,2008,1856.0
+Mingəçevir şəhəri,2011,926.0
+Mingəçevir şəhəri,2012,4085.0
+Mingəçevir şəhəri,2013,6762.0
+Mingəçevir şəhəri,2014,2766.0
+Mingəçevir şəhəri,2015,5173.0
+Mingəçevir şəhəri,2016,4213.0
+Mingəçevir şəhəri,2017,5014.0
+Mingəçevir şəhəri,2018,7920.0
+Mingəçevir şəhəri,2019,14096.0
+Mingəçevir şəhəri,2020,2806.0
+Mingəçevir şəhəri,2021,999.0
+Mingəçevir şəhəri,2022,1681.0
+Mingəçevir şəhəri,2023,945.0
+Mingəçevir şəhəri,2024,258.0
+Ağdaş rayonu,2006,16.0
+Ağdaş rayonu,2022,11.0
+Ağdaş rayonu,2023,9.0
+Ağdaş rayonu,2024,3.0
+Göyçay rayonu,2006,40.0
+Göyçay rayonu,2007,20.0
+Göyçay rayonu,2008,40.0
+Göyçay rayonu,2009,162.0
+Göyçay rayonu,2010,153.0
+Göyçay rayonu,2011,1416.0
+Göyçay rayonu,2012,1568.0
+Göyçay rayonu,2013,115.0
+Göyçay rayonu,2014,26.0
+Göyçay rayonu,2015,157.0
+Göyçay rayonu,2016,385.0
+Göyçay rayonu,2017,121.0
+Göyçay rayonu,2018,168.0
+Göyçay rayonu,2019,372.0
+Göyçay rayonu,2020,74.0
+Göyçay rayonu,2021,269.0
+Göyçay rayonu,2022,695.0
+Göyçay rayonu,2023,322.0
+Göyçay rayonu,2024,72.0
+Kürdəmir rayonu,2009,149.0
+Kürdəmir rayonu,2010,81.0
+Kürdəmir rayonu,2015,3828.0
+Kürdəmir rayonu,2016,12895.0
+Kürdəmir rayonu,2017,17789.0
+Kürdəmir rayonu,2018,1352.0
+Kürdəmir rayonu,2023,189.0
+Kürdəmir rayonu,2024,237.0
+Zərdab rayonu,2006,10.0
+Zərdab rayonu,2007,7.0
+Zərdab rayonu,2008,4.0
+Zərdab rayonu,2009,2.0
+Zərdab rayonu,2010,40.0
+Zərdab rayonu,2011,1.0
+Zərdab rayonu,2012,20.0
+Zərdab rayonu,2013,16.0
+Zərdab rayonu,2014,1.0
+Zərdab rayonu,2015,10.0
+Zərdab rayonu,2016,132.0
+Zərdab rayonu,2017,167.0
+Zərdab rayonu,2018,3.0
+Mil-Muğan iqtisadi rayonu,2006,3.0
+Mil-Muğan iqtisadi rayonu,2007,276.0
+Mil-Muğan iqtisadi rayonu,2008,330.0
+Mil-Muğan iqtisadi rayonu,2009,227.0
+Mil-Muğan iqtisadi rayonu,2010,480.0
+Mil-Muğan iqtisadi rayonu,2011,526.0
+Mil-Muğan iqtisadi rayonu,2012,0.0
+Mil-Muğan iqtisadi rayonu,2013,0.0
+Mil-Muğan iqtisadi rayonu,2014,0.0
+Mil-Muğan iqtisadi rayonu,2015,0.0
+Mil-Muğan iqtisadi rayonu,2016,335.0
+Mil-Muğan iqtisadi rayonu,2017,10.0
+Mil-Muğan iqtisadi rayonu,2018,168.0
+Mil-Muğan iqtisadi rayonu,2019,39.0
+Mil-Muğan iqtisadi rayonu,2020,5.0
+Mil-Muğan iqtisadi rayonu,2021,69.0
+Mil-Muğan iqtisadi rayonu,2022,326.0
+Mil-Muğan iqtisadi rayonu,2023,472.0
+Mil-Muğan iqtisadi rayonu,2024,437.0
+Beyləqan rayonu,2018,139.0
+Beyləqan rayonu,2019,37.0
+Beyləqan rayonu,2020,5.0
+Beyləqan rayonu,2021,69.0
+Beyləqan rayonu,2022,326.0
+Beyləqan rayonu,2023,218.0
+Beyləqan rayonu,2024,265.0
+İmişli rayonu,2016,335.0
+İmişli rayonu,2017,10.0
+İmişli rayonu,2018,28.0
+İmişli rayonu,2019,2.0
+İmişli rayonu,2023,8.0
+İmişli rayonu,2024,3.0
+Saatlı rayonu,2006,3.0
+Saatlı rayonu,2007,276.0
+Saatlı rayonu,2008,330.0
+Saatlı rayonu,2009,227.0
+Saatlı rayonu,2010,480.0
+Saatlı rayonu,2011,526.0
+Saatlı rayonu,2018,1.0
+Saatlı rayonu,2023,246.0
+Saatlı rayonu,2024,169.0
+Şəki-Zaqatala iqtisadi rayonu,2006,2043.0
+Şəki-Zaqatala iqtisadi rayonu,2007,2308.0
+Şəki-Zaqatala iqtisadi rayonu,2008,3751.0
+Şəki-Zaqatala iqtisadi rayonu,2009,7734.0
+Şəki-Zaqatala iqtisadi rayonu,2010,6218.0
+Şəki-Zaqatala iqtisadi rayonu,2011,3501.0
+Şəki-Zaqatala iqtisadi rayonu,2012,3017.0
+Şəki-Zaqatala iqtisadi rayonu,2013,4202.0
+Şəki-Zaqatala iqtisadi rayonu,2014,6031.0
+Şəki-Zaqatala iqtisadi rayonu,2015,4185.0
+Şəki-Zaqatala iqtisadi rayonu,2016,215203.0
+Şəki-Zaqatala iqtisadi rayonu,2017,109560.0
+Şəki-Zaqatala iqtisadi rayonu,2018,214211.0
+Şəki-Zaqatala iqtisadi rayonu,2019,220683.0
+Şəki-Zaqatala iqtisadi rayonu,2020,20557.0
+Şəki-Zaqatala iqtisadi rayonu,2021,28050.0
+Şəki-Zaqatala iqtisadi rayonu,2022,102263.0
+Şəki-Zaqatala iqtisadi rayonu,2023,82248.0
+Şəki-Zaqatala iqtisadi rayonu,2024,112919.0
+Balakən rayonu,2011,49.0
+Balakən rayonu,2012,175.0
+Balakən rayonu,2013,518.0
+Balakən rayonu,2014,1012.0
+Balakən rayonu,2015,88.0
+Balakən rayonu,2016,117.0
+Balakən rayonu,2017,187.0
+Balakən rayonu,2018,294.0
+Balakən rayonu,2019,356.0
+Balakən rayonu,2020,63.0
+Balakən rayonu,2021,16.0
+Balakən rayonu,2022,176.0
+Balakən rayonu,2023,412.0
+Balakən rayonu,2024,432.0
+Qax rayonu,2006,90.0
+Qax rayonu,2007,154.0
+Qax rayonu,2008,194.0
+Qax rayonu,2009,554.0
+Qax rayonu,2010,535.0
+Qax rayonu,2011,180.0
+Qax rayonu,2012,375.0
+Qax rayonu,2013,511.0
+Qax rayonu,2014,664.0
+Qax rayonu,2015,593.0
+Qax rayonu,2016,705.0
+Qax rayonu,2017,4102.0
+Qax rayonu,2018,1246.0
+Qax rayonu,2019,3053.0
+Qax rayonu,2020,206.0
+Qax rayonu,2021,15.0
+Qax rayonu,2022,107.0
+Qax rayonu,2023,60.0
+Qax rayonu,2024,3833.0
+Qəbələ rayonu,2006,92.0
+Qəbələ rayonu,2007,559.0
+Qəbələ rayonu,2008,1454.0
+Qəbələ rayonu,2009,4794.0
+Qəbələ rayonu,2010,2587.0
+Qəbələ rayonu,2011,25.0
+Qəbələ rayonu,2013,20.0
+Qəbələ rayonu,2016,210379.0
+Qəbələ rayonu,2017,99976.0
+Qəbələ rayonu,2018,205001.0
+Qəbələ rayonu,2019,204911.0
+Qəbələ rayonu,2020,19883.0
+Qəbələ rayonu,2021,27505.0
+Qəbələ rayonu,2022,100104.0
+Qəbələ rayonu,2023,75049.0
+Qəbələ rayonu,2024,102878.0
+Oğuz rayonu,2010,325.0
+Oğuz rayonu,2011,93.0
+Oğuz rayonu,2012,129.0
+Oğuz rayonu,2013,43.0
+Oğuz rayonu,2014,24.0
+Oğuz rayonu,2015,120.0
+Oğuz rayonu,2016,148.0
+Oğuz rayonu,2017,140.0
+Şəki rayonu,2006,1670.0
+Şəki rayonu,2007,1459.0
+Şəki rayonu,2008,1974.0
+Şəki rayonu,2009,1931.0
+Şəki rayonu,2010,2417.0
+Şəki rayonu,2011,2677.0
+Şəki rayonu,2012,1744.0
+Şəki rayonu,2013,2603.0
+Şəki rayonu,2014,4013.0
+Şəki rayonu,2015,3132.0
+Şəki rayonu,2016,3444.0
+Şəki rayonu,2017,4745.0
+Şəki rayonu,2018,6921.0
+Şəki rayonu,2019,11523.0
+Şəki rayonu,2020,302.0
+Şəki rayonu,2021,424.0
+Şəki rayonu,2022,1715.0
+Şəki rayonu,2023,6492.0
+Şəki rayonu,2024,5524.0
+Zaqatala rayonu,2006,191.0
+Zaqatala rayonu,2007,136.0
+Zaqatala rayonu,2008,129.0
+Zaqatala rayonu,2009,455.0
+Zaqatala rayonu,2010,354.0
+Zaqatala rayonu,2011,477.0
+Zaqatala rayonu,2012,594.0
+Zaqatala rayonu,2013,507.0
+Zaqatala rayonu,2014,318.0
+Zaqatala rayonu,2015,252.0
+Zaqatala rayonu,2016,410.0
+Zaqatala rayonu,2017,410.0
+Zaqatala rayonu,2018,749.0
+Zaqatala rayonu,2019,840.0
+Zaqatala rayonu,2020,103.0
+Zaqatala rayonu,2021,90.0
+Zaqatala rayonu,2022,161.0
+Zaqatala rayonu,2023,235.0
+Zaqatala rayonu,2024,252.0
+Şirvan-Salyan iqtisadi rayonu,2006,279.0
+Şirvan-Salyan iqtisadi rayonu,2007,349.0
+Şirvan-Salyan iqtisadi rayonu,2008,352.0
+Şirvan-Salyan iqtisadi rayonu,2009,178.0
+Şirvan-Salyan iqtisadi rayonu,2010,202.0
+Şirvan-Salyan iqtisadi rayonu,2011,133.0
+Şirvan-Salyan iqtisadi rayonu,2012,1054.0
+Şirvan-Salyan iqtisadi rayonu,2013,3297.0
+Şirvan-Salyan iqtisadi rayonu,2014,442.0
+Şirvan-Salyan iqtisadi rayonu,2015,74.0
+Şirvan-Salyan iqtisadi rayonu,2016,391.0
+Şirvan-Salyan iqtisadi rayonu,2017,417.0
+Şirvan-Salyan iqtisadi rayonu,2018,1162.0
+Şirvan-Salyan iqtisadi rayonu,2019,462.0
+Şirvan-Salyan iqtisadi rayonu,2020,276.0
+Şirvan-Salyan iqtisadi rayonu,2021,32.0
+Şirvan-Salyan iqtisadi rayonu,2022,455.0
+Şirvan-Salyan iqtisadi rayonu,2023,520.0
+Şirvan-Salyan iqtisadi rayonu,2024,737.0
+Şirvan şəhəri,2006,279.0
+Şirvan şəhəri,2007,349.0
+Şirvan şəhəri,2008,352.0
+Şirvan şəhəri,2009,178.0
+Şirvan şəhəri,2010,202.0
+Şirvan şəhəri,2011,120.0
+Şirvan şəhəri,2012,75.0
+Şirvan şəhəri,2013,2619.0
+Şirvan şəhəri,2014,118.0
+Şirvan şəhəri,2015,40.0
+Şirvan şəhəri,2016,25.0
+Şirvan şəhəri,2017,6.0
+Şirvan şəhəri,2018,33.0
+Şirvan şəhəri,2019,23.0
+Şirvan şəhəri,2021,12.0
+Şirvan şəhəri,2024,6.0
+Biləsuvar rayonu,2011,13.0
+Biləsuvar rayonu,2012,82.0
+Biləsuvar rayonu,2013,216.0
+Biləsuvar rayonu,2014,170.0
+Biləsuvar rayonu,2015,6.0
+Biləsuvar rayonu,2016,333.0
+Biləsuvar rayonu,2017,346.0
+Biləsuvar rayonu,2018,586.0
+Biləsuvar rayonu,2019,252.0
+Biləsuvar rayonu,2020,74.0
+Biləsuvar rayonu,2021,20.0
+Biləsuvar rayonu,2022,63.0
+Biləsuvar rayonu,2023,114.0
+Biləsuvar rayonu,2024,216.0
+Salyan rayonu,2012,897.0
+Salyan rayonu,2013,462.0
+Salyan rayonu,2014,154.0
+Salyan rayonu,2015,28.0
+Salyan rayonu,2016,33.0
+Salyan rayonu,2017,65.0
+Salyan rayonu,2018,543.0
+Salyan rayonu,2019,187.0
+Salyan rayonu,2020,202.0
+Salyan rayonu,2022,392.0
+Salyan rayonu,2023,406.0
+Salyan rayonu,2024,515.0

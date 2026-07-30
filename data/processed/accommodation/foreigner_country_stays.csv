@@ -1,0 +1,511 @@
+country,year,guests
+Cəmi,2012,372117.0
+Cəmi,2013,395461.0
+Cəmi,2014,392790.0
+Cəmi,2015,495648.0
+Cəmi,2016,776784.0
+Cəmi,2017,981232.0
+Cəmi,2018,1234392.0
+Cəmi,2019,1316739.0
+Cəmi,2020,267383.0
+Cəmi,2021,271563.0
+Cəmi,2022,907953.0
+Cəmi,2023,1081425.0
+Cəmi,2024,1354027.0
+ABŞ,2012,19578.0
+ABŞ,2013,27398.0
+ABŞ,2014,21291.0
+ABŞ,2015,24795.0
+ABŞ,2016,21682.0
+ABŞ,2017,29532.0
+ABŞ,2018,31232.0
+ABŞ,2019,29964.0
+ABŞ,2020,7217.0
+ABŞ,2021,8439.0
+ABŞ,2022,35358.0
+ABŞ,2023,35411.0
+ABŞ,2024,58672.0
+Almaniya,2012,20358.0
+Almaniya,2013,16058.0
+Almaniya,2014,17904.0
+Almaniya,2015,17000.0
+Almaniya,2016,18116.0
+Almaniya,2017,21901.0
+Almaniya,2018,18526.0
+Almaniya,2019,17571.0
+Almaniya,2020,6283.0
+Almaniya,2021,9487.0
+Almaniya,2022,16454.0
+Almaniya,2023,19656.0
+Almaniya,2024,23113.0
+Belarus,2017,8607.0
+Belarus,2018,4772.0
+Belarus,2019,4984.0
+Belarus,2020,1051.0
+Belarus,2021,1953.0
+Belarus,2022,3707.0
+Belarus,2023,7553.0
+Belarus,2024,7634.0
+Belçika,2012,1613.0
+Belçika,2013,1608.0
+Belçika,2014,2455.0
+Belçika,2015,2129.0
+Belçika,2016,3890.0
+Belçika,2017,4534.0
+Belçika,2018,2267.0
+Belçika,2019,2465.0
+Belçika,2020,715.0
+Belçika,2021,2509.0
+Belçika,2022,2563.0
+Belçika,2023,2394.0
+Belçika,2024,2658.0
+Bəhreyn,2018,13128.0
+Bəhreyn,2019,15667.0
+Bəhreyn,2020,1460.0
+Bəhreyn,2021,1012.0
+Bəhreyn,2022,4939.0
+Bəhreyn,2023,6159.0
+Bəhreyn,2024,6620.0
+BƏƏ,2018,171842.0
+BƏƏ,2019,142876.0
+BƏƏ,2020,19351.0
+BƏƏ,2021,20374.0
+BƏƏ,2022,89498.0
+BƏƏ,2023,71713.0
+BƏƏ,2024,78295.0
+Bolqarıstan,2017,1790.0
+Bolqarıstan,2018,1623.0
+Bolqarıstan,2019,2110.0
+Bolqarıstan,2020,495.0
+Bolqarıstan,2021,323.0
+Bolqarıstan,2022,836.0
+Bolqarıstan,2023,1285.0
+Bolqarıstan,2024,2464.0
+Böyük Britaniya,2012,61628.0
+Böyük Britaniya,2013,50844.0
+Böyük Britaniya,2014,42606.0
+Böyük Britaniya,2015,44675.0
+Böyük Britaniya,2016,57296.0
+Böyük Britaniya,2017,79496.0
+Böyük Britaniya,2018,41409.0
+Böyük Britaniya,2019,49865.0
+Böyük Britaniya,2020,22577.0
+Böyük Britaniya,2021,23799.0
+Böyük Britaniya,2022,33195.0
+Böyük Britaniya,2023,39577.0
+Böyük Britaniya,2024,39694.0
+Çexiya Respublikası,2017,2031.0
+Çexiya Respublikası,2018,1515.0
+Çexiya Respublikası,2019,2177.0
+Çexiya Respublikası,2020,803.0
+Çexiya Respublikası,2021,884.0
+Çexiya Respublikası,2022,971.0
+Çexiya Respublikası,2023,1713.0
+Çexiya Respublikası,2024,1930.0
+Çin,2012,4329.0
+Çin,2013,5240.0
+Çin,2014,6541.0
+Çin,2015,3905.0
+Çin,2016,6210.0
+Çin,2017,11231.0
+Çin,2018,8917.0
+Çin,2019,19120.0
+Çin,2020,1530.0
+Çin,2021,1339.0
+Çin,2022,6771.0
+Çin,2023,25629.0
+Çin,2024,30917.0
+Estoniya,2017,1349.0
+Estoniya,2018,673.0
+Estoniya,2019,750.0
+Estoniya,2020,206.0
+Estoniya,2021,286.0
+Estoniya,2022,830.0
+Estoniya,2023,1218.0
+Estoniya,2024,1190.0
+Finlandiya,2012,591.0
+Finlandiya,2013,561.0
+Finlandiya,2014,1234.0
+Finlandiya,2015,1497.0
+Finlandiya,2016,2090.0
+Finlandiya,2017,789.0
+Finlandiya,2018,1307.0
+Finlandiya,2019,1458.0
+Finlandiya,2020,112.0
+Finlandiya,2021,182.0
+Finlandiya,2022,638.0
+Finlandiya,2023,1009.0
+Finlandiya,2024,1037.0
+Fransa,2012,7320.0
+Fransa,2013,8980.0
+Fransa,2014,7604.0
+Fransa,2015,10300.0
+Fransa,2016,10672.0
+Fransa,2017,11005.0
+Fransa,2018,9755.0
+Fransa,2019,9669.0
+Fransa,2020,1935.0
+Fransa,2021,3116.0
+Fransa,2022,5701.0
+Fransa,2023,9073.0
+Fransa,2024,7741.0
+Gürcüstan,2012,6516.0
+Gürcüstan,2013,11370.0
+Gürcüstan,2014,6586.0
+Gürcüstan,2015,8139.0
+Gürcüstan,2016,12487.0
+Gürcüstan,2017,14576.0
+Gürcüstan,2018,9837.0
+Gürcüstan,2019,14377.0
+Gürcüstan,2020,2753.0
+Gürcüstan,2021,3063.0
+Gürcüstan,2022,12971.0
+Gürcüstan,2023,15791.0
+Gürcüstan,2024,12143.0
+Hindistan,2012,4713.0
+Hindistan,2013,7007.0
+Hindistan,2014,5533.0
+Hindistan,2015,4614.0
+Hindistan,2016,4352.0
+Hindistan,2017,9927.0
+Hindistan,2018,39635.0
+Hindistan,2019,72051.0
+Hindistan,2020,14090.0
+Hindistan,2021,5046.0
+Hindistan,2022,49190.0
+Hindistan,2023,115767.0
+Hindistan,2024,266960.0
+İraq,2018,23664.0
+İraq,2019,17748.0
+İraq,2020,2904.0
+İraq,2021,650.0
+İraq,2022,2704.0
+İraq,2023,1531.0
+İraq,2024,2043.0
+İran,2012,20009.0
+İran,2013,20616.0
+İran,2014,25947.0
+İran,2015,22979.0
+İran,2016,8142.0
+İran,2017,71087.0
+İran,2018,58623.0
+İran,2019,65693.0
+İran,2020,7142.0
+İran,2021,4159.0
+İran,2022,8357.0
+İran,2023,5805.0
+İran,2024,4802.0
+İspaniya,2012,1685.0
+İspaniya,2013,1846.0
+İspaniya,2014,2670.0
+İspaniya,2015,4520.0
+İspaniya,2016,5233.0
+İspaniya,2017,8520.0
+İspaniya,2018,5280.0
+İspaniya,2019,4839.0
+İspaniya,2020,1044.0
+İspaniya,2021,1686.0
+İspaniya,2022,3405.0
+İspaniya,2023,5178.0
+İspaniya,2024,6332.0
+Israil,2012,7438.0
+Israil,2013,7429.0
+Israil,2014,4663.0
+Israil,2015,8105.0
+Israil,2016,9724.0
+Israil,2017,11431.0
+Israil,2018,46127.0
+Israil,2019,72370.0
+Israil,2020,10017.0
+Israil,2021,10553.0
+Israil,2022,34736.0
+Israil,2023,40407.0
+Israil,2024,35003.0
+İsveç,2012,2270.0
+İsveç,2013,2856.0
+İsveç,2014,2112.0
+İsveç,2015,1905.0
+İsveç,2016,2820.0
+İsveç,2017,2883.0
+İsveç,2018,2009.0
+İsveç,2019,2498.0
+İsveç,2020,499.0
+İsveç,2021,868.0
+İsveç,2022,1171.0
+İsveç,2023,1481.0
+İsveç,2024,2310.0
+İtaliya,2012,7390.0
+İtaliya,2013,8183.0
+İtaliya,2014,8793.0
+İtaliya,2015,14270.0
+İtaliya,2016,14358.0
+İtaliya,2017,17603.0
+İtaliya,2018,11501.0
+İtaliya,2019,16274.0
+İtaliya,2020,7170.0
+İtaliya,2021,8738.0
+İtaliya,2022,12255.0
+İtaliya,2023,15306.0
+İtaliya,2024,17145.0
+Kanada,2012,3229.0
+Kanada,2013,3711.0
+Kanada,2014,2194.0
+Kanada,2015,4138.0
+Kanada,2016,3026.0
+Kanada,2017,4075.0
+Kanada,2018,6899.0
+Kanada,2019,4504.0
+Kanada,2020,890.0
+Kanada,2021,956.0
+Kanada,2022,2472.0
+Kanada,2023,3403.0
+Kanada,2024,4582.0
+Koreya Respublikası,2017,3284.0
+Koreya Respublikası,2018,4692.0
+Koreya Respublikası,2019,6328.0
+Koreya Respublikası,2020,950.0
+Koreya Respublikası,2021,454.0
+Koreya Respublikası,2022,2134.0
+Koreya Respublikası,2023,5052.0
+Koreya Respublikası,2024,6540.0
+Küveyt,2018,41439.0
+Küveyt,2019,42967.0
+Küveyt,2020,9747.0
+Küveyt,2021,2829.0
+Küveyt,2022,34050.0
+Küveyt,2023,36415.0
+Küveyt,2024,35973.0
+Qazaxıstan,2012,5464.0
+Qazaxıstan,2013,6929.0
+Qazaxıstan,2014,5722.0
+Qazaxıstan,2015,7445.0
+Qazaxıstan,2016,11020.0
+Qazaxıstan,2017,14569.0
+Qazaxıstan,2018,13905.0
+Qazaxıstan,2019,14638.0
+Qazaxıstan,2020,2574.0
+Qazaxıstan,2021,2929.0
+Qazaxıstan,2022,13689.0
+Qazaxıstan,2023,25470.0
+Qazaxıstan,2024,32198.0
+Qətər,2018,27684.0
+Qətər,2019,27732.0
+Qətər,2020,3958.0
+Qətər,2021,4746.0
+Qətər,2022,11281.0
+Qətər,2023,9781.0
+Qətər,2024,11347.0
+Qırğızıstan,2017,1798.0
+Qırğızıstan,2018,784.0
+Qırğızıstan,2019,1446.0
+Qırğızıstan,2020,205.0
+Qırğızıstan,2021,305.0
+Qırğızıstan,2022,832.0
+Qırğızıstan,2023,1626.0
+Qırğızıstan,2024,3360.0
+Latviya,2017,1680.0
+Latviya,2018,1394.0
+Latviya,2019,1732.0
+Latviya,2020,425.0
+Latviya,2021,516.0
+Latviya,2022,812.0
+Latviya,2023,1596.0
+Latviya,2024,2031.0
+Litva,2017,1455.0
+Litva,2018,1405.0
+Litva,2019,1556.0
+Litva,2020,220.0
+Litva,2021,424.0
+Litva,2022,964.0
+Litva,2023,2444.0
+Litva,2024,2622.0
+Macarıstan,2018,1522.0
+Macarıstan,2019,1774.0
+Macarıstan,2020,383.0
+Macarıstan,2021,711.0
+Macarıstan,2022,1216.0
+Macarıstan,2023,2192.0
+Macarıstan,2024,2673.0
+Malayziya,2018,1815.0
+Malayziya,2019,2478.0
+Malayziya,2020,1178.0
+Malayziya,2021,1204.0
+Malayziya,2022,1646.0
+Malayziya,2023,2256.0
+Malayziya,2024,1617.0
+Moldova,2017,3575.0
+Moldova,2018,1021.0
+Moldova,2019,847.0
+Moldova,2020,149.0
+Moldova,2021,158.0
+Moldova,2022,663.0
+Moldova,2023,885.0
+Moldova,2024,1138.0
+Niderland,2012,8203.0
+Niderland,2013,8258.0
+Niderland,2014,7372.0
+Niderland,2015,4891.0
+Niderland,2016,9183.0
+Niderland,2017,8381.0
+Niderland,2018,4404.0
+Niderland,2019,4595.0
+Niderland,2020,2705.0
+Niderland,2021,4641.0
+Niderland,2022,6737.0
+Niderland,2023,5522.0
+Niderland,2024,5399.0
+Norveç,2012,4304.0
+Norveç,2013,4480.0
+Norveç,2014,3497.0
+Norveç,2015,4571.0
+Norveç,2016,6083.0
+Norveç,2017,8445.0
+Norveç,2018,5170.0
+Norveç,2019,8526.0
+Norveç,2020,2440.0
+Norveç,2021,2478.0
+Norveç,2022,3831.0
+Norveç,2023,3894.0
+Norveç,2024,3734.0
+Oman,2018,18201.0
+Oman,2019,11429.0
+Oman,2020,1549.0
+Oman,2021,267.0
+Oman,2022,7629.0
+Oman,2023,5936.0
+Oman,2024,6386.0
+Özbəkistan,2017,5325.0
+Özbəkistan,2018,4132.0
+Özbəkistan,2019,6487.0
+Özbəkistan,2020,923.0
+Özbəkistan,2021,1237.0
+Özbəkistan,2022,8920.0
+Özbəkistan,2023,16373.0
+Özbəkistan,2024,22342.0
+Pakistan,2012,528.0
+Pakistan,2013,1044.0
+Pakistan,2014,537.0
+Pakistan,2015,2175.0
+Pakistan,2016,6733.0
+Pakistan,2017,10162.0
+Pakistan,2018,28453.0
+Pakistan,2019,24749.0
+Pakistan,2020,3129.0
+Pakistan,2021,1796.0
+Pakistan,2022,24050.0
+Pakistan,2023,22652.0
+Pakistan,2024,34742.0
+Polşa,2012,1220.0
+Polşa,2013,1699.0
+Polşa,2014,2265.0
+Polşa,2015,2713.0
+Polşa,2016,3421.0
+Polşa,2017,4686.0
+Polşa,2018,2904.0
+Polşa,2019,4594.0
+Polşa,2020,968.0
+Polşa,2021,1597.0
+Polşa,2022,3478.0
+Polşa,2023,6820.0
+Polşa,2024,6561.0
+Rumıniya,2012,700.0
+Rumıniya,2013,1051.0
+Rumıniya,2014,1260.0
+Rumıniya,2015,1488.0
+Rumıniya,2016,2009.0
+Rumıniya,2017,1717.0
+Rumıniya,2018,1906.0
+Rumıniya,2019,2873.0
+Rumıniya,2020,1120.0
+Rumıniya,2021,660.0
+Rumıniya,2022,1255.0
+Rumıniya,2023,2417.0
+Rumıniya,2024,2292.0
+Rusiya  Federasiyası,2012,45404.0
+Rusiya  Federasiyası,2013,52845.0
+Rusiya  Federasiyası,2014,47553.0
+Rusiya  Federasiyası,2015,82097.0
+Rusiya  Federasiyası,2016,111342.0
+Rusiya  Federasiyası,2017,141041.0
+Rusiya  Federasiyası,2018,121665.0
+Rusiya  Federasiyası,2019,136897.0
+Rusiya  Federasiyası,2020,34484.0
+Rusiya  Federasiyası,2021,28983.0
+Rusiya  Federasiyası,2022,110534.0
+Rusiya  Federasiyası,2023,161461.0
+Rusiya  Federasiyası,2024,173194.0
+Səudiyyə Ərəbistanı,2018,109405.0
+Səudiyyə Ərəbistanı,2019,173225.0
+Səudiyyə Ərəbistanı,2020,22065.0
+Səudiyyə Ərəbistanı,2021,8426.0
+Səudiyyə Ərəbistanı,2022,140155.0
+Səudiyyə Ərəbistanı,2023,99807.0
+Səudiyyə Ərəbistanı,2024,100678.0
+Tacikistan,2017,842.0
+Tacikistan,2018,828.0
+Tacikistan,2019,584.0
+Tacikistan,2020,78.0
+Tacikistan,2021,63.0
+Tacikistan,2022,656.0
+Tacikistan,2023,1400.0
+Tacikistan,2024,2116.0
+Türkiyə,2012,49584.0
+Türkiyə,2013,49718.0
+Türkiyə,2014,67562.0
+Türkiyə,2015,68169.0
+Türkiyə,2016,69627.0
+Türkiyə,2017,71478.0
+Türkiyə,2018,60765.0
+Türkiyə,2019,74709.0
+Türkiyə,2020,24591.0
+Türkiyə,2021,42237.0
+Türkiyə,2022,79418.0
+Türkiyə,2023,98299.0
+Türkiyə,2024,107375.0
+Türkmənistan,2017,1311.0
+Türkmənistan,2018,1142.0
+Türkmənistan,2019,2177.0
+Türkmənistan,2020,341.0
+Türkmənistan,2021,113.0
+Türkmənistan,2022,627.0
+Türkmənistan,2023,1287.0
+Türkmənistan,2024,1426.0
+Ukrayna,2012,11304.0
+Ukrayna,2013,12161.0
+Ukrayna,2014,9530.0
+Ukrayna,2015,17246.0
+Ukrayna,2016,19386.0
+Ukrayna,2017,22576.0
+Ukrayna,2018,15288.0
+Ukrayna,2019,14197.0
+Ukrayna,2020,4090.0
+Ukrayna,2021,4963.0
+Ukrayna,2022,6112.0
+Ukrayna,2023,8611.0
+Ukrayna,2024,7461.0
+Yaponiya,2012,1319.0
+Yaponiya,2013,1300.0
+Yaponiya,2014,2259.0
+Yaponiya,2015,2237.0
+Yaponiya,2016,2296.0
+Yaponiya,2017,2958.0
+Yaponiya,2018,4513.0
+Yaponiya,2019,3555.0
+Yaponiya,2020,573.0
+Yaponiya,2021,1280.0
+Yaponiya,2022,1577.0
+Yaponiya,2023,2344.0
+Yaponiya,2024,3151.0
+Digər ölkələr,2012,75420.0
+Digər ölkələr,2013,82269.0
+Digər ölkələr,2014,87100.0
+Digər ölkələr,2015,129645.0
+Digər ölkələr,2016,355586.0
+Digər ölkələr,2017,363582.0
+Digər ölkələr,2018,249414.0
+Digər ölkələr,2019,177614.0
+Digər ölkələr,2020,38294.0
+Digər ölkələr,2021,49124.0
+Digər ölkələr,2022,116965.0
+Digər ölkələr,2023,129826.0
+Digər ölkələr,2024,164386.0

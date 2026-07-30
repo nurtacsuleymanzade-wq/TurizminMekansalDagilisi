@@ -1,0 +1,292 @@
+{
+  "year": 2024,
+  "indicators": {
+    "capacity": {
+      "indicator": "capacity",
+      "n_regions": 1,
+      "morans_i": -0.435082,
+      "morans_p": 0.286,
+      "morans_z": -0.707,
+      "morans_ei": -0.125,
+      "lisa_clusters": [
+        {
+          "region": "Goranboy rayonu",
+          "cluster": "LH"
+        },
+        {
+          "region": "\u015eirvan-Salyan iqtisadi rayonu",
+          "cluster": "LL"
+        }
+      ],
+      "lisa_sig_count": 2,
+      "hot_spots": [
+        {
+          "region": "\u015eirvan-Salyan iqtisadi rayonu",
+          "type": "cold",
+          "z_score": -1.5384
+        }
+      ],
+      "hot_count": 0,
+      "cold_count": 1,
+      "mean_center": {
+        "x": 5271701.5697,
+        "y": 4862074.8118
+      },
+      "std_ellipse": {
+        "cx": 5271701.5697,
+        "cy": 4862074.8118,
+        "sdx": 271719.2706,
+        "sdy": 65534.103,
+        "theta": -0.7529
+      }
+    },
+    "nights": {
+      "indicator": "nights",
+      "n_regions": 1,
+      "morans_i": -0.162335,
+      "morans_p": 0.303,
+      "morans_z": -0.5874,
+      "morans_ei": -0.125,
+      "lisa_clusters": [
+        {
+          "region": "Goranboy rayonu",
+          "cluster": "LH"
+        }
+      ],
+      "lisa_sig_count": 1,
+      "hot_spots": [
+        {
+          "region": "Astara rayonu",
+          "type": "cold",
+          "z_score": -0.4755
+        }
+      ],
+      "hot_count": 0,
+      "cold_count": 1,
+      "mean_center": {
+        "x": 5228167.5726,
+        "y": 4913965.3052
+      },
+      "std_ellipse": {
+        "cx": 5228167.5726,
+        "cy": 4913965.3052,
+        "sdx": 161008.5758,
+        "sdy": 39615.2342,
+        "theta": -0.6729
+      }
+    },
+    "guests": {
+      "indicator": "guests",
+      "n_regions": 1,
+      "morans_i": -0.353877,
+      "morans_p": 0.192,
+      "morans_z": -0.9109,
+      "morans_ei": -0.125,
+      "lisa_clusters": [
+        {
+          "region": "Goranboy rayonu",
+          "cluster": "LH"
+        }
+      ],
+      "lisa_sig_count": 1,
+      "hot_spots": [
+        {
+          "region": "Astara rayonu",
+          "type": "cold",
+          "z_score": -0.727
+        }
+      ],
+      "hot_count": 0,
+      "cold_count": 1,
+      "mean_center": {
+        "x": 5237963.1144,
+        "y": 4905842.7523
+      },
+      "std_ellipse": {
+        "cx": 5237963.1144,
+        "cy": 4905842.7523,
+        "sdx": 221541.9168,
+        "sdy": 53911.3619,
+        "theta": -0.6766
+      }
+    },
+    "revenue": {
+      "indicator": "revenue",
+      "n_regions": 1,
+      "morans_i": -0.148756,
+      "morans_p": 0.369,
+      "morans_z": -0.5853,
+      "morans_ei": -0.125,
+      "lisa_clusters": [
+        {
+          "region": "\u015eirvan-Salyan iqtisadi rayonu",
+          "cluster": "LL"
+        }
+      ],
+      "lisa_sig_count": 1,
+      "hot_spots": [
+        {
+          "region": "\u015eirvan-Salyan iqtisadi rayonu",
+          "type": "cold",
+          "z_score": -0.6606
+        }
+      ],
+      "hot_count": 0,
+      "cold_count": 1,
+      "mean_center": {
+        "x": 5218089.0128,
+        "y": 4919490.5758
+      },
+      "std_ellipse": {
+        "cx": 5218089.0128,
+        "cy": 4919490.5758,
+        "sdx": 136012.4771,
+        "sdy": 31384.1994,
+        "theta": -0.7184
+      }
+    },
+    "employees": {
+      "indicator": "employees",
+      "n_regions": 1,
+      "morans_i": -0.205685,
+      "morans_p": 0.386,
+      "morans_z": -0.5352,
+      "morans_ei": -0.125,
+      "lisa_clusters": [
+        {
+          "region": "Goranboy rayonu",
+          "cluster": "LH"
+        },
+        {
+          "region": "\u015eirvan-Salyan iqtisadi rayonu",
+          "cluster": "LL"
+        }
+      ],
+      "lisa_sig_count": 2,
+      "hot_spots": [
+        {
+          "region": "\u015eirvan-Salyan iqtisadi rayonu",
+          "type": "cold",
+          "z_score": -0.9647
+        }
+      ],
+      "hot_count": 0,
+      "cold_count": 1,
+      "mean_center": {
+        "x": 5246971.868,
+        "y": 4880083.8689
+      },
+      "std_ellipse": {
+        "cx": 5246971.868,
+        "cy": 4880083.8689,
+        "sdx": 223930.4365,
+        "sdy": 41300.0602,
+        "theta": -0.8231
+      }
+    },
+    "hotel_density": {
+      "indicator": "hotel_density",
+      "n_regions": 1,
+      "morans_i": -0.13361,
+      "morans_p": 0.252,
+      "morans_z": -0.7871,
+      "morans_ei": -0.125,
+      "lisa_clusters": [
+        {
+          "region": "Goranboy rayonu",
+          "cluster": "LH"
+        }
+      ],
+      "lisa_sig_count": 1,
+      "hot_spots": [
+        {
+          "region": "\u015eirvan-Salyan iqtisadi rayonu",
+          "type": "cold",
+          "z_score": -0.5763
+        }
+      ],
+      "hot_count": 0,
+      "cold_count": 1,
+      "mean_center": {
+        "x": 5212516.6522,
+        "y": 4923417.8948
+      },
+      "std_ellipse": {
+        "cx": 5212516.6522,
+        "cy": 4923417.8948,
+        "sdx": 80207.6064,
+        "sdy": 13006.5936,
+        "theta": -0.8501
+      }
+    },
+    "revenue_per_capacity": {
+      "indicator": "revenue_per_capacity",
+      "n_regions": 1,
+      "morans_i": -0.066928,
+      "morans_p": 0.287,
+      "morans_z": 0.5003,
+      "morans_ei": -0.125,
+      "lisa_clusters": [
+        {
+          "region": "Astara rayonu",
+          "cluster": "LL"
+        },
+        {
+          "region": "Goranboy rayonu",
+          "cluster": "LH"
+        }
+      ],
+      "lisa_sig_count": 2,
+      "hot_spots": [
+        {
+          "region": "Astara rayonu",
+          "type": "cold",
+          "z_score": -0.6138
+        }
+      ],
+      "hot_count": 0,
+      "cold_count": 1,
+      "mean_center": {
+        "x": 5246553.02,
+        "y": 4907522.7654
+      },
+      "std_ellipse": {
+        "cx": 5246553.02,
+        "cy": 4907522.7654,
+        "sdx": 186955.771,
+        "sdy": 47990.1062,
+        "theta": -0.6038
+      }
+    },
+    "foreign_tourist_ratio": {
+      "indicator": "foreign_tourist_ratio",
+      "n_regions": 1,
+      "morans_i": -0.170935,
+      "morans_p": 0.371,
+      "morans_z": -0.2505,
+      "morans_ei": -0.125,
+      "lisa_clusters": [],
+      "lisa_sig_count": 0,
+      "hot_spots": [
+        {
+          "region": "Astara rayonu",
+          "type": "cold",
+          "z_score": -0.521
+        }
+      ],
+      "hot_count": 0,
+      "cold_count": 1,
+      "mean_center": {
+        "x": 5278379.4179,
+        "y": 4892823.3959
+      },
+      "std_ellipse": {
+        "cx": 5278379.4179,
+        "cy": 4892823.3959,
+        "sdx": 183889.6593,
+        "sdy": 37980.6777,
+        "theta": -0.4985
+      }
+    }
+  }
+}

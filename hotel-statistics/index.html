@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konaklama Sektörü Mekânsal Analizi | Accommodation Sector Spatial Analysis</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<link rel="stylesheet" href="../style.css">
+<style>
+:root {
+    --hotel-bg: #0f0f1a;
+    --hotel-card: #1a1f2e;
+    --hotel-border: #2a2a3a;
+    --hotel-text: #e0e0e0;
+    --hotel-accent: #3498db;
+    --hotel-success: #2ecc71;
+    --hotel-danger: #e74c3c;
+    --hotel-warning: #f39c12;
+}
+body { background: var(--hotel-bg); color: var(--hotel-text); }
+.hotel-header {
+    padding: 100px 24px 40px; text-align: center;
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1f2e 50%, #0f0f1a 100%);
+    border-bottom: 1px solid var(--hotel-border);
+}
+.hotel-header h1 { font-size: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 12px; }
+.hotel-header h1 span { background: linear-gradient(135deg, #3498db, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hotel-header .subtitle { color: #94a3b8; font-size: 1rem; margin-bottom: 16px; }
+.breadcrumb { color: #64748b; font-size: 0.85rem; margin-bottom: 20px; }
+.breadcrumb a { color: #3498db; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* Filter Bar */
+.filter-bar {
+    position: sticky; top: 72px; z-index: 100;
+    background: rgba(15, 15, 26, 0.95); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--hotel-border);
+    padding: 12px 24px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+}
+.filter-bar select, .filter-bar input[type="range"] {
+    background: var(--hotel-card); color: var(--hotel-text);
+    border: 1px solid var(--hotel-border); border-radius: 6px;
+    padding: 6px 12px; font-size: 0.85rem;
+}
+.filter-bar label { font-size: 0.8rem; color: #94a3b8; }
+.filter-btn {
+    background: var(--hotel-accent); color: #fff; border: none;
+    padding: 6px 16px; border-radius: 6px; cursor: pointer; font-size: 0.85rem;
+}
+.filter-btn:hover { opacity: 0.85; }
+.filter-btn.reset { background: #334155; }
+
+/* Dashboard Section Cards */
+.dashboard { max-width: 1400px; margin: 0 auto; padding: 24px; }
+.sec-card {
+    background: var(--hotel-card); border: 1px solid var(--hotel-border);
+    border-radius: 12px; margin-bottom: 20px; overflow: hidden;
+}
+.sec-card summary {
+    padding: 16px 24px; cursor: pointer; font-size: 1.1rem; font-weight: 600;
+    display: flex; align-items: center; gap: 12px;
+    border-bottom: 1px solid var(--hotel-border);
+    transition: background 0.2s;
+}
+.sec-card summary:hover { background: #1f2638; }
+.sec-card summary::-webkit-details-marker { display: none; }
+.sec-card .sec-number {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--hotel-accent); color: #fff; font-size: 0.8rem; font-weight: 700;
+}
+.sec-card[open] summary { border-bottom-color: var(--hotel-accent); }
+.sec-body { padding: 20px 24px; }
+.sec-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 16px; margin-bottom: 16px; }
+.sec-row .chart-box { background: #13131f; border-radius: 8px; padding: 12px; min-height: 300px; }
+.sec-row .chart-box h4 { font-size: 0.9rem; color: #94a3b8; margin-bottom: 8px; }
+.sec-row .chart-box img { width: 100%; border-radius: 6px; }
+.sec-row .chart-box canvas, .sec-row .chart-box .plotly-chart { width: 100% !important; min-height: 280px; }
+
+/* Commentary box */
+.commentary {
+    background: rgba(52, 152, 219, 0.08); border-left: 3px solid var(--hotel-accent);
+    border-radius: 0 8px 8px 0; padding: 16px 20px; margin-top: 12px;
+    font-size: 0.92rem; line-height: 1.7;
+}
+.commentary strong { color: var(--hotel-accent); }
+
+/* KPI cards */
+.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.kpi-card {
+    background: #13131f; border: 1px solid var(--hotel-border);
+    border-radius: 8px; padding: 12px 16px; text-align: center;
+}
+.kpi-card .kpi-value { font-size: 1.5rem; font-weight: 700; color: var(--hotel-accent); }
+.kpi-card .kpi-label { font-size: 0.75rem; color: #64748b; margin-top: 4px; }
+
+/* Table styles */
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.data-table th { background: #13131f; padding: 8px 12px; text-align: left; border-bottom: 2px solid var(--hotel-border); cursor: pointer; }
+.data-table td { padding: 6px 12px; border-bottom: 1px solid rgba(42,42,58,0.5); }
+.data-table tr:hover td { background: rgba(52,152,219,0.05); }
+.cell-high { color: var(--hotel-success); font-weight: 600; }
+.cell-low { color: var(--hotel-danger); }
+.cell-mid { color: var(--hotel-warning); }
+
+/* Stats bar */
+.stats-bar { display: flex; flex-wrap: wrap; gap: 6px; }
+.stats-bar .stat-item { background: #13131f; border-radius: 4px; padding: 2px 8px; font-size: 0.75rem; }
+
+/* Footer */
+.hotel-footer {
+    text-align: center; padding: 40px 24px;
+    border-top: 1px solid var(--hotel-border); color: #64748b; font-size: 0.85rem;
+    max-width: 1400px; margin: 0 auto;
+}
+.hotel-footer a { color: var(--hotel-accent); }
+
+@media (max-width: 768px) {
+    .sec-row { grid-template-columns: 1fr; }
+    .filter-bar { gap: 6px; }
+    .filter-bar select { flex: 1; min-width: 100px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (reuse from main site) -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-logo">Turizmin Mekânsal Dağılışı</a>
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../harita.html">İnteraktif Harita</a></li>
+            <li><a href="../haritalar_statiktir.html">Statik Haritalar</a></li>
+            <li><a href="../azstat_analizi.html">Turizm Analizi</a></li>
+            <li><a href="index.html" class="active">Konaklama</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="hotel-header">
+    <div class="breadcrumb">
+        <a href="../index.html">Ana Sayfa</a> → <a href="../azstat_analizi.html">Turizm İstatistikleri</a> → <span style="color:#94a3b8">Konaklama Analizi</span>
+    </div>
+    <h1>🏨 <span>Konaklama Sektörü Mekânsal Analizi</span></h1>
+    <div class="subtitle">Accommodation Sector Spatial Analysis — AzStat Hotel İstatistikleri CBS Tabanlı Karar Destek Sistemi</div>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:8px">
+        <span class="stats-bar"><span class="stat-item">📊 34+4 AzStat Veri Seti</span></span>
+        <span class="stats-bar"><span class="stat-item">🗺️ 74 İlçe (Rayon)</span></span>
+        <span class="stats-bar"><span class="stat-item">📈 19 Yıl (2006-2024)</span></span>
+        <span class="stats-bar"><span class="stat-item">🔬 17 Analiz Bölümü</span></span>
+    </div>
+</header>
+
+<!-- Filter Bar -->
+<div class="filter-bar" id="filterBar">
+    <label>Yıl:</label>
+    <select id="yearSelect"></select>
+    <label>Bölge:</label>
+    <select id="regionSelect"><option value="all">Tümü</option></select>
+    <label>Gösterge:</label>
+    <select id="indicatorSelect">
+        <option value="capacity">Kapasite</option>
+        <option value="guests">Turist Sayısı</option>
+        <option value="nights">Geceleme</option>
+        <option value="revenue">Gelir</option>
+        <option value="employees">İstihdam</option>
+        <option value="hotel_density">Otel Sıklığı</option>
+        <option value="foreign_tourist_ratio">Yabancı Oranı</option>
+    </select>
+    <button class="filter-btn" onclick="applyFilters()">Uygula</button>
+    <button class="filter-btn reset" onclick="resetFilters()">Sıfırla</button>
+</div>
+
+<!-- Dashboard Body -->
+<div class="dashboard" id="dashboard">
+
+<!-- ============================================ -->
+<!-- SECTION 1: HOTEL COUNT -->
+<!-- ============================================ -->
+<details class="sec-card" open>
+    <summary><span class="sec-number">1</span> Otel Sayısı (Hotel Count)</summary>
+    <div class="sec-body">
+        <div class="kpi-row" id="kpi1"></div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>Kapasite Koroplet Haritası</h4><img src="../models/maps/accommodation/choropleth_capacity.png" alt="Capacity Choropleth"></div>
+            <div class="chart-box"><h4>Hot Spot Analizi (Getis-Ord Gi*)</h4><img src="../models/maps/accommodation/hot_spot_capacity.png" alt="Hot Spot"></div>
+        </div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>LISA Küme Haritası</h4><img src="../models/maps/accommodation/lisa_cluster_capacity.png" alt="LISA Cluster"></div>
+            <div class="chart-box"><h4>KDE Yoğunluk Haritası</h4><img src="../models/maps/accommodation/kde_capacity.png" alt="KDE"></div>
+        </div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>Kapasite Zaman Serisi (Ulusal)</h4><canvas id="chart1a"></canvas></div>
+            <div class="chart-box"><h4>İlk 10 Bölge</h4><canvas id="chart1b"></canvas></div>
+        </div>
+        <div class="commentary">
+            <strong>Otel yoğunlaşması Bakü'de maksimum düzeydedir.</strong> 2024 verilerine göre Bakü şehri toplam
+            28.998 yatak kapasitesi ile ilk sırada yer alırken, onu Quba-Xaçmaz ekonomik bölgesi (12.033 yatak)
+            ve Dağlık Şirvan (2.414 yatak) takip etmektedir. Toplam kapasite 131.878 yatak, toplam oda sayısı ise
+            62.280'dir. 2006-2024 döneminde otel kapasitesindeki artış, turizm altyapısına yapılan yatırımların
+            bir göstergesidir. Moran's I değeri -0.435 (p=0.276) ile mekânsal otokorelasyon istatistiksel olarak
+            anlamlı değildir; bu, otel yatırımlarının mekânsal kümelenmeden ziyade bağımsız lokasyonlara yayıldığını göstermektedir.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 2: HOTEL CAPACITY -->
+<!-- ============================================ -->
+<details class="sec-card" open>
+    <summary><span class="sec-number">2</span> Otel Kapasitesi (Hotel Capacity / Birdəfəlik Tutum)</summary>
+    <div class="sec-body">
+        <div class="sec-row">
+            <div class="chart-box"><h4>Kapasite Dağılım Haritası</h4><img src="../models/maps/accommodation/mean_center_capacity.png" alt="Mean Center"></div>
+            <div class="chart-box"><h4>KDE Yoğunluk</h4><img src="../models/maps/accommodation/kde_capacity.png" alt="KDE Capacity"></div>
+        </div>
+        <div class="commentary">
+            <strong>Toplam kapasite 131.878 yatak (2024).</strong> Ortalama bölgesel kapasite 1.735 yataktır.
+            Bakü (28.998 yatak) ve Quba-Xaçmaz (12.033 yatak) en yüksek kapasiteye sahip bölgelerdir.
+            KDE haritası, kapasitenin Bakü merkezli olduğunu ve Hazar kıyısı boyunca kuzeye (Quba-Xaçmaz) doğru
+            bir koridor oluşturduğunu göstermektedir. Standart sapma elipsi, kapasite dağılımının doğu-batı
+            ekseninde yoğunlaştığını ortaya koymaktadır.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 3: ROOM COUNT -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">3</span> Oda Sayısı (Room Count / Nömrə)</summary>
+    <div class="sec-body">
+        <div class="sec-row">
+            <div class="chart-box"><h4>Oda Sayısı Koroplet</h4><img src="../models/maps/accommodation/choropleth_rooms.png" alt="Rooms"></div>
+            <div class="chart-box"><h4>Otel Sayısı vs Oda Sayısı</h4><canvas id="chart3a"></canvas></div>
+        </div>
+        <div class="commentary">
+            <strong>Toplam 62.280 oda (2024).</strong> Ortalama bölgesel oda sayısı 819'dur.
+            Bakü 15.592 oda ile en yüksek değere sahiptir. Oda başına düşen ortalama yatak sayısı
+            yaklaşık 2.1'dir (131.878 yatak / 62.280 oda).
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 4: OVERNIGHT STAYS -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">4</span> Gecelik Konaklama (Overnight Stays / Gecələmə)</summary>
+    <div class="sec-body">
+        <div class="kpi-row" id="kpi4"></div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>Geceleme Koroplet</h4><img src="../models/maps/accommodation/choropleth_nights.png" alt="Nights"></div>
+            <div class="chart-box"><h4>Hot Spot: Geceleme</h4><img src="../models/maps/accommodation/hot_spot_nights.png" alt="Nights Hot Spot"></div>
+        </div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>Yerli vs Yabancı Geceleme</h4><canvas id="chart4a"></canvas></div>
+            <div class="chart-box"><h4>Geceleme Zaman Serisi</h4><canvas id="chart4b"></canvas></div>
+        </div>
+        <div class="commentary">
+            <strong>Toplam 8.482.094 geceleme (2024).</strong> Geceleme sayısının en yüksek olduğu bölgeler:
+            Bakü (2.609.069), Quba-Xaçmaz ekonomik bölgesi. Yabancı geceleme oranı %36.6'dır.
+            Ortalama kalış süresi (geceleme/turist) 1.81 gündür. Bu, Azerbaycan'da turistlerin
+            kısa süreli konaklama eğiliminde olduğunu göstermektedir. 2006-2024 döneminde
+            geceleme sayısı istikrarlı bir artış göstermiştir.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 5: DOMESTIC TOURISTS -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">5</span> Yerli Turistler (Domestic Tourists)</summary>
+    <div class="sec-body">
+        <div class="sec-row">
+            <div class="chart-box"><h4>Yerli Turist Zaman Serisi</h4><canvas id="chart5a"></canvas></div>
+            <div class="chart-box"><h4>Yerli Turist Payı</h4><canvas id="chart5b"></canvas></div>
+        </div>
+        <div class="commentary">
+            <strong>Toplam 1.990.252 yerli turist (2024).</strong> Yerli turistlerin oranı %42.4'tür.
+            En yüksek yerli turist sayısı Bakü'de (354.733) görülmektedir. Yerli turizm, pandemi
+            sonrası dönemde güçlü bir toparlanma göstermiştir. Yerli turistlerin mekânsal dağılışı,
+            büyük şehir merkezleri ve tatil bölgelerinde yoğunlaşmaktadır.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 6: FOREIGN TOURISTS -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">6</span> Yabancı Turistler (Foreign Tourists)</summary>
+    <div class="sec-body">
+        <div class="kpi-row" id="kpi6"></div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>Yabancı Turist Oranı Haritası</h4><img src="../models/maps/accommodation/choropleth_foreign_tourist_ratio.png" alt="Foreign Ratio"></div>
+            <div class="chart-box"><h4>Yabancı Turist Zaman Serisi</h4><canvas id="chart6a"></canvas></div>
+        </div>
+        <div class="commentary">
+            <strong>Toplam 2.705.416 yabancı turist (2024).</strong> Yabancı turistlerin oranı %57.6 ile
+            yerli turistlerden daha yüksektir. En önemli kaynak pazarlar: Rusya, Türkiye, Hindistan, İran.
+            Yabancı turistlerin mekânsal dağılışı Bakü merkezli olup, kıyı ve dağ bölgelerine yayılmaktadır.
+            Yabancı turist oranının yüksek olduğu bölgelerde gelir düzeyi de paralel olarak artmaktadır.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 7: TOURISTS BY COUNTRY -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">7</span> Ülkelere Göre Turistler (Tourists by Country)</summary>
+    <div class="sec-body">
+        <div class="chart-box" style="min-height:400px"><h4>Ülkelere Göre Turist Dağılımı</h4><div id="chart7" class="plotly-chart" style="height:400px"></div></div>
+        <div class="commentary">
+            <strong>48 farklı ülkeden turist verisi analiz edilmiştir.</strong> En yüksek turist gönderen
+            ülkeler arasında Rusya, Türkiye, Hindistan ve İran başı çekmektedir. Bu ülkelerin toplamı,
+            Azerbaycan'a gelen yabancı turistlerin önemli bir kısmını oluşturmaktadır. Ülke çeşitliliği,
+            Azerbaycan'ın uluslararası turizm pazarında giderek daha fazla tanındığını göstermektedir.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTIONS 8-9: REVENUE & EXPENSE -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">8</span> Gelir (Revenue / Gəlir)</summary>
+    <div class="sec-body">
+        <div class="kpi-row" id="kpi8"></div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>Gelir Koroplet</h4><img src="../models/maps/accommodation/choropleth_revenue.png" alt="Revenue"></div>
+            <div class="chart-box"><h4>Hot Spot: Gelir</h4><img src="../models/maps/accommodation/hot_spot_revenue.png" alt="Revenue Hot Spot"></div>
+        </div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>Gelir Zaman Serisi</h4><canvas id="chart8a"></canvas></div>
+            <div class="chart-box"><h4>Gelir Dağılımı (Pasta)</h4><canvas id="chart8b"></canvas></div>
+        </div>
+        <div class="commentary">
+            <strong>Toplam gelir: 1.379.758 (2024).</strong> Bakü toplam gelirin %34.4'ünü (474.198)
+            oluşturmaktadır. Turizm gelirinin mekânsal dağılışı, otel yoğunlaşması ile yüksek korelasyon
+            göstermektedir. Korelasyon analizine göre gelir-harcama korelasyonu r=0.9999'dur.
+            Gelirin bölgesel dağılımı, turizm yatırımlarının getirisinin mekânsal olarak eşitsiz
+            dağıldığını ortaya koymaktadır.
+        </div>
+    </div>
+</details>
+
+<details class="sec-card">
+    <summary><span class="sec-number">9</span> Gider (Expense / Xərclər)</summary>
+    <div class="sec-body">
+        <div class="sec-row">
+            <div class="chart-box"><h4>Gider Koroplet</h4><img src="../models/maps/accommodation/choropleth_expense.png" alt="Expense"></div>
+            <div class="chart-box"><h4>Gelir vs Gider Karşılaştırması</h4><canvas id="chart9a"></canvas></div>
+        </div>
+        <div class="commentary">
+            <strong>Toplam gider: 1.011.854 (2024).</strong> Gelir-gider oranı (kârlılık) %36.4'tür.
+            En yüksek kâr marjı Bakü ve Quba-Xaçmaz bölgelerinde görülmektedir. Giderlerin büyük kısmını
+            malzeme ve işçilik maliyetleri oluşturmaktadır.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 10: PROFITABILITY -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">10</span> Kârlılık (Profitability)</summary>
+    <div class="sec-body">
+        <div class="sec-row">
+            <div class="chart-box"><h4>Kâr/Zarar Haritası</h4><img src="../models/maps/accommodation/choropleth_profit.png" alt="Profit"></div>
+            <div class="chart-box"><h4>Kârlılık Dağılımı</h4><canvas id="chart10a"></canvas></div>
+        </div>
+        <div class="commentary">
+            <strong>Toplam kâr: 367.904 (2024).</strong> Kârlılık, otel yoğunluğunun yüksek olduğu
+            bölgelerde daha yüksektir (ölçek ekonomisi). Düşük kârlı bölgelerde altyapı ve tanıtım
+            yatırımlarına ihtiyaç vardır. En kârlı bölge Bakü iken, kırsal bölgelerdeki oteller
+            düşük doluluk oranları nedeniyle daha düşük kâr marjına sahiptir.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 11: EMPLOYMENT -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">11</span> Çalışan Sayısı (Employment / İşçilər)</summary>
+    <div class="sec-body">
+        <div class="kpi-row" id="kpi11"></div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>İstihdam Koroplet</h4><img src="../models/maps/accommodation/choropleth_employees.png" alt="Employees"></div>
+            <div class="chart-box"><h4>Hot Spot: İstihdam</h4><img src="../models/maps/accommodation/hot_spot_employees.png" alt="Employees Hot Spot"></div>
+        </div>
+        <div class="commentary">
+            <strong>Toplam 29.764 çalışan (2024).</strong> Ortalama bölgesel istihdam 408 kişidir.
+            En yüksek istihdam Bakü'de (6.588), onu Quba-Xaçmaz (2.912) ve Dağlık Şirvan (642) takip
+            etmektedir. Turizm istihdamı, hizmet sektörünün bölgesel gelişmişliğinin bir göstergesidir.
+            Yatak başına düşen çalışan sayısı ortalama 0.23'tür.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 12: OWNERSHIP STRUCTURE -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">12</span> Mülkiyet Yapısı (Ownership Structure)</summary>
+    <div class="sec-body">
+        <div class="sec-row">
+            <div class="chart-box"><h4>Mülkiyet Dağılımı</h4><canvas id="chart12a"></canvas></div>
+            <div class="chart-box"><h4>Mülkiyet Zaman Serisi</h4><canvas id="chart12b"></canvas></div>
+        </div>
+        <div class="commentary">
+            <strong>Özel sektör ağırlıklı mülkiyet yapısı</strong> turizm yatırımlarının piyasa odaklı
+            olduğunu göstermektedir. Devlet mülkiyetindeki otellerin oranı zamanla azalırken, özel
+            ve yabancı ortaklı otellerin sayısı artmaktadır. Bu durum, Azerbaycan turizm sektörünün
+            liberalleşme sürecinin bir göstergesidir.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 13: REGIONAL COMPARISON -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">13</span> Bölgesel Karşılaştırma (Regional Comparison)</summary>
+    <div class="sec-body">
+        <div style="overflow-x:auto">
+            <table class="data-table" id="regionTable">
+                <thead><tr>
+                    <th onclick="sortTable(0)">Bölge</th>
+                    <th onclick="sortTable(1)">Kapasite ↓</th>
+                    <th onclick="sortTable(2)">Oda</th>
+                    <th onclick="sortTable(3)">Geceleme</th>
+                    <th onclick="sortTable(4)">Turist</th>
+                    <th onclick="sortTable(5)">Gelir</th>
+                    <th onclick="sortTable(6)">Gider</th>
+                    <th onclick="sortTable(7)">İstihdam</th>
+                    <th onclick="sortTable(8)">Yabancı %</th>
+                </tr></thead>
+                <tbody id="regionTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 14: DERIVED INDICATORS -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">14</span> Yeni Hesaplanan Göstergeler (Derived Indicators)</summary>
+    <div class="sec-body">
+        <div class="sec-row">
+            <div class="chart-box"><h4>Otel Sıklığı (Hotel Density)</h4><img src="../models/maps/accommodation/choropleth_hotel_density.png" alt="Hotel Density"></div>
+            <div class="chart-box"><h4>Kapasite Başına Gelir</h4><img src="../models/maps/accommodation/choropleth_revenue_per_capacity.png" alt="Rev/Cap"></div>
+        </div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>Ortalama Kalış Süresi</h4><img src="../models/maps/accommodation/choropleth_avg_stay.png" alt="Avg Stay"></div>
+            <div class="chart-box"><h4>Yabancı Turist Oranı</h4><img src="../models/maps/accommodation/choropleth_foreign_tourist_ratio.png" alt="Foreign Ratio"></div>
+        </div>
+        <div class="commentary">
+            <strong>17 türetilmiş gösterge hesaplanmıştır.</strong> Otel sıklığı (otel/km²) Bakü'de
+            maksimum düzeydedir (84.70). Kapasite başına gelir ortalaması 10.46'dır. Ortalama kalış
+            süresi 1.81 gün olup, uluslararası ortalamaların altındadır. Yabancı turist oranı
+            ortalaması %17.0'dır ancak Bakü'de bu oran %76.2'ye ulaşmaktadır. Lokasyon katsayısı (LQ)
+            analizi, Bakü ve Quba-Xaçmaz'ın turizmde uzmanlaşmış bölgeler olduğunu göstermektedir.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 15: SPATIAL ANALYSIS -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">15</span> Mekânsal Analizler (Spatial Analysis Dashboard)</summary>
+    <div class="sec-body">
+        <div class="kpi-row" id="kpi15"></div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>LISA Küme Haritası (Kapasite)</h4><img src="../models/maps/accommodation/lisa_cluster_capacity.png" alt="LISA"></div>
+            <div class="chart-box"><h4>Hot Spot (Geceleme)</h4><img src="../models/maps/accommodation/hot_spot_nights.png" alt="Hot Spot Nights"></div>
+        </div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>Ortalama Merkez & Standart Sapma Elipsi (Gelir)</h4><img src="../models/maps/accommodation/mean_center_revenue.png" alt="Mean Center Revenue"></div>
+            <div class="chart-box"><h4>KDE (Geceleme)</h4><img src="../models/maps/accommodation/kde_guests.png" alt="KDE Guests"></div>
+        </div>
+        <div class="commentary">
+            <strong>Mekânsal otokorelasyon analizi sonuçları:</strong><br>
+            • Moran's I değerleri tüm göstergeler için negatif olup, istatistiksel olarak anlamlı
+            mekânsal kümelenme tespit edilmemiştir (p &gt; 0.05). Bu durum, otel yatırımlarının
+            mekânsal olarak rastgele dağıldığını göstermektedir.<br>
+            • LISA analizinde bazı bölgelerde HH (High-High) ve LL (Low-Low) kümelenmeleri
+            tespit edilmiştir, ancak bunlar sınırlı sayıdadır.<br>
+            • Getis-Ord Gi* hot spot analizi, kapasite ve geceleme için Bakü merkezli sıcak noktalar
+            göstermektedir.<br>
+            • Standart sapma elipsi, turizm aktivitelerinin doğu-batı ekseninde yoğunlaştığını
+            ortaya koymaktadır.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 16: CORRELATION ANALYSIS -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">16</span> Korelasyon Analizi (Correlation Analysis)</summary>
+    <div class="sec-body">
+        <div class="sec-row">
+            <div class="chart-box"><h4>Korelasyon Isı Haritası</h4><img src="../models/maps/accommodation/correlation_heatmap.png" alt="Correlation Heatmap"></div>
+            <div class="chart-box"><h4>Saçılım Matrisi (İlk 6 Gösterge)</h4><img src="../models/maps/accommodation/scatter_matrix.png" alt="Scatter Matrix"></div>
+        </div>
+        <div class="commentary">
+            <strong>En güçlü korelasyonlar:</strong><br>
+            • Yabancı geceleme ↔ Yabancı turist: r = 1.0000 (beklenen, neredeyse aynı değişken)<br>
+            • Gelir ↔ Gider: r = 0.9999 (işletme maliyetleri gelirle doğru orantılı)<br>
+            • Yabancı turist ↔ Otel sıklığı: r = 0.9999 (yabancı turistler yoğun bölgeleri tercih ediyor)<br>
+            • Geceleme ↔ Gelir: r = 0.9991 (daha uzun konaklama = daha yüksek gelir)<br>
+            • Bu yüksek korelasyonlar, turizm sektöründeki değişkenlerin birbirine sıkı sıkıya bağlı
+            olduğunu ve bütüncül bir analiz yaklaşımı gerektirdiğini göstermektedir.
+        </div>
+    </div>
+</details>
+
+<!-- ============================================ -->
+<!-- SECTION 17: BIVARIATE & ADVANCED -->
+<!-- ============================================ -->
+<details class="sec-card">
+    <summary><span class="sec-number">17</span> Bivariate & İleri Düzey Haritalar</summary>
+    <div class="sec-body">
+        <div class="sec-row">
+            <div class="chart-box"><h4>Bivariate: Otel Sıklığı × Gelir</h4><img src="../models/maps/accommodation/bivariate_hotel_density_revenue.png" alt="Bivariate 1"></div>
+            <div class="chart-box"><h4>Bivariate: Kapasite × Yabancı Oranı</h4><img src="../models/maps/accommodation/bivariate_capacity_foreign_ratio.png" alt="Bivariate 2"></div>
+        </div>
+        <div class="sec-row">
+            <div class="chart-box"><h4>Turizm Gelişmişlik Endeksi</h4><img src="../models/maps/accommodation/tourism_development_index.png" alt="TDI"></div>
+            <div class="chart-box"><h4>Zamansal Animasyon (2006-2024)</h4>
+                <img src="../models/maps/accommodation/temporal_animation.gif" alt="Animation" style="max-width:100%;border-radius:6px;">
+                <p style="font-size:0.8rem;color:#64748b;margin-top:8px">Kapasite değişimi: 2006 → 2024 (7 kare)</p>
+            </div>
+        </div>
+        <div class="commentary">
+            <strong>Bivariate haritalar iki değişkenin mekânsal birlikteliğini göstermektedir.</strong>
+            Mor renk (yüksek-yüksek) Bakü ve çevresinde yoğunlaşmıştır. Turizm Gelişmişlik Endeksi (TDI)
+            6 göstergenin (kapasite, geceleme, turist, gelir, istihdam, yabancı oranı) normalize
+            edilmiş bileşik endeksidir. TDI'ya göre en gelişmiş bölge Bakü, en düşük gelişmişlik
+            Mil-Muğan ve Gazah-Tovuz bölgelerindedir. Zamansal animasyon, 2006-2024 döneminde
+            kapasitenin mekânsal yayılımını göstermektedir.
+        </div>
+    </div>
+</details>
+
+</div><!-- /dashboard -->
+
+<!-- Footer -->
+<footer class="hotel-footer">
+    <p><strong>Veri Kaynağı:</strong> Azərbaycan Respublikasının Dövlət Statistika Komitəsi (<a href="https://stat.gov.az" target="_blank">stat.gov.az</a>)</p>
+    <p><strong>Metodoloji:</strong> CBS tabanlı mekânsal analiz (PySAL, GeoPandas, Leaflet) | 
+    Moran's I, LISA, Getis-Ord Gi*, KDE, Standart Sapma Elipsi</p>
+    <p><strong>Atıf:</strong> Bu çalışma <strong>Nur Taceddin Suleymanzade</strong>'nin doktora tezi kapsamında geliştirilmiştir.</p>
+    <p style="font-size:0.75rem;margin-top:4px">Son güncelleme: Temmuz 2026</p>
+</footer>
+
+<script src="../scripts/nav.js"></script>
+<script>
+// ── Data Store ──
+const DATA = { panel: null, basic: null, ownership: null, foreign: null };
+
+async function loadCSV(path) {
+    const r = await fetch(path);
+    const text = await r.text();
+    const lines = text.trim().split('\n');
+    const headers = lines[0].split(',');
+    const data = [];
+    for (let i = 1; i < lines.length; i++) {
+        const vals = lines[i].split(',');
+        const row = {};
+        headers.forEach((h, j) => {
+            row[h.trim()] = isNaN(vals[j]) ? vals[j] : parseFloat(vals[j]);
+        });
+        data.push(row);
+    }
+    return data;
+}
+
+async function loadAll() {
+    DATA.panel = await loadCSV('../data/processed/accommodation/regional_panel.csv');
+    DATA.basic = await loadCSV('../data/processed/accommodation/hotel_basic_indicators.csv');
+    DATA.ownership = await loadCSV('../data/processed/accommodation/hotel_by_ownership_count.csv');
+    DATA.foreign = await loadCSV('../data/processed/accommodation/foreigner_country_stays.csv');
+    
+    // Populate filters
+    const years = [...new Set(DATA.panel.map(d => d.year))].sort();
+    const sel = document.getElementById('yearSelect');
+    years.forEach(y => {
+        const opt = document.createElement('option');
+        opt.value = y; opt.textContent = y; sel.appendChild(opt);
+    });
+    sel.value = Math.max(...years);
+    
+    const regions = [...new Set(DATA.panel.map(d => d.economic_region).filter(Boolean))].sort();
+    const rsel = document.getElementById('regionSelect');
+    regions.forEach(r => {
+        const opt = document.createElement('option');
+        opt.value = r; opt.textContent = r; rsel.appendChild(opt);
+    });
+    
+    renderAll();
+}
+
+// ── Filter Functions ──
+function getFiltered() {
+    const year = parseInt(document.getElementById('yearSelect').value);
+    const region = document.getElementById('regionSelect').value;
+    let data = DATA.panel.filter(d => d.year === year);
+    if (region !== 'all') data = data.filter(d => d.economic_region === region);
+    return data;
+}
+
+function applyFilters() { renderAll(); }
+function resetFilters() {
+    const years = [...new Set(DATA.panel.map(d => d.year))].sort();
+    document.getElementById('yearSelect').value = Math.max(...years);
+    document.getElementById('regionSelect').value = 'all';
+    renderAll();
+}
+
+// ── Chart Registry ──
+const charts = {};
+
+function destroyChart(id) {
+    if (charts[id]) { charts[id].destroy(); delete charts[id]; }
+}
+
+// ── Render Everything ──
+function renderAll() {
+    const data = getFiltered();
+    if (!data.length) return;
+    
+    renderKPIs(data);
+    renderBasicCharts(data);
+    renderOwnershipChart();
+    renderForeignChart();
+    renderRegionTable(data);
+    renderSpatialStats();
+    renderPlotlyCharts();
+}
+
+// ── KPI Rows ──
+function renderKPIs(data) {
+    const sums = data.reduce((a, d) => {
+        ['capacity','guests','nights','nights_domestic','nights_foreign','guests_domestic','guests_foreign','revenue','expense','employees','profit'].forEach(c => {
+            if (d[c] !== undefined) a[c] = (a[c]||0) + d[c];
+        });
+        return a;
+    }, {});
+    
+    // KPI 1: Capacity stats
+    document.getElementById('kpi1').innerHTML = `
+        <div class="kpi-card"><div class="kpi-value">${(sums.capacity||0).toLocaleString()}</div><div class="kpi-label">Toplam Kapasite</div></div>
+        <div class="kpi-card"><div class="kpi-value">${(sums.guests||0).toLocaleString()}</div><div class="kpi-label">Toplam Turist</div></div>
+        <div class="kpi-card"><div class="kpi-value">${data.length}</div><div class="kpi-label">Bölge Sayısı</div></div>
+    `;
+    
+    document.getElementById('kpi4').innerHTML = `
+        <div class="kpi-card"><div class="kpi-value">${(sums.nights||0).toLocaleString()}</div><div class="kpi-label">Toplam Geceleme</div></div>
+        <div class="kpi-card"><div class="kpi-value">${((sums.nights||0)/(sums.guests||1)).toFixed(2)}</div><div class="kpi-label">Ort. Kalış (gün)</div></div>
+        <div class="kpi-card"><div class="kpi-value">${((sums.nights_foreign||0)/(sums.nights||1)*100).toFixed(1)}%</div><div class="kpi-label">Yabancı Geceleme %</div></div>
+    `;
+    
+    document.getElementById('kpi6').innerHTML = `
+        <div class="kpi-card"><div class="kpi-value">${(sums.guests_foreign||0).toLocaleString()}</div><div class="kpi-label">Yabancı Turist</div></div>
+        <div class="kpi-card"><div class="kpi-value">${((sums.guests_foreign||0)/(sums.guests||1)*100).toFixed(1)}%</div><div class="kpi-label">Yabancı Oranı</div></div>
+    `;
+    
+    document.getElementById('kpi8').innerHTML = `
+        <div class="kpi-card"><div class="kpi-value">${(sums.revenue||0).toLocaleString()}</div><div class="kpi-label">Toplam Gelir</div></div>
+        <div class="kpi-card"><div class="kpi-value">${((sums.revenue||0)/(sums.guests||1)).toFixed(1)}</div><div class="kpi-label">Turist Başına Gelir</div></div>
+    `;
+    
+    document.getElementById('kpi11').innerHTML = `
+        <div class="kpi-card"><div class="kpi-value">${(sums.employees||0).toLocaleString()}</div><div class="kpi-label">Toplam Çalışan</div></div>
+        <div class="kpi-card"><div class="kpi-value">${((sums.employees||0)/(sums.capacity||1)).toFixed(2)}</div><div class="kpi-label">Yatak/Çalışan</div></div>
+    `;
+    
+    document.getElementById('kpi15').innerHTML = `
+        <div class="kpi-card"><div class="kpi-value">-0.435</div><div class="kpi-label">Moran's I (Kapasite)</div></div>
+        <div class="kpi-card"><div class="kpi-value">p&gt;0.05</div><div class="kpi-label">Anlamlılık</div></div>
+        <div class="kpi-card"><div class="kpi-value">Bakü</div><div class="kpi-label">Sıcak Nokta</div></div>
+    `;
+}
+
+// ── Basic Charts ──
+function renderBasicCharts(data) {
+    const year = parseInt(document.getElementById('yearSelect').value);
+    
+    // Chart 1a: Capacity time series (national)
+    const byYear = {};
+    DATA.panel.forEach(d => {
+        if (d.capacity !== undefined) byYear[d.year] = (byYear[d.year]||0) + d.capacity;
+    });
+    const ySorted = Object.keys(byYear).sort();
+    destroyChart('chart1a');
+    charts['chart1a'] = new Chart(document.getElementById('chart1a'), {
+        type: 'line',
+        data: {
+            labels: ySorted,
+            datasets: [{
+                label: 'Toplam Kapasite',
+                data: ySorted.map(y => byYear[y]),
+                borderColor: '#3498db', backgroundColor: 'rgba(52,152,219,0.1)',
+                fill: true, tension: 0.3
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } }
+        }
+    });
+    
+    // Chart 1b: Top 10 by capacity
+    const sorted = [...data].sort((a, b) => (b.capacity||0) - (a.capacity||0)).slice(0, 10);
+    destroyChart('chart1b');
+    const colors = ['#3498db','#2ecc71','#e74c3c','#f39c12','#9b59b6','#1abc9c','#e67e22','#2c3e50','#95a5a6','#c0392b'];
+    charts['chart1b'] = new Chart(document.getElementById('chart1b'), {
+        type: 'bar',
+        data: {
+            labels: sorted.map(d => d.rayon?.substring(0, 15)),
+            datasets: [{
+                label: 'Kapasite',
+                data: sorted.map(d => d.capacity||0),
+                backgroundColor: colors.slice(0, sorted.length)
+            }]
+        },
+        options: {
+            indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } }
+        }
+    });
+    
+    // Chart 4a: Domestic vs Foreign nights
+    destroyChart('chart4a');
+    charts['chart4a'] = new Chart(document.getElementById('chart4a'), {
+        type: 'bar',
+        data: {
+            labels: ['Yerli', 'Yabancı'],
+            datasets: [{
+                label: 'Geceleme',
+                data: [
+                    data.reduce((a,d) => a + (d.nights_domestic||0), 0),
+                    data.reduce((a,d) => a + (d.nights_foreign||0), 0)
+                ],
+                backgroundColor: ['#2ecc71', '#3498db']
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } }
+        }
+    });
+    
+    // Chart 4b: Nights time series
+    const nByYear = {};
+    DATA.panel.forEach(d => {
+        if (d.nights !== undefined) nByYear[d.year] = (nByYear[d.year]||0) + d.nights;
+    });
+    const ny = Object.keys(nByYear).sort();
+    destroyChart('chart4b');
+    charts['chart4b'] = new Chart(document.getElementById('chart4b'), {
+        type: 'line',
+        data: {
+            labels: ny,
+            datasets: [{ label: 'Toplam Geceleme', data: ny.map(y => nByYear[y]),
+                borderColor: '#e74c3c', backgroundColor: 'rgba(231,76,60,0.1)', fill: true, tension: 0.3 }]
+        },
+        options: { responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } } }
+    });
+    
+    // Chart 5a: Domestic guests time series
+    const dByYear = {};
+    DATA.panel.forEach(d => {
+        if (d.guests_domestic !== undefined) dByYear[d.year] = (dByYear[d.year]||0) + d.guests_domestic;
+    });
+    const dy = Object.keys(dByYear).sort();
+    destroyChart('chart5a');
+    charts['chart5a'] = new Chart(document.getElementById('chart5a'), {
+        type: 'line',
+        data: {
+            labels: dy,
+            datasets: [{ label: 'Yerli Turist', data: dy.map(y => dByYear[y]),
+                borderColor: '#2ecc71', backgroundColor: 'rgba(46,204,113,0.1)', fill: true, tension: 0.3 }]
+        },
+        options: { responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } } }
+    });
+    
+    // Chart 5b: Domestic vs Foreign pie
+    const totDom = data.reduce((a,d) => a + (d.guests_domestic||0), 0);
+    const totFor = data.reduce((a,d) => a + (d.guests_foreign||0), 0);
+    destroyChart('chart5b');
+    charts['chart5b'] = new Chart(document.getElementById('chart5b'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Yerli', 'Yabancı'],
+            datasets: [{ data: [totDom, totFor], backgroundColor: ['#2ecc71', '#3498db'] }]
+        },
+        options: { responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } } }
+    });
+    
+    // Chart 6a: Foreign guests time series
+    const fByYear = {};
+    DATA.panel.forEach(d => {
+        if (d.guests_foreign !== undefined) fByYear[d.year] = (fByYear[d.year]||0) + d.guests_foreign;
+    });
+    const fy = Object.keys(fByYear).sort();
+    destroyChart('chart6a');
+    charts['chart6a'] = new Chart(document.getElementById('chart6a'), {
+        type: 'line',
+        data: {
+            labels: fy,
+            datasets: [{ label: 'Yabancı Turist', data: fy.map(y => fByYear[y]),
+                borderColor: '#f39c12', backgroundColor: 'rgba(243,156,18,0.1)', fill: true, tension: 0.3 }]
+        },
+        options: { responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } } }
+    });
+    
+    // Chart 8a: Revenue time series
+    const rByYear = {};
+    DATA.panel.forEach(d => {
+        if (d.revenue !== undefined) rByYear[d.year] = (rByYear[d.year]||0) + d.revenue;
+    });
+    const ry = Object.keys(rByYear).sort();
+    destroyChart('chart8a');
+    charts['chart8a'] = new Chart(document.getElementById('chart8a'), {
+        type: 'line',
+        data: {
+            labels: ry,
+            datasets: [{ label: 'Toplam Gelir', data: ry.map(y => rByYear[y]),
+                borderColor: '#2ecc71', backgroundColor: 'rgba(46,204,113,0.1)', fill: true, tension: 0.3 }]
+        },
+        options: { responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } } }
+    });
+    
+    // Chart 8b: Revenue by economic region (pie)
+    const erRev = {};
+    data.forEach(d => {
+        if (d.economic_region && d.revenue !== undefined) {
+            erRev[d.economic_region] = (erRev[d.economic_region]||0) + d.revenue;
+        }
+    });
+    const erLabels = Object.keys(erRev);
+    const erValues = erLabels.map(k => erRev[k]);
+    destroyChart('chart8b');
+    charts['chart8b'] = new Chart(document.getElementById('chart8b'), {
+        type: 'pie',
+        data: { labels: erLabels, datasets: [{ data: erValues, backgroundColor: colors }] },
+        options: { responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0', font: { size: 10 } } } } }
+    });
+    
+    // Chart 9a: Revenue vs Expense comparison
+    const reData = data.filter(d => d.revenue !== undefined && d.expense !== undefined).slice(0, 15);
+    destroyChart('chart9a');
+    charts['chart9a'] = new Chart(document.getElementById('chart9a'), {
+        type: 'bar',
+        data: {
+            labels: reData.map(d => d.rayon?.substring(0, 12)),
+            datasets: [
+                { label: 'Gelir', data: reData.map(d => d.revenue), backgroundColor: '#2ecc71' },
+                { label: 'Gider', data: reData.map(d => d.expense), backgroundColor: '#e74c3c' }
+            ]
+        },
+        options: { responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } } }
+    });
+    
+    // Chart 10a: Profit/Loss distribution
+    destroyChart('chart10a');
+    const profitData = data.filter(d => d.profit !== undefined).sort((a,b) => (b.profit||0) - (a.profit||0)).slice(0, 15);
+    charts['chart10a'] = new Chart(document.getElementById('chart10a'), {
+        type: 'bar',
+        data: {
+            labels: profitData.map(d => d.rayon?.substring(0, 12)),
+            datasets: [{
+                label: 'Kâr/Zarar',
+                data: profitData.map(d => d.profit),
+                backgroundColor: profitData.map(d => d.profit >= 0 ? '#2ecc71' : '#e74c3c')
+            }]
+        },
+        options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } } }
+    });
+}
+
+// ── Ownership Chart ──
+function renderOwnershipChart() {
+    const data = DATA.ownership.filter(d => d.ownership && d.hotel_count !== undefined);
+    const byYear = {};
+    data.forEach(d => {
+        if (!byYear[d.year]) byYear[d.year] = {};
+        byYear[d.year][d.ownership] = d.hotel_count;
+    });
+    const years = Object.keys(byYear).sort();
+    
+    // Chart 12a: Donut - latest year
+    const ly = Math.max(...years);
+    const lyData = byYear[ly];
+    if (lyData) {
+        destroyChart('chart12a');
+        charts['chart12a'] = new Chart(document.getElementById('chart12a'), {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(lyData),
+                datasets: [{ data: Object.values(lyData), backgroundColor: ['#3498db','#2ecc71','#e74c3c','#f39c12','#9b59b6'] }]
+            },
+            options: { responsive: true, maintainAspectRatio: false,
+                plugins: { legend: { labels: { color: '#e0e0e0' } } } }
+        });
+    }
+    
+    // Chart 12b: Stacked bar over years
+    destroyChart('chart12b');
+    const types = ['total','state','private','foreign','joint'].filter(t => byYear[years[0]]?.[t] !== undefined);
+    charts['chart12b'] = new Chart(document.getElementById('chart12b'), {
+        type: 'bar',
+        data: {
+            labels: years,
+            datasets: types.map((t, i) => ({
+                label: t,
+                data: years.map(y => byYear[y][t] || 0),
+                backgroundColor: ['#3498db','#2ecc71','#e74c3c','#f39c12','#9b59b6'][i]
+            }))
+        },
+        options: { responsive: true, maintainAspectRatio: false, scales: { x: { stacked: true }, y: { stacked: true } },
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } } }
+    });
+}
+
+// ── Foreign Charts (Plotly) ──
+function renderForeignChart() {
+    const data = DATA.foreign;
+    if (!data.length) return;
+    
+    // Aggregate by country (latest year)
+    const ly = Math.max(...data.map(d => d.year));
+    const byCountry = {};
+    data.filter(d => d.year === ly).forEach(d => {
+        if (d.country && d.guests !== undefined) {
+            byCountry[d.country] = (byCountry[d.country]||0) + d.guests;
+        }
+    });
+    const sorted = Object.entries(byCountry).sort((a,b) => b[1] - a[1]).slice(0, 20);
+    
+    Plotly.newPlot('chart7', [{
+        type: 'bar',
+        x: sorted.map(d => d[1]),
+        y: sorted.map(d => d[0]),
+        orientation: 'h',
+        marker: { color: '#3498db' }
+    }], {
+        title: { text: `Ülkelere Göre Turist Sayısı (${ly})`, font: { color: '#e0e0e0' } },
+        margin: { l: 120, r: 30, t: 40, b: 40 },
+        plot_bgcolor: '#0f0f1a',
+        paper_bgcolor: '#0f0f1a',
+        font: { color: '#94a3b8' },
+        xaxis: { gridcolor: '#2a2a3a', color: '#94a3b8' },
+        yaxis: { gridcolor: '#2a2a3a', color: '#94a3b8' },
+        height: 400
+    });
+}
+
+// ── Region Table ──
+function renderRegionTable(data) {
+    const erData = {};
+    data.forEach(d => {
+        const er = d.economic_region || 'Diğer';
+        if (!erData[er]) erData[er] = { name: er, capacity:0, rooms:0, nights:0, guests:0, revenue:0, expense:0, employees:0, fg:0, tg:0 };
+        const r = erData[er];
+        if (d.capacity !== undefined) r.capacity += d.capacity;
+        if (d.rooms !== undefined) r.rooms += d.rooms;
+        if (d.nights !== undefined) r.nights += d.nights;
+        if (d.guests !== undefined) r.guests += d.guests;
+        if (d.revenue !== undefined) r.revenue += d.revenue;
+        if (d.expense !== undefined) r.expense += d.expense;
+        if (d.employees !== undefined) r.employees += d.employees;
+        if (d.guests_foreign !== undefined) r.fg += d.guests_foreign;
+        if (d.guests !== undefined) r.tg += d.guests;
+    });
+    
+    const vals = Object.values(erData);
+    const maxCap = Math.max(...vals.map(v => v.capacity)) || 1;
+    const tbody = document.getElementById('regionTableBody');
+    tbody.innerHTML = vals.sort((a,b) => b.capacity - a.capacity).map(v => {
+        const pct = v.tg > 0 ? v.fg/v.tg*100 : 0;
+        const capClass = v.capacity >= maxCap * 0.5 ? 'cell-high' : v.capacity < maxCap * 0.2 ? 'cell-low' : 'cell-mid';
+        return `<tr>
+            <td>${v.name}</td>
+            <td class="${capClass}">${v.capacity.toLocaleString()}</td>
+            <td>${v.rooms.toLocaleString()}</td>
+            <td>${v.nights.toLocaleString()}</td>
+            <td>${v.guests.toLocaleString()}</td>
+            <td>${v.revenue.toLocaleString()}</td>
+            <td>${v.expense.toLocaleString()}</td>
+            <td>${v.employees.toLocaleString()}</td>
+            <td>${pct.toFixed(1)}%</td>
+        </tr>`;
+    }).join('');
+}
+
+// ── Spatial Stats ──
+function renderSpatialStats() {
+    // From pre-computed JSON
+    fetch('../data/processed/accommodation/spatial_analysis.json')
+        .then(r => r.json())
+        .then(data => {
+            const div = document.getElementById('spatialStats');
+            if (!div) return;
+            const indicators = data.indicators || {};
+            let html = '<div class="kpi-row">';
+            Object.entries(indicators).slice(0, 6).forEach(([k, v]) => {
+                if (v.morans_i !== undefined && v.morans_i !== null) {
+                    html += `<div class="kpi-card">
+                        <div class="kpi-value">${v.morans_i.toFixed(4)}</div>
+                        <div class="kpi-label">Moran I: ${k}</div>
+                        <div style="font-size:0.7rem;color:#94a3b8">p=${v.morans_p?.toFixed(3)}</div>
+                    </div>`;
+                }
+            });
+            html += '</div>';
+        })
+        .catch(() => {});
+}
+
+// ── Plotly Charts ──
+function renderPlotlyCharts() {
+    // Empty placeholder for potential Plotly additions
+}
+
+// ── Table Sort ──
+function sortTable(col) {
+    const tbody = document.getElementById('regionTableBody');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    const isAsc = tbody.dataset.sortCol == col && tbody.dataset.sortDir == 'asc';
+    tbody.dataset.sortCol = col;
+    tbody.dataset.sortDir = isAsc ? 'desc' : 'asc';
+    
+    rows.sort((a, b) => {
+        const va = parseFloat(a.children[col]?.textContent.replace(/,/g, '')) || 0;
+        const vb = parseFloat(b.children[col]?.textContent.replace(/,/g, '')) || 0;
+        return isAsc ? va - vb : vb - va;
+    });
+    rows.forEach(r => tbody.appendChild(r));
+}
+
+// ── Init ──
+document.addEventListener('DOMContentLoaded', loadAll);
+</script>
+
+</body>
+</html>

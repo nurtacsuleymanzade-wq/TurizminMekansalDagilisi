@@ -1,0 +1,58 @@
+{
+  "year": 2024,
+  "indicators": [
+    "capacity",
+    "nights",
+    "guests",
+    "revenue",
+    "employees",
+    "foreign_tourist_ratio"
+  ],
+  "results": [
+    {
+      "rayon": "Astara rayonu",
+      "economic_region": "Lankaran-Astara",
+      "tourism_development_index": 0.14741661908394407
+    },
+    {
+      "rayon": "Goranboy rayonu",
+      "economic_region": "Ganja-Dashkasan",
+      "tourism_development_index": 0.008366823822633821
+    },
+    {
+      "rayon": "Lerik rayonu",
+      "economic_region": "Lankaran-Astara",
+      "tourism_development_index": 0.08209074780808694
+    },
+    {
+      "rayon": "Naftalan  \u015f\u0259h\u0259ri",
+      "economic_region": NaN,
+      "tourism_development_index": 0.9989726204116735
+    },
+    {
+      "rayon": "Qazax-Tovuz iqtisadi rayonu",
+      "economic_region": NaN,
+      "tourism_development_index": 0.23415832957804422
+    },
+    {
+      "rayon": "Sabirabad rayonu",
+      "economic_region": "Mil-Mughan",
+      "tourism_development_index": 0.0
+    },
+    {
+      "rayon": "Salyan rayonu",
+      "economic_region": NaN,
+      "tourism_development_index": 0.04375030118838345
+    },
+    {
+      "rayon": "Tovuz rayonu",
+      "economic_region": "Gazakh-Tovuz",
+      "tourism_development_index": 0.031168487142030715
+    },
+    {
+      "rayon": "\u015eirvan-Salyan iqtisadi rayonu",
+      "economic_region": NaN,
+      "tourism_development_index": 0.09483177308081393
+    }
+  ]
+}
