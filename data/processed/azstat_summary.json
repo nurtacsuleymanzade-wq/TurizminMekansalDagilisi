@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "source": "Azərbaycan Respublikasının Dövlət Statistika Komitəsi (AzStat)",
+    "url": "https://www.stat.gov.az/source/tourism/",
+    "data_files": [
+      "002_1.xls - Sərhəd-buraxılış məntəqələrindən keçən şəxslərin sayı",
+      "002_2.xls - Nəqliyyat növlərindən istifadə üzrə sayı",
+      "002_3.xls - Səfərlərin məqsədi üzrə bölgüsü və xərclər",
+      "002_4.xls - Ölkələr üzrə gələn əcnəbilərin sayı"
+    ],
+    "data_period": "2015-2024",
+    "data_type": "real",
+    "notes": "Məlumatlar birbaşa AzStat rəsmi XLS fayllarından çıxarılıb. Qiymətlər 'min nəfər' ilə verilmişdir, milyonlara çevrilmişdir."
+  },
+  "yearly_totals": {
+    "2015": 12192000,
+    "2016": 13000800,
+    "2017": 13563100,
+    "2018": 15504300,
+    "2019": 17464300,
+    "2020": 4028300,
+    "2021": 3432400,
+    "2022": 6131600,
+    "2023": 7860400,
+    "2024": 9544900
+  },
+  "transport_breakdown_latest": {
+    "year": 2024,
+    "incoming": {
+      "avtomobil": 602800,
+      "dəmir yolu": 3600,
+      "hava nəqliyyatı": 1986800,
+      "su nəqliyyatı": 33500
+    },
+    "outgoing": {
+      "avtomobil": 612500,
+      "dəmir yolu": 2900,
+      "hava nəqliyyatı": 1498700,
+      "su nəqliyyatı": 44800
+    },
+    "incoming_share_pct": {
+      "avtomobil": 22.9,
+      "dəmir yolu": 0.1,
+      "hava nəqliyyatı": 75.6,
+      "su nəqliyyatı": 1.3
+    },
+    "outgoing_share_pct": {
+      "avtomobil": 28.4,
+      "dəmir yolu": 0.1,
+      "hava nəqliyyatı": 69.4,
+      "su nəqliyyatı": 2.1
+    }
+  },
+  "top_countries": [
+    {
+      "country": "Rusiya Federasiyası",
+      "visitor_count": 730971,
+      "share_pct": 27.8
+    },
+    {
+      "country": "Türkiyə",
+      "visitor_count": 426132,
+      "share_pct": 16.2
+    },
+    {
+      "country": "Hindistan",
+      "visitor_count": 243633,
+      "share_pct": 9.3
+    },
+    {
+      "country": "İran",
+      "visitor_count": 210081,
+      "share_pct": 8.0
+    },
+    {
+      "country": "Gürcüstan",
+      "visitor_count": 111300,
+      "share_pct": 4.2
+    },
+    {
+      "country": "Səudiyyə Ərəbistanı",
+      "visitor_count": 98113,
+      "share_pct": 3.7
+    },
+    {
+      "country": "Qazaxıstan",
+      "visitor_count": 86302,
+      "share_pct": 3.3
+    },
+    {
+      "country": "Pakistan",
+      "visitor_count": 80919,
+      "share_pct": 3.1
+    },
+    {
+      "country": "BƏƏ",
+      "visitor_count": 46731,
+      "share_pct": 1.8
+    },
+    {
+      "country": "Özbəkistan",
+      "visitor_count": 46391,
+      "share_pct": 1.8
+    },
+    {
+      "country": "Çin",
+      "visitor_count": 44798,
+      "share_pct": 1.7
+    },
+    {
+      "country": "Ukrayna",
+      "visitor_count": 36144,
+      "share_pct": 1.4
+    },
+    {
+      "country": "Türkmənistan",
+      "visitor_count": 33020,
+      "share_pct": 1.3
+    },
+    {
+      "country": "Küveyt",
+      "visitor_count": 31369,
+      "share_pct": 1.2
+    },
+    {
+      "country": "Digər ölkələr",
+      "visitor_count": 30050,
+      "share_pct": 1.1
+    },
+    {
+      "country": "İsrail",
+      "visitor_count": 28954,
+      "share_pct": 1.1
+    },
+    {
+      "country": "Belarus",
+      "visitor_count": 26308,
+      "share_pct": 1.0
+    },
+    {
+      "country": "Böyük Britaniya",
+      "visitor_count": 25693,
+      "share_pct": 1.0
+    },
+    {
+      "country": "Oman",
+      "visitor_count": 24144,
+      "share_pct": 0.9
+    },
+    {
+      "country": "ABŞ",
+      "visitor_count": 22927,
+      "share_pct": 0.9
+    }
+  ],
+  "purpose_breakdown": {
+    "turizm": 1855100,
+    "işgüzar": 261000,
+    "müalicə": 23200,
+    "dini": 3300,
+    "qohum ziyarəti": 263800,
+    "digər turizm": 42200,
+    "digər məqsədlər": 771600
+  },
+  "purpose_shares": {
+    "turizm": 57.6,
+    "işgüzar": 8.1,
+    "müalicə": 0.7,
+    "dini": 0.1,
+    "qohum ziyarəti": 8.2,
+    "digər turizm": 1.3,
+    "digər məqsədlər": 24.0
+  },
+  "expenditure_breakdown": {
+    "2014": {
+      "incoming": 1281.2,
+      "outgoing": 1888.5
+    },
+    "2015": {
+      "incoming": 1132.4,
+      "outgoing": 1816.9
+    },
+    "2016": {
+      "incoming": 1411.3,
+      "outgoing": 1970.3
+    },
+    "2017": {
+      "incoming": 2285.3,
+      "outgoing": 1678.9
+    },
+    "2018": {
+      "incoming": 2661.6,
+      "outgoing": 2387.4
+    },
+    "2019": {
+      "incoming": 2971.4,
+      "outgoing": 2407.6
+    },
+    "2020": {
+      "incoming": 414.7,
+      "outgoing": 412.5
+    },
+    "2021": {
+      "incoming": 492.6,
+      "outgoing": 510.3
+    },
+    "2022": {
+      "incoming": 1340.2,
+      "outgoing": 924.8
+    },
+    "2023": {
+      "incoming": 2439.2,
+      "outgoing": 1493.2
+    },
+    "2024": {
+      "incoming": 3403.5,
+      "outgoing": 2219.0
+    }
+  },
+  "key_trends": [
+    "COVID-19 pandemiyası səbəbindən 2020-ci ildə sərhəd keçidləri 76.9% azalaraq 4,028,300 nəfərə düşüb (2019: 17,464,300 nəfər).",
+    "2024-cü ildə toparlanma davam edir: 9,544,900 nəfər keçid qeydə alınıb (2019 səviyyəsinin 54.7%).",
+    "Hava nəqliyyatı gələn əcnəbilər arasında 75.6% payla əsas nəqliyyat növüdür. Rusiya Federasiyası (27.8% pay) ən böyük mənbə ölkə olaraq qalır."
+  ],
+  "summary_stats": {
+    "peak_year": "2019",
+    "peak_value": 17464300,
+    "covid_drop_pct": 76.9,
+    "recovery_2024_vs_2019_pct": 54.7,
+    "recovery_2024_vs_2020_pct": 136.9,
+    "latest_year": 2024,
+    "latest_value": 9544900,
+    "top_source_country": "Rusiya Federasiyası",
+    "top_source_country_share": 27.8,
+    "dominant_transport": "hava nəqliyyatı",
+    "dominant_transport_share": 75.6
+  }
+}

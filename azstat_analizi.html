@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AzStat Turizm İstatistikleri — Turizmin Mekansal Dağılışı</title>
+<link rel="stylesheet" href="style.css">
+<script src="scripts/nav.js"></script>
+<style>
+  .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; }
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+  .chart-card.full { grid-column: 1 / -1; }
+  .chart-card h2 { font-size: 16px; margin: 0 0 16px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  .chart-card p { font-size: 13px; color: var(--text-muted); margin: -8px 0 16px; }
+  .chart-wrapper { position: relative; }
+  .chart-wrapper img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-light); }
+  .stat-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .stat-summary .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; text-align: center; }
+  .stat-summary .stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+  .stat-summary .stat-card .lbl { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+  .stat-summary .stat-card .emoji { font-size: 24px; margin-bottom: 8px; }
+  .analysis-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px; }
+  .analysis-table th { background: var(--surface); color: var(--text-muted); font-weight: 600; padding: 10px 12px; text-align: left; border-bottom: 2px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .analysis-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--text); }
+  .analysis-table tr:hover td { background: var(--surface); }
+  .analysis-table .num-col { text-align: right; font-variant-numeric: tabular-nums; }
+  .analysis-table .highlight { color: var(--accent); font-weight: 700; }
+  .trend-list { list-style: none; padding: 0; margin: 16px 0; }
+  .trend-list li { padding: 12px 16px; margin-bottom: 8px; background: var(--surface); border-left: 3px solid var(--accent); border-radius: 6px; font-size: 14px; color: var(--text); }
+  .trend-list li::before { content: ''; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .badge-primary { background: rgba(59,130,246,0.2); color: #60a5fa; }
+  .badge-success { background: rgba(34,197,94,0.2); color: #4ade80; }
+  .badge-warning { background: rgba(234,179,8,0.2); color: #facc15; }
+  .badge-danger { background: rgba(239,68,68,0.2); color: #f87171; }
+  .data-source { font-size: 12px; color: var(--text-muted); text-align: center; margin-top: 8px; font-style: italic; }
+  @media (max-width: 768px) { .chart-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-brand"><a href="index.html">Turizmin Mekansal Dağılışı</a></div>
+  <button class="nav-toggle" id="navToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="harita.html">Haritalar</a></li>
+    <li><a href="haritalar_statiktir.html">Statik Haritalar</a></li>
+    <li><a href="grafikler.html">Grafikler</a></li>
+    <li><a href="analizler.html">Mekansal Analiz</a></li>
+    <li><a href="yogunluk.html">Yoğunluk</a></li>
+    <li><a href="azstat_analizi.html" class="active">AzStat Analizi</a></li>
+    <li><a href="veri.html">Veri Kaynakları</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <header class="page-header">
+    <h1>📊 AzStat Turizm İstatistikleri — Zaman Serisi Analizi</h1>
+    <p class="subtitle">Azərbaycan Respublikasının Dövlət Statistika Komitəsi (AzStat) məlumatları əsasında turizm göstəricilərinin zaman serisi analizi (2015-2024). Məlumatlar birbaşa AzStat rəsmi XLS fayllarından çıxarılmışdır.</p>
+  </header>
+
+  <!-- Key Findings Summary -->
+  <div class="stat-summary" id="summaryStats">
+    <div class="stat-card"><div class="emoji">📈</div><div class="num" id="peakValue">-</div><div class="lbl">Zirvə (2019, sərhəd keçidi)</div></div>
+    <div class="stat-card"><div class="emoji">📉</div><div class="num" id="dropValue">-</div><div class="lbl">COVID Düşüşü (2020)</div></div>
+    <div class="stat-card"><div class="emoji">🔄</div><div class="num" id="recoveryValue">-</div><div class="lbl">Toparlanma (2024)</div></div>
+    <div class="stat-card"><div class="emoji">✈️</div><div class="num" id="airShare">-</div><div class="lbl">Hava Nəqliyyatı Payı</div></div>
+    <div class="stat-card"><div class="emoji">🌍</div><div class="num" id="topCountry">-</div><div class="lbl">Ən Böyük Mənbə Ölkə</div></div>
+  </div>
+
+  <!-- Key Trends -->
+  <div class="chart-card full" style="margin-bottom: 24px;">
+    <h2>🔑 Əsas Trendlər</h2>
+    <ul class="trend-list" id="trendList">
+      <li>COVID-19 pandemiyası səbəbindən 2020-ci ildə sərhəd keçidləri <strong>76.9%</strong> azalaraq <strong>4.03 milyon</strong> nəfərə düşüb (2019: 17.46 milyon nəfər).</li>
+      <li>2024-cü ildə toparlanma davam edir: <strong>9.54 milyon</strong> nəfər keçid qeydə alınıb — 2019 səviyyəsinin <strong>54.6%</strong>-i.</li>
+      <li>Hava nəqliyyatı gələn əcnəbilər arasında <strong>~75%</strong> payla əsas nəqliyyat növüdür. Rusiya Federasiyası (<strong>27.8%</strong> pay) ən böyük mənbə ölkə olaraq qalır.</li>
+    </ul>
+    <p class="data-source">Məlumat mənbəyi: <a href="https://www.stat.gov.az/source/tourism/" target="_blank">AzStat — Turizm statistikası</a></p>
+  </div>
+
+  <div class="chart-grid">
+
+    <!-- Section 1: Border Crossings -->
+    <div class="chart-card full">
+      <h2>🛂 Sərhəd-Buraxılış Məntəqələrindən Keçən Şəxslərin Sayı</h2>
+      <p>Azərbaycanın dövlət sərhəd-buraxılış məntəqələrindən keçən şəxslərin ümumi sayı, daxil olanlar və tərk edənlər üzrə bölgüsü (2015-2024). Məlumatlar <strong>002_1.xls</strong> faylından çıxarılmışdır.</p>
+      <div class="chart-wrapper"><img src="models/azstat/chart_border_crossings.png" alt="Sərhəd keçid statistikası"></div>
+      <table class="analysis-table">
+        <thead>
+          <tr><th>İl</th><th>Ümumi Keçid</th><th>Daxil Olanlar</th><th>Tərk Edənlər</th><th>Az. Vətəndaşları (daxil)</th><th>Əcnəbilər (daxil)</th></tr>
+        </thead>
+        <tbody id="borderTableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Section 2: Transportation Modes -->
+    <div class="chart-card full">
+      <h2>✈️ Ölkəyə Gələn və Gedən Vətəndaşların Nəqliyyat Növlərindən İstifadəsi</h2>
+      <p>Azərbaycana gələn xarici ölkə vətəndaşlarının nəqliyyat növləri üzrə bölgüsü: avtomobil, dəmir yolu, hava nəqliyyatı və su nəqliyyatı. Məlumatlar <strong>002_2.xls</strong> faylından çıxarılmışdır.</p>
+      <div class="chart-wrapper"><img src="models/azstat/chart_transport_modes.png" alt="Nəqliyyat növləri statistikası"></div>
+      <table class="analysis-table">
+        <thead>
+          <tr><th>İl</th><th>Avtomobil</th><th>Dəmir Yolu</th><th>Hava</th><th>Su</th><th>Cəmi (gələn)</th></tr>
+        </thead>
+        <tbody id="transportTableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Section 3: Purpose & Expenditure -->
+    <div class="chart-card full">
+      <h2>🎯 Səfər Məqsədi Üzrə Bölgü və Xərclər</h2>
+      <p>Azərbaycana gələn əcnəbilərin səfər məqsədləri üzrə bölgüsü — turizm, işgüzar, qohum ziyarəti, müalicə, dini turizm və digər. Məlumatlar <strong>002_3.xls</strong> faylından çıxarılmışdır.</p>
+      <div class="chart-wrapper"><img src="models/azstat/chart_purpose_expenditure.png" alt="Səfər məqsədi statistikası"></div>
+      <table class="analysis-table">
+        <thead>
+          <tr><th>İl</th><th>Turizm</th><th>İşgüzar</th><th>Qohum Ziy.</th><th>Müalicə</th><th>Dini</th><th>Digər</th><th>Cəmi</th></tr>
+        </thead>
+        <tbody id="purposeTableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Section 4: Country of Origin -->
+    <div class="chart-card full">
+      <h2>🌍 Azərbaycana Gələn Əcnəbilərin Ölkələr Üzrə Bölgüsü</h2>
+      <p>Azərbaycana gələn əcnəbilərin vətəndaşlıqlarına görə bölgüsü — ən böyük mənbə ölkələr və illər üzrə trend. Məlumatlar <strong>002_4.xls</strong> faylından çıxarılmışdır.</p>
+      <div class="chart-wrapper"><img src="models/azstat/chart_country_origin.png" alt="Ölkə statistikası"></div>
+      <table class="analysis-table">
+        <thead>
+          <tr><th>#</th><th>Ölkə</th><th>2024</th><th>2023</th><th>2022</th><th>2019</th><th>Pay (2024)</th><th>Dəyişim (24/23)</th></tr>
+        </thead>
+        <tbody id="countryTableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="chart-card full">
+      <h2>📊 Ümumi Panel — AzStat Turizm İstatistikləri</h2>
+      <p>Dörd əsas göstəricinin vahid paneldə icmalı: sərhəd keçidləri, nəqliyyat növləri, səfər məqsədləri və ölkə bölgüsü.</p>
+      <div class="chart-wrapper"><img src="models/azstat/azstat_dashboard.png" alt="Ümumi panel"></div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+// Load summary JSON and populate tables
+fetch('data/processed/azstat_summary.json')
+  .then(r => r.json())
+  .then(data => {
+    // Summary stats
+    const s = data.summary_stats;
+    document.getElementById('peakValue').textContent = (s.peak_value / 1e6).toFixed(1) + 'M';
+    document.getElementById('dropValue').textContent = '-' + s.covid_drop_pct + '%';
+    document.getElementById('recoveryValue').textContent = (s.latest_value / 1e6).toFixed(1) + 'M (' + s.recovery_2024_vs_2019_pct + '%)';
+    document.getElementById('airShare').textContent = s.dominant_transport_share + '%';
+    document.getElementById('topCountry').textContent = s.top_source_country || '-';
+
+    // Border crossings table
+    const borderData = data.yearly_totals;
+    // We need breakdown data - fetch the detailed CSV
+    fetch('data/processed/azstat_border_crossings.csv').then(r => r.text()).then(csv => {
+      const rows = csv.split('\\n').slice(1).filter(r => r.trim());
+      const byYear = {};
+      rows.forEach(row => {
+        const [year, cat, , val] = row.split(',');
+        if (year >= 2015 && year <= 2024) {
+          if (!byYear[year]) byYear[year] = {};
+          byYear[year][cat] = parseInt(val) || 0;
+        }
+      });
+      const borderTbody = document.getElementById('borderTableBody');
+      Object.keys(byYear).sort().forEach(y => {
+        const d = byYear[y];
+        borderTbody.innerHTML += `<tr>
+          <td class="highlight">${y}</td>
+          <td class="num-col">${(borderData[y]/1e6).toFixed(1)}M</td>
+          <td class="num-col">${(d['Daxil olanlar (ümumi)']/1e6).toFixed(2)}M</td>
+          <td class="num-col">${(d['Tərk edənlər (ümumi)']/1e6).toFixed(2)}M</td>
+          <td class="num-col">${(d['Daxil olanlar (Azərbaycan vətəndaşları)']/1e6).toFixed(2)}M</td>
+          <td class="num-col">${(d['Daxil olanlar (əcnəbilər)']/1e6).toFixed(2)}M</td>
+        </tr>`;
+      });
+    });
+
+    // Country table
+    const countryTbody = document.getElementById('countryTableBody');
+    data.top_countries.slice(0, 15).forEach((c, i) => {
+      const pctChange = c.share_pct > 0 ? `<span class="badge badge-success">+${c.share_pct.toFixed(1)}%</span>` : '-';
+      countryTbody.innerHTML += `<tr>
+        <td>${i + 1}</td>
+        <td class="highlight">${c.country}</td>
+        <td class="num-col">${(c.visitor_count/1000).toFixed(1)}K</td>
+        <td class="num-col">-</td>
+        <td class="num-col">-</td>
+        <td class="num-col">-</td>
+        <td class="num-col">${c.share_pct}%</td>
+        <td class="num-col">-</td>
+      </tr>`;
+    });
+
+    // Transport table
+    const transportTbody = document.getElementById('transportTableBody');
+    if (data.transport_breakdown_latest) {
+      const tr = data.transport_breakdown_latest;
+      const inc = tr.incoming;
+      const yr = tr.year;
+      transportTbody.innerHTML += `<tr>
+        <td class="highlight">${yr}</td>
+        <td class="num-col">${inc.avtomobil ? (inc.avtomobil/1000).toFixed(1)+'K' : '-'}</td>
+        <td class="num-col">${inc['dəmir yolu'] ? (inc['dəmir yolu']/1000).toFixed(1)+'K' : '-'}</td>
+        <td class="num-col">${inc['hava nəqliyyatı'] ? (inc['hava nəqliyyatı']/1000).toFixed(1)+'K' : '-'}</td>
+        <td class="num-col">${inc['su nəqliyyatı'] ? (inc['su nəqliyyatı']/1000).toFixed(1)+'K' : '-'}</td>
+        <td class="num-col highlight">${Object.values(inc).reduce((a,b)=>a+b,0) > 0 ? (Object.values(inc).reduce((a,b)=>a+b,0)/1000).toFixed(1)+'K' : '-'}</td>
+      </tr>`;
+    }
+
+    // Purpose table (latest year)
+    const purposeTbody = document.getElementById('purposeTableBody');
+    if (data.purpose_breakdown) {
+      const pb = data.purpose_breakdown;
+      const totalPurpose = Object.values(pb).reduce((a,b) => a+b, 0);
+      purposeTbody.innerHTML += `<tr>
+        <td class="highlight">${data.transport_breakdown_latest?.year || '-'}</td>
+        <td class="num-col">${pb.turizm ? (pb.turizm/1000).toFixed(1)+'K' : '-'}</td>
+        <td class="num-col">${pb.işgüzar ? (pb.işgüzar/1000).toFixed(1)+'K' : '-'}</td>
+        <td class="num-col">${pb['qohum ziyarəti'] ? (pb['qohum ziyarəti']/1000).toFixed(1)+'K' : '-'}</td>
+        <td class="num-col">${pb.müalicə ? (pb.müalicə/1000).toFixed(1)+'K' : '-'}</td>
+        <td class="num-col">${pb.dini ? (pb.dini/1000).toFixed(1)+'K' : '-'}</td>
+        <td class="num-col">${pb['digər məqsədlər'] ? (pb['digər məqsədlər']/1000).toFixed(1)+'K' : '-'}</td>
+        <td class="num-col highlight">${(totalPurpose/1000).toFixed(1)+'K'}</td>
+      </tr>`;
+    }
+  })
+  .catch(err => {
+    console.error('Could not load summary JSON:', err);
+    document.getElementById('peakValue').textContent = '9.54M';
+    document.getElementById('dropValue').textContent = '-76.9%';
+    document.getElementById('recoveryValue').textContent = '54.6%';
+    document.getElementById('airShare').textContent = '75%';
+    document.getElementById('topCountry').textContent = 'Rusiya';
+  });
+</script>
+</body>
+</html>

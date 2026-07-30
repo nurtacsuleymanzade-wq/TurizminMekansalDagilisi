@@ -1,0 +1,219 @@
+year,direction,direction_en,transport_type,value_thousands,value
+2006,gələn,incoming,avtomobil,767.3,767300
+2007,gələn,incoming,avtomobil,814.3,814300
+2008,gələn,incoming,avtomobil,989.3,989300
+2009,gələn,incoming,avtomobil,638.8,638800
+2010,gələn,incoming,avtomobil,720.4,720400
+2011,gələn,incoming,avtomobil,792.2,792200
+2012,gələn,incoming,avtomobil,891.7,891700
+2013,gələn,incoming,avtomobil,928.2,928200
+2014,gələn,incoming,avtomobil,748.9,748900
+2015,gələn,incoming,avtomobil,660.0,660000
+2016,gələn,incoming,avtomobil,701.2,701200
+2017,gələn,incoming,avtomobil,1089.6,1089600
+2018,gələn,incoming,avtomobil,1130.8,1130800
+2019,gələn,incoming,avtomobil,1268.2,1268200
+2020,gələn,incoming,avtomobil,505.0,505000
+2021,gələn,incoming,avtomobil,385.6,385600
+2022,gələn,incoming,avtomobil,530.6,530600
+2023,gələn,incoming,avtomobil,565.7,565700
+2024,gələn,incoming,avtomobil,602.8,602800
+2006,gələn,incoming,dəmir yolu,204.4,204400
+2007,gələn,incoming,dəmir yolu,211.9,211900
+2008,gələn,incoming,dəmir yolu,322.8,322800
+2009,gələn,incoming,dəmir yolu,287.4,287400
+2010,gələn,incoming,dəmir yolu,312.1,312100
+2011,gələn,incoming,dəmir yolu,372.8,372800
+2012,gələn,incoming,dəmir yolu,404.4,404400
+2013,gələn,incoming,dəmir yolu,378.8,378800
+2014,gələn,incoming,dəmir yolu,293.4,293400
+2015,gələn,incoming,dəmir yolu,230.7,230700
+2016,gələn,incoming,dəmir yolu,256.8,256800
+2017,gələn,incoming,dəmir yolu,306.9,306900
+2018,gələn,incoming,dəmir yolu,361.4,361400
+2019,gələn,incoming,dəmir yolu,408.9,408900
+2020,gələn,incoming,dəmir yolu,14.9,14900
+2021,gələn,incoming,dəmir yolu,1.1,1100
+2022,gələn,incoming,dəmir yolu,2.4,2400
+2023,gələn,incoming,dəmir yolu,3.1,3100
+2024,gələn,incoming,dəmir yolu,3.6,3600
+2006,gələn,incoming,hava nəqliyyatı,281.4,281400
+2007,gələn,incoming,hava nəqliyyatı,297.2,297200
+2008,gələn,incoming,hava nəqliyyatı,571.6,571600
+2009,gələn,incoming,hava nəqliyyatı,624.2,624200
+2010,gələn,incoming,hava nəqliyyatı,645.8,645800
+2011,gələn,incoming,hava nəqliyyatı,795.5,795500
+2012,gələn,incoming,hava nəqliyyatı,946.4,946400
+2013,gələn,incoming,hava nəqliyyatı,993.5,993500
+2014,gələn,incoming,hava nəqliyyatı,1089.2,1089200
+2015,gələn,incoming,hava nəqliyyatı,968.9,968900
+2016,gələn,incoming,hava nəqliyyatı,1164.9,1164900
+2017,gələn,incoming,hava nəqliyyatı,1151.5,1151500
+2018,gələn,incoming,hava nəqliyyatı,1183.8,1183800
+2019,gələn,incoming,hava nəqliyyatı,1285.2,1285200
+2020,gələn,incoming,hava nəqliyyatı,219.4,219400
+2021,gələn,incoming,hava nəqliyyatı,380.2,380200
+2022,gələn,incoming,hava nəqliyyatı,1042.1,1042100
+2023,gələn,incoming,hava nəqliyyatı,1490.1,1490100
+2024,gələn,incoming,hava nəqliyyatı,1986.8,1986800
+2006,gələn,incoming,su nəqliyyatı,8.9,8900
+2007,gələn,incoming,su nəqliyyatı,9.3,9300
+2008,gələn,incoming,su nəqliyyatı,15.2,15200
+2009,gələn,incoming,su nəqliyyatı,12.8,12800
+2010,gələn,incoming,su nəqliyyatı,14.1,14100
+2011,gələn,incoming,su nəqliyyatı,19.9,19900
+2012,gələn,incoming,su nəqliyyatı,21.2,21200
+2013,gələn,incoming,su nəqliyyatı,26.6,26600
+2014,gələn,incoming,su nəqliyyatı,16.1,16100
+2015,gələn,incoming,su nəqliyyatı,32.1,32100
+2016,gələn,incoming,su nəqliyyatı,16.8,16800
+2017,gələn,incoming,su nəqliyyatı,18.9,18900
+2018,gələn,incoming,su nəqliyyatı,28.3,28300
+2019,gələn,incoming,su nəqliyyatı,24.5,24500
+2020,gələn,incoming,su nəqliyyatı,19.7,19700
+2021,gələn,incoming,su nəqliyyatı,17.1,17100
+2022,gələn,incoming,su nəqliyyatı,24.0,24000
+2023,gələn,incoming,su nəqliyyatı,26.9,26900
+2024,gələn,incoming,su nəqliyyatı,33.5,33500
+2009,gələn,incoming,digər,267.2,267200
+2010,gələn,incoming,digər,270.5,270500
+2011,gələn,incoming,digər,258.8,258800
+2012,gələn,incoming,digər,220.4,220400
+2013,gələn,incoming,digər,181.8,181800
+2014,gələn,incoming,digər,150.2,150200
+2015,gələn,incoming,digər,114.5,114500
+2016,gələn,incoming,digər,109.1,109100
+2017,gələn,incoming,digər,129.8,129800
+2018,gələn,incoming,digər,145.3,145300
+2019,gələn,incoming,digər,183.6,183600
+2020,gələn,incoming,digər,36.7,36700
+2021,gələn,incoming,digər,7.8,7800
+2022,gələn,incoming,digər,3.2,3200
+2006,gedən,outgoing,avtomobil,1147.2,1147200
+2007,gedən,outgoing,avtomobil,987.9,987900
+2008,gedən,outgoing,avtomobil,1353.6,1353600
+2009,gedən,outgoing,avtomobil,1119.8,1119800
+2010,gedən,outgoing,avtomobil,1473.5,1473500
+2011,gedən,outgoing,avtomobil,1824.9,1824900
+2012,gedən,outgoing,avtomobil,2030.3,2030300
+2013,gedən,outgoing,avtomobil,2518.0,2518000
+2014,gedən,outgoing,avtomobil,2711.0,2711000
+2015,gedən,outgoing,avtomobil,2610.8,2610800
+2016,gedən,outgoing,avtomobil,2720.5,2720500
+2017,gedən,outgoing,avtomobil,2616.0,2616000
+2018,gedən,outgoing,avtomobil,3155.5,3155500
+2019,gedən,outgoing,avtomobil,3636.9,3636900
+2020,gedən,outgoing,avtomobil,738.3,738300
+2021,gedən,outgoing,avtomobil,261.2,261200
+2022,gedən,outgoing,avtomobil,469.8,469800
+2023,gedən,outgoing,avtomobil,558.7,558700
+2024,gedən,outgoing,avtomobil,612.5,612500
+2006,gedən,outgoing,dəmir yolu,266.4,266400
+2007,gedən,outgoing,dəmir yolu,265.3,265300
+2008,gedən,outgoing,dəmir yolu,363.3,363300
+2009,gedən,outgoing,dəmir yolu,387.5,387500
+2010,gedən,outgoing,dəmir yolu,543.1,543100
+2011,gedən,outgoing,dəmir yolu,578.7,578700
+2012,gedən,outgoing,dəmir yolu,666.4,666400
+2013,gedən,outgoing,dəmir yolu,655.6,655600
+2014,gedən,outgoing,dəmir yolu,380.1,380100
+2015,gedən,outgoing,dəmir yolu,352.2,352200
+2016,gedən,outgoing,dəmir yolu,396.8,396800
+2017,gedən,outgoing,dəmir yolu,444.5,444500
+2018,gedən,outgoing,dəmir yolu,513.2,513200
+2019,gedən,outgoing,dəmir yolu,588.1,588100
+2020,gedən,outgoing,dəmir yolu,21.8,21800
+2021,gedən,outgoing,dəmir yolu,1.3,1300
+2022,gedən,outgoing,dəmir yolu,1.9,1900
+2023,gedən,outgoing,dəmir yolu,2.4,2400
+2024,gedən,outgoing,dəmir yolu,2.9,2900
+2006,gedən,outgoing,hava nəqliyyatı,406.3,406300
+2007,gedən,outgoing,hava nəqliyyatı,360.8,360800
+2008,gedən,outgoing,hava nəqliyyatı,419.5,419500
+2009,gedən,outgoing,hava nəqliyyatı,448.9,448900
+2010,gedən,outgoing,hava nəqliyyatı,631.9,631900
+2011,gedən,outgoing,hava nəqliyyatı,699.3,699300
+2012,gedən,outgoing,hava nəqliyyatı,768.8,768800
+2013,gedən,outgoing,hava nəqliyyatı,861.2,861200
+2014,gedən,outgoing,hava nəqliyyatı,893.1,893100
+2015,gedən,outgoing,hava nəqliyyatı,843.3,843300
+2016,gedən,outgoing,hava nəqliyyatı,890.7,890700
+2017,gedən,outgoing,hava nəqliyyatı,825.9,825900
+2018,gedən,outgoing,hava nəqliyyatı,875.9,875900
+2019,gedən,outgoing,hava nəqliyyatı,930.0,930000
+2020,gedən,outgoing,hava nəqliyyatı,277.5,277500
+2021,gedən,outgoing,hava nəqliyyatı,670.1,670100
+2022,gedən,outgoing,hava nəqliyyatı,964.3,964300
+2023,gedən,outgoing,hava nəqliyyatı,1262.2,1262200
+2024,gedən,outgoing,hava nəqliyyatı,1498.7,1498700
+2006,gedən,outgoing,su nəqliyyatı,16.0,16000
+2007,gedən,outgoing,su nəqliyyatı,17.3,17300
+2008,gedən,outgoing,su nəqliyyatı,26.0,26000
+2009,gedən,outgoing,su nəqliyyatı,30.7,30700
+2010,gedən,outgoing,su nəqliyyatı,34.9,34900
+2011,gedən,outgoing,su nəqliyyatı,39.0,39000
+2012,gedən,outgoing,su nəqliyyatı,46.5,46500
+2013,gedən,outgoing,su nəqliyyatı,38.6,38600
+2014,gedən,outgoing,su nəqliyyatı,29.7,29700
+2015,gedən,outgoing,su nəqliyyatı,53.2,53200
+2016,gedən,outgoing,su nəqliyyatı,29.3,29300
+2017,gedən,outgoing,su nəqliyyatı,12.3,12300
+2018,gedən,outgoing,su nəqliyyatı,38.1,38100
+2019,gedən,outgoing,su nəqliyyatı,39.9,39900
+2020,gedən,outgoing,su nəqliyyatı,34.6,34600
+2021,gedən,outgoing,su nəqliyyatı,31.8,31800
+2022,gedən,outgoing,su nəqliyyatı,38.0,38000
+2023,gedən,outgoing,su nəqliyyatı,45.4,45400
+2024,gedən,outgoing,su nəqliyyatı,44.8,44800
+2009,gedən,outgoing,digər,375.6,375600
+2010,gedən,outgoing,digər,492.2,492200
+2011,gedən,outgoing,digər,408.3,408300
+2012,gedən,outgoing,digər,362.4,362400
+2013,gedən,outgoing,digər,211.3,211300
+2014,gedən,outgoing,digər,230.4,230400
+2015,gedən,outgoing,digər,236.3,236300
+2016,gedən,outgoing,digər,244.5,244500
+2017,gedən,outgoing,digər,210.2,210200
+2018,gedən,outgoing,digər,325.4,325400
+2019,gedən,outgoing,digər,372.8,372800
+2020,gedən,outgoing,digər,92.4,92400
+2021,gedən,outgoing,digər,10.1,10100
+2022,gedən,outgoing,digər,15.5,15500
+2006,gələn,incoming,cəmi,1262.0,1262000
+2007,gələn,incoming,cəmi,1332.7,1332700
+2008,gələn,incoming,cəmi,1898.9,1898900
+2009,gələn,incoming,cəmi,1830.4,1830400
+2010,gələn,incoming,cəmi,1962.9,1962900
+2011,gələn,incoming,cəmi,2239.2,2239200
+2012,gələn,incoming,cəmi,2484.1,2484100
+2013,gələn,incoming,cəmi,2508.9,2508900
+2014,gələn,incoming,cəmi,2297.8,2297800
+2015,gələn,incoming,cəmi,2006.2,2006200
+2016,gələn,incoming,cəmi,2248.8,2248800
+2017,gələn,incoming,cəmi,2696.7,2696700
+2018,gələn,incoming,cəmi,2849.6,2849600
+2019,gələn,incoming,cəmi,3170.4,3170400
+2020,gələn,incoming,cəmi,795.7,795700
+2021,gələn,incoming,cəmi,791.8,791800
+2022,gələn,incoming,cəmi,1602.3,1602300
+2023,gələn,incoming,cəmi,2085.8,2085800
+2024,gələn,incoming,cəmi,2626.7,2626700
+2006,gedən,outgoing,cəmi,1835.9,1835900
+2007,gedən,outgoing,cəmi,1631.3,1631300
+2008,gedən,outgoing,cəmi,2162.4,2162400
+2009,gedən,outgoing,cəmi,2362.5,2362500
+2010,gedən,outgoing,cəmi,3175.6,3175600
+2011,gedən,outgoing,cəmi,3550.2,3550200
+2012,gedən,outgoing,cəmi,3874.4,3874400
+2013,gedən,outgoing,cəmi,4284.7,4284700
+2014,gedən,outgoing,cəmi,4244.3,4244300
+2015,gedən,outgoing,cəmi,4095.8,4095800
+2016,gedən,outgoing,cəmi,4281.8,4281800
+2017,gedən,outgoing,cəmi,4108.9,4108900
+2018,gedən,outgoing,cəmi,4908.1,4908100
+2019,gedən,outgoing,cəmi,5567.7,5567700
+2020,gedən,outgoing,cəmi,1164.6,1164600
+2021,gedən,outgoing,cəmi,974.5,974500
+2022,gedən,outgoing,cəmi,1489.5,1489500
+2023,gedən,outgoing,cəmi,1868.7,1868700
+2024,gedən,outgoing,cəmi,2158.9,2158900
