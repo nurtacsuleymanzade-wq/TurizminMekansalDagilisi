@@ -1,15 +1,30 @@
-dataset_name,source_url,institution,download_date,reference_years,spatial_unit,file_format,license,original_filename,processing_status,notes
-AzStat_Tourism_Yearbook,https://www.stat.gov.az/,Azərbaycan Dövlət Statistika Komitəsi,,2005-2025,rayon,PDF/XLSX,Open Government Data,,PENDING,Resmi turizm istatistik yilliklari. Otel sayisi, geceleme, yatak kapasitesi vb.
-TourismBoard_Monthly,https://tourismboard.az/,Azərbaycan Turizm Bürosu,,2020-2025,rayon,PDF/XLSX,,,PENDING,Aylik turizm raporlari ve istatistikler
-OSM_Tourism_POI,https://overpass-api.de/api/interpreter,OpenStreetMap,,2024,nokta,GeoJSON,ODbL,,PENDING,Turistik POI katmanlari (otel, muze, plaj, restoran vb.)
-OSM_Road_Network,https://download.geofabrik.de/asia/azerbaijan.html,OpenStreetMap/Geofabrik,,2024,cizgi,Shapefile/GeoJSON,ODbL,,PENDING,Karayollari ve yol siniflari
-OSM_Administrative_Boundaries,https://download.geofabrik.de/asia/azerbaijan.html,OpenStreetMap/Geofabrik,,2024,rayon,Shapefile/GeoJSON,ODbL,,PENDING,Rayon idari sinirlari
-UNESCO_Sites,https://whc.unesco.org/en/list/,UNESCO,,2024,nokta/poligon,GeoJSON,UNESCO OGD,,PENDING,Dunya Mirasi alanlari (Icherisheher, Gobustan, Sheki)
-Protected_Planet_AZ,https://www.protectedplanet.net/,UNEP-WCMC,,2024,poligon,GeoJSON,,,PENDING,Korunan alanlar ve milli parklar
-Culture_Ministry_Monuments,https://kultur.gov.az/,Azərbaycan Mədəniyyət Nazirliyi,,2024,nokta,CSV/GeoJSON,,,PENDING,Tarihi ve kulturel anit kayitlari
-Ecology_Ministry_Nature,https://eco.gov.az/,Ekoloji ve Tebii Servetler Nazirliyi,,2024,nokta/poligon,GeoJSON,,,PENDING,Dogal kaynaklar (milli parklar, rezervler)
-Population_Statistics,https://www.stat.gov.az/,Azərbaycan Dövlət Statistika Komitəsi,,2005-2025,rayon,XLSX/CSV,Open Government Data,,PENDING,Rayon bazinda nufus, kirsal/kentsel nufus, gelir
-ERA5_Climate,https://cds.climate.copernicus.eu/,Copernicus Climate Change Service,,2005-2025,rayon (zonal),NetCDF/GeoTIFF,Copernicus License,,PENDING,Aylik sicaklik, yagis, guneslenme verileri
-SRTM_DEM,https://srtm.csi.cgiar.org/,CGIAR/NASA,,2024,raster (30m),GeoTIFF,Open,,PENDING,Sayisal yukseklik modeli
-Copernicus_LandCover,https://land.copernicus.eu/,European Environment Agency,,2024,poligon/raster,GeoTIFF/GeoJSON,Copernicus License,,PENDING,Arazi ortusu ve kullanim siniflari
-Google_Places_API,,Google,,2024,nokta,JSON/GeoJSON,Google ToS,,PENDING,Turistik isletme dogrulama (rating, review) - SADECE yardimci
+# Kaynak Kayıt Defteri (Source Registry)
+# Turizmin Mekansal Dağılışı — Azerbaycan Doktora Tezi
+# Format: id | program | kaynak | url | tip | dosya | boyut | satir | durum | aciklama
+#
+id|program|kaynak|url|tip|dosya|boyut|satir|durum|aciklama
+AZS_001|Veri Toplama|AzStat Turizm İstatistikleri 2024|https://www.stat.gov.az/menu/6/statistical_yearbooks/tourism_2024.zip|PDF|data/raw/statistics/Azərbaycanda turizm_2024.pdf|2.9 MB|~500|✅ İndirildi|Resmi turizm istatistik yıllığı: oteller, ziyaretçiler, bölgesel dağılım
+AZS_002|Veri Toplama|AzStat Turizm İstatistikleri 2022|https://www.stat.gov.az/menu/6/statistical_yearbooks/tourism_2022.zip|PDF|data/raw/statistics/Azarbaycanda turizm 2022 (25.11.2022) son.pdf|2.5 MB|~500|✅ İndirildi|2022 yılı turizm istatistik yıllığı
+AZS_003|Veri İşleme|AzStat Otel İstatistikleri (İşlenmiş)|-|CSV|data/processed/azstat_hotel_stats_2024.csv|111 KB|~2,500|✅ İşlendi|PDF'den çıkarılmış otel/konaklama verileri (iqtisadi rayon bazında)
+AZS_004|Veri İşleme|AzStat Sınıflandırılmış Otel Verisi|-|CSV|data/processed/azstat_hotel_stats_2024_classified.csv|120 KB|~2,500|✅ İşlendi|Sınıflandırılmış otel istatistikleri
+AZS_005|Veri İşleme|Rayon-Yıl Panel Verisi|-|CSV|data/processed/rayon_year_panel.csv|25 KB|691|✅ İşlendi|19 sütunlu: rayon_id, rayon_name, year, facilities, rooms, beds, guests, tourists...
+AZS_006|Veri İşleme|Turizm Panel Temel Göstergeler|-|CSV|data/processed/tourism_panel_key_indicators.csv|20 KB|~500|✅ İşlendi|Temel turizm göstergeleri paneli
+OSM_001|Veri Toplama|OpenStreetMap Turizm/Tarihi POI'ler|https://overpass-api.de/api/interpreter|GeoJSON|data/geojson/osm_tourism_historic.geojson|246 KB|737|✅ İndirildi|OSM'den turistik yerler, tarihi anıtlar, müzeler
+OSM_002|Veri Toplama|OpenStreetMap Yiyecek/İçecek POI'ler|https://overpass-api.de/api/interpreter|GeoJSON|data/geojson/osm_food_drink.geojson|742 KB|2,329|✅ İndirildi|OSM'den restoranlar, kafeler, barlar
+OSM_003|Veri Toplama|OpenStreetMap Ulaşım Merkezleri|https://overpass-api.de/api/interpreter|GeoJSON|data/geojson/osm_transportation_hubs.geojson|26 KB|79|✅ İndirildi|Havaalanları, tren istasyonları, otogarlar
+OSM_004|Veri Toplama|OSM Rayon Sınırları|https://overpass-api.de/api/interpreter|GeoJSON|data/geojson/azerbaijan_rayon_boundaries.geojson|900 KB|74|✅ İndirildi|74 rayon/idari bölge sınırı
+OSM_005|Veri Toplama|OSM Azerbaycan Sınırı (Admin 0)|https://naturalearthdata.com|GeoJSON|data/geojson/aze_admin0.geojson|128 KB|1|✅ İndirildi|Ülke sınırı
+OSM_006|Veri Toplama|OSM 1. Düzey İdari Bölgeler|https://naturalearthdata.com|GeoJSON|data/geojson/aze_admin1.geojson|900 KB|74|✅ İndirildi|Rayon/idari bölge sınırları
+OSM_007|Veri Toplama|OSM Ekonomik Bölgeler|https://naturalearthdata.com|GeoJSON|data/geojson/aze_economicregion.geojson|419 KB|14|✅ İndirildi|14 ekonomik bölge sınırı
+OSM_008|Veri Toplama|OSM Yol Ağı|https://naturalearthdata.com|GeoJSON|data/geojson/aze_adminlines.geojson|549 KB|~1,000|✅ İndirildi|Ana yol ve demiryolu hatları
+OSM_009|Veri Toplama|OSM Yerleşim Noktaları|https://naturalearthdata.com|GeoJSON|data/geojson/aze_adminpoints.geojson|68 KB|75|✅ İndirildi|Şehir ve kasaba merkez noktaları
+OSM_010|Veri Toplama|OSM Detaylı İdari Sınırlar (EM)|https://www.naturalearthdata.com|GeoJSON|data/geojson/aze_admin1_em.geojson|1.2 MB|74|✅ İndirildi|Enhanced (detaylı) idari sınırlar
+BDR_001|Veri Toplama|Turizm Noktaları (Birleştirilmiş)|-|GeoJSON|data/geojson/all_tourism_points.geojson|333 KB|1,085|✅ İşlendi|8 kategoride birleştirilmiş tüm POI'ler
+BDR_002|Veri İşleme|Rayon Özellik Matrisi|-|CSV|data/processed/rayon_feature_matrix.csv|2.8 KB|71|✅ İşlendi|Rayon × kategori nokta sayısı matrisi
+BDR_003|Veri İşleme|Rayon Kategori Sayımları|-|CSV|data/processed/rayon_category_counts.csv|589 B|~50|✅ İşlendi|Kategori bazında rayon sayımları
+ANL_001|Mekansal Analiz|Hot Spot Analizi (Getis-Ord Gi*)|-|CSV|data/processed/hotspot_analysis.csv|3 KB|71|✅ Analiz Edildi|71 rayon için Z-skoru, sınıflandırma, güven seviyesi
+ANL_002|Mekansal Analiz|Hot Spot Haritası|-|GeoJSON|data/processed/hotspot_map.geojson|24 KB|74|✅ Analiz Edildi|Renklendirilmiş rayon hot spot haritası
+ANL_003|Mekansal Analiz|Çeşitlilik Endeksi (Simpson)|-|CSV|data/processed/diversity_index.csv|2 KB|~50|✅ Analiz Edildi|Turizm kategorilerinin Simpson çeşitlilik endeksi
+ANL_004|Mekansal Analiz|Rayon Özet İstatistikleri|-|JSON|data/processed/rayon_summary.json|2 KB|13|✅ Analiz Edildi|Rayon bazında kategori dağılımı özeti
+ANL_005|Mekansal Analiz|Kategori Payları|-|CSV|data/processed/category_shares.csv|703 B|8|✅ Analiz Edildi|Her kategorinin toplam içindeki payı
+UNS_001|Veri Toplama|UNESCO Dünya Miras Listesi|https://whc.unesco.org/en/list/xml/|XML|data/unesco_raw.xml|~10 KB|~5|✅ İndirildi|Azerbaycan'daki UNESCO alanları

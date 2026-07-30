@@ -1,0 +1,2975 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.573991,
+          49.719523
+        ]
+      },
+      "properties": {
+        "name": "Final- Bakünün doğal, Kültürel kaynakları dağılışnormal",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.573641,
+          49.731659
+        ]
+      },
+      "properties": {
+        "name": "Amore Restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.574452,
+          49.723111
+        ]
+      },
+      "properties": {
+        "name": "Ibiza Restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.357547,
+          49.837438
+        ]
+      },
+      "properties": {
+        "name": "BigChefs Bakü",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.356745,
+          49.830325
+        ]
+      },
+      "properties": {
+        "name": "Manzara Restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.358747,
+          49.837991
+        ]
+      },
+      "properties": {
+        "name": "Dinehall",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.356669,
+          49.835245
+        ]
+      },
+      "properties": {
+        "name": "Salat cafe",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.358595,
+          49.837291
+        ]
+      },
+      "properties": {
+        "name": "Zafferano Restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.355741,
+          49.835187
+        ]
+      },
+      "properties": {
+        "name": "Chayki restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.446863,
+          50.277188
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.582748,
+          50.061704
+        ]
+      },
+      "properties": {
+        "name": "Shaurma N1",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.573412,
+          49.74823
+        ]
+      },
+      "properties": {
+        "name": "Kalyon Novkhanı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.530349,
+          50.112503
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.531991,
+          50.109933
+        ]
+      },
+      "properties": {
+        "name": "Mirvari",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.528228,
+          50.099717
+        ]
+      },
+      "properties": {
+        "name": "Mangal Steak House Zugulba",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.588492,
+          50.063971
+        ]
+      },
+      "properties": {
+        "name": "Amburan Winter Garden",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.587204,
+          50.042092
+        ]
+      },
+      "properties": {
+        "name": "Istanbul Meyhane Bilgah",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.565563,
+          49.868369
+        ]
+      },
+      "properties": {
+        "name": "Miracle restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.500043,
+          50.171785
+        ]
+      },
+      "properties": {
+        "name": "Tandirloin Restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.420732,
+          50.357557
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.340204,
+          50.00741
+        ]
+      },
+      "properties": {
+        "name": "Halikarnas Balıkçısı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.381999,
+          49.868063
+        ]
+      },
+      "properties": {
+        "name": "Sumakh Restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.301594,
+          49.780042
+        ]
+      },
+      "properties": {
+        "name": "Marmara Balık Evi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.301291,
+          49.779045
+        ]
+      },
+      "properties": {
+        "name": "Ada Restoranı Bakü",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.351606,
+          49.848294
+        ]
+      },
+      "properties": {
+        "name": "Ruby360 Bakü",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.336695,
+          49.834898
+        ]
+      },
+      "properties": {
+        "name": "Chai Lounge",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.339065,
+          49.837349
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.339093,
+          49.83799
+        ]
+      },
+      "properties": {
+        "name": "Atelier 61 Grill and Terrace",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.33922,
+          49.84107
+        ]
+      },
+      "properties": {
+        "name": "Jolly Joker Bakü",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.341717,
+          49.838872
+        ]
+      },
+      "properties": {
+        "name": "Bayıldım Restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.340649,
+          49.837077
+        ]
+      },
+      "properties": {
+        "name": "Pizza Mizza Bayıl Restoran",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.346212,
+          49.841477
+        ]
+      },
+      "properties": {
+        "name": "Günaydın Bulvar Restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.304428,
+          49.81191
+        ]
+      },
+      "properties": {
+        "name": "Eldorado Fish House",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.305586,
+          49.824581
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.30425,
+          49.826402
+        ]
+      },
+      "properties": {
+        "name": "BülBül Balık Evi (Fish house)",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.304114,
+          49.828207
+        ]
+      },
+      "properties": {
+        "name": "Derya Balık Evi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.304285,
+          49.829445
+        ]
+      },
+      "properties": {
+        "name": "Şazeli Balık Evi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.303613,
+          49.829655
+        ]
+      },
+      "properties": {
+        "name": "Şefa balık evi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.308491,
+          49.821925
+        ]
+      },
+      "properties": {
+        "name": "Khazar Balık Evi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.305112,
+          49.790334
+        ]
+      },
+      "properties": {
+        "name": "Delfin Restoranı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.354013,
+          49.835452
+        ]
+      },
+      "properties": {
+        "name": "Bulvar Cafe",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.362985,
+          49.836781
+        ]
+      },
+      "properties": {
+        "name": "Love in Ferma",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.33922,
+          49.84107
+        ]
+      },
+      "properties": {
+        "name": "Jolly Joker Bakı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.369782,
+          49.845382
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.373579,
+          49.858713
+        ]
+      },
+      "properties": {
+        "name": "Hukkabaz",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.373084,
+          49.8574
+        ]
+      },
+      "properties": {
+        "name": "The Gallery Lounge",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.371504,
+          49.836029
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.346212,
+          49.841477
+        ]
+      },
+      "properties": {
+        "name": "Günaydın restoranı Bulvar",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.358595,
+          49.837291
+        ]
+      },
+      "properties": {
+        "name": "Zafferano Restaurant",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.343151,
+          49.842016
+        ]
+      },
+      "properties": {
+        "name": "Mangal Steak House",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.363254,
+          49.83493
+        ]
+      },
+      "properties": {
+        "name": "Bakıdakı otellerFour Seasons otel Bakü",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.374715,
+          49.856755
+        ]
+      },
+      "properties": {
+        "name": "JW Marriott Abşeron Bakü otel",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.372112,
+          49.849678
+        ]
+      },
+      "properties": {
+        "name": "Hilton Bakü",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.359495,
+          49.82656
+        ]
+      },
+      "properties": {
+        "name": "Alev Kuleleri",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.360261,
+          49.826169
+        ]
+      },
+      "properties": {
+        "name": "Fairmont Bakü",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.306343,
+          49.802464
+        ]
+      },
+      "properties": {
+        "name": "Ramada by Wyndham Baku",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.342281,
+          49.840088
+        ]
+      },
+      "properties": {
+        "name": "Sapphire Bayıl Otel",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.374878,
+          49.883625
+        ]
+      },
+      "properties": {
+        "name": "Baku Marriott Hotel Boulevard",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.371612,
+          49.858609
+        ]
+      },
+      "properties": {
+        "name": "The Crescent otel",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.305149,
+          49.825692
+        ]
+      },
+      "properties": {
+        "name": "Sapphire Marine",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.354163,
+          49.833506
+        ]
+      },
+      "properties": {
+        "name": "Sheraton Baku Intourist",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.354882,
+          49.833994
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3044705,
+          49.8267875
+        ]
+      },
+      "properties": {
+        "name": "Port Marine",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.305514,
+          49.793415
+        ]
+      },
+      "properties": {
+        "name": "Aysberg Resort",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.306704,
+          49.791752
+        ]
+      },
+      "properties": {
+        "name": "Panorama Villa Lux Hotel",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.304907,
+          49.774248
+        ]
+      },
+      "properties": {
+        "name": "Homebridge Hotel Apartments",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.338094,
+          49.808075
+        ]
+      },
+      "properties": {
+        "name": "Hillmond Hotel",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.354909,
+          49.804728
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.367933,
+          49.837825
+        ]
+      },
+      "properties": {
+        "name": "The Merchant Baku",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.575127,
+          49.7771555
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.375908,
+          49.858666
+        ]
+      },
+      "properties": {
+        "name": "Holiday Inn Baku, an IHG Hotel",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.375979,
+          49.851041
+        ]
+      },
+      "properties": {
+        "name": "The Landmark Hotel Baku",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.374681,
+          49.851147
+        ]
+      },
+      "properties": {
+        "name": "Bulvar Inn Hotel",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.371526,
+          49.848932
+        ]
+      },
+      "properties": {
+        "name": "Radisson Hotel Baku",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.5121,
+          50.16737
+        ]
+      },
+      "properties": {
+        "name": "Dalga Beach Aquapark Resort",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.591996,
+          49.990178
+        ]
+      },
+      "properties": {
+        "name": "Baku villas",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.565681,
+          49.831114
+        ]
+      },
+      "properties": {
+        "name": "Serhedci Istirahet Merkezi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.568892,
+          49.859393
+        ]
+      },
+      "properties": {
+        "name": "Hayat Beach Resort",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.587782,
+          50.063985
+        ]
+      },
+      "properties": {
+        "name": "Amburan Beach Club",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.584964,
+          49.946003
+        ]
+      },
+      "properties": {
+        "name": "Marina Village Sea Breeze",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.59135,
+          49.985275
+        ]
+      },
+      "properties": {
+        "name": "Sea Breeze Resort",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.5738644,
+          49.7746175
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.502976,
+          50.147432
+        ]
+      },
+      "properties": {
+        "name": "Mardakan Village",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.517596,
+          50.119368
+        ]
+      },
+      "properties": {
+        "name": "Very Well Guest House",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.400537,
+          50.096581
+        ]
+      },
+      "properties": {
+        "name": "Dreamland Golf otel Baku",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.371384,
+          49.84544
+        ]
+      },
+      "properties": {
+        "name": "InterContinental Baku, an IHG Hotel",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.561932,
+          50.081253
+        ]
+      },
+      "properties": {
+        "name": "Khazri Recreation and Health",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.573064,
+          50.066668
+        ]
+      },
+      "properties": {
+        "name": "Bilgeh Kardioloji Sanatoriyası",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.527767,
+          50.100575
+        ]
+      },
+      "properties": {
+        "name": "Sapphire Spa Fitness Zagulba",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.338159,
+          49.834245
+        ]
+      },
+      "properties": {
+        "name": "Şıkh sanatoriyası",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.304623,
+          49.772205
+        ]
+      },
+      "properties": {
+        "name": "HamamBath",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.305865,
+          49.777008
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.47355,
+          50.333831
+        ]
+      },
+      "properties": {
+        "name": "Pirallahı adası",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.438953,
+          50.349366
+        ]
+      },
+      "properties": {
+        "name": "F-Marine Rersort",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.395898,
+          49.867815
+        ]
+      },
+      "properties": {
+        "name": "Tarihi kültürel Merkezler, Müzeler ve AnıtlarHaydar Aliyev Merkezi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.369498,
+          49.84012
+        ]
+      },
+      "properties": {
+        "name": "Azerbaycan Ulusal Tarih Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.360901,
+          49.834918
+        ]
+      },
+      "properties": {
+        "name": "Ulusal Muğam Merkezi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.35993,
+          49.835824
+        ]
+      },
+      "properties": {
+        "name": "Azerbaycan Halı Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.378024,
+          49.86466
+        ]
+      },
+      "properties": {
+        "name": "Bakü Modern Sanat Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.439652,
+          50.169066
+        ]
+      },
+      "properties": {
+        "name": "Arkeoloji ve Etnografya Müze Kompleksi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.363168,
+          49.831736
+        ]
+      },
+      "properties": {
+        "name": "Azerbaycan Ulusal Güzel Sanatlar Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.337431,
+          49.841946
+        ]
+      },
+      "properties": {
+        "name": "Surakhanı Gemi Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.369424,
+          49.843055
+        ]
+      },
+      "properties": {
+        "name": "Müze Merkezi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.368569,
+          49.840583
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.359818,
+          49.828726
+        ]
+      },
+      "properties": {
+        "name": "Doğa Tarihi Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.34016,
+          49.841157
+        ]
+      },
+      "properties": {
+        "name": "Taş Kronikleri Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.367413,
+          49.831148
+        ]
+      },
+      "properties": {
+        "name": "Neriman Nerimanovun Ev Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.339837,
+          49.838353
+        ]
+      },
+      "properties": {
+        "name": "Resim Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.36727,
+          49.839031
+        ]
+      },
+      "properties": {
+        "name": "Azerbaycan Kukla Tiyatrosu",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.415483,
+          50.008569
+        ]
+      },
+      "properties": {
+        "name": "Ateşgah Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.492132,
+          50.140711
+        ]
+      },
+      "properties": {
+        "name": "Merdekan Kalesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.456138,
+          49.980016
+        ]
+      },
+      "properties": {
+        "name": "Ramana Kalesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.340201,
+          49.837443
+        ]
+      },
+      "properties": {
+        "name": "YARAT Sanat Merkezi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.360102,
+          49.83421
+        ]
+      },
+      "properties": {
+        "name": "Bakü çokkültürlülük merkezi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.360122,
+          49.830122
+        ]
+      },
+      "properties": {
+        "name": "Yeşil Tiyatro",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.35869,
+          49.831624
+        ]
+      },
+      "properties": {
+        "name": "Gülüstan Sarayı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.368603,
+          49.831632
+        ]
+      },
+      "properties": {
+        "name": "Saadet Sarayi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.375522,
+          49.843757
+        ]
+      },
+      "properties": {
+        "name": "Nizami Kinotiyatrosu",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.368451,
+          49.833782
+        ]
+      },
+      "properties": {
+        "name": "Ismailiyya Sarayı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.375245,
+          49.831168
+        ]
+      },
+      "properties": {
+        "name": "Azerbaycan Devlet Akademik Millî Dram Tiyatrosu",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.336777,
+          49.844811
+        ]
+      },
+      "properties": {
+        "name": "Azerbaycan Denizçilərinin Hatırasına ait heykel",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.334471,
+          49.832548
+        ]
+      },
+      "properties": {
+        "name": "Dünyanın Endüstriyel Olarak Açılan İlk Petrol Kuyusu, 1846",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.339653,
+          49.841983
+        ]
+      },
+      "properties": {
+        "name": "Eski Buharlı Tren heykeli",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.362452,
+          49.836426
+        ]
+      },
+      "properties": {
+        "name": "Kuğular çeşmesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.36677,
+          49.84021
+        ]
+      },
+      "properties": {
+        "name": "Müslüm Maqomayevin heykeli",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.369852,
+          49.83624
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.370013,
+          49.842247
+        ]
+      },
+      "properties": {
+        "name": "Bağımsızlık Müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.37747,
+          49.8299
+        ]
+      },
+      "properties": {
+        "name": "Uzeyir Hacibeyov\\`un ev müzesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.460385,
+          49.922864
+        ]
+      },
+      "properties": {
+        "name": "Balakhanı mahallesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.33482,
+          49.835153
+        ]
+      },
+      "properties": {
+        "name": "Spor Turizmi ve aktiviteler için ArenalarSu İdmanı sarayı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.344368,
+          49.844973
+        ]
+      },
+      "properties": {
+        "name": "Devlet Bayrak Meydanı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.344226,
+          49.85028
+        ]
+      },
+      "properties": {
+        "name": "Bakü Kristal Salonu",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.358828,
+          49.834985
+        ]
+      },
+      "properties": {
+        "name": "Baku Sports Hall",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.362471,
+          49.835577
+        ]
+      },
+      "properties": {
+        "name": "Azneft Meydanı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.39725,
+          49.852414
+        ]
+      },
+      "properties": {
+        "name": "Tofig Bahramov Cumhuriyyet Stadyumu",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.334435,
+          49.839056
+        ]
+      },
+      "properties": {
+        "name": "Avropa Oyunları Parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.334152,
+          49.836601
+        ]
+      },
+      "properties": {
+        "name": "EGP Arena",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.411088,
+          49.897746
+        ]
+      },
+      "properties": {
+        "name": "Şefa Stadyumu",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.363629,
+          49.835989
+        ]
+      },
+      "properties": {
+        "name": "Bulvar Tennis Club",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.337611,
+          49.835969
+        ]
+      },
+      "properties": {
+        "name": "Azerbaycan Kano ve Avarçekme Federasiyası",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.484219,
+          50.1842
+        ]
+      },
+      "properties": {
+        "name": "Alışveriş ve Eğlence olanaklarıŞüvelan Park",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.588437,
+          50.058064
+        ]
+      },
+      "properties": {
+        "name": "Amburan Mall",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.5901,
+          49.988608
+        ]
+      },
+      "properties": {
+        "name": "Sea Breeze Mall",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.37488,
+          49.861031
+        ]
+      },
+      "properties": {
+        "name": "Port Baku Mall",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.400131,
+          49.852945
+        ]
+      },
+      "properties": {
+        "name": "Gençlik Mall",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.387073,
+          49.855743
+        ]
+      },
+      "properties": {
+        "name": "Şark Pazarı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.403387,
+          49.872856
+        ]
+      },
+      "properties": {
+        "name": "Metropark Shopping Mall",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.358049,
+          49.837306
+        ]
+      },
+      "properties": {
+        "name": "Deniz Mall",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.37074,
+          49.849699
+        ]
+      },
+      "properties": {
+        "name": "Park Bulvar",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.376517,
+          49.841655
+        ]
+      },
+      "properties": {
+        "name": "AF Mall",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.378841,
+          49.830519
+        ]
+      },
+      "properties": {
+        "name": "Nizami Mall",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.354652,
+          49.837553
+        ]
+      },
+      "properties": {
+        "name": "Baku Eye",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3616,
+          49.840322
+        ]
+      },
+      "properties": {
+        "name": "Premium Yachting Baku",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.361105,
+          49.835751
+        ]
+      },
+      "properties": {
+        "name": "Mini Venice",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.333085,
+          49.836767
+        ]
+      },
+      "properties": {
+        "name": "Sky Cinema",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.40308,
+          50.302405
+        ]
+      },
+      "properties": {
+        "name": "ParklarZire Kültür Merkezi - EKO Park",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.296682,
+          50.348832
+        ]
+      },
+      "properties": {
+        "name": "Abşeron Millî Parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.467243,
+          50.082808
+        ]
+      },
+      "properties": {
+        "name": "Bine Atçılık Merkezi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.394105,
+          49.866062
+        ]
+      },
+      "properties": {
+        "name": "Haydar Aliyev Merkez Parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.392901,
+          49.848966
+        ]
+      },
+      "properties": {
+        "name": "Bakü Hayvanat Bahçesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.391461,
+          49.841424
+        ]
+      },
+      "properties": {
+        "name": "Koala Park",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.385119,
+          49.835942
+        ]
+      },
+      "properties": {
+        "name": "Zabitler parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.42766,
+          49.907432
+        ]
+      },
+      "properties": {
+        "name": "Böyükşor Bulvarı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.409105,
+          49.802168
+        ]
+      },
+      "properties": {
+        "name": "Meşe Parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.36162,
+          49.820917
+        ]
+      },
+      "properties": {
+        "name": "Fahri Hiyabanı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.357767,
+          49.828804
+        ]
+      },
+      "properties": {
+        "name": "Dağüstü Parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.363186,
+          49.827973
+        ]
+      },
+      "properties": {
+        "name": "Şelale Parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.364531,
+          49.83201
+        ]
+      },
+      "properties": {
+        "name": "Filarmoni Çeşmesi Meydanı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.525187,
+          49.884358
+        ]
+      },
+      "properties": {
+        "name": "Omar Atçılık Merkezi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.358938,
+          49.952312
+        ]
+      },
+      "properties": {
+        "name": "Gençlik parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.465306,
+          49.791024
+        ]
+      },
+      "properties": {
+        "name": "Çamur Volkanı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.376346,
+          49.874254
+        ]
+      },
+      "properties": {
+        "name": "Askeri Kanimetler Parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.378352,
+          49.893889
+        ]
+      },
+      "properties": {
+        "name": "Nizami Gencevi Parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.363151,
+          49.825933
+        ]
+      },
+      "properties": {
+        "name": "Çemberekend Parkı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.373455,
+          49.817051
+        ]
+      },
+      "properties": {
+        "name": "Huseyn Cavid Park",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.465187,
+          50.084614
+        ]
+      },
+      "properties": {
+        "name": "Elite At kulübü",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.516041,
+          50.155761
+        ]
+      },
+      "properties": {
+        "name": "PlajlarMerdekan Khezri plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.589594,
+          49.95913
+        ]
+      },
+      "properties": {
+        "name": "Panorama Nardaran Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.534202,
+          50.105703
+        ]
+      },
+      "properties": {
+        "name": "Glam Plajı Bakü",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.57413,
+          49.8984
+        ]
+      },
+      "properties": {
+        "name": "Pirşağı Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.576029,
+          49.774191
+        ]
+      },
+      "properties": {
+        "name": "Novkhanı Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.59331,
+          49.987298
+        ]
+      },
+      "properties": {
+        "name": "Sea Breeze Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.525633,
+          50.115906
+        ]
+      },
+      "properties": {
+        "name": "Buzovna Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.522508,
+          50.1245798
+        ]
+      },
+      "properties": {
+        "name": "Delmar Buzovna Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.586966,
+          49.953198
+        ]
+      },
+      "properties": {
+        "name": "Palm Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.586362,
+          50.064771
+        ]
+      },
+      "properties": {
+        "name": "Amburan Park ve Akuapark",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.534058,
+          50.108408
+        ]
+      },
+      "properties": {
+        "name": "Sunny Zagulba Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.522748,
+          50.122434
+        ]
+      },
+      "properties": {
+        "name": "Buzovna Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.589853,
+          49.960978
+        ]
+      },
+      "properties": {
+        "name": "Sea Breeze Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.5657557,
+          49.8178611
+        ]
+      },
+      "properties": {
+        "name": "Marina Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.573222,
+          49.74976
+        ]
+      },
+      "properties": {
+        "name": "Diana Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.6033,
+          49.682475
+        ]
+      },
+      "properties": {
+        "name": "Sumgait plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.349634,
+          50.227796
+        ]
+      },
+      "properties": {
+        "name": "Gızıl Gum plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.300218,
+          49.772418
+        ]
+      },
+      "properties": {
+        "name": "Şıkh Plajı",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.308925,
+          49.820349
+        ]
+      },
+      "properties": {
+        "name": "Dini yerlerBibiheybet Camii",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.428784,
+          49.824205
+        ]
+      },
+      "properties": {
+        "name": "Haydar Camii",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.516467,
+          50.112079
+        ]
+      },
+      "properties": {
+        "name": "Mir Mövsüm Ziya Ağa Türbesi",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.372205,
+          49.828413
+        ]
+      },
+      "properties": {
+        "name": "Teze Pir Camii",
+        "category": "Kultur_Merkezi",
+        "source_file": "06_kultur_merkezleri"
+      }
+    }
+  ]
+}

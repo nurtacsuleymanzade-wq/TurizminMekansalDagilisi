@@ -1,0 +1,305 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.206297,
+          45.408213
+        ]
+      },
+      "properties": {
+        "name": "Naxçıvannormal",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.215211,
+          45.406714
+        ]
+      },
+      "properties": {
+        "name": "MüzelerHeydər Əliyev Muzeyi",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.213878,
+          45.405681
+        ]
+      },
+      "properties": {
+        "name": "Ədəbiyyat Muzeyi",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.200976,
+          45.408535
+        ]
+      },
+      "properties": {
+        "name": "Xatirə Muzeyi",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.197017,
+          45.412461
+        ]
+      },
+      "properties": {
+        "name": "Naxçıvan Qala Tarix Memarlıq Abidəsi",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.205038,
+          45.406172
+        ]
+      },
+      "properties": {
+        "name": "Mümine Hatun Türbesi",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.201674,
+          45.408207
+        ]
+      },
+      "properties": {
+        "name": "Türk şəhidləri abidəsi",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1959,
+          45.412357
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.203971,
+          45.405358
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.205368,
+          45.406298
+        ]
+      },
+      "properties": {
+        "name": "The museum under Open Air",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.197017,
+          45.412461
+        ]
+      },
+      "properties": {
+        "name": "Naxçıvan Qala Tarix Memarlıq Abidəsi",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.214394,
+          45.407789
+        ]
+      },
+      "properties": {
+        "name": "Nakhchivan State Carpet Museum",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.210243,
+          45.409111
+        ]
+      },
+      "properties": {
+        "name": "Restoranlar17 Heydər Əliyev Prospekti",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.201462,
+          45.412601
+        ]
+      },
+      "properties": {
+        "name": "Osmanlı Sofrası",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.200912,
+          45.408227
+        ]
+      },
+      "properties": {
+        "name": "4 FƏSİL Restaurant",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.194847,
+          45.412456
+        ]
+      },
+      "properties": {
+        "name": "NUH YURDU RESTORANI",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.207698,
+          45.405721
+        ]
+      },
+      "properties": {
+        "name": "BAZAR GÖLÜ Kafesi",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.19897,
+          45.417282
+        ]
+      },
+      "properties": {
+        "name": "Kosebasi Naxcivan",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.208527,
+          45.433103
+        ]
+      },
+      "properties": {
+        "name": "Hesko söyüdlük aile restorani",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.219104,
+          45.441485
+        ]
+      },
+      "properties": {
+        "name": "4 FƏSİL restaurant",
+        "category": "Destinasyon",
+        "source_file": "08_destinasyonlar"
+      }
+    }
+  ]
+}

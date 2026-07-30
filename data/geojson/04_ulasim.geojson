@@ -1,0 +1,1040 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3740804,
+          48.5222489
+        ]
+      },
+      "properties": {
+        "name": "QubaQuba rayonunun turizm fealiyetlerinormal",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2090365,
+          48.1030709
+        ]
+      },
+      "properties": {
+        "name": "Kınalık Ateş Tapınağı",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1782358,
+          48.1282014
+        ]
+      },
+      "properties": {
+        "name": "Kınalık Tarih ve Etnografi Müzesi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1776663,
+          48.1231283
+        ]
+      },
+      "properties": {
+        "name": "Şeyh Şalbuz Camii",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3656901,
+          48.5050159
+        ]
+      },
+      "properties": {
+        "name": "Tağlı körpü",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.367717,
+          48.5114524
+        ]
+      },
+      "properties": {
+        "name": "Dağ Yahudilerinin müzesi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3696549,
+          48.5085329
+        ]
+      },
+      "properties": {
+        "name": "Sinagog",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3684009,
+          48.5061736
+        ]
+      },
+      "properties": {
+        "name": "Altı kubbeli Sinagog",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.305001,
+          48.569308
+        ]
+      },
+      "properties": {
+        "name": "Konaklama ve dinlenme olanaklarıMacara Village Resort",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3627426,
+          48.3840379
+        ]
+      },
+      "properties": {
+        "name": "Long Forest Cabins",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3346985,
+          48.3964755
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3044055,
+          48.3772087
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2246289,
+          48.2919659
+        ]
+      },
+      "properties": {
+        "name": "Quba Xal Xal istirahət mərkəzi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2141423,
+          48.2400676
+        ]
+      },
+      "properties": {
+        "name": "Griz Guesthouse",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2436701,
+          48.3025175
+        ]
+      },
+      "properties": {
+        "name": "Məstdərgah Quba",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2458136,
+          48.315955
+        ]
+      },
+      "properties": {
+        "name": "Nazli Bulaq Istirahet Merkezi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2273081,
+          48.3087199
+        ]
+      },
+      "properties": {
+        "name": "Mountain Breeze",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2319239,
+          48.3051707
+        ]
+      },
+      "properties": {
+        "name": "Guba Panoramic hotel",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.266246,
+          48.3276644
+        ]
+      },
+      "properties": {
+        "name": "Quba Vadi Chalet Hotel",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2711328,
+          48.3313179
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3076293,
+          48.3799553
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3248893,
+          48.3842898
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3281583,
+          48.3928635
+        ]
+      },
+      "properties": {
+        "name": "HİLLSİDE istirahət mərkəzi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3465611,
+          48.4495178
+        ]
+      },
+      "properties": {
+        "name": "Gachrash Forest (recreational area)",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3097064,
+          48.5391865
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3321064,
+          48.4989785
+        ]
+      },
+      "properties": {
+        "name": "Quba Palace Hotel",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3089369,
+          48.5394558
+        ]
+      },
+      "properties": {
+        "name": "Cennet Bagi Hotel",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2621664,
+          48.3274381
+        ]
+      },
+      "properties": {
+        "name": "Minarə Ailəvi İstirahət Mərkəzi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3596078,
+          48.4996677
+        ]
+      },
+      "properties": {
+        "name": "Gold Hotel Quba",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.359609,
+          48.5681889
+        ]
+      },
+      "properties": {
+        "name": "Arena Grand Hotel",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.363179,
+          48.564883
+        ]
+      },
+      "properties": {
+        "name": "Arena Sport Hotel",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3643139,
+          48.5260863
+        ]
+      },
+      "properties": {
+        "name": "Quba Palace Hotel",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.230856,
+          48.316755
+        ]
+      },
+      "properties": {
+        "name": "Dehne İstirahet Merkezi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1564242,
+          48.4135021
+        ]
+      },
+      "properties": {
+        "name": "Retro Otel",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1713448,
+          48.61615
+        ]
+      },
+      "properties": {
+        "name": "Uğur İstirahət Mərkəzi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3870594,
+          48.5392811
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3637743,
+          48.5066356
+        ]
+      },
+      "properties": {
+        "name": "Doğal coğrafi olanaklarNizami Park",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2400429,
+          48.2922349
+        ]
+      },
+      "properties": {
+        "name": "Afurca şelalesi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.237522,
+          48.3152253
+        ]
+      },
+      "properties": {
+        "name": "Grizdehne köyü",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2247661,
+          48.2191145
+        ]
+      },
+      "properties": {
+        "name": "Gur-gur Şəlaləsi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1978574,
+          48.2120187
+        ]
+      },
+      "properties": {
+        "name": "Kartal irvesi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2019905,
+          48.1860527
+        ]
+      },
+      "properties": {
+        "name": "Galahudat köyü",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1820974,
+          48.1252845
+        ]
+      },
+      "properties": {
+        "name": "Kınalık köyü",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2415745,
+          48.1006081
+        ]
+      },
+      "properties": {
+        "name": "Heydər Əliyev zirvəsi (Mount Haydar Aliyev)",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.313316,
+          48.37808
+        ]
+      },
+      "properties": {
+        "name": "Geçreş köyü",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2101718,
+          48.2472376
+        ]
+      },
+      "properties": {
+        "name": "Griz köyü",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3643139,
+          48.5260862
+        ]
+      },
+      "properties": {
+        "name": "Təngəaltı",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2188583,
+          48.5397992
+        ]
+      },
+      "properties": {
+        "name": "Khanagah",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3084304,
+          48.5727515
+        ]
+      },
+      "properties": {
+        "name": "Chanlibel Lake",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.192054,
+          48.520902
+        ]
+      },
+      "properties": {
+        "name": "Şahdağ Milli Parkı - Quba Xanagah marşrutu",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2275899,
+          48.6245088
+        ]
+      },
+      "properties": {
+        "name": "Tengealtı deresi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.192054,
+          48.520902
+        ]
+      },
+      "properties": {
+        "name": "Şahdağ Milli Parkı - Quba Xanagah marşrutu",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9744808,
+          48.6868943
+        ]
+      },
+      "properties": {
+        "name": "Xaltan",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2539426,
+          48.3232418
+        ]
+      },
+      "properties": {
+        "name": "Yeme içme olanaklarıŞelale Dinlenme alanı ve Restoran",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.257277,
+          48.3260372
+        ]
+      },
+      "properties": {
+        "name": "Qızılağac restorani",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2594895,
+          48.3260297
+        ]
+      },
+      "properties": {
+        "name": "Şahbulaq İstirahət Mərkəzi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2600982,
+          48.3317987
+        ]
+      },
+      "properties": {
+        "name": "Ağbulaq Restoranı",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2701978,
+          48.327621
+        ]
+      },
+      "properties": {
+        "name": "Quba-Ağ bulaq restoranı",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2663569,
+          48.3348195
+        ]
+      },
+      "properties": {
+        "name": "Şah Eseri",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3059396,
+          48.3716843
+        ]
+      },
+      "properties": {
+        "name": "Qədim Qəçrəş restoranı",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2988274,
+          48.5310951
+        ]
+      },
+      "properties": {
+        "name": "Balbulaq Ailəvi istirahət Mərkəzi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3269718,
+          48.5026555
+        ]
+      },
+      "properties": {
+        "name": "The Challette Steakhouse",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1810821,
+          48.6154396
+        ]
+      },
+      "properties": {
+        "name": "Tenge Deresi Restoran",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1778104,
+          48.6166105
+        ]
+      },
+      "properties": {
+        "name": "Magara",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1745254,
+          48.6164683
+        ]
+      },
+      "properties": {
+        "name": "Qosha-Qaya",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.291152,
+          48.3627589
+        ]
+      },
+      "properties": {
+        "name": "Eğlence ve alışverişHorse riding",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3329368,
+          48.5126209
+        ]
+      },
+      "properties": {
+        "name": "The National Azerbaijan Golf Club",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3584809,
+          48.5068532
+        ]
+      },
+      "properties": {
+        "name": "Şahdağ Quba İdman Kompleksi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3612607,
+          48.5271876
+        ]
+      },
+      "properties": {
+        "name": "Quba Ticarət Mərkəzi",
+        "category": "Ulasim",
+        "source_file": "04_ulasim"
+      }
+    }
+  ]
+}

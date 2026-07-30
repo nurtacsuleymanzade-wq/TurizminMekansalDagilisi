@@ -1,91 +1,305 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İnteraktif Haritalar — TMD</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İnteraktif Haritalar — Turizmin Mekansal Dağılışı</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="scripts/nav.js"></script>
+<style>
+  #map-container { display: flex; flex-direction: column; gap: 20px; }
+  .map-wrapper { background: var(--surface); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+  #main-map { height: 550px; width: 100%; }
+  .map-controls { display: flex; gap: 10px; padding: 15px; flex-wrap: wrap; background: var(--surface-alt); border-bottom: 1px solid var(--border); }
+  .map-controls select, .map-controls button { padding: 8px 16px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 14px; cursor: pointer; }
+  .map-controls select:hover, .map-controls button:hover { border-color: var(--accent); }
+  .map-controls button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .map-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; padding: 15px; }
+  .stat-card { text-align: center; padding: 12px; background: var(--surface-alt); border-radius: 8px; }
+  .stat-card .value { font-size: 24px; font-weight: 700; color: var(--accent); }
+  .stat-card .label { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+  .legend-info { padding: 12px 15px; font-size: 13px; color: var(--text-muted); display: flex; gap: 18px; flex-wrap: wrap; }
+  .legend-info .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 6px; }
+  .category-legend { padding: 8px 15px 15px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .cat-item { display: flex; align-items: center; gap: 6px; font-size: 13px; cursor: pointer; padding: 4px 10px; border-radius: 20px; border: 1px solid var(--border); transition: all 0.2s; }
+  .cat-item:hover { background: var(--surface-alt); }
+  .cat-item.active { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 15%, transparent); }
+  .cat-item input { margin: 0; }
+  #mini-maps { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .mini-map-box { background: var(--surface); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+  .mini-map-box h3 { margin: 0; padding: 12px 15px; font-size: 15px; border-bottom: 1px solid var(--border); }
+  .mini-map { height: 300px; width: 100%; }
+  .leaflet-popup-content { font-family: 'Inter', sans-serif; }
+  .leaflet-popup-content strong { color: #000; }
+</style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">TMD</a>
-            <button class="nav-toggle" aria-label="Menüyü aç/kapat">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="harita.html" class="active">Haritalar</a></li>
-                <li><a href="grafikler.html">Grafikler</a></li>
-                <li><a href="analizler.html">Analizler</a></li>
-                <li><a href="veri.html">Veri</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar">
+  <div class="nav-brand"><a href="index.html">Turizmin Mekansal Dağılışı</a></div>
+  <button class="nav-toggle" id="navToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="harita.html" class="active">Haritalar</a></li>
+    <li><a href="grafikler.html">Grafikler</a></li>
+    <li><a href="analizler.html">Mekansal Analiz</a></li>
+    <li><a href="veri.html">Veri Kaynakları</a></li>
+  </ul>
+</nav>
 
-    <header class="page-header">
-        <div class="container">
-            <h1>🗺️ İnteraktif Haritalar</h1>
-            <p>Azerbaycan turizm faaliyetlerinin mekânsal dağılışını gösteren interaktif harita katmanları.</p>
-        </div>
-    </header>
+<main class="container">
+  <header class="page-header">
+    <h1>🏛️ İnteraktif Turizm Haritaları</h1>
+    <p class="subtitle">Azerbaycan genelinde turistik noktaların, otellerin, kültür merkezlerinin ve doğal alanların mekansal dağılışı.</p>
+  </header>
 
-    <section class="content-section">
-        <div class="container">
-            <!-- Harita Türleri -->
-            <div class="content-card">
-                <h2>Turizm Noktaları</h2>
-                <p>Azerbaycan genelinde turistik çekiciliklerin mekânsal dağılımı. Konaklama, yeme-içme, kültürel miras, doğal alanlar ve diğer POI kategorileri ayrı katmanlar halinde gösterilmektedir.</p>
-                <div class="placeholder-map">🗺️ Harita yükleniyor — veriler hazırlandığında interaktif harita burada görünecek</div>
-                <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 8px;">Planlanan katmanlar: Oteller · Tarihi Anıtlar · Müzeler · Restoranlar · Parklar · Plajlar · Termal Kaynaklar · Kayak Merkezleri</p>
-            </div>
+  <section id="map-container">
+    <!-- Main controls -->
+    <div class="map-wrapper">
+      <div class="map-controls">
+        <select id="baseLayer">
+          <option value="streets">Sokak Haritası</option>
+          <option value="satellite">Uydu Görüntüsü</option>
+          <option value="topo">Topoğrafik</option>
+          <option value="light">Açık Tema</option>
+          <option value="dark">Koyu Tema</option>
+        </select>
+        <select id="mapView">
+          <option value="all">Tüm Kategoriler</option>
+          <option value="Otel">Oteller</option>
+          <option value="Kultur_Merkezi">Kültür Merkezleri</option>
+          <option value="Doga_Alani">Doğa Alanları</option>
+          <option value="Tarihi_Anit">Tarihi Anıtlar</option>
+          <option value="Turizm_Bolgesi">Turizm Bölgeleri</option>
+          <option value="Ulasim">Ulaşım</option>
+          <option value="Diger_Tesis">Diğer Tesisler</option>
+          <option value="Destinasyon">Destinasyonlar</option>
+        </select>
+        <select id="mapStyle">
+          <option value="point">Nokta Haritası</option>
+          <option value="cluster">Küme Haritası</option>
+          <option value="heat">Isı Haritası</option>
+        </select>
+        <button id="fitAll" class="active">Tümünü Göster</button>
+      </div>
+      <div id="main-map"></div>
+      <div class="map-stats" id="mapStats"></div>
+    </div>
 
-            <div class="content-card">
-                <h2>Yoğunluk Haritaları</h2>
-                <p>Kernel Density Estimation (KDE) yöntemiyle hesaplanan turizm noktaları yoğunluk haritaları. Turistik faaliyetlerin hangi bölgelerde kümelenme gösterdiğini görselleştirir.</p>
-                <div class="placeholder-map">🗺️ Yoğunluk haritası — analiz tamamlandığında burada görünecek</div>
-            </div>
+    <!-- Secondary maps -->
+    <div id="mini-maps">
+      <div class="mini-map-box">
+        <h3>🏨 Otel Yoğunluğu</h3>
+        <div id="hotelMap" class="mini-map"></div>
+      </div>
+      <div class="mini-map-box">
+        <h3>🏛️ Kültür Merkezleri</h3>
+        <div id="cultureMap" class="mini-map"></div>
+      </div>
+      <div class="mini-map-box">
+        <h3>🌿 Doğal Alanlar</h3>
+        <div id="natureMap" class="mini-map"></div>
+      </div>
+    </div>
+  </section>
+</main>
 
-            <div class="content-card">
-                <h2>Erişilebilirlik Haritaları</h2>
-                <p>Turizm noktalarına ulaşım sürelerine göre erişilebilirlik analizleri. 30, 60, 120 ve 180 dakikalık servis alanları.</p>
-                <div class="placeholder-map">🗺️ Erişilebilirlik haritası — network analizi tamamlandığında burada görünecek</div>
-            </div>
+<footer class="footer">
+  <p>Azerbaycan'da Turizm Faaliyetlerinin Mekansal Dağılışı &copy; 2026</p>
+  <p class="footer-meta">Doktora Tez Çalışması &mdash; Veri: AzStat, OSM, UNESCO &amp; diğer açık kaynaklar</p>
+</footer>
 
-            <div class="content-card">
-                <h2>Tarihî Değişim Haritaları</h2>
-                <p>2005, 2010, 2015, 2019, 2020, 2022, 2024 ve 2025 yılları için turizm yoğunluğu haritaları. Zaman kaydırıcısı ile yıllar arası karşılaştırma.</p>
-                <div class="placeholder-map">🗺️ Tarihî değişim haritası — zaman serisi verileri hazırlandığında burada görünecek</div>
-                <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 8px;">Planlanan haritalar: Turizm yoğunluğu · Pandemi etkisi (2019→2020) · Toparlanma (2019→2024) · Tesis genişlemesi · Hot spot/Cold spot değişimi</p>
-            </div>
-        </div>
-    </section>
+<script>
+// ─── Data ────────────────────────────────────────────────────────────────
+const CATEGORIES = ["Otel","Tarihi_Anit","Diger_Tesis","Ulasim","Doga_Alani","Kultur_Merkezi","Turizm_Bolgesi","Destinasyon"];
+const CAT_COLORS = {
+  "Otel": "#e74c3c", "Tarihi_Anit": "#8e44ad", "Diger_Tesis": "#f39c12",
+  "Ulasim": "#3498db", "Doga_Alani": "#2ecc71", "Kultur_Merkezi": "#e67e22",
+  "Turizm_Bolgesi": "#1abc9c", "Destinasyon": "#9b59b6"
+};
+const CAT_ICONS = {
+  "Otel": "🏨", "Tarihi_Anit": "🏛️", "Diger_Tesis": "🏗️", "Ulasim": "🚌",
+  "Doga_Alani": "🌿", "Kultur_Merkezi": "🎭", "Turizm_Bolgesi": "🗺️", "Destinasyon": "📍"
+};
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h4>Azerbaycan'da Turizm Faaliyetlerinin Mekânsal Dağılışı</h4>
-                    <p>Doktora Tezi · Coğrafya Anabilim Dalı</p>
-                    <p>Nurtac Süleymanzade · 2025</p>
-                </div>
-                <div class="footer-links">
-                    <h5>Hızlı Bağlantılar</h5>
-                    <ul>
-                        <li><a href="index.html">Ana Sayfa</a></li>
-                        <li><a href="grafikler.html">Grafikler</a></li>
-                        <li><a href="analizler.html">Analizler</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 Tüm hakları saklıdır.</p>
-            </div>
-        </div>
-    </footer>
+// ─── Initialize Main Map ─────────────────────────────────────────────────
+const mainMap = L.map('main-map', { zoomControl: true }).setView([40.3, 48.5], 7);
 
-    <script src="scripts/nav.js"></script>
+const tileLayers = {
+  streets: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OSM' }),
+  satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19, attribution: '&copy; Esri' }),
+  topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 17, attribution: '&copy; OpenTopoMap' }),
+  light: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 19, attribution: '&copy; CARTO' }),
+  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 19, attribution: '&copy; CARTO' }),
+};
+tileLayers.streets.addTo(mainMap);
+
+// ─── Load GeoJSON Data ───────────────────────────────────────────────────
+let allFeatures = [];
+let featureLayers = {};
+let currentLayerGroup = L.layerGroup().addTo(mainMap);
+let currentStyle = 'point';
+
+async function loadData() {
+  const files = [
+    'data/geojson/01_oteller.geojson', 'data/geojson/02_tarihi_anitlar.geojson',
+    'data/geojson/03_diger_tesisler.geojson', 'data/geojson/04_ulasim.geojson',
+    'data/geojson/05_doga_alanlari.geojson', 'data/geojson/06_kultur_merkezleri.geojson',
+    'data/geojson/07_turizm_bolgeleri.geojson', 'data/geojson/08_destinasyonlar.geojson'
+  ];
+  
+  for (const file of files) {
+    try {
+      const resp = await fetch(file);
+      const data = await resp.json();
+      const cat = data.features[0]?.properties?.category || 'Bilinmiyor';
+      allFeatures = allFeatures.concat(data.features.map(f => ({ ...f, _cat: cat })));
+    } catch(e) {
+      console.warn(`Cannot load ${file}: ${e.message}`);
+    }
+  }
+  
+  updateStats();
+  buildFeatureLayers();
+  renderMap();
+}
+
+function buildFeatureLayers() {
+  const groups = {};
+  allFeatures.forEach(f => {
+    const cat = f._cat || 'Bilinmiyor';
+    if (!groups[cat]) groups[cat] = [];
+    groups[cat].push(f);
+  });
+  
+  Object.entries(groups).forEach(([cat, features]) => {
+    // Point layer
+    const markers = features.map(f => {
+      const coords = f.geometry.coordinates;
+      const color = CAT_COLORS[cat] || '#999';
+      const icon = L.divIcon({
+        html: `<div style="width:12px;height:12px;background:${color};border-radius:50%;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.3)"></div>`,
+        iconSize: [12, 12], iconAnchor: [6, 6], className: ''
+      });
+      return L.marker([coords[1], coords[0]], { icon });
+    });
+    
+    // Cluster group
+    const cluster = L.markerClusterGroup({
+      chunkedLoading: true,
+      maxClusterRadius: 50,
+      spiderfyOnMaxZoom: true,
+      iconCreateFunction: function(c) {
+        const count = c.getChildCount();
+        const color = CAT_COLORS[cat] || '#999';
+        return L.divIcon({
+          html: `<div style="width:36px;height:36px;background:${color};border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;border:2px solid rgba(255,255,255,.8)">${count}</div>`,
+          iconSize: [36, 36], iconAnchor: [18, 18], className: ''
+        });
+      }
+    });
+    markers.forEach(m => cluster.addLayer(m));
+    
+    // Heat layer
+    const heatPoints = features.map(f => {
+      const c = f.geometry.coordinates;
+      return [c[1], c[0], 0.8];
+    });
+    
+    const heat = L.heatLayer(heatPoints, {
+      radius: 25, blur: 15, maxZoom: 10,
+      gradient: { 0.4: 'blue', 0.6: 'lime', 0.8: 'yellow', 1.0: 'red' }
+    });
+    
+    featureLayers[cat] = { markers: L.layerGroup(markers), cluster, heat, features };
+  });
+}
+
+function renderMap() {
+  currentLayerGroup.clearLayers();
+  const view = document.getElementById('mapView').value;
+  const style = document.getElementById('mapStyle').value;
+  currentStyle = style;
+  
+  const catsToShow = view === 'all' ? CATEGORIES : [view];
+  
+  catsToShow.forEach(cat => {
+    const layer = featureLayers[cat];
+    if (!layer) return;
+    
+    if (style === 'point') currentLayerGroup.addLayer(layer.markers);
+    else if (style === 'cluster') currentLayerGroup.addLayer(layer.cluster);
+    else if (style === 'heat') currentLayerGroup.addLayer(layer.heat);
+  });
+}
+
+function updateStats() {
+  const counts = {};
+  allFeatures.forEach(f => {
+    const cat = f._cat || 'Bilinmiyor';
+    counts[cat] = (counts[cat] || 0) + 1;
+  });
+  
+  const container = document.getElementById('mapStats');
+  container.innerHTML = Object.entries(counts).sort((a,b) => b[1]-a[1]).map(([cat, count]) => `
+    <div class="stat-card">
+      <div class="value">${count}</div>
+      <div class="label">${CAT_ICONS[cat] || ''} ${cat.replace(/_/g,' ')}</div>
+    </div>
+  `).join('');
+}
+
+// ─── Mini Maps ────────────────────────────────────────────────────────────
+function createMiniMap(id, catFilter, color) {
+  const map = L.map(id, { zoomControl: false, attributionControl: false }).setView([40.3, 48.5], 7);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 19 }).addTo(map);
+  
+  const points = allFeatures.filter(f => f._cat === catFilter).map(f => {
+    const c = f.geometry.coordinates;
+    return [c[1], c[0]];
+  });
+  
+  if (points.length > 0) {
+    L.heatLayer(points, {
+      radius: 20, blur: 12, maxZoom: 10,
+      gradient: { 0.4: color+'40', 0.6: color+'80', 0.8: color+'cc', 1.0: color }
+    }).addTo(map);
+  }
+}
+
+// ─── Event Handlers ─────────────────────────────────────────────────────
+document.getElementById('baseLayer').addEventListener('change', e => {
+  Object.values(tileLayers).forEach(t => mainMap.removeLayer(t));
+  tileLayers[e.target.value].addTo(mainMap);
+});
+
+document.getElementById('mapView').addEventListener('change', renderMap);
+document.getElementById('mapStyle').addEventListener('change', renderMap);
+
+document.getElementById('fitAll').addEventListener('click', () => {
+  if (allFeatures.length > 0) {
+    const bounds = L.latLngBounds(allFeatures.map(f => {
+      const c = f.geometry.coordinates;
+      return [c[1], c[0]];
+    }));
+    mainMap.fitBounds(bounds.pad(0.1));
+  }
+});
+
+// ─── Init ────────────────────────────────────────────────────────────────
+loadData().then(() => {
+  setTimeout(() => {
+    createMiniMap('hotelMap', 'Otel', '#e74c3c');
+    createMiniMap('cultureMap', 'Kultur_Merkezi', '#e67e22');
+    createMiniMap('natureMap', 'Doga_Alani', '#2ecc71');
+    document.getElementById('fitAll').click();
+  }, 500);
+});
+</script>
 </body>
 </html>

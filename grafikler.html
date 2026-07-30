@@ -1,99 +1,457 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grafikler ve Tablolar — TMD</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grafikler ve Veri Görselleştirme — Turizmin Mekansal Dağılışı</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<script src="scripts/nav.js"></script>
+<style>
+  .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; }
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+  .chart-card.full { grid-column: 1 / -1; }
+  .chart-card h2 { font-size: 16px; margin: 0 0 16px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  .chart-card p { font-size: 13px; color: var(--text-muted); margin: -8px 0 16px; }
+  .chart-wrapper { position: relative; height: 350px; }
+  .chart-wrapper.tall { height: 450px; }
+  .chart-wrapper.short { height: 280px; }
+  .controls-bar { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+  .controls-bar select, .controls-bar button { padding: 8px 16px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 14px; cursor: pointer; }
+  .controls-bar select:hover, .controls-bar button:hover { border-color: var(--accent); }
+  .stat-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-bottom: 30px; }
+  .stat-summary .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; text-align: center; }
+  .stat-summary .stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+  .stat-summary .stat-card .lbl { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+  .stat-summary .stat-card .emoji { font-size: 24px; margin-bottom: 8px; }
+  @media (max-width: 768px) { .chart-grid { grid-template-columns: 1fr; } }
+</style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">TMD</a>
-            <button class="nav-toggle" aria-label="Menüyü aç/kapat">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="harita.html">Haritalar</a></li>
-                <li><a href="grafikler.html" class="active">Grafikler</a></li>
-                <li><a href="analizler.html">Analizler</a></li>
-                <li><a href="veri.html">Veri</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar">
+  <div class="nav-brand"><a href="index.html">Turizmin Mekansal Dağılışı</a></div>
+  <button class="nav-toggle" id="navToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="harita.html">Haritalar</a></li>
+    <li><a href="grafikler.html" class="active">Grafikler</a></li>
+    <li><a href="analizler.html">Mekansal Analiz</a></li>
+    <li><a href="veri.html">Veri Kaynakları</a></li>
+  </ul>
+</nav>
 
-    <header class="page-header">
-        <div class="container">
-            <h1>📈 Grafikler ve Tablolar</h1>
-            <p>Azerbaycan turizm istatistiklerine ait zamansal trendler, bölgesel karşılaştırmalar ve dağılım grafikleri.</p>
-        </div>
-    </header>
+<main class="container">
+  <header class="page-header">
+    <h1>📊 Turizm Verisi Görselleştirme</h1>
+    <p class="subtitle">Azerbaycan genelinde turistik kaynakların kategorik dağılımı, yoğunluk analizi ve mekansal istatistikler.</p>
+  </header>
 
-    <section class="content-section">
-        <div class="container">
-            <!-- Grafik Grupları -->
-            <div class="content-card">
-                <h2>Yıllara Göre Turist ve Geceleme Sayıları</h2>
-                <p>2005–2025 döneminde yerli ve yabancı turist sayıları ile toplam geceleme sayılarındaki değişim.</p>
-                <div class="placeholder-map">📊 Grafik — veriler toplandığında burada görünecek</div>
-            </div>
+  <!-- Summary Stats -->
+  <div class="stat-summary" id="summaryStats">
+    <div class="stat-card"><div class="emoji">📍</div><div class="num">-</div><div class="lbl">Toplam Nokta</div></div>
+    <div class="stat-card"><div class="emoji">🏨</div><div class="num">-</div><div class="lbl">Otel</div></div>
+    <div class="stat-card"><div class="emoji">🎭</div><div class="num">-</div><div class="lbl">Kültür Merkezi</div></div>
+    <div class="stat-card"><div class="emoji">🌿</div><div class="num">-</div><div class="lbl">Doğa Alanı</div></div>
+    <div class="stat-card"><div class="emoji">🏛️</div><div class="num">-</div><div class="lbl">Tarihi Anıt</div></div>
+    <div class="stat-card"><div class="emoji">🗺️</div><div class="num">-</div><div class="lbl">Turizm Bölgesi</div></div>
+  </div>
 
-            <div class="content-card">
-                <h2>Rayonlara Göre Turizm Göstergeleri</h2>
-                <p>Rayon bazında turist sayısı, geceleme, konaklama tesisi sayısı, yatak kapasitesi ve doluluk oranı karşılaştırmaları.</p>
-                <div class="placeholder-map">📊 Grafik — veriler toplandığında burada görünecek</div>
-            </div>
+  <div class="controls-bar">
+    <select id="chartSort">
+      <option value="count">Miktara Göre Sırala</option>
+      <option value="alpha">Alfabetik Sırala</option>
+    </select>
+    <select id="chartTheme">
+      <option value="dark">Koyu Tema</option>
+      <option value="light">Açık Tema</option>
+    </select>
+    <button id="exportPNG">📥 PNG Dışa Aktar</button>
+  </div>
 
-            <div class="content-card">
-                <h2>Mevsimsellik Analizi</h2>
-                <p>Aylara göre turist girişleri ve turizm hareketlerinin mevsimsel deseni.</p>
-                <div class="placeholder-map">📊 Grafik — veriler toplandığında burada görünecek</div>
-            </div>
+  <div class="chart-grid" id="chartGrid">
+    <!-- 1. Kategori Dağılımı (Pasta) -->
+    <div class="chart-card">
+      <h2>🥧 Kategori Dağılımı</h2>
+      <p>Turistik noktaların kategorilere göre yüzdesel dağılımı.</p>
+      <div class="chart-wrapper"><canvas id="pieChart"></canvas></div>
+    </div>
 
-            <div class="content-card">
-                <h2>Turizm Yoğunluğu Göstergeleri</h2>
-                <p>Turist sayısı / nüfus (‰), turist sayısı / km², yatak kapasitesi / km² gibi normalize edilmiş yoğunluk ölçütleri.</p>
-                <div class="placeholder-map">📊 Grafik — veriler toplandığında burada görünecek</div>
-            </div>
+    <!-- 2. Kategori Karşılaştırma (Bar) -->
+    <div class="chart-card">
+      <h2>📊 Kategori Karşılaştırması</h2>
+      <p>Her kategorideki toplam nokta sayısı.</p>
+      <div class="chart-wrapper"><canvas id="barChart"></canvas></div>
+    </div>
 
-            <div class="content-card">
-                <h2>Turizm Arz-Talep İlişkileri</h2>
-                <p>Turizm arzı ile ulaşılabilirlik, nüfus, gelir, doğal ve kültürel çekicilikler arasındaki korelasyon grafikleri.</p>
-                <div class="placeholder-map">📊 Grafik — veriler toplandığında burada görünecek</div>
-            </div>
+    <!-- 3. Rayon Bazında Dağılım (Horizontal Bar) -->
+    <div class="chart-card full">
+      <h2>🏙️ Rayon Bazında Turistik Nokta Dağılımı</h2>
+      <p>En fazla turistik kaynağa sahip ilk 15 rayon.</p>
+      <div class="chart-wrapper tall"><canvas id="rayonChart"></canvas></div>
+    </div>
 
-            <div class="content-card">
-                <h2>Rayon Gelişim Tipolojisi</h2>
-                <p>Seçilen başlangıç ve bitiş yılları arasında rayonların turizm göstergelerindeki artış/azalış oranları ve gelişim sınıflandırması.</p>
-                <div class="placeholder-map">📊 Grafik — veriler toplandığında burada görünecek</div>
-            </div>
-        </div>
-    </section>
+    <!-- 4. Diversite Endeksi -->
+    <div class="chart-card">
+      <h2>🌐 Turizm Çeşitlilik Endeksi</h2>
+      <p>Rayonların Simpson çeşitlilik indeksi (0-1 arası).</p>
+      <div class="chart-wrapper short"><canvas id="diversityChart"></canvas></div>
+    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h4>Azerbaycan'da Turizm Faaliyetlerinin Mekânsal Dağılışı</h4>
-                    <p>Doktora Tezi · Coğrafya Anabilim Dalı</p>
-                    <p>Nurtac Süleymanzade · 2025</p>
-                </div>
-                <div class="footer-links">
-                    <h5>Hızlı Bağlantılar</h5>
-                    <ul>
-                        <li><a href="index.html">Ana Sayfa</a></li>
-                        <li><a href="harita.html">Haritalar</a></li>
-                        <li><a href="analizler.html">Analizler</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 Tüm hakları saklıdır.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- 5. Hotspot Sınıflandırması -->
+    <div class="chart-card">
+      <h2>🔥 Hotspot Sınıflandırması</h2>
+      <p>Rayonların Z-skoruna göre sınıflandırılması.</p>
+      <div class="chart-wrapper short"><canvas id="hotspotChart"></canvas></div>
+    </div>
 
-    <script src="scripts/nav.js"></script>
+    <!-- 6. Saçılım Grafiği -->
+    <div class="chart-card full">
+      <h2>📈 Kategori İlişki Matrisi</h2>
+      <p>Oteller ve kültür merkezleri arasındaki korelasyon (rayon bazında).</p>
+      <div class="chart-wrapper"><canvas id="scatterChart"></canvas></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>Azerbaycan'da Turizm Faaliyetlerinin Mekansal Dağılışı &copy; 2026</p>
+  <p class="footer-meta">Doktora Tez Çalışması &mdash; Veri: AzStat, OSM, UNESCO &amp; diğer açık kaynaklar</p>
+</footer>
+
+<script>
+Chart.register(ChartDataLabels);
+
+const CAT_COLORS = {
+  "Otel": "#e74c3c", "Tarihi_Anit": "#8e44ad", "Diger_Tesis": "#f39c12",
+  "Ulasim": "#3498db", "Doga_Alani": "#2ecc71", "Kultur_Merkezi": "#e67e22",
+  "Turizm_Bolgesi": "#1abc9c", "Destinasyon": "#9b59b6"
+};
+const CAT_NAMES = {
+  "Otel": "Oteller", "Tarihi_Anit": "Tarihi Anıtlar", "Diger_Tesis": "Diğer Tesisler",
+  "Ulasim": "Ulaşım", "Doga_Alani": "Doğa Alanları", "Kultur_Merkezi": "Kültür Merkezleri",
+  "Turizm_Bolgesi": "Turizm Bölgeleri", "Destinasyon": "Destinasyonlar"
+};
+
+const chartInstances = {};
+const textColor = '#e0e0e0';
+const gridColor = 'rgba(255,255,255,0.08)';
+
+let allFeatures = [];
+let rayonData = {};
+let hotspotData = {};
+let diversityData = {};
+
+// ─── Data Loading ──────────────────────────────────────────────────────
+async function loadAllData() {
+  // 1. Load GeoJSON features
+  const files = [
+    'data/geojson/01_oteller.geojson', 'data/geojson/02_tarihi_anitlar.geojson',
+    'data/geojson/03_diger_tesisler.geojson', 'data/geojson/04_ulasim.geojson',
+    'data/geojson/05_doga_alanlari.geojson', 'data/geojson/06_kultur_merkezleri.geojson',
+    'data/geojson/07_turizm_bolgeleri.geojson', 'data/geojson/08_destinasyonlar.geojson'
+  ];
+  for (const file of files) {
+    try {
+      const resp = await fetch(file);
+      const data = await resp.json();
+      const cat = data.features[0]?.properties?.category || 'Bilinmiyor';
+      allFeatures = allFeatures.concat(data.features.map(f => ({ ...f, _cat: cat })));
+    } catch(e) { /* skip */ }
+  }
+  
+  // 2. Try to load processed data
+  try {
+    const resp = await fetch('data/processed/rayon_summary.json');
+    rayonData = await resp.json();
+  } catch(e) { console.warn('rayon_summary.json not loaded'); }
+  
+  try {
+    const resp = await fetch('data/processed/hotspot_analysis.csv');
+    const text = await resp.text();
+    hotspotData = parseCSV(text);
+  } catch(e) { console.warn('hotspot_analysis.csv not loaded'); }
+  
+  return { ok: true, total: allFeatures.length };
+}
+
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  if (lines.length < 2) return [];
+  const headers = lines[0].split(',').map(h => h.trim());
+  return lines.slice(1).map(line => {
+    const vals = line.split(',');
+    const obj = {};
+    headers.forEach((h, i) => { obj[h] = vals[i]?.trim() || ''; });
+    return obj;
+  });
+}
+
+// ─── Summary Stats ────────────────────────────────────────────────────
+function updateSummary(loaded) {
+  if (!loaded) return;
+  const counts = {};
+  allFeatures.forEach(f => {
+    const cat = f._cat || 'Bilinmiyor';
+    counts[cat] = (counts[cat] || 0) + 1;
+  });
+  
+  document.getElementById('summaryStats').innerHTML = `
+    <div class="stat-card"><div class="emoji">📍</div><div class="num">${allFeatures.length}</div><div class="lbl">Toplam Nokta</div></div>
+    <div class="stat-card"><div class="emoji">🏨</div><div class="num">${counts['Otel'] || 0}</div><div class="lbl">Otel</div></div>
+    <div class="stat-card"><div class="emoji">🎭</div><div class="num">${counts['Kultur_Merkezi'] || 0}</div><div class="lbl">Kültür Merkezi</div></div>
+    <div class="stat-card"><div class="emoji">🌿</div><div class="num">${counts['Doga_Alani'] || 0}</div><div class="lbl">Doğa Alanı</div></div>
+    <div class="stat-card"><div class="emoji">🏛️</div><div class="num">${counts['Tarihi_Anit'] || 0}</div><div class="lbl">Tarihi Anıt</div></div>
+    <div class="stat-card"><div class="emoji">🗺️</div><div class="num">${counts['Turizm_Bolgesi'] || 0}</div><div class="lbl">Turizm Bölgesi</div></div>
+  `;
+}
+
+// ─── Chart Defaults ──────────────────────────────────────────────────
+const chartDefaults = {
+  color: textColor,
+  plugins: { legend: { labels: { color: textColor, font: { size: 12 } } } },
+  scales: {
+    x: { ticks: { color: textColor }, grid: { color: gridColor } },
+    y: { ticks: { color: textColor }, grid: { color: gridColor } }
+  }
+};
+
+// ─── Build Charts ──────────────────────────────────────────────────
+function buildCharts() {
+  if (allFeatures.length === 0) return;
+  
+  const counts = {};
+  allFeatures.forEach(f => {
+    const cat = f._cat || 'Bilinmiyor';
+    counts[cat] = (counts[cat] || 0) + 1;
+  });
+  
+  const labels = Object.keys(counts).map(k => CAT_NAMES[k] || k);
+  const values = Object.values(counts);
+  const colors = Object.keys(counts).map(k => CAT_COLORS[k] || '#999');
+  
+  // 1. PIE CHART
+  const pieCtx = document.getElementById('pieChart').getContext('2d');
+  chartInstances.pie = new Chart(pieCtx, {
+    type: 'doughnut',
+    data: {
+      labels,
+      datasets: [{
+        data: values,
+        backgroundColor: colors.map(c => c + 'cc'),
+        borderColor: colors,
+        borderWidth: 2
+      }]
+    },
+    options: {
+      ...chartDefaults,
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'right', labels: { color: textColor, padding: 12 } },
+        datalabels: {
+          color: '#fff', font: { weight: 'bold', size: 13 },
+          formatter: (v, ctx) => ctx.chart.data.labels[ctx.dataIndex].charAt(0),
+          display: ctx => ctx.dataset.data[ctx.dataIndex] > 10
+        }
+      }
+    },
+    plugins: [ChartDataLabels]
+  });
+  
+  // 2. BAR CHART
+  const barCtx = document.getElementById('barChart').getContext('2d');
+  chartInstances.bar = new Chart(barCtx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Nokta Sayısı',
+        data: values,
+        backgroundColor: colors.map(c => c + '99'),
+        borderColor: colors,
+        borderWidth: 2,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      ...chartDefaults,
+      responsive: true, maintainAspectRatio: false,
+      indexAxis: 'y',
+      plugins: {
+        legend: { display: false },
+        datalabels: {
+          color: textColor, anchor: 'end', align: 'end',
+          font: { weight: 'bold' },
+          formatter: v => v
+        }
+      }
+    },
+    plugins: [ChartDataLabels]
+  });
+  
+  // 3. RAYON CHART
+  if (Object.keys(rayonData).length > 0) {
+    const rayons = Object.entries(rayonData)
+      .sort((a, b) => b[1].total - a[1].total)
+      .slice(0, 15);
+    
+    const rayonLabels = rayons.map(r => r[0]);
+    const rayonVals = rayons.map(r => r[1].total);
+    const rayColors = ['#e74c3c','#e67e22','#f1c40f','#2ecc71','#1abc9c','#3498db','#9b59b6','#e74c3c','#e67e22','#f1c40f','#2ecc71','#1abc9c','#3498db','#9b59b6','#e74c3c'];
+    
+    const rayCtx = document.getElementById('rayonChart').getContext('2d');
+    chartInstances.rayon = new Chart(rayCtx, {
+      type: 'bar',
+      data: {
+        labels: rayonLabels,
+        datasets: [{
+          label: 'Turistik Nokta',
+          data: rayonVals,
+          backgroundColor: rayColors.slice(0, rayonLabels.length).map(c => c + '99'),
+          borderColor: rayColors.slice(0, rayonLabels.length),
+          borderWidth: 2,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        ...chartDefaults,
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          datalabels: {
+            color: textColor, anchor: 'end', align: 'end',
+            font: { weight: 'bold' },
+            formatter: v => v
+          }
+        }
+      },
+      plugins: [ChartDataLabels]
+    });
+  }
+  
+  // 4. DIVERSITY CHART
+  if (hotspotData.length > 0) {
+    const topDiv = hotspotData.sort((a,b) => parseFloat(b.z_score) - parseFloat(a.z_score)).slice(0, 12);
+    const divLabels = topDiv.map(r => r.rayon);
+    const divVals = topDiv.map(r => parseFloat(r.z_score) || 0);
+    const divColors = divVals.map(v => v > 1.5 ? '#e74c3c' : v > 0.5 ? '#e67e22' : v > -0.5 ? '#95a5a6' : '#3498db');
+    
+    const divCtx = document.getElementById('diversityChart').getContext('2d');
+    chartInstances.diversity = new Chart(divCtx, {
+      type: 'bar',
+      data: {
+        labels: divLabels,
+        datasets: [{
+          label: 'Z-Skoru',
+          data: divVals,
+          backgroundColor: divColors.map(c => c + '99'),
+          borderColor: divColors,
+          borderWidth: 2
+        }]
+      },
+      options: {
+        ...chartDefaults,
+        responsive: true, maintainAspectRatio: false,
+        indexAxis: 'y',
+        plugins: { legend: { display: false }, datalabels: { display: false } }
+      }
+    });
+  }
+  
+  // 5. HOTSPOT CLASSIFICATION
+  if (hotspotData.length > 0) {
+    const classes = {};
+    hotspotData.forEach(r => {
+      const cl = r.classification || 'Bilinmiyor';
+      classes[cl] = (classes[cl] || 0) + 1;
+    });
+    
+    const hsLabels = Object.keys(classes);
+    const hsVals = Object.values(classes);
+    const hsColors = hsLabels.map(l => {
+      if (l.includes('Hot')) return '#e74c3c';
+      if (l.includes('Warm')) return '#e67e22';
+      if (l.includes('Cold')) return '#3498db';
+      if (l.includes('No Data')) return '#95a5a6';
+      return '#2ecc71';
+    });
+    
+    const hsCtx = document.getElementById('hotspotChart').getContext('2d');
+    chartInstances.hotspot = new Chart(hsCtx, {
+      type: 'doughnut',
+      data: {
+        labels: hsLabels,
+        datasets: [{
+          data: hsVals,
+          backgroundColor: hsColors.map(c => c + 'cc'),
+          borderColor: hsColors,
+          borderWidth: 2
+        }]
+      },
+      options: {
+        ...chartDefaults,
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom', labels: { color: textColor, font: { size: 11 } } },
+          datalabels: {
+            color: '#fff', font: { weight: 'bold' },
+            formatter: v => v
+          }
+        }
+      },
+      plugins: [ChartDataLabels]
+    });
+  }
+  
+  // 6. SCATTER CHART
+  if (Object.keys(rayonData).length > 0) {
+    const scatterData = Object.entries(rayonData)
+      .filter(([_, v]) => v.total > 0)
+      .map(([name, data]) => ({
+        x: data.categories?.Otel || 0,
+        y: data.categories?.Kultur_Merkezi || 0,
+        label: name
+      }));
+    
+    const scCtx = document.getElementById('scatterChart').getContext('2d');
+    chartInstances.scatter = new Chart(scCtx, {
+      type: 'scatter',
+      data: {
+        datasets: [{
+          label: 'Rayonlar',
+          data: scatterData,
+          backgroundColor: '#e74c3c88',
+          borderColor: '#e74c3c',
+          borderWidth: 2,
+          pointRadius: 6,
+          pointHoverRadius: 10
+        }]
+      },
+      options: {
+        ...chartDefaults,
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: ctx => `${ctx.raw.label}: Otel=${ctx.raw.x}, Kültür=${ctx.raw.y}`
+            }
+          },
+          datalabels: { display: false }
+        },
+        scales: {
+          x: { ...chartDefaults.scales.x, title: { display: true, text: 'Otel Sayısı', color: textColor } },
+          y: { ...chartDefaults.scales.y, title: { display: true, text: 'Kültür Merkezi Sayısı', color: textColor } }
+        }
+      }
+    });
+  }
+}
+
+// ─── Init ──────────────────────────────────────────────────────────
+loadAllData().then(loaded => {
+  updateSummary(loaded);
+  buildCharts();
+});
+</script>
 </body>
 </html>

@@ -1,0 +1,455 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.6815811,
+          48.7256227
+        ]
+      },
+      "properties": {
+        "name": "Xacmaz rayonu kısaldılmışXacmaz rayonunun turizm fealiyetlerinormal",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.6668099,
+          48.649881
+        ]
+      },
+      "properties": {
+        "name": "Soyuq bulaq",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.6044426,
+          48.6981888
+        ]
+      },
+      "properties": {
+        "name": "İsti su",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.6294754,
+          48.6887297
+        ]
+      },
+      "properties": {
+        "name": "Food City Restoran",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.4916981,
+          48.7762072
+        ]
+      },
+      "properties": {
+        "name": "Çənlibel Restoran",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.4700767,
+          48.7950786
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.4548293,
+          48.8091705
+        ]
+      },
+      "properties": {
+        "name": "Sevimli soba",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.4599526,
+          48.7684285
+        ]
+      },
+      "properties": {
+        "name": "Restoran Kənd Həyatı",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.4728,
+          48.8303006
+        ]
+      },
+      "properties": {
+        "name": "Abinin Yeri Turkish Cuisine",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.48737,
+          48.8074117
+        ]
+      },
+      "properties": {
+        "name": "Yaşıl Bağ Restoran",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.4814109,
+          48.7562955
+        ]
+      },
+      "properties": {
+        "name": "Çənlibel Restoran",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.758986,
+          48.7188528
+        ]
+      },
+      "properties": {
+        "name": "Konaklama olanaklarıNabran House",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.7465309,
+          48.6760772
+        ]
+      },
+      "properties": {
+        "name": "Maral Gol restaurant and hotel",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.7787538,
+          48.6508052
+        ]
+      },
+      "properties": {
+        "name": "River Inn Boutique Hotel",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.7911679,
+          48.677673
+        ]
+      },
+      "properties": {
+        "name": "Caspian Sea Resort Hotel",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.8183876,
+          48.6226873
+        ]
+      },
+      "properties": {
+        "name": "Ulduz İstirahət Mərkəzi Nabran Yalama",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.8058186,
+          48.6483935
+        ]
+      },
+      "properties": {
+        "name": "Raduga Nabran Hotel",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.7295544,
+          48.7274538
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.7085943,
+          48.7390895
+        ]
+      },
+      "properties": {
+        "name": "Vogue Hotel Nabran",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.5824217,
+          48.7157265
+        ]
+      },
+      "properties": {
+        "name": "Choban Bulaq",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.6462406,
+          48.7987234
+        ]
+      },
+      "properties": {
+        "name": "Lazy Seal Cottages Nabran",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.6630281,
+          48.7866272
+        ]
+      },
+      "properties": {
+        "name": "Deniz Guest House",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.7752158,
+          48.6975546
+        ]
+      },
+      "properties": {
+        "name": "ATLANT HOLIDAY VILLAGE",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.773344,
+          48.6764181
+        ]
+      },
+      "properties": {
+        "name": "Lotos",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.740483,
+          48.7046794
+        ]
+      },
+      "properties": {
+        "name": "Tarihi kültürel kaynaklarDoğal coğrafi alanlar ve plajlarNabran",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.8181708,
+          48.5885617
+        ]
+      },
+      "properties": {
+        "name": "Samur-Yalama Millî Parkı",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.7176944,
+          48.7055512
+        ]
+      },
+      "properties": {
+        "name": "Palma Resort Beach",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.694495,
+          48.7536645
+        ]
+      },
+      "properties": {
+        "name": "Palma",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.6784287,
+          48.7705213
+        ]
+      },
+      "properties": {
+        "name": "Xəzər Dəniz Gəmiçiliyi QSC Dənizçi İstirahət Mərkəzi",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.4407348,
+          48.8001326
+        ]
+      },
+      "properties": {
+        "name": "Çənlibel Park",
+        "category": "Tarihi_Anit",
+        "source_file": "02_tarihi_anitlar"
+      }
+    }
+  ]
+}

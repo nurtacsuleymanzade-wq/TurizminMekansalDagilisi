@@ -1,0 +1,1212 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.85,
+          40.45
+        ]
+      },
+      "properties": {
+        "rayon": "Absheron",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.95,
+          40.05
+        ]
+      },
+      "properties": {
+        "rayon": "Agdam",
+        "feature_count": 36,
+        "z_score": 0.3,
+        "classification": "Not Significant",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.47,
+          40.63
+        ]
+      },
+      "properties": {
+        "rayon": "Agdash",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.37,
+          40.05
+        ]
+      },
+      "properties": {
+        "rayon": "Aghjabadi",
+        "feature_count": 8,
+        "z_score": -0.11,
+        "classification": "Not Significant",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.45,
+          41.12
+        ]
+      },
+      "properties": {
+        "rayon": "Agstafa",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.38,
+          40.57
+        ]
+      },
+      "properties": {
+        "rayon": "Agsu",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.87,
+          38.43
+        ]
+      },
+      "properties": {
+        "rayon": "Astara",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.45,
+          39.15
+        ]
+      },
+      "properties": {
+        "rayon": "Babek",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.87,
+          40.41
+        ]
+      },
+      "properties": {
+        "rayon": "Baku",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.78,
+          41.73
+        ]
+      },
+      "properties": {
+        "rayon": "Balakan",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.13,
+          40.38
+        ]
+      },
+      "properties": {
+        "rayon": "Barda",
+        "feature_count": 13,
+        "z_score": -0.03,
+        "classification": "Not Significant",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.62,
+          39.78
+        ]
+      },
+      "properties": {
+        "rayon": "Beylagan",
+        "feature_count": 26,
+        "z_score": 0.16,
+        "classification": "Not Significant",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.53,
+          39.47
+        ]
+      },
+      "properties": {
+        "rayon": "Bilasuvar",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.08,
+          40.52
+        ]
+      },
+      "properties": {
+        "rayon": "Dashkasan",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.17,
+          39.58
+        ]
+      },
+      "properties": {
+        "rayon": "Fuzuli",
+        "feature_count": 101,
+        "z_score": 1.26,
+        "classification": "Warm Spot",
+        "confidence": 0.38
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.8,
+          40.57
+        ]
+      },
+      "properties": {
+        "rayon": "Gadabay",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.36,
+          40.68
+        ]
+      },
+      "properties": {
+        "rayon": "Ganja",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.78,
+          40.6
+        ]
+      },
+      "properties": {
+        "rayon": "Goranboy",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.73,
+          40.65
+        ]
+      },
+      "properties": {
+        "rayon": "Goychay",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.33,
+          40.58
+        ]
+      },
+      "properties": {
+        "rayon": "Goygol",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.93,
+          40.03
+        ]
+      },
+      "properties": {
+        "rayon": "Hajigabul",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.07,
+          39.87
+        ]
+      },
+      "properties": {
+        "rayon": "Imishli",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.15,
+          40.78
+        ]
+      },
+      "properties": {
+        "rayon": "Ismayilli",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0,
+          39.4
+        ]
+      },
+      "properties": {
+        "rayon": "Jabrayil",
+        "feature_count": 63,
+        "z_score": 0.7,
+        "classification": "Warm Spot",
+        "confidence": 0.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.57,
+          39.2
+        ]
+      },
+      "properties": {
+        "rayon": "Jalilabad",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.57,
+          38.95
+        ]
+      },
+      "properties": {
+        "rayon": "Julfa",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.03,
+          40.1
+        ]
+      },
+      "properties": {
+        "rayon": "Kalbajar",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.17,
+          39.45
+        ]
+      },
+      "properties": {
+        "rayon": "Kangarli",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8,
+          41.47
+        ]
+      },
+      "properties": {
+        "rayon": "Khachmaz",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.12,
+          40.9
+        ]
+      },
+      "properties": {
+        "rayon": "Khizi",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.8,
+          39.9
+        ]
+      },
+      "properties": {
+        "rayon": "Khojaly",
+        "feature_count": 72,
+        "z_score": 0.83,
+        "classification": "Warm Spot",
+        "confidence": 0.17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.17,
+          40.33
+        ]
+      },
+      "properties": {
+        "rayon": "Kurdamir",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.37,
+          39.63
+        ]
+      },
+      "properties": {
+        "rayon": "Lachin",
+        "feature_count": 23,
+        "z_score": 0.11,
+        "classification": "Not Significant",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.83,
+          38.75
+        ]
+      },
+      "properties": {
+        "rayon": "Lankaran",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.42,
+          38.78
+        ]
+      },
+      "properties": {
+        "rayon": "Lerik",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.68,
+          39.03
+        ]
+      },
+      "properties": {
+        "rayon": "Masally",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.05,
+          40.77
+        ]
+      },
+      "properties": {
+        "rayon": "Mingachevir",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.82,
+          40.5
+        ]
+      },
+      "properties": {
+        "rayon": "Naftalan",
+        "feature_count": 15,
+        "z_score": -0.0,
+        "classification": "Not Significant",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.42,
+          39.2
+        ]
+      },
+      "properties": {
+        "rayon": "Nakhchivan",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.25,
+          39.35
+        ]
+      },
+      "properties": {
+        "rayon": "Neftchala",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.57,
+          41.07
+        ]
+      },
+      "properties": {
+        "rayon": "Oghuz",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.97,
+          38.9
+        ]
+      },
+      "properties": {
+        "rayon": "Ordubad",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.85,
+          40.98
+        ]
+      },
+      "properties": {
+        "rayon": "Qabala",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.92,
+          41.42
+        ]
+      },
+      "properties": {
+        "rayon": "Qakh",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.37,
+          41.1
+        ]
+      },
+      "properties": {
+        "rayon": "Qazakh",
+        "feature_count": 550,
+        "z_score": 7.85,
+        "classification": "Hot Spot (High)",
+        "confidence": 0.99
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          41.37
+        ]
+      },
+      "properties": {
+        "rayon": "Quba",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.5,
+          39.35
+        ]
+      },
+      "properties": {
+        "rayon": "Qubadli",
+        "feature_count": 8,
+        "z_score": -0.11,
+        "classification": "Not Significant",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4,
+          41.43
+        ]
+      },
+      "properties": {
+        "rayon": "Qusar",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          39.93
+        ]
+      },
+      "properties": {
+        "rayon": "Saatly",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.48,
+          40.0
+        ]
+      },
+      "properties": {
+        "rayon": "Sabirabad",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.98,
+          39.6
+        ]
+      },
+      "properties": {
+        "rayon": "Salyan",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.42,
+          40.95
+        ]
+      },
+      "properties": {
+        "rayon": "Samukh",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.88,
+          39.7
+        ]
+      },
+      "properties": {
+        "rayon": "Sedarak",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.87,
+          41.22
+        ]
+      },
+      "properties": {
+        "rayon": "Shabran",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.55,
+          39.4
+        ]
+      },
+      "properties": {
+        "rayon": "Shahbuz",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.17,
+          41.2
+        ]
+      },
+      "properties": {
+        "rayon": "Shaki",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.93,
+          40.63
+        ]
+      },
+      "properties": {
+        "rayon": "Shamakhi",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.02,
+          40.83
+        ]
+      },
+      "properties": {
+        "rayon": "Shamkir",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.15,
+          39.55
+        ]
+      },
+      "properties": {
+        "rayon": "Sharur",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.92,
+          39.93
+        ]
+      },
+      "properties": {
+        "rayon": "Shirvan",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.75,
+          39.75
+        ]
+      },
+      "properties": {
+        "rayon": "Shusha",
+        "feature_count": 120,
+        "z_score": 1.54,
+        "classification": "Hot Spot (High)",
+        "confidence": 0.01
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.07,
+          41.08
+        ]
+      },
+      "properties": {
+        "rayon": "Siazan",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.67,
+          40.58
+        ]
+      },
+      "properties": {
+        "rayon": "Sumqayit",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.85,
+          40.33
+        ]
+      },
+      "properties": {
+        "rayon": "Tartar",
+        "feature_count": 50,
+        "z_score": 0.51,
+        "classification": "Warm Spot",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.62,
+          40.97
+        ]
+      },
+      "properties": {
+        "rayon": "Tovuz",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.65,
+          40.52
+        ]
+      },
+      "properties": {
+        "rayon": "Ujar",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.23,
+          38.9
+        ]
+      },
+      "properties": {
+        "rayon": "Yardimli",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.15,
+          40.62
+        ]
+      },
+      "properties": {
+        "rayon": "Yevlakh",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.65,
+          39.08
+        ]
+      },
+      "properties": {
+        "rayon": "Zangilan",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.65,
+          41.63
+        ]
+      },
+      "properties": {
+        "rayon": "Zaqatala",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.72,
+          40.22
+        ]
+      },
+      "properties": {
+        "rayon": "Zardab",
+        "feature_count": 0,
+        "z_score": -0.22,
+        "classification": "No Data",
+        "confidence": 0.0
+      }
+    }
+  ]
+}

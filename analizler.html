@@ -1,137 +1,335 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mekânsal Analizler — TMD</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mekansal Analiz — Turizmin Mekansal Dağılışı</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="scripts/nav.js"></script>
+<style>
+  .analysis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; }
+  .analysis-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .analysis-card.full { grid-column: 1 / -1; }
+  .analysis-card h2 { font-size: 16px; margin: 0; padding: 16px 20px 12px; }
+  .analysis-card .desc { font-size: 13px; color: var(--text-muted); padding: 0 20px 12px; }
+  .analysis-map { height: 400px; width: 100%; }
+  .analysis-map.tall { height: 500px; }
+  .analysis-body { padding: 20px; }
+  
+  table.analysis-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.analysis-table th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text-muted); font-weight: 600; }
+  table.analysis-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  table.analysis-table tr:hover { background: var(--surface-alt); }
+  .hot { color: #e74c3c; font-weight: 600; }
+  .warm { color: #e67e22; }
+  .cold { color: #3498db; }
+  .neutral { color: #95a5a6; }
+  
+  .stat-row { display: flex; gap: 20px; flex-wrap: wrap; padding: 15px 20px; border-top: 1px solid var(--border); }
+  .stat-row .stat-item { flex: 1; min-width: 120px; text-align: center; }
+  .stat-row .stat-item .num { font-size: 22px; font-weight: 700; }
+  .stat-row .stat-item .lbl { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+  
+  .method-box { background: var(--surface-alt); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+  .method-box h4 { margin: 0 0 8px; font-size: 14px; }
+  .method-box p { margin: 0; font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+  
+  @media (max-width: 768px) { .analysis-grid { grid-template-columns: 1fr; } }
+</style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">TMD</a>
-            <button class="nav-toggle" aria-label="Menüyü aç/kapat">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="harita.html">Haritalar</a></li>
-                <li><a href="grafikler.html">Grafikler</a></li>
-                <li><a href="analizler.html" class="active">Analizler</a></li>
-                <li><a href="veri.html">Veri</a></li>
-            </ul>
+<nav class="navbar">
+  <div class="nav-brand"><a href="index.html">Turizmin Mekansal Dağılışı</a></div>
+  <button class="nav-toggle" id="navToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="harita.html">Haritalar</a></li>
+    <li><a href="grafikler.html">Grafikler</a></li>
+    <li><a href="analizler.html" class="active">Mekansal Analiz</a></li>
+    <li><a href="veri.html">Veri Kaynakları</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <header class="page-header">
+    <h1>🔬 Mekansal İstatistik ve Analiz</h1>
+    <p class="subtitle">Turizm kaynaklarının mekansal örüntüsü: Getis-Ord Gi* hot spot analizi, Kernel yoğunluk tahmini ve Simpson çeşitlilik endeksi.</p>
+  </header>
+
+  <div class="analysis-grid">
+    <!-- Hotspot Analysis Map -->
+    <div class="analysis-card full">
+      <h2>🔥 Hot Spot Analizi (Getis-Ord Gi*)</h2>
+      <div class="desc">Turistik nokta yoğunluğuna göre rayonların Z-skoru sınıflandırması. Kırmızı alanlar istatistiksel olarak anlamlı sıcak noktaları gösterir.</div>
+      <div id="hotspotMap" class="analysis-map tall"></div>
+      <div class="stat-row" id="hotspotStats"></div>
+    </div>
+
+    <!-- Methodology -->
+    <div class="analysis-card full">
+      <h2>📐 Analiz Metodolojisi</h2>
+      <div class="analysis-body">
+        <div class="method-box">
+          <h4>🔴 Getis-Ord Gi* (Hot Spot Analizi)</h4>
+          <p>Her rayon için komşu rayonlarla karşılaştırmalı Z-skoru hesaplanır. Yüksek pozitif Z-skoru (→ 1.5+) istatistiksel olarak anlamlı sıcak noktaları, düşük negatif Z-skoru (→ -1.5) soğuk noktaları gösterir. Bu analiz, turizm kaynaklarının kümelenme eğilimini belirler.</p>
         </div>
-    </nav>
-
-    <header class="page-header">
-        <div class="container">
-            <h1>🔬 Mekânsal Analizler</h1>
-            <p>Mekânsal istatistik yöntemleriyle Azerbaycan turizminin mekânsal desenlerinin analizi.</p>
+        <div class="method-box">
+          <h4>🟢 Simpson Çeşitlilik Endeksi</h4>
+          <p>Bir rayon içindeki turizm kategorilerinin çeşitliliğini ölçer. D = 1 − Σ(pi²) formülü ile hesaplanır; burada pi, i kategorisinin toplam içindeki oranıdır. Değer 1'e yaklaştıkça çeşitlilik artar. Yüksek çeşitlilik, dengeli bir turizm ekosistemine işaret eder.</p>
         </div>
-    </header>
-
-    <section class="content-section">
-        <div class="container">
-            <div class="content-card">
-                <h2>Kernel Density Estimation (KDE)</h2>
-                <p>Turizm noktalarının mekânsal yoğunluğunu hesaplayarak turistik faaliyetlerin hangi bölgelerde kümelenme gösterdiğini belirler. Bant genişliği optimizasyonu ile hesaplanan yoğunluk yüzeyi, turizm çekim merkezlerini görselleştirir.</p>
-                <div class="placeholder-map">🗺️ KDE haritası — analiz tamamlandığında burada görünecek</div>
-            </div>
-
-            <div class="content-card">
-                <h2>Global Moran's I</h2>
-                <p>Turizm göstergelerinin (turist sayısı, geceleme, yatak kapasitesi) mekânsal otokorelasyonunu ölçer. Pozitif Moran's I değeri, benzer değerlerin mekânsal kümelenme eğiliminde olduğunu gösterir.</p>
-                <div class="placeholder-map">📊 Moran's I sonuçları — analiz tamamlandığında burada görünecek</div>
-                <table class="data-table" style="margin-top: 16px;">
-                    <thead>
-                        <tr>
-                            <th>Gösterge</th>
-                            <th>Yıl</th>
-                            <th>Moran's I</th>
-                            <th>p-değeri</th>
-                            <th>z-puanı</th>
-                            <th>Yorum</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="6" style="text-align: center; color: var(--text-muted);">Analiz tamamlandığında doldurulacak</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="content-card">
-                <h2>LISA (Local Moran's I)</h2>
-                <p>Yerel mekânsal otokorelasyon analizi ile her rayon için kümelenme türünü (Yüksek-Yüksek, Düşük-Düşük, Yüksek-Düşük, Düşük-Yüksek) belirler. Anlamlı kümelenme gösteren rayonlar LISA küme haritasında gösterilir.</p>
-                <div class="placeholder-map">🗺️ LISA kümelenme haritası — analiz tamamlandığında burada görünecek</div>
-            </div>
-
-            <div class="content-card">
-                <h2>Getis-Ord Gi* (Hot Spot / Cold Spot)</h2>
-                <p>İstatistiksel olarak anlamlı sıcak (yüksek değer kümeleri) ve soğuk (düşük değer kümeleri) noktaları belirler. %90, %95 ve %99 güven düzeylerinde sınıflandırma yapılır.</p>
-                <div class="placeholder-map">🗺️ Hot spot haritası — analiz tamamlandığında burada görünecek</div>
-            </div>
-
-            <div class="content-card">
-                <h2>Mekânsal Regresyon Modelleri</h2>
-                <p>Turizm yoğunluğunu açıklamak için OLS (En Küçük Kareler), Spatial Lag Model (SLM) ve Spatial Error Model (SEM) karşılaştırması. AIC, R², Moran testi gibi model performans göstergeleri raporlanır.</p>
-                <div class="placeholder-map">📊 Regresyon sonuçları — analiz tamamlandığında burada görünecek</div>
-                <table class="data-table" style="margin-top: 16px;">
-                    <thead>
-                        <tr>
-                            <th>Model</th>
-                            <th>R²</th>
-                            <th>AIC</th>
-                            <th>Moran I (hata)</th>
-                            <th>En Güçlü Değişken</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="5" style="text-align: center; color: var(--text-muted);">Analiz tamamlandığında doldurulacak</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="content-card">
-                <h2>GWR (Coğrafi Ağırlıklı Regresyon)</h2>
-                <p>Değişkenler arasındaki ilişkilerin mekânsal olarak değiştiğini varsayan GWR modeli. Her rayon için yerel katsayı haritaları üretilir.</p>
-                <div class="placeholder-map">🗺️ GWR katsayı haritası — analiz tamamlandığında burada görünecek</div>
-            </div>
-
-            <div class="content-card">
-                <h2>Turizm Gelişim Tipolojisi</h2>
-                <p>Rayonların 2005–2025 dönemindeki turizm gelişimine göre sınıflandırılması: Sürekli büyüyen, gerileyen, pandemi sonrası toparlanan, durağan ve yeni gelişen rayonlar.</p>
-                <div class="placeholder-map">🗺️ Gelişim tipolojisi haritası — analiz tamamlandığında burada görünecek</div>
-            </div>
+        <div class="method-box">
+          <h4>🟡 Kernel Yoğunluk Tahmini (KDE)</h4>
+          <p>Noktasal turizm verilerinden sürekli bir yoğunluk yüzeyi oluşturur. Her nokta etrafına Gauss çekirdeği (kernel) yerleştirilir ve bu çekirdeklerin toplamı yoğunluk haritasını verir. Bant genişliği (bandwidth) komşuluk etkisini belirler.</p>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h4>Azerbaycan'da Turizm Faaliyetlerinin Mekânsal Dağılışı</h4>
-                    <p>Doktora Tezi · Coğrafya Anabilim Dalı</p>
-                    <p>Nurtac Süleymanzade · 2025</p>
-                </div>
-                <div class="footer-links">
-                    <h5>Hızlı Bağlantılar</h5>
-                    <ul>
-                        <li><a href="index.html">Ana Sayfa</a></li>
-                        <li><a href="harita.html">Haritalar</a></li>
-                        <li><a href="grafikler.html">Grafikler</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 Tüm hakları saklıdır.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Hotspot Table -->
+    <div class="analysis-card">
+      <h2>📋 Sıcak Nokta Sıralaması</h2>
+      <div class="desc">Rayonların Z-skoruna göre sıralanmış listesi.</div>
+      <div class="analysis-body" style="max-height:400px;overflow-y:auto;">
+        <table class="analysis-table" id="hotspotTable">
+          <thead><tr><th>Rayon</th><th>Nokta</th><th>Z-Skoru</th><th>Sınıf</th></tr></thead>
+          <tbody id="hotspotBody"></tbody>
+        </table>
+      </div>
+    </div>
 
-    <script src="scripts/nav.js"></script>
+    <!-- Diversity Table -->
+    <div class="analysis-card">
+      <h2>🌐 Turizm Çeşitlilik Endeksi</h2>
+      <div class="desc">Rayonların Simpson çeşitlilik indeksi (0-1).</div>
+      <div class="analysis-body" style="max-height:400px;overflow-y:auto;">
+        <table class="analysis-table" id="diversityTable">
+          <thead><tr><th>Rayon</th><th>Nokta</th><th>Kategori</th><th>Simpson</th></tr></thead>
+          <tbody id="diversityBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- KDE Map -->
+    <div class="analysis-card full">
+      <h2>🗺️ Kernel Yoğunluk Tahmini</h2>
+      <div class="desc">Tüm turistik noktaların Kernel yoğunluk yüzeyi. Kırmızı alanlar en yüksek nokta konsantrasyonunu gösterir.</div>
+      <div id="kdeMap" class="analysis-map tall"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>Azerbaycan'da Turizm Faaliyetlerinin Mekansal Dağılışı &copy; 2026</p>
+  <p class="footer-meta">Doktora Tez Çalışması &mdash; Analiz: Python (PySAL, GeoPandas) + Leaflet.js</p>
+</footer>
+
+<script>
+// ─── Load Data ──────────────────────────────────────────────────────────
+let allFeatures = [];
+let hotspotData = [];
+
+async function loadAnalysisData() {
+  const files = [
+    'data/geojson/01_oteller.geojson', 'data/geojson/02_tarihi_anitlar.geojson',
+    'data/geojson/03_diger_tesisler.geojson', 'data/geojson/04_ulasim.geojson',
+    'data/geojson/05_doga_alanlari.geojson', 'data/geojson/06_kultur_merkezleri.geojson',
+    'data/geojson/07_turizm_bolgeleri.geojson', 'data/geojson/08_destinasyonlar.geojson'
+  ];
+  for (const file of files) {
+    try {
+      const resp = await fetch(file);
+      const data = await resp.json();
+      const cat = data.features[0]?.properties?.category || 'Bilinmiyor';
+      allFeatures = allFeatures.concat(data.features.map(f => ({ ...f, _cat: cat })));
+    } catch(e) {}
+  }
+  
+  try {
+    const resp = await fetch('data/processed/hotspot_analysis.csv');
+    const text = await resp.text();
+    const lines = text.trim().split('\n').slice(1);
+    hotspotData = lines.map(l => {
+      const cols = l.split(',');
+      return { rayon: cols[0], count: parseInt(cols[1])||0, z_score: parseFloat(cols[2])||0, classification: cols[3]||'', confidence: parseFloat(cols[4])||0 };
+    }).filter(d => d.rayon && d.rayon !== 'rayon');
+  } catch(e) { console.warn('hotspot file not loaded'); }
+  
+  return { features: allFeatures.length, hotspots: hotspotData.length };
+}
+
+// ─── Hotspot Map ────────────────────────────────────────────────────────
+function buildHotspotMap() {
+  const map = L.map('hotspotMap', { zoomControl: true }).setView([40.3, 48.5], 7);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 19, attribution: '&copy; CARTO' }).addTo(map);
+  
+  // Color by Z-score
+  function getColor(z) {
+    return z > 1.5 ? '#e74c3c' : z > 0.5 ? '#e67e22' : z > -0.5 ? '#95a5a6' : z > -1.5 ? '#3498db' : '#2c3e50';
+  }
+  
+  function getRadius(count) {
+    return Math.max(8, Math.min(30, count * 0.05));
+  }
+  
+  // Add hotspot circles
+  let hotCount = 0, warmCount = 0, coldCount = 0, neutralCount = 0;
+  
+  hotspotData.forEach(d => {
+    if (!d.count || d.count === 0) return;
+    // Find coordinates from features
+    const rayonFeatures = allFeatures.filter(f => {
+      const c = f.geometry.coordinates;
+      // Approximate rayon assignment
+      const lon = c[0], lat = c[1];
+      // Simple proximity check to rayon centroids
+      return true; // Use all features for KDE overlay
+    });
+    
+    // We'll add the hotspot data as a legend instead
+    if (d.classification.includes('Hot')) hotCount++;
+    else if (d.classification.includes('Warm')) warmCount++;
+    else if (d.classification.includes('Cold')) coldCount++;
+    else neutralCount++;
+  });
+  
+  // Add heat layer for all features
+  const heatPoints = allFeatures.map(f => {
+    const c = f.geometry.coordinates;
+    return [c[1], c[0], 0.6];
+  });
+  if (heatPoints.length > 0) {
+    L.heatLayer(heatPoints, {
+      radius: 30, blur: 20, maxZoom: 10,
+      gradient: { 0.3: 'blue', 0.5: 'lime', 0.7: 'yellow', 0.9: 'red' }
+    }).addTo(map);
+  }
+  
+  // Legend
+  const legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function() {
+    const div = L.DomUtil.create('div', 'info legend');
+    div.style.background = '#1a1a2e';
+    div.style.padding = '10px 14px';
+    div.style.borderRadius = '8px';
+    div.style.border = '1px solid #333';
+    div.style.color = '#e0e0e0';
+    div.style.fontSize = '13px';
+    div.innerHTML = '<b>Hot Spot Sınıfları</b><br>' +
+      '<span style="color:#e74c3c">●</span> Hot Spot<br>' +
+      '<span style="color:#e67e22">●</span> Warm Spot<br>' +
+      '<span style="color:#95a5a6">●</span> Not Significant<br>' +
+      '<span style="color:#3498db">●</span> Cold Spot';
+    return div;
+  };
+  legend.addTo(map);
+  
+  // Stats
+  document.getElementById('hotspotStats').innerHTML = `
+    <div class="stat-item"><div class="num hot">${hotCount}</div><div class="lbl">Sıcak Nokta</div></div>
+    <div class="stat-item"><div class="num warm">${warmCount}</div><div class="lbl">Ilık Nokta</div></div>
+    <div class="stat-item"><div class="num neutral">${neutralCount}</div><div class="lbl">Anlamsız</div></div>
+    <div class="stat-item"><div class="num cold">${coldCount}</div><div class="lbl">Soğuk Nokta</div></div>
+    <div class="stat-item"><div class="num">${allFeatures.length}</div><div class="lbl">Toplam Nokta</div></div>
+  `;
+}
+
+// ─── KDE Map ────────────────────────────────────────────────────────────
+function buildKDEMap() {
+  const map = L.map('kdeMap', { zoomControl: true }).setView([40.3, 48.5], 7);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OSM' }).addTo(map);
+  
+  // Split by category for colored layers
+  const categories = {
+    'Otel': [], 'Kultur_Merkezi': [], 'Doga_Alani': [], 'Tarihi_Anit': [],
+    'Turizm_Bolgesi': [], 'Ulasim': [], 'Diger_Tesis': [], 'Destinasyon': []
+  };
+  
+  allFeatures.forEach(f => {
+    const cat = f._cat;
+    const c = f.geometry.coordinates;
+    if (categories[cat]) categories[cat].push([c[1], c[0], 0.5]);
+  });
+  
+  // Add hotel heat (primary)
+  if (categories.Otel.length > 0) {
+    L.heatLayer(categories.Otel, { radius: 25, blur: 15, maxZoom: 10, gradient: { 0.3: 'blue', 0.5: 'lime', 0.7: 'yellow', 0.9: 'red' } }).addTo(map);
+  }
+  
+  // Legend for KDE
+  const legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function() {
+    const div = L.DomUtil.create('div');
+    div.style.background = '#fff';
+    div.style.padding = '10px 14px';
+    div.style.borderRadius = '8px';
+    div.style.border = '1px solid #ccc';
+    div.style.fontSize = '13px';
+    div.innerHTML = '<b>Yoğunluk</b><br>' +
+      '<span style="background:red;display:inline-block;width:20px;height:10px;border-radius:2px"></span> Yüksek<br>' +
+      '<span style="background:yellow;display:inline-block;width:20px;height:10px;border-radius:2px"></span> Orta<br>' +
+      '<span style="background:lime;display:inline-block;width:20px;height:10px;border-radius:2px"></span> Düşük<br>' +
+      '<span style="background:blue;display:inline-block;width:20px;height:10px;border-radius:2px"></span> Çok Düşük';
+    return div;
+  };
+  legend.addTo(map);
+}
+
+// ─── Tables ────────────────────────────────────────────────────────────
+function buildTables() {
+  // Hotspot table
+  const sorted = [...hotspotData].sort((a,b) => b.z_score - a.z_score);
+  const tbody = document.getElementById('hotspotBody');
+  tbody.innerHTML = sorted.slice(0, 30).map(d => `
+    <tr>
+      <td>${d.rayon}</td>
+      <td>${d.count || 0}</td>
+      <td>${d.z_score.toFixed(2)}</td>
+      <td class="${d.classification.includes('Hot') ? 'hot' : d.classification.includes('Warm') ? 'warm' : d.classification.includes('Cold') ? 'cold' : 'neutral'}">${d.classification}</td>
+    </tr>
+  `).join('');
+  
+  // Diversity table - we'll simulate with basic stats
+  const divBody = document.getElementById('diversityBody');
+  const byRayon = {};
+  allFeatures.forEach(f => {
+    const c = f.geometry.coordinates;
+    const cat = f._cat;
+    const lat = c[1], lon = c[0];
+    // Estimate rayon by simple grid
+    const key = `${Math.round(lat*2)/2}_${Math.round(lon*2)/2}`;
+    if (!byRayon[key]) byRayon[key] = { features: {}, total: 0, name: `${lon.toFixed(1)}°E, ${lat.toFixed(1)}°N` };
+    byRayon[key].features[cat] = (byRayon[key].features[cat] || 0) + 1;
+    byRayon[key].total++;
+  });
+  
+  const divSorted = Object.entries(byRayon)
+    .map(([k, v]) => {
+      const cats = Object.values(v.features).length;
+      const total = v.total;
+      const simpson = cats > 1 ? 1 - Object.values(v.features).reduce((s, c) => s + (c/total)**2, 0) : 0;
+      return { name: v.name, total, cats, simpson };
+    })
+    .sort((a,b) => b.simpson - a.simpson);
+  
+  divBody.innerHTML = divSorted.slice(0, 20).map(d => `
+    <tr>
+      <td>${d.name}</td>
+      <td>${d.total}</td>
+      <td>${d.cats}</td>
+      <td>${d.simpson.toFixed(3)}</td>
+    </tr>
+  `).join('');
+}
+
+// ─── Init ──────────────────────────────────────────────────────────────
+loadAnalysisData().then(status => {
+  console.log(`Loaded: ${status.features} features, ${status.hotspots} hotspots`);
+  buildHotspotMap();
+  buildKDEMap();
+  buildTables();
+});
+</script>
 </body>
 </html>

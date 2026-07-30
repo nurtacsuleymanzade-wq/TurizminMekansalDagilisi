@@ -1,0 +1,815 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.8657147,
+          47.7103011
+        ]
+      },
+      "properties": {
+        "name": "Qebele kısaltılmışQebele rayonunun turizm imkanlarinormal",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9753297,
+          47.913748
+        ]
+      },
+      "properties": {
+        "name": "Yeddi Gozel Waterfall",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0538241,
+          47.8867653
+        ]
+      },
+      "properties": {
+        "name": "Durja Waterfall",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0483547,
+          47.9129049
+        ]
+      },
+      "properties": {
+        "name": "Laza köyü",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0663456,
+          47.9297953
+        ]
+      },
+      "properties": {
+        "name": "Zəylik Şəlaləsi",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.7900653,
+          47.6109885
+        ]
+      },
+      "properties": {
+        "name": "Rafting Gabala",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0049854,
+          47.9643422
+        ]
+      },
+      "properties": {
+        "name": "Soyuq Bulaq Şəlaləsi-Waterfall",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.8579136,
+          47.7257538
+        ]
+      },
+      "properties": {
+        "name": "Tarihi mekanlarAncient City Site Qabala",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.883799,
+          47.706424
+        ]
+      },
+      "properties": {
+        "name": "The ruins of the ancient city walls of Gabala",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.8991292,
+          47.7155022
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Excavations - Ancient Caucasian Albania",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9114228,
+          47.9623416
+        ]
+      },
+      "properties": {
+        "name": "Həzrə Türbələri Kompleksi",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.91368,
+          47.6469266
+        ]
+      },
+      "properties": {
+        "name": "Azerbaijan Udi Hearth",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9449308,
+          47.6687443
+        ]
+      },
+      "properties": {
+        "name": "Albanian Church",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9323014,
+          47.6548907
+        ]
+      },
+      "properties": {
+        "name": "Alban-Udi Church Chotari",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9470725,
+          47.8716941
+        ]
+      },
+      "properties": {
+        "name": "RestoranlarSerin bağ. Cool Garden حديقة باردة",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.8915754,
+          47.6918808
+        ]
+      },
+      "properties": {
+        "name": "Qala selbir Balıq evi çuxur Qəbələ",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9288786,
+          47.7950677
+        ]
+      },
+      "properties": {
+        "name": "Qedim Qebele",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9157594,
+          47.8023468
+        ]
+      },
+      "properties": {
+        "name": "Aydınqışlaq kafe",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0063619,
+          47.8774582
+        ]
+      },
+      "properties": {
+        "name": "Su Səsi Qəbələ",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0171128,
+          47.8934398
+        ]
+      },
+      "properties": {
+        "name": "Qabala Xanlar resort",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0242327,
+          47.8729684
+        ]
+      },
+      "properties": {
+        "name": "Soyuq Bulaq Qəbələ Restoranı",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9630319,
+          47.8720589
+        ]
+      },
+      "properties": {
+        "name": "Nohur Gol Restoran",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9531464,
+          47.891819
+        ]
+      },
+      "properties": {
+        "name": "Dost Qapısı",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9344331,
+          47.9565324
+        ]
+      },
+      "properties": {
+        "name": "Restaurant Manzara.Gabala Vandam",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0523255,
+          47.7896236
+        ]
+      },
+      "properties": {
+        "name": "Qədiroğlu Şahdağ Restoran",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0305797,
+          47.7794039
+        ]
+      },
+      "properties": {
+        "name": "RİM Restaurant",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0412117,
+          47.7788413
+        ]
+      },
+      "properties": {
+        "name": "Cənnət Bağı Restoran",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.961423,
+          47.9073622
+        ]
+      },
+      "properties": {
+        "name": "OtellerChenot Palace Gabala",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0331223,
+          47.8868809
+        ]
+      },
+      "properties": {
+        "name": "Tufandag Mountain Resort",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9477375,
+          47.8226581
+        ]
+      },
+      "properties": {
+        "name": "Gilan Hotel Gabala",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9371861,
+          47.8852824
+        ]
+      },
+      "properties": {
+        "name": "Nohur Hotel",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9760437,
+          47.8206225
+        ]
+      },
+      "properties": {
+        "name": "Qafqaz White Palace",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9902113,
+          47.8237358
+        ]
+      },
+      "properties": {
+        "name": "Zohrab Villa",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9879283,
+          47.8453142
+        ]
+      },
+      "properties": {
+        "name": "Private Holiday Villa in Gabala City - Fits up to 30 People - 8 Bedrooms",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0005726,
+          47.8389005
+        ]
+      },
+      "properties": {
+        "name": "A Yard Or Villa İn Gabala",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9880302,
+          47.8619057
+        ]
+      },
+      "properties": {
+        "name": "Qafqaz Mini Villa",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.979798,
+          47.8664751
+        ]
+      },
+      "properties": {
+        "name": "Qafqaz Suite Bluesky",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9963108,
+          47.8698384
+        ]
+      },
+      "properties": {
+        "name": "Fortuna Resort Qebele",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0055357,
+          47.8562292
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0154171,
+          47.8678023
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0070985,
+          47.8889361
+        ]
+      },
+      "properties": {
+        "name": "Qafqaz Riverside Resort Hotel",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0160637,
+          47.9123929
+        ]
+      },
+      "properties": {
+        "name": "Qafqaz Resort Hotel",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9445426,
+          47.9092714
+        ]
+      },
+      "properties": {
+        "name": "Gabala House",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9277403,
+          47.9764327
+        ]
+      },
+      "properties": {
+        "name": "Xəzər İstirahət Mərkəzi",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9513765,
+          47.9275721
+        ]
+      },
+      "properties": {
+        "name": "Qabala Yeddi Gozel Hotel",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9843915,
+          47.9528362
+        ]
+      },
+      "properties": {
+        "name": "White Boutique Hotel Gabala",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.8071627,
+          47.6138258
+        ]
+      },
+      "properties": {
+        "name": "Archan Gabala",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.8276694,
+          47.7116417
+        ]
+      },
+      "properties": {
+        "name": "Hava limanıGabala International Airport",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9765188,
+          47.8487237
+        ]
+      },
+      "properties": {
+        "name": "Ticaret MerkeziGabala Shopping Center",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9664556,
+          47.8427669
+        ]
+      },
+      "properties": {
+        "name": "Qəbələ Əyləncə Mərkəzi",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9879728,
+          47.8871841
+        ]
+      },
+      "properties": {
+        "name": "Gabaland Amusement Park",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0045247,
+          47.8013388
+        ]
+      },
+      "properties": {
+        "name": "Gabala Shooting Club",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.8806603,
+          47.8557748
+        ]
+      },
+      "properties": {
+        "name": "Termal SUYengice Thermal Resort Hotel",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0581856,
+          47.8088278
+        ]
+      },
+      "properties": {
+        "name": "Qamarvan",
+        "category": "Doga_Alani",
+        "source_file": "05_doga_alanlari"
+      }
+    }
+  ]
+}

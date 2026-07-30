@@ -1,0 +1,1655 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3663004,
+          49.8325225
+        ]
+      },
+      "properties": {
+        "name": "Içerışeher haritasıIçerışeherdekı turızm adına herseynormal",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3661111,
+          49.8336111
+        ]
+      },
+      "properties": {
+        "name": "Şirvanşahlar Sarayı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3676593,
+          49.8366264
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3666587,
+          49.8347736
+        ]
+      },
+      "properties": {
+        "name": "Tahir Salakhov Ev Müzesi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3650386,
+          49.8347917
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3644752,
+          49.83541
+        ]
+      },
+      "properties": {
+        "name": "Ramazanovlar Sarayı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3657582,
+          49.8353465
+        ]
+      },
+      "properties": {
+        "name": "Açık Hava Müzesi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3661172,
+          49.8333288
+        ]
+      },
+      "properties": {
+        "name": "HamamlarŞirvanşahların hamamları",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3686677,
+          49.8369344
+        ]
+      },
+      "properties": {
+        "name": "Yeraltı hamam (XVII əsr)",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3643691,
+          49.8327503
+        ]
+      },
+      "properties": {
+        "name": "Ağa Mikayil Hamamı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3672431,
+          49.8369669
+        ]
+      },
+      "properties": {
+        "name": "Kultur merkezlerıModern Sanat Merkezi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.366022,
+          49.8323896
+        ]
+      },
+      "properties": {
+        "name": "ARTIM Proje Alanı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3679352,
+          49.8350991
+        ]
+      },
+      "properties": {
+        "name": "Medina Galerisi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3670107,
+          49.8330322
+        ]
+      },
+      "properties": {
+        "name": "Bakü Resm Galerisi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.364755,
+          49.8343462
+        ]
+      },
+      "properties": {
+        "name": "Bakü Marionette Tiyatrosu",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3662966,
+          49.8379465
+        ]
+      },
+      "properties": {
+        "name": "İsa Bey Hacinskinin evi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3665329,
+          49.8374283
+        ]
+      },
+      "properties": {
+        "name": "QGallery (Kız Kalesi Art Gallery)",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3648339,
+          49.8355749
+        ]
+      },
+      "properties": {
+        "name": "İçerişeher Devlet Tarih-Mimarlık Koruma alanı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3640039,
+          49.83416
+        ]
+      },
+      "properties": {
+        "name": "OtellerRöyal Antik Butik otel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3640685,
+          49.8337072
+        ]
+      },
+      "properties": {
+        "name": "Premier Old Gates Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3643122,
+          49.8334458
+        ]
+      },
+      "properties": {
+        "name": "Perla De Mar Hotel Baku",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3643699,
+          49.832991
+        ]
+      },
+      "properties": {
+        "name": "City Walls Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3650208,
+          49.8333031
+        ]
+      },
+      "properties": {
+        "name": "Revelton Studios Baku",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3651592,
+          49.8332387
+        ]
+      },
+      "properties": {
+        "name": "Şirvanşah oteli",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3652028,
+          49.8327684
+        ]
+      },
+      "properties": {
+        "name": "Qala Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3652218,
+          49.8329776
+        ]
+      },
+      "properties": {
+        "name": "Nuh\\`un gemisi oteli",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3652306,
+          49.8328686
+        ]
+      },
+      "properties": {
+        "name": "OLD STONE HOTEL",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3651356,
+          49.8324002
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3651601,
+          49.8324807
+        ]
+      },
+      "properties": {
+        "name": "La Casa Old City",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3656274,
+          49.8323669
+        ]
+      },
+      "properties": {
+        "name": "İçerişeher otel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3662196,
+          49.834288
+        ]
+      },
+      "properties": {
+        "name": "Terrace Old City Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3662345,
+          49.8344264
+        ]
+      },
+      "properties": {
+        "name": "Iva Hotel Old City Baku",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3662849,
+          49.8345508
+        ]
+      },
+      "properties": {
+        "name": "Soffia Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3665548,
+          49.8364893
+        ]
+      },
+      "properties": {
+        "name": "Museum Inn",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3662569,
+          49.8363347
+        ]
+      },
+      "properties": {
+        "name": "Sultan Inn Boutique Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3658568,
+          49.8360262
+        ]
+      },
+      "properties": {
+        "name": "Deniz Inn",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3658702,
+          49.8357615
+        ]
+      },
+      "properties": {
+        "name": "West Inn Hotel Baku",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3658152,
+          49.8355302
+        ]
+      },
+      "properties": {
+        "name": "Caspian Pearl Boutique Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3655711,
+          49.8360088
+        ]
+      },
+      "properties": {
+        "name": "Old Castle Boutique Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3653832,
+          49.8359383
+        ]
+      },
+      "properties": {
+        "name": "Castello Inn Baku",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.366691,
+          49.8353845
+        ]
+      },
+      "properties": {
+        "name": "Boyuk Gala Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3664836,
+          49.8359092
+        ]
+      },
+      "properties": {
+        "name": "Seven Rooms Boutique Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.36804,
+          49.8363668
+        ]
+      },
+      "properties": {
+        "name": "Şah Sarayı otel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3666365,
+          49.8378593
+        ]
+      },
+      "properties": {
+        "name": "Art Gallery Hotel",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3637346,
+          49.833809
+        ]
+      },
+      "properties": {
+        "name": "RestoranlarКафе Тандыр",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3651551,
+          49.8331352
+        ]
+      },
+      "properties": {
+        "name": "Natavan Restoran",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3652641,
+          49.8323794
+        ]
+      },
+      "properties": {
+        "name": "Ocag art cafe",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3655333,
+          49.8324253
+        ]
+      },
+      "properties": {
+        "name": "Muse Cafe",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3659178,
+          49.8329425
+        ]
+      },
+      "properties": {
+        "name": "Floors. The Housing Space.",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3671285,
+          49.8362989
+        ]
+      },
+      "properties": {
+        "name": "Coffee And Jazz",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3669504,
+          49.8361927
+        ]
+      },
+      "properties": {
+        "name": "Böyük Qala Restaurant",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3664273,
+          49.8364464
+        ]
+      },
+      "properties": {
+        "name": "Çay Bağı 145",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3652058,
+          49.8358907
+        ]
+      },
+      "properties": {
+        "name": "New Karavanseray ART GARDEN RESTORAN",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3649923,
+          49.8358726
+        ]
+      },
+      "properties": {
+        "name": "Han Restaurant Baku",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3650926,
+          49.8358414
+        ]
+      },
+      "properties": {
+        "name": "Shakh Garden",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3657417,
+          49.8366801
+        ]
+      },
+      "properties": {
+        "name": "Rast restourant lounge",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3651007,
+          49.8359889
+        ]
+      },
+      "properties": {
+        "name": "Tatell Baku",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3655805,
+          49.8352121
+        ]
+      },
+      "properties": {
+        "name": "Köhnə şəhər restoranı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3678197,
+          49.8364157
+        ]
+      },
+      "properties": {
+        "name": "LaQuzu",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3675971,
+          49.8364869
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.368515,
+          49.8359697
+        ]
+      },
+      "properties": {
+        "name": "Qaynana Restaurant",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3685582,
+          49.8357076
+        ]
+      },
+      "properties": {
+        "name": "Salam Baku Restaurant",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3687309,
+          49.8356913
+        ]
+      },
+      "properties": {
+        "name": "Manqal Old",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3686749,
+          49.8355151
+        ]
+      },
+      "properties": {
+        "name": "Sehrli Təndir",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3686004,
+          49.8352071
+        ]
+      },
+      "properties": {
+        "name": "Qala Divari",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3645207,
+          49.8349875
+        ]
+      },
+      "properties": {
+        "name": "Merci Baku",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3669376,
+          49.8378102
+        ]
+      },
+      "properties": {
+        "name": "Le Cafe",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3677956,
+          49.8335008
+        ]
+      },
+      "properties": {
+        "name": "Bürc Qala",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3676411,
+          49.8333034
+        ]
+      },
+      "properties": {
+        "name": "Gabala Old City Restaurant",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3669801,
+          49.8325567
+        ]
+      },
+      "properties": {
+        "name": "Taksim Kebap İçeri Şeher",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3641127,
+          49.8337918
+        ]
+      },
+      "properties": {
+        "name": "Old City Coffee",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.365778,
+          49.8375133
+        ]
+      },
+      "properties": {
+        "name": "Caffe Giusto (Maiden Tower)",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3679219,
+          49.8336098
+        ]
+      },
+      "properties": {
+        "name": "Ciz Biz Resturant",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3672576,
+          49.8328155
+        ]
+      },
+      "properties": {
+        "name": "Xanliq restaurant",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3648011,
+          49.8328681
+        ]
+      },
+      "properties": {
+        "name": "CamilerGileyli Məscidi (Cömert Geray camii)",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3660854,
+          49.8330144
+        ]
+      },
+      "properties": {
+        "name": "Şah Məscidi (Shah Mosque)",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3659377,
+          49.8326269
+        ]
+      },
+      "properties": {
+        "name": "Çin Camii",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.365901,
+          49.833526
+        ]
+      },
+      "properties": {
+        "name": "Seyid Yahya Bakuvi Türbesi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3661225,
+          49.8344082
+        ]
+      },
+      "properties": {
+        "name": "Beyler camii",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3654211,
+          49.8357382
+        ]
+      },
+      "properties": {
+        "name": "Cuma Camii",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3658344,
+          49.8373241
+        ]
+      },
+      "properties": {
+        "name": "Lezgi Camii",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3677846,
+          49.8356522
+        ]
+      },
+      "properties": {
+        "name": "Molla Ahmet Camii",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3650515,
+          49.834159
+        ]
+      },
+      "properties": {
+        "name": "Hızır Camii",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3653952,
+          49.8346935
+        ]
+      },
+      "properties": {
+        "name": "Muhammet Camii",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3661446,
+          49.833472
+        ]
+      },
+      "properties": {
+        "name": "Keigubad Camii",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.364757,
+          49.8353139
+        ]
+      },
+      "properties": {
+        "name": "Sayyid Yahya Murtuza Mosque",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.365833,
+          49.8368832
+        ]
+      },
+      "properties": {
+        "name": "Tanrı\\`nın kutsal annesi kilisesi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3637063,
+          49.8339331
+        ]
+      },
+      "properties": {
+        "name": "Tarıhı unsurlarSalyan Kapısı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3637993,
+          49.8335076
+        ]
+      },
+      "properties": {
+        "name": "14.yüzyıl Sufi hanegahı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3640095,
+          49.8331639
+        ]
+      },
+      "properties": {
+        "name": "Filarmoni Duvar Saati",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3659114,
+          49.8321172
+        ]
+      },
+      "properties": {
+        "name": "Tekkale Kapısı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3659707,
+          49.8322918
+        ]
+      },
+      "properties": {
+        "name": "Aliağa Vahid heykeli",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3660192,
+          49.8338318
+        ]
+      },
+      "properties": {
+        "name": "Murat Kapısı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3662377,
+          49.8372794
+        ]
+      },
+      "properties": {
+        "name": "Kız Kalesi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3686325,
+          49.8365301
+        ]
+      },
+      "properties": {
+        "name": "Bakü hanlarının sarayı kompleksi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3661967,
+          49.832828
+        ]
+      },
+      "properties": {
+        "name": "Şirvanşahların Mezarı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.364101,
+          49.8329172
+        ]
+      },
+      "properties": {
+        "name": "Ağa Mikail Kulesi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3664248,
+          49.8368338
+        ]
+      },
+      "properties": {
+        "name": "Bazar Meydanı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3687387,
+          49.8364705
+        ]
+      },
+      "properties": {
+        "name": "Sağ Şamakhı Kulesi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3667409,
+          49.837036
+        ]
+      },
+      "properties": {
+        "name": "KervansaraylarBuhara Kervansarayı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3651562,
+          49.8357412
+        ]
+      },
+      "properties": {
+        "name": "Küçük Kervansaray",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3671202,
+          49.8372781
+        ]
+      },
+      "properties": {
+        "name": "Multani Karvansarayi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3661462,
+          49.837225
+        ]
+      },
+      "properties": {
+        "name": "Hedıyelik eşya dükkanlarıEl sanatları mağazaları",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3663214,
+          49.8370485
+        ]
+      },
+      "properties": {
+        "name": "Benzersiz Halılar Butiki",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3665081,
+          49.8372779
+        ]
+      },
+      "properties": {
+        "name": "Uçan Halılar Butiki",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3668069,
+          49.8362729
+        ]
+      },
+      "properties": {
+        "name": "Tebriz halıları",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3674716,
+          49.8368758
+        ]
+      },
+      "properties": {
+        "name": "Kardeşler Halı Dükanı",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.365676,
+          49.8350422
+        ]
+      },
+      "properties": {
+        "name": "Hillside Şarap butiği",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3650727,
+          49.8356444
+        ]
+      },
+      "properties": {
+        "name": "İçerişeher “ABAD” sergi-satış merkezi",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3645598,
+          49.8345004
+        ]
+      },
+      "properties": {
+        "name": "Buta Hediyelik Eşya",
+        "category": "Turizm_Bolgesi",
+        "source_file": "07_turizm_bolgeleri"
+      }
+    }
+  ]
+}

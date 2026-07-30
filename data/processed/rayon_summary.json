@@ -1,0 +1,112 @@
+{
+  "Agdam": {
+    "total": 36,
+    "categories": {
+      "Otel": 36
+    },
+    "lon": 46.95,
+    "lat": 40.05
+  },
+  "Aghjabadi": {
+    "total": 8,
+    "categories": {
+      "Otel": 8
+    },
+    "lon": 47.37,
+    "lat": 40.05
+  },
+  "Barda": {
+    "total": 13,
+    "categories": {
+      "Otel": 13
+    },
+    "lon": 47.13,
+    "lat": 40.38
+  },
+  "Beylagan": {
+    "total": 26,
+    "categories": {
+      "Otel": 26
+    },
+    "lon": 47.62,
+    "lat": 39.78
+  },
+  "Fuzuli": {
+    "total": 101,
+    "categories": {
+      "Otel": 101
+    },
+    "lon": 47.17,
+    "lat": 39.58
+  },
+  "Jabrayil": {
+    "total": 63,
+    "categories": {
+      "Otel": 63
+    },
+    "lon": 47.0,
+    "lat": 39.4
+  },
+  "Khojaly": {
+    "total": 72,
+    "categories": {
+      "Otel": 72
+    },
+    "lon": 46.8,
+    "lat": 39.9
+  },
+  "Lachin": {
+    "total": 23,
+    "categories": {
+      "Otel": 23
+    },
+    "lon": 46.37,
+    "lat": 39.63
+  },
+  "Naftalan": {
+    "total": 15,
+    "categories": {
+      "Otel": 15
+    },
+    "lon": 46.82,
+    "lat": 40.5
+  },
+  "Qazakh": {
+    "total": 550,
+    "categories": {
+      "Destinasyon": 20,
+      "Diger_Tesis": 69,
+      "Doga_Alani": 54,
+      "Kultur_Merkezi": 198,
+      "Tarihi_Anit": 30,
+      "Turizm_Bolgesi": 110,
+      "Ulasim": 69
+    },
+    "lon": 45.37,
+    "lat": 41.1
+  },
+  "Qubadli": {
+    "total": 8,
+    "categories": {
+      "Otel": 8
+    },
+    "lon": 46.5,
+    "lat": 39.35
+  },
+  "Shusha": {
+    "total": 120,
+    "categories": {
+      "Otel": 120
+    },
+    "lon": 46.75,
+    "lat": 39.75
+  },
+  "Tartar": {
+    "total": 50,
+    "categories": {
+      "Otel": 50
+    },
+    "lon": 46.85,
+    "lat": 40.33
+  }
+}

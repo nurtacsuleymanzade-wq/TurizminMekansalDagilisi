@@ -1,0 +1,1040 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3825817,
+          48.5236221
+        ]
+      },
+      "properties": {
+        "name": "Quba kısaldılmışQuba rayonunun turizm fealiyetlerinormal",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2090365,
+          48.1030709
+        ]
+      },
+      "properties": {
+        "name": "Kınalık Ateş Tapınağı",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1743601,
+          48.1475991
+        ]
+      },
+      "properties": {
+        "name": "Kınalık Tarih ve Etnografi Müzesi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1732732,
+          48.1152319
+        ]
+      },
+      "properties": {
+        "name": "Şeyh Şalbuz Camii",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3705855,
+          48.5060457
+        ]
+      },
+      "properties": {
+        "name": "Tağlı körpü",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3690061,
+          48.5186622
+        ]
+      },
+      "properties": {
+        "name": "Dağ Yahudilerinin müzesi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3840814,
+          48.5071596
+        ]
+      },
+      "properties": {
+        "name": "Sinagog",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3727809,
+          48.4924407
+        ]
+      },
+      "properties": {
+        "name": "Altı kubbeli Sinagog",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.307322,
+          48.5699946
+        ]
+      },
+      "properties": {
+        "name": "Konaklama ve dinlenme olanaklarıMacara Village Resort",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3627426,
+          48.3840379
+        ]
+      },
+      "properties": {
+        "name": "Long Forest Cabins",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3313474,
+          48.4029986
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3121424,
+          48.3758352
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2168819,
+          48.2837263
+        ]
+      },
+      "properties": {
+        "name": "Quba Xal Xal istirahət mərkəzi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2218892,
+          48.2489938
+        ]
+      },
+      "properties": {
+        "name": "Griz Guesthouse",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2488321,
+          48.3014875
+        ]
+      },
+      "properties": {
+        "name": "Məstdərgah Quba",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2494274,
+          48.313895
+        ]
+      },
+      "properties": {
+        "name": "Nazli Bulaq Istirahet Merkezi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2218853,
+          48.2977337
+        ]
+      },
+      "properties": {
+        "name": "Mountain Breeze",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2290837,
+          48.3068873
+        ]
+      },
+      "properties": {
+        "name": "Guba Panoramic hotel",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2726971,
+          48.325261
+        ]
+      },
+      "properties": {
+        "name": "Quba Vadi Chalet Hotel",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2755193,
+          48.3467674
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3078872,
+          48.3916283
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3225688,
+          48.37708
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3242909,
+          48.3928635
+        ]
+      },
+      "properties": {
+        "name": "HİLLSİDE istirahət mərkəzi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3465611,
+          48.4495178
+        ]
+      },
+      "properties": {
+        "name": "Gachrash Forest (recreational area)",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3156375,
+          48.546053
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3321064,
+          48.4989785
+        ]
+      },
+      "properties": {
+        "name": "Quba Palace Hotel",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3059711,
+          48.5351642
+        ]
+      },
+      "properties": {
+        "name": "Cennet Bagi Hotel",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2601018,
+          48.3312146
+        ]
+      },
+      "properties": {
+        "name": "Minarə Ailəvi İstirahət Mərkəzi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3614115,
+          48.4866215
+        ]
+      },
+      "properties": {
+        "name": "Gold Hotel Quba",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3575475,
+          48.5771153
+        ]
+      },
+      "properties": {
+        "name": "Arena Grand Hotel",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.363179,
+          48.564883
+        ]
+      },
+      "properties": {
+        "name": "Arena Sport Hotel",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3733317,
+          48.5401623
+        ]
+      },
+      "properties": {
+        "name": "Quba Palace Hotel",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2282739,
+          48.3212182
+        ]
+      },
+      "properties": {
+        "name": "Dehne İstirahet Merkezi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1564242,
+          48.4135021
+        ]
+      },
+      "properties": {
+        "name": "Retro Otel",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1598432,
+          48.6128884
+        ]
+      },
+      "properties": {
+        "name": "Uğur İstirahət Mərkəzi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3870594,
+          48.5392811
+        ]
+      },
+      "properties": {
+        "name": "",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3596514,
+          48.504919
+        ]
+      },
+      "properties": {
+        "name": "Doğal coğrafi olanaklarNizami Park",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2400429,
+          48.2922349
+        ]
+      },
+      "properties": {
+        "name": "Afurca şelalesi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.237522,
+          48.3152253
+        ]
+      },
+      "properties": {
+        "name": "Grizdehne köyü",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2247661,
+          48.2191145
+        ]
+      },
+      "properties": {
+        "name": "Gur-gur Şəlaləsi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1978574,
+          48.2120187
+        ]
+      },
+      "properties": {
+        "name": "Kartal irvesi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2019905,
+          48.1860527
+        ]
+      },
+      "properties": {
+        "name": "Galahudat köyü",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1898484,
+          48.1300908
+        ]
+      },
+      "properties": {
+        "name": "Kınalık köyü",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2415745,
+          48.1006081
+        ]
+      },
+      "properties": {
+        "name": "Heydər Əliyev zirvəsi (Mount Haydar Aliyev)",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3164104,
+          48.3616005
+        ]
+      },
+      "properties": {
+        "name": "Geçreş köyü",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1988064,
+          48.2561641
+        ]
+      },
+      "properties": {
+        "name": "Griz köyü",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.357614,
+          48.5209366
+        ]
+      },
+      "properties": {
+        "name": "Təngəaltı",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2188583,
+          48.5397992
+        ]
+      },
+      "properties": {
+        "name": "Khanagah",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3110093,
+          48.5820212
+        ]
+      },
+      "properties": {
+        "name": "Chanlibel Lake",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.192054,
+          48.520902
+        ]
+      },
+      "properties": {
+        "name": "Şahdağ Milli Parkı - Quba Xanagah marşrutu",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2275899,
+          48.6245088
+        ]
+      },
+      "properties": {
+        "name": "Tengealtı deresi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.192054,
+          48.520902
+        ]
+      },
+      "properties": {
+        "name": "Şahdağ Milli Parkı - Quba Xanagah marşrutu",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9744808,
+          48.6868943
+        ]
+      },
+      "properties": {
+        "name": "Xaltan",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2495548,
+          48.3373181
+        ]
+      },
+      "properties": {
+        "name": "Yeme içme olanaklarıŞelale Dinlenme alanı ve Restoran",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2435964,
+          48.3263808
+        ]
+      },
+      "properties": {
+        "name": "Qızılağac restorani",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2607799,
+          48.3181332
+        ]
+      },
+      "properties": {
+        "name": "Şahbulaq İstirahət Mərkəzi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2580335,
+          48.3458749
+        ]
+      },
+      "properties": {
+        "name": "Ağbulaq Restoranı",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2820665,
+          48.3341442
+        ]
+      },
+      "properties": {
+        "name": "Quba-Ağ bulaq restoranı",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2663569,
+          48.3506123
+        ]
+      },
+      "properties": {
+        "name": "Şah Eseri",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2997495,
+          48.3720277
+        ]
+      },
+      "properties": {
+        "name": "Qədim Qəçrəş restoranı",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2988274,
+          48.5310951
+        ]
+      },
+      "properties": {
+        "name": "Balbulaq Ailəvi istirahət Mərkəzi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3200103,
+          48.5060888
+        ]
+      },
+      "properties": {
+        "name": "The Challette Steakhouse",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.203171,
+          48.6216187
+        ]
+      },
+      "properties": {
+        "name": "Tenge Deresi Restoran",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1891792,
+          48.6207301
+        ]
+      },
+      "properties": {
+        "name": "Magara",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1760759,
+          48.6133784
+        ]
+      },
+      "properties": {
+        "name": "Qosha-Qaya",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.291152,
+          48.3627589
+        ]
+      },
+      "properties": {
+        "name": "Eğlence ve alışverişHorse riding",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.330101,
+          48.5129643
+        ]
+      },
+      "properties": {
+        "name": "The National Azerbaijan Golf Club",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3504919,
+          48.5099431
+        ]
+      },
+      "properties": {
+        "name": "Şahdağ Quba İdman Kompleksi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.3576531,
+          48.5402338
+        ]
+      },
+      "properties": {
+        "name": "Quba Ticarət Mərkəzi",
+        "category": "Diger_Tesis",
+        "source_file": "03_diger_tesisler"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1228 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.0197172,
+          38.9065186
+        ]
+      },
+      "properties": {
+        "addr:city": "Ordubad",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Ordubad avtovağzali",
+        "name:en": "Ordubad Bus Terminal",
+        "name:ru": "Автовокзал г. Ордубад",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.4027383,
+          39.2186238
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtobus vağzalı",
+        "name:ru": "Автовокзал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.5618279,
+          39.401132
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name:en": "1925",
+        "name:ru": "1925"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.5709367,
+          39.8475308
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.0767082,
+          41.3280625
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Qırmızı Körpü",
+        "name:az": "Qırmızı Körpü",
+        "name:pl": "Czerwony Most",
+        "name:ru": "Красный мост",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.8102645,
+          40.5771897
+        ]
+      },
+      "properties": {
+        "addr:city": "Gədəbəy",
+        "addr:district": "Gədəbəy rayonu",
+        "addr:postcode": "AZ2100",
+        "addr:street": "20 Yanvar küç.",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Yeni Avtovağzal",
+        "phone": "+994 2232 54596",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.0829915,
+          40.5193617
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Köhnə Avtovağzal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.8246429,
+          40.2181897
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3209842,
+          40.5917051
+        ]
+      },
+      "properties": {
+        "addr:city": "Göygöl",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "description": "for Ganja (0.30 manat)",
+        "name": "Göygöl Avtovağzal",
+        "name:en": "Goygol Central Bus Station",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3404415,
+          40.6418614
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "description": "for Goygol (0.30 manat) ... from the center take bus #5 (0.30 manat)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3505207,
+          40.6530462
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.4065978,
+          40.6829804
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "description": "Tbilisi, Gazakh, Sheki, Nizami, Goranboy, Yevlax, Balaken, Agdas, Samadabad, Baku, Moskow",
+        "name": "Yeni Yevlax  avtovoğzalı",
+        "name:az": "Yevlax yeni avtovoğzal",
+        "name:en": "Yevlax yeni avtovoğzal - main bus station",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.8303216,
+          40.5024261
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.8291646,
+          40.5022953
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtovağzal Naftalan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.7771056,
+          40.6015097
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Goranboy Avtovağzalı"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.3520439,
+          41.0900893
+        ]
+      },
+      "properties": {
+        "addr:city": "Qazax",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Avtovağzal",
+        "name:fr": "Gare routière de Qazax",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.6245911,
+          40.9935322
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Tovuz Avtovağzalı"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.0337368,
+          40.8230248
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtovağzal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.2707904,
+          41.7098415
+        ]
+      },
+      "properties": {
+        "addr:street": "Şambul yolu",
+        "amenity": "bus_station",
+        "name": "Avtovağzal Qabaqçöl",
+        "phone": "+994506756255",
+        "website": "https://www.instagram.com/hemzetheyderov/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.4251764,
+          41.7056522
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.4253172,
+          41.7059164
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.4241792,
+          41.706127
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtovağzal Balakən"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.4162824,
+          41.7189907
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.6579638,
+          41.6018676
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Zaqatala Avtovağzal",
+        "name:en": "Zaqatala Bus Station",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.6388136,
+          41.6294025
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtovağzal Zagatala"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.6003185,
+          39.7867127
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8756473,
+          38.4452349
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name:en": "Bus Station",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8255821,
+          38.7785275
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name:en": "Lankaran Bus Station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.7075398,
+          40.229939
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtovağzal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.2182217,
+          40.6397163
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.7343887,
+          40.6404796
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtovağzal Göyçay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.2817212,
+          39.9822783
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1559086,
+          40.3340773
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtovağzal Kürdəmir"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.39201,
+          40.5811917
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtovağzal Ağsu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0458449,
+          40.7648869
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0458249,
+          40.7651308
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0455769,
+          40.7650972
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0460833,
+          40.7634585
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "4",
+        "name_1": "12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0458001,
+          40.7630642
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0450769,
+          40.7686177
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0852624,
+          40.7562126
+        ]
+      },
+      "properties": {
+        "addr:housenumber": "576",
+        "addr:postcode": "AZ4502",
+        "addr:street": "Heydər Əliyev prospekti",
+        "amenity": "bus_station",
+        "name": "Avtovağzal Mingəçevir"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1669859,
+          41.2017925
+        ]
+      },
+      "properties": {
+        "addr:street": "Mikayıl Müsfiq",
+        "amenity": "bus_station",
+        "highway": "bus_stop",
+        "name": "Təzə Bazar Şəki / New Bazar Bus Stop ( 4,5,8,10,11,14,15,24 )"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1700211,
+          40.7884416
+        ]
+      },
+      "properties": {
+        "addr:city": "İsmayıllı",
+        "amenity": "bus_station",
+        "name": "Avtovağzal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8307112,
+          40.95993
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtovağzal",
+        "name:pl": "Dworzec autobusowy Gabala"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4177379,
+          41.4186104
+        ]
+      },
+      "properties": {
+        "addr:postcode": "3800",
+        "addr:street": "Heydər Əliyev",
+        "amenity": "bus_station",
+        "email": "kainbekov84@mail.ru",
+        "name": "Такси парк",
+        "opening_hours": "07:00-23:59",
+        "phone": "+994702222457",
+        "website": "https://038-taxi-service.business.site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4415556,
+          41.4310187
+        ]
+      },
+      "properties": {
+        "addr:street": "Çingiz Qurbanov küç.",
+        "amenity": "bus_station",
+        "name": "Avtovağzal Qusar",
+        "name:az": "Avtovağzal Qusar",
+        "name:pl": "Dworzec autobusowy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5531079,
+          41.3673246
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "internet_access": "wlan",
+        "name:en": "ferid quba ev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5529522,
+          41.3714374
+        ]
+      },
+      "properties": {
+        "addr:city": "Quba",
+        "addr:postcode": "AZ4011",
+        "addr:street": "Molla Pənah Vaqif",
+        "amenity": "bus_station",
+        "name": "Quba Şəhər Avtovağzalı",
+        "name:en": "Quba Bus Station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6542594,
+          40.6222967
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Bakı Taxi",
+        "name:en": "Private cars to Baku, reasonable price"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7261351,
+          40.3145871
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7634225,
+          40.3234274
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Abşeron Ticarət Mərkəzi dayanacağı",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7728367,
+          40.3252256
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Avtovağzal",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7814111,
+          40.32547
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7819334,
+          40.3263288
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8180618,
+          40.3242731
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Muxtarov"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8509615,
+          40.3795476
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "28 May D",
+        "operator": "BakuBus",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8508209,
+          40.3796945
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "28 May C",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8489683,
+          40.3793508
+        ]
+      },
+      "properties": {
+        "addr:street": "28 May Meydanı",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "28 May F",
+        "operator": "BakuBUS MMC",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.854335,
+          40.3785416
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Aero Express shuttle to Airport (GYD)",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8643575,
+          40.3825612
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "2 saylı Şəhər Klinik Xəstəxanası",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7979746,
+          40.4183996
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Mərkəzi Avtovağzal Bakı - Giriş 1",
+        "name:az": "Mərkəzi Avtovağzal Bakı - Giriş 1",
+        "name:de": "Fernbus Terminal 1 Baku",
+        "name:en": "Central Bus Station 1 Baku"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.7985594,
+          40.4179172
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Mərkəzi Avtovağzal Bakı - Giriş 2",
+        "name:az": "Mərkəzi Avtovağzal Bakı - Giriş 2",
+        "name:de": "Fernbus Terminal 2 Baku",
+        "name:en": "Central Bus Station 2 Baku"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8138975,
+          40.4054362
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8190436,
+          40.4030082
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name:en": "Alatava körpüsü",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9099324,
+          40.4233408
+        ]
+      },
+      "properties": {
+        "addr:street": "Xəlil Rza Ulutürk",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "AYNA",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.6654323,
+          40.5845653
+        ]
+      },
+      "properties": {
+        "addr:street": "Bakı pr.",
+        "amenity": "bus_station",
+        "name": "Avtobus Staniyası 7, 26, 33 / 7-nin dayanacağı",
+        "name:en": "Bus station for 7, 26, 33",
+        "website": "http://sumqayit-ih.gov.az/az"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.6638413,
+          40.5861656
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "594/595 son dayancaq, Sumqayıt Avtovağzalı"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9470402,
+          40.3724738
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9794455,
+          40.3561722
+        ]
+      },
+      "properties": {
+        "addr:housenumber": "1",
+        "addr:street": "Hövsan Şosesi",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Baku Bus Depo",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9188878,
+          40.4209435
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Koroğlu Avtobus stansiyası",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9276852,
+          40.4266748
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Penitensiar Xidmətin Avtonəqliyyat Təsərrüfatı",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9588163,
+          40.4169723
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9629388,
+          40.4184712
+        ]
+      },
+      "properties": {
+        "addr:street": "Sülh",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name:en": "22, 35, 40, 141",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.9669951,
+          40.4140432
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.0146784,
+          40.4755312
+        ]
+      },
+      "properties": {
+        "addr:housenumber": "214",
+        "addr:postcode": "AZ1112",
+        "addr:street": "Shusha Street",
+        "amenity": "bus_station",
+        "name": "Avtovağzal - 214 Avtobus",
+        "operator": "Irade ve Ziya"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.0523703,
+          40.4640868
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.1647089,
+          40.4869667
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "name": "Avtovağzal Mərdəkan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5770561,
+          41.6374845
+        ]
+      },
+      "properties": {
+        "addr:street": "Yasaboba",
+        "amenity": "bus_station",
+        "name:en": "Avtobus dayanacağı"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6867834,
+          41.6229215
+        ]
+      },
+      "properties": {
+        "addr:street": "Qəndov-Xaçmaz-Yalama R.F. sərhədi",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Avtovağzal Xudat",
+        "name:az": "Xudat avtovağzalı",
+        "public_transport": "station"
+      }
+    }
+  ]
+}

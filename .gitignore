@@ -2,24 +2,38 @@
 .DS_Store
 Thumbs.db
 *.swp
-*.swo
 *~
 
 # Python
 __pycache__/
 *.py[cod]
 *.egg-info/
-.env
+env/
 .venv/
-venv/
+dist/
+build/
 
 # IDE
-.vscode/
 .idea/
+.vscode/
+*.sublime-*
 
-# Large data (track via git LFS if needed)
-data/raw/*.shp
-data/raw/*.tif
-data/raw/*.nc
-data/raw/*.gpkg
-*.gdb/
+# Node
+node_modules/
+
+# Large data files (>50MB)
+data/raw/statistics/*.zip
+
+# Keep Git keepfiles
+!.gitkeep
+
+# Logs
+*.log
+
+# Virtual environments
+venv/
+env/
+
+# Raw intermediate data
+data/geojson/*_raw.json
+*.zip
