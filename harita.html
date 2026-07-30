@@ -3,40 +3,288 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>İnteraktif Haritalar — Turizmin Mekansal Dağılışı</title>
+<title>İnteraktif Harita — Turizmin Mekansal Dağılışı</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="scripts/nav.js"></script>
 <style>
-  #map-container { display: flex; flex-direction: column; gap: 20px; }
-  .map-wrapper { background: var(--surface); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
-  #main-map { height: 550px; width: 100%; }
-  .map-controls { display: flex; gap: 10px; padding: 15px; flex-wrap: wrap; background: var(--surface-alt); border-bottom: 1px solid var(--border); }
-  .map-controls select, .map-controls button { padding: 8px 16px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 14px; cursor: pointer; }
-  .map-controls select:hover, .map-controls button:hover { border-color: var(--accent); }
-  .map-controls button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-  .map-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; padding: 15px; }
-  .stat-card { text-align: center; padding: 12px; background: var(--surface-alt); border-radius: 8px; }
-  .stat-card .value { font-size: 24px; font-weight: 700; color: var(--accent); }
-  .stat-card .label { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
-  .legend-info { padding: 12px 15px; font-size: 13px; color: var(--text-muted); display: flex; gap: 18px; flex-wrap: wrap; }
-  .legend-info .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 6px; }
-  .category-legend { padding: 8px 15px 15px; display: flex; gap: 12px; flex-wrap: wrap; }
-  .cat-item { display: flex; align-items: center; gap: 6px; font-size: 13px; cursor: pointer; padding: 4px 10px; border-radius: 20px; border: 1px solid var(--border); transition: all 0.2s; }
-  .cat-item:hover { background: var(--surface-alt); }
-  .cat-item.active { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 15%, transparent); }
-  .cat-item input { margin: 0; }
-  #mini-maps { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-  .mini-map-box { background: var(--surface); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
-  .mini-map-box h3 { margin: 0; padding: 12px 15px; font-size: 15px; border-bottom: 1px solid var(--border); }
-  .mini-map { height: 300px; width: 100%; }
-  .leaflet-popup-content { font-family: 'Inter', sans-serif; }
-  .leaflet-popup-content strong { color: #000; }
+:root {
+  --leaflet-bg: #0a0e17;
+  --panel-bg: #111827dd;
+  --panel-border: #1e293b;
+  --text-panel: #e2e8f0;
+  --accent: #3b82f6;
+  --radius: 10px;
+}
+* { box-sizing: border-box; }
+
+body { background: #0a0e17; }
+
+.map-page-layout {
+  display: flex;
+  gap: 0;
+  height: calc(100vh - var(--nav-height, 72px));
+  position: relative;
+}
+
+/* Sidebar */
+.map-sidebar {
+  width: 320px;
+  min-width: 320px;
+  background: var(--panel-bg);
+  backdrop-filter: blur(12px);
+  border-right: 1px solid var(--panel-border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+  height: 100%;
+}
+.sidebar-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--panel-border);
+  flex-shrink: 0;
+}
+.sidebar-header h2 {
+  margin: 0 0 4px 0; font-size: 16px; color: var(--text-panel); display: flex; align-items: center; gap: 8px;
+}
+.sidebar-header .subtitle {
+  font-size: 12px; color: #64748b; margin: 0;
+}
+
+/* Search */
+.search-box {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--panel-border);
+  flex-shrink: 0;
+}
+.search-box input {
+  width: 100%;
+  padding: 10px 14px;
+  background: #1a1f2e;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  color: var(--text-panel);
+  font-size: 13px;
+  outline: none;
+  transition: border 0.2s;
+}
+.search-box input:focus { border-color: var(--accent); }
+.search-box input::placeholder { color: #475569; }
+.search-results {
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  position: absolute;
+  width: calc(320px - 32px);
+  background: #1a1f2e;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  z-index: 2000;
+  margin-top: 4px;
+}
+.search-results.show { display: block; }
+.search-results .sr-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--text-panel);
+  border-bottom: 1px solid #1e293b;
+  transition: background 0.15s;
+}
+.search-results .sr-item:hover { background: #1f2638; }
+.search-results .sr-item .sr-cat { font-size: 10px; color: #64748b; }
+
+/* Category filters */
+.category-filters {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--panel-border);
+  flex-shrink: 0;
+  overflow-y: auto;
+  max-height: 340px;
+}
+.category-filters h3 {
+  margin: 0 0 10px 0; font-size: 13px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.cat-filter-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-bottom: 2px;
+}
+.cat-filter-item:hover { background: #1a1f2e; }
+.cat-filter-item input[type="checkbox"] { accent-color: var(--accent); width: 16px; height: 16px; cursor: pointer; }
+.cat-filter-item .cat-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
+.cat-filter-item .cat-name { font-size: 13px; color: var(--text-panel); flex: 1; }
+.cat-filter-item .cat-count { font-size: 11px; color: #64748b; }
+.cat-filter-item .cat-icon { font-size: 14px; }
+
+/* Stats sidebar area */
+.sidebar-stats {
+  padding: 12px 16px;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--panel-border);
+}
+.sidebar-stats .total-count {
+  font-size: 28px; font-weight: 700; color: var(--accent);
+  line-height: 1;
+}
+.sidebar-stats .total-label { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* Region buttons */
+.region-buttons {
+  padding: 12px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--panel-border);
+}
+.region-btn {
+  padding: 5px 12px;
+  background: #1a1f2e;
+  border: 1px solid var(--panel-border);
+  border-radius: 20px;
+  color: #94a3b8;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.region-btn:hover { border-color: var(--accent); color: var(--text-panel); }
+.region-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Info panel (bottom of sidebar) */
+.info-panel {
+  padding: 12px 16px;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 80px;
+}
+.info-panel h4 {
+  margin: 0 0 8px 0; font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.info-panel .info-empty {
+  font-size: 12px; color: #475569; font-style: italic;
+}
+.info-panel .info-content {
+  display: none;
+}
+.info-panel .info-content.show { display: block; }
+.info-content .info-row {
+  display: flex;
+  padding: 4px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #1a1f2e;
+}
+.info-content .info-row .info-label { color: #64748b; width: 90px; flex-shrink: 0; }
+.info-content .info-row .info-value { color: var(--text-panel); }
+
+/* Map container */
+.map-container-main {
+  flex: 1;
+  position: relative;
+}
+#mainMap {
+  width: 100%;
+  height: 100%;
+}
+
+/* Category legend overlay on map */
+.map-legend {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  background: var(--panel-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  z-index: 1000;
+  min-width: 160px;
+}
+.map-legend h4 {
+  margin: 0 0 8px 0; font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.map-legend .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  font-size: 11px;
+  color: var(--text-panel);
+}
+.map-legend .legend-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Remove default Leaflet attribution styling issues */
+.leaflet-container { background: #0a0e17; }
+.leaflet-control-zoom a { background: #1a1f2e !important; color: var(--text-panel) !important; border-color: var(--panel-border) !important; }
+.leaflet-popup-content-wrapper { background: #1a1f2e !important; color: var(--text-panel) !important; border-radius: 8px !important; }
+.leaflet-popup-tip { background: #1a1f2e !important; }
+
+/* Toggle sidebar button (mobile) */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2000;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(59,130,246,0.4);
+}
+
+@media (max-width: 768px) {
+  .map-sidebar {
+    position: fixed;
+    top: var(--nav-height, 72px);
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 2000;
+    transform: translateY(0);
+    transition: transform 0.3s;
+  }
+  .map-sidebar.collapsed {
+    transform: translateY(-100%);
+  }
+  .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Popup styling */
+.poi-popup h3 { margin: 0 0 6px 0; font-size: 14px; }
+.poi-popup p { margin: 2px 0; font-size: 12px; color: #94a3b8; }
+.poi-popup .pp-cat {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 4px;
+}
 </style>
 </head>
 <body>
@@ -46,260 +294,448 @@
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Ana Sayfa</a></li>
     <li><a href="harita.html" class="active">Haritalar</a></li>
+    <li><a href="haritalar_statiktir.html">Statik Haritalar</a></li>
     <li><a href="grafikler.html">Grafikler</a></li>
     <li><a href="analizler.html">Mekansal Analiz</a></li>
     <li><a href="veri.html">Veri Kaynakları</a></li>
   </ul>
 </nav>
 
-<main class="container">
-  <header class="page-header">
-    <h1>🏛️ İnteraktif Turizm Haritaları</h1>
-    <p class="subtitle">Azerbaycan genelinde turistik noktaların, otellerin, kültür merkezlerinin ve doğal alanların mekansal dağılışı.</p>
-  </header>
-
-  <section id="map-container">
-    <!-- Main controls -->
-    <div class="map-wrapper">
-      <div class="map-controls">
-        <select id="baseLayer">
-          <option value="streets">Sokak Haritası</option>
-          <option value="satellite">Uydu Görüntüsü</option>
-          <option value="topo">Topoğrafik</option>
-          <option value="light">Açık Tema</option>
-          <option value="dark">Koyu Tema</option>
-        </select>
-        <select id="mapView">
-          <option value="all">Tüm Kategoriler</option>
-          <option value="Otel">Oteller</option>
-          <option value="Kultur_Merkezi">Kültür Merkezleri</option>
-          <option value="Doga_Alani">Doğa Alanları</option>
-          <option value="Tarihi_Anit">Tarihi Anıtlar</option>
-          <option value="Turizm_Bolgesi">Turizm Bölgeleri</option>
-          <option value="Ulasim">Ulaşım</option>
-          <option value="Diger_Tesis">Diğer Tesisler</option>
-          <option value="Destinasyon">Destinasyonlar</option>
-        </select>
-        <select id="mapStyle">
-          <option value="point">Nokta Haritası</option>
-          <option value="cluster">Küme Haritası</option>
-          <option value="heat">Isı Haritası</option>
-        </select>
-        <button id="fitAll" class="active">Tümünü Göster</button>
-      </div>
-      <div id="main-map"></div>
-      <div class="map-stats" id="mapStats"></div>
+<div class="map-page-layout">
+  <!-- Sidebar -->
+  <aside class="map-sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2><i class="fas fa-map-marked-alt" style="color:var(--accent)"></i> Turizm POI Haritası</h2>
+      <p class="subtitle">7 kategoride 26.713 turistik nokta</p>
     </div>
 
-    <!-- Secondary maps -->
-    <div id="mini-maps">
-      <div class="mini-map-box">
-        <h3>🏨 Otel Yoğunluğu</h3>
-        <div id="hotelMap" class="mini-map"></div>
-      </div>
-      <div class="mini-map-box">
-        <h3>🏛️ Kültür Merkezleri</h3>
-        <div id="cultureMap" class="mini-map"></div>
-      </div>
-      <div class="mini-map-box">
-        <h3>🌿 Doğal Alanlar</h3>
-        <div id="natureMap" class="mini-map"></div>
-      </div>
+    <!-- Search -->
+    <div class="search-box" style="position:relative">
+      <input type="text" id="searchInput" placeholder="Nokta veya bölge ara..." autocomplete="off">
+      <div class="search-results" id="searchResults"></div>
     </div>
-  </section>
-</main>
 
-<footer class="footer">
-  <p>Azerbaycan'da Turizm Faaliyetlerinin Mekansal Dağılışı &copy; 2026</p>
-  <p class="footer-meta">Doktora Tez Çalışması &mdash; Veri: AzStat, OSM, UNESCO &amp; diğer açık kaynaklar</p>
-</footer>
+    <!-- Stats -->
+    <div class="sidebar-stats">
+      <div class="total-count" id="totalCount">0</div>
+      <div class="total-label">Toplam Turizm POI Noktası</div>
+    </div>
+
+    <!-- Region buttons -->
+    <div class="region-buttons">
+      <button class="region-btn active" data-region="all">Genel</button>
+      <button class="region-btn" data-region="baku">Bakü</button>
+      <button class="region-btn" data-region="quba">Quba</button>
+      <button class="region-btn" data-region="qebele">Qebele</button>
+      <button class="region-btn" data-region="gence">Gəncə</button>
+      <button class="region-btn" data-region="lenkeran">Lənkəran</button>
+      <button class="region-btn" data-region="seki">Şəki</button>
+    </div>
+
+    <!-- Category filters -->
+    <div class="category-filters" id="categoryFilters">
+      <h3><i class="fas fa-layer-group" style="margin-right:4px"></i> Kategori Filtreleri</h3>
+      <div id="catList"></div>
+    </div>
+
+    <!-- Info panel -->
+    <div class="info-panel" id="infoPanel">
+      <h4><i class="fas fa-info-circle" style="margin-right:4px"></i> Nokta Bilgisi</h4>
+      <div class="info-empty">Bir noktaya tıklayarak detayları görüntüleyin.</div>
+      <div class="info-content" id="infoContent"></div>
+    </div>
+  </aside>
+
+  <!-- Map -->
+  <div class="map-container-main">
+    <div id="mainMap"></div>
+    <div class="map-legend" id="mapLegend">
+      <h4>Kategoriler</h4>
+      <div id="legendItems"></div>
+    </div>
+  </div>
+</div>
+
+<button class="sidebar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button>
 
 <script>
-// ─── Data ────────────────────────────────────────────────────────────────
-const CATEGORIES = ["Otel","Tarihi_Anit","Diger_Tesis","Ulasim","Doga_Alani","Kultur_Merkezi","Turizm_Bolgesi","Destinasyon"];
-const CAT_COLORS = {
-  "Otel": "#e74c3c", "Tarihi_Anit": "#8e44ad", "Diger_Tesis": "#f39c12",
-  "Ulasim": "#3498db", "Doga_Alani": "#2ecc71", "Kultur_Merkezi": "#e67e22",
-  "Turizm_Bolgesi": "#1abc9c", "Destinasyon": "#9b59b6"
+// ─── Category Configuration ────────────────────────────────────────────────
+const CATEGORIES = {
+  "Yeme-İçme":       { color: "#e74c3c", icon: "🍽️", markerShape: "circle" },
+  "Otel/Konaklama":  { color: "#3498db", icon: "🏨", markerShape: "square" },
+  "Tarihi-Kültürel": { color: "#9b59b6", icon: "🏛️", markerShape: "triangle" },
+  "Spor":            { color: "#2ecc71", icon: "⚽", markerShape: "diamond" },
+  "Alışveriş-Eğlence":{ color: "#f39c12", icon: "🛍️", markerShape: "circle" },
+  "Park-Plaj-Doğa":  { color: "#1abc9c", icon: "🏖️", markerShape: "square" },
+  "Dini Yerler":     { color: "#e67e22", icon: "🕌", markerShape: "star" }
 };
-const CAT_ICONS = {
-  "Otel": "🏨", "Tarihi_Anit": "🏛️", "Diger_Tesis": "🏗️", "Ulasim": "🚌",
-  "Doga_Alani": "🌿", "Kultur_Merkezi": "🎭", "Turizm_Bolgesi": "🗺️", "Destinasyon": "📍"
+const CAT_ORDER = Object.keys(CATEGORIES);
+
+// ─── Region View Bounds (lng, lat) ────────────────────────────────────────
+const REGION_VIEWS = {
+  all:     { center: [40.3, 48.5], zoom: 7 },
+  baku:    { center: [40.38, 49.85], zoom: 11 },
+  quba:    { center: [41.38, 48.7], zoom: 10 },
+  qebele:  { center: [40.95, 47.8], zoom: 10 },
+  gence:   { center: [40.65, 46.35], zoom: 10 },
+  lenkeran:{ center: [38.73, 48.8], zoom: 10 },
+  seki:    { center: [41.2, 47.2], zoom: 10 }
 };
 
-// ─── Initialize Main Map ─────────────────────────────────────────────────
-const mainMap = L.map('main-map', { zoomControl: true }).setView([40.3, 48.5], 7);
+// ─── Initialize Map ───────────────────────────────────────────────────────
+const map = L.map('mainMap', {
+  zoomControl: true,
+  center: [40.3, 48.5],
+  zoom: 7
+});
 
+// Base layers
 const tileLayers = {
-  streets: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OSM' }),
-  satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19, attribution: '&copy; Esri' }),
-  topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 17, attribution: '&copy; OpenTopoMap' }),
-  light: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 19, attribution: '&copy; CARTO' }),
-  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 19, attribution: '&copy; CARTO' }),
+  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; CARTO'
+  }),
+  light: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; CARTO'
+  }),
+  streets: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
+  }),
+  satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 18, attribution: '&copy; Esri'
+  })
 };
-tileLayers.streets.addTo(mainMap);
+tileLayers.dark.addTo(map);
 
-// ─── Load GeoJSON Data ───────────────────────────────────────────────────
+// Layer control for basemaps
+L.control.layers({
+  'Koyu Tema': tileLayers.dark,
+  'Açık Tema': tileLayers.light,
+  'Sokak': tileLayers.streets,
+  'Uydu': tileLayers.satellite
+}, null, { position: 'topright' }).addTo(map);
+
+// ─── State ────────────────────────────────────────────────────────────────
 let allFeatures = [];
-let featureLayers = {};
-let currentLayerGroup = L.layerGroup().addTo(mainMap);
-let currentStyle = 'point';
+let clusterGroup = null;
+let activeCategoryFilters = new Set(CAT_ORDER);
+let markerLayers = {}; // {category: {markers: [], cluster: ClusterGroup}}
 
-async function loadData() {
-  const files = [
-    'data/geojson/01_oteller.geojson', 'data/geojson/02_tarihi_anitlar.geojson',
-    'data/geojson/03_diger_tesisler.geojson', 'data/geojson/04_ulasim.geojson',
-    'data/geojson/05_doga_alanlari.geojson', 'data/geojson/06_kultur_merkezleri.geojson',
-    'data/geojson/07_turizm_bolgeleri.geojson', 'data/geojson/08_destinasyonlar.geojson'
-  ];
-  
-  for (const file of files) {
-    try {
-      const resp = await fetch(file);
-      const data = await resp.json();
-      const cat = data.features[0]?.properties?.category || 'Bilinmiyor';
-      allFeatures = allFeatures.concat(data.features.map(f => ({ ...f, _cat: cat })));
-    } catch(e) {
-      console.warn(`Cannot load ${file}: ${e.message}`);
-    }
+// ─── Helpers ──────────────────────────────────────────────────────────────
+function createDivIcon(cat, size = 10) {
+  const cfg = CATEGORIES[cat];
+  if (!cfg) return L.divIcon({ html: '<div></div>', iconSize: [10,10] });
+  let shape = '';
+  if (cfg.markerShape === 'circle') {
+    shape = `border-radius:50%`;
+  } else if (cfg.markerShape === 'square') {
+    shape = `border-radius:2px`;
+  } else if (cfg.markerShape === 'triangle') {
+    shape = `clip-path:polygon(50% 0%, 0% 100%, 100% 100%);border-radius:0`;
+  } else if (cfg.markerShape === 'diamond') {
+    shape = `transform:rotate(45deg);border-radius:2px`;
+  } else if (cfg.markerShape === 'star') {
+    shape = `clip-path:polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);border-radius:0`;
   }
-  
-  updateStats();
-  buildFeatureLayers();
-  renderMap();
+  const html = `<div style="width:${size}px;height:${size}px;background:${cfg.color};${shape};border:1.5px solid rgba(255,255,255,0.8);box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div>`;
+  return L.divIcon({ html, iconSize: [size, size], iconAnchor: [size/2, size/2], className: '' });
 }
 
-function buildFeatureLayers() {
-  const groups = {};
-  allFeatures.forEach(f => {
-    const cat = f._cat || 'Bilinmiyor';
-    if (!groups[cat]) groups[cat] = [];
-    groups[cat].push(f);
-  });
-  
-  Object.entries(groups).forEach(([cat, features]) => {
-    // Point layer
-    const markers = features.map(f => {
-      const coords = f.geometry.coordinates;
-      const color = CAT_COLORS[cat] || '#999';
-      const icon = L.divIcon({
-        html: `<div style="width:12px;height:12px;background:${color};border-radius:50%;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.3)"></div>`,
-        iconSize: [12, 12], iconAnchor: [6, 6], className: ''
-      });
-      return L.marker([coords[1], coords[0]], { icon });
+function getClusterIcon(cat) {
+  const cfg = CATEGORIES[cat];
+  const color = cfg ? cfg.color : '#999';
+  return function(cluster) {
+    const count = cluster.getChildCount();
+    const size = count > 100 ? 44 : count > 20 ? 36 : 28;
+    return L.divIcon({
+      html: `<div style="width:${size}px;height:${size}px;background:${color};border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:${size>36?14:12}px;border:2px solid rgba(255,255,255,0.7);box-shadow:0 2px 8px rgba(0,0,0,0.3)">${count}</div>`,
+      iconSize: [size, size], iconAnchor: [size/2, size/2], className: ''
     });
-    
-    // Cluster group
+  };
+}
+
+// ─── Load Data ────────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const resp = await fetch('data/geojson/all_pois_reclassified.geojson');
+    const data = await resp.json();
+    allFeatures = data.features || [];
+    console.log(`Loaded ${allFeatures.length} features`);
+    document.getElementById('totalCount').textContent = allFeatures.length.toLocaleString();
+    buildMarkers();
+    updateCategoryList();
+    updateLegend();
+    renderMap();
+  } catch(e) {
+    console.error('Failed to load data:', e);
+    document.getElementById('totalCount').textContent = 'ERR';
+  }
+}
+
+function buildMarkers() {
+  // Group features by category
+  const grouped = {};
+  allFeatures.forEach(f => {
+    const cat = f.properties.category || 'Diğer';
+    if (!grouped[cat]) grouped[cat] = [];
+    grouped[cat].push(f);
+  });
+
+  Object.entries(grouped).forEach(([cat, features]) => {
+    const markers = [];
     const cluster = L.markerClusterGroup({
       chunkedLoading: true,
       maxClusterRadius: 50,
       spiderfyOnMaxZoom: true,
-      iconCreateFunction: function(c) {
-        const count = c.getChildCount();
-        const color = CAT_COLORS[cat] || '#999';
-        return L.divIcon({
-          html: `<div style="width:36px;height:36px;background:${color};border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;border:2px solid rgba(255,255,255,.8)">${count}</div>`,
-          iconSize: [36, 36], iconAnchor: [18, 18], className: ''
-        });
-      }
+      disableClusteringAtZoom: 16,
+      iconCreateFunction: getClusterIcon(cat)
     });
-    markers.forEach(m => cluster.addLayer(m));
-    
-    // Heat layer
-    const heatPoints = features.map(f => {
-      const c = f.geometry.coordinates;
-      return [c[1], c[0], 0.8];
+
+    features.forEach(f => {
+      const coords = f.geometry.coordinates;
+      if (!coords || coords.length < 2) return;
+      const lat = coords[1], lng = coords[0];
+      const marker = L.marker([lat, lng], { icon: createDivIcon(cat, 12) });
+      
+      // Popup
+      const p = f.properties;
+      const catCfg = CATEGORIES[cat] || {};
+      marker.bindPopup(`
+        <div class="poi-popup">
+          <h3>${p.name || 'İsimsiz Nokta'}</h3>
+          <p><strong>Kategori:</strong> ${catCfg.icon || ''} ${cat}</p>
+          <p><strong>Alt Kategori:</strong> ${p.subcategory || '-'}</p>
+          <p><strong>Bölge:</strong> ${p.region || 'Bilinmeyen'}</p>
+          <p><strong>Kaynak:</strong> ${p.source || 'OSM'}</p>
+          <span class="pp-cat" style="background:${catCfg.color||'#999'};color:#fff">${cat}</span>
+        </div>
+      `, { className: 'poi-popup-wrap', maxWidth: 250 });
+
+      // Click -> info panel
+      marker.on('click', function() {
+        showInfo(p, cat);
+      });
+
+      markers.push(marker);
+      cluster.addLayer(marker);
     });
-    
-    const heat = L.heatLayer(heatPoints, {
-      radius: 25, blur: 15, maxZoom: 10,
-      gradient: { 0.4: 'blue', 0.6: 'lime', 0.8: 'yellow', 1.0: 'red' }
-    });
-    
-    featureLayers[cat] = { markers: L.layerGroup(markers), cluster, heat, features };
+
+    markerLayers[cat] = { markers, cluster };
   });
 }
 
 function renderMap() {
-  currentLayerGroup.clearLayers();
-  const view = document.getElementById('mapView').value;
-  const style = document.getElementById('mapStyle').value;
-  currentStyle = style;
-  
-  const catsToShow = view === 'all' ? CATEGORIES : [view];
-  
-  catsToShow.forEach(cat => {
-    const layer = featureLayers[cat];
+  // Clear existing cluster group
+  if (clusterGroup) {
+    map.removeLayer(clusterGroup);
+  }
+
+  clusterGroup = L.markerClusterGroup({
+    chunkedLoading: true,
+    maxClusterRadius: 50,
+    spiderfyOnMaxZoom: true,
+    disableClusteringAtZoom: 16,
+    iconCreateFunction: function(cluster) {
+      // Use the most common category color
+      const counts = {};
+      cluster.getAllChildMarkers().forEach(m => {
+        const cat = m._popup ? 'Spor' : 'Diğer'; // fallback
+      });
+      return L.divIcon({
+        html: `<div style="width:32px;height:32px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;border:2px solid rgba(255,255,255,0.7)">${cluster.getChildCount()}</div>`,
+        iconSize: [32, 32], iconAnchor: [16, 16], className: ''
+      });
+    }
+  });
+
+  // Add layers for active categories
+  CAT_ORDER.forEach(cat => {
+    if (!activeCategoryFilters.has(cat)) return;
+    const layer = markerLayers[cat];
     if (!layer) return;
     
-    if (style === 'point') currentLayerGroup.addLayer(layer.markers);
-    else if (style === 'cluster') currentLayerGroup.addLayer(layer.cluster);
-    else if (style === 'heat') currentLayerGroup.addLayer(layer.heat);
+    layer.cluster.eachLayer(m => clusterGroup.addLayer(m));
   });
+
+  map.addLayer(clusterGroup);
+  updateStats();
 }
 
 function updateStats() {
+  let total = 0;
   const counts = {};
-  allFeatures.forEach(f => {
-    const cat = f._cat || 'Bilinmiyor';
-    counts[cat] = (counts[cat] || 0) + 1;
+  CAT_ORDER.forEach(cat => {
+    if (!activeCategoryFilters.has(cat)) return;
+    const layer = markerLayers[cat];
+    if (!layer) return;
+    const n = layer.cluster.getChildCount();
+    counts[cat] = n;
+    total += n;
   });
+  document.getElementById('totalCount').textContent = total.toLocaleString();
+}
+
+function updateCategoryList() {
+  const container = document.getElementById('catList');
+  container.innerHTML = CAT_ORDER.map(cat => {
+    const cfg = CATEGORIES[cat];
+    const count = markerLayers[cat] ? markerLayers[cat].cluster.getChildCount() : 0;
+    const checked = activeCategoryFilters.has(cat) ? 'checked' : '';
+    return `
+      <label class="cat-filter-item" data-cat="${cat}">
+        <input type="checkbox" ${checked} value="${cat}">
+        <span class="cat-dot" style="background:${cfg.color}"></span>
+        <span class="cat-icon">${cfg.icon}</span>
+        <span class="cat-name">${cat}</span>
+        <span class="cat-count">${count.toLocaleString()}</span>
+      </label>
+    `;
+  }).join('');
+
+  // Add change listeners
+  container.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    cb.addEventListener('change', function() {
+      const cat = this.value;
+      if (this.checked) {
+        activeCategoryFilters.add(cat);
+      } else {
+        activeCategoryFilters.delete(cat);
+      }
+      renderMap();
+    });
+  });
+}
+
+function updateLegend() {
+  const container = document.getElementById('legendItems');
+  container.innerHTML = CAT_ORDER.map(cat => {
+    const cfg = CATEGORIES[cat];
+    return `
+      <div class="legend-item">
+        <div class="legend-dot" style="background:${cfg.color}"></div>
+        ${cfg.icon} ${cat}
+      </div>
+    `;
+  }).join('');
+}
+
+function showInfo(props, cat) {
+  const panel = document.getElementById('infoPanel');
+  const empty = panel.querySelector('.info-empty');
+  const content = document.getElementById('infoContent');
   
-  const container = document.getElementById('mapStats');
-  container.innerHTML = Object.entries(counts).sort((a,b) => b[1]-a[1]).map(([cat, count]) => `
-    <div class="stat-card">
-      <div class="value">${count}</div>
-      <div class="label">${CAT_ICONS[cat] || ''} ${cat.replace(/_/g,' ')}</div>
+  empty.style.display = 'none';
+  content.classList.add('show');
+  
+  const catCfg = CATEGORIES[cat] || {};
+  content.innerHTML = `
+    <div class="info-row">
+      <span class="info-label">Ad</span>
+      <span class="info-value">${props.name || 'İsimsiz'}</span>
     </div>
-  `).join('');
+    <div class="info-row">
+      <span class="info-label">Kategori</span>
+      <span class="info-value">${catCfg.icon || ''} ${cat}</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Alt Kategori</span>
+      <span class="info-value">${props.subcategory || '-'}</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Bölge</span>
+      <span class="info-value">${props.region || 'Bilinmeyen'}</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Rayon</span>
+      <span class="info-value">${props.rayon || '-'}</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Kaynak</span>
+      <span class="info-value">${props.source || 'OSM'}</span>
+    </div>
+  `;
 }
 
-// ─── Mini Maps ────────────────────────────────────────────────────────────
-function createMiniMap(id, catFilter, color) {
-  const map = L.map(id, { zoomControl: false, attributionControl: false }).setView([40.3, 48.5], 7);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 19 }).addTo(map);
+// ─── Search ───────────────────────────────────────────────────────────────
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+let searchTimeout;
+
+searchInput.addEventListener('input', function() {
+  clearTimeout(searchTimeout);
+  const q = this.value.trim().toLowerCase();
+  if (q.length < 2) {
+    searchResults.classList.remove('show');
+    return;
+  }
   
-  const points = allFeatures.filter(f => f._cat === catFilter).map(f => {
-    const c = f.geometry.coordinates;
-    return [c[1], c[0]];
+  searchTimeout = setTimeout(() => {
+    const results = allFeatures.filter(f => {
+      const p = f.properties;
+      const name = (p.name || '').toLowerCase();
+      const region = (p.region || '').toLowerCase();
+      const rayon = (p.rayon || '').toLowerCase();
+      const cat = (p.category || '').toLowerCase();
+      return name.includes(q) || region.includes(q) || rayon.includes(q) || cat.includes(q);
+    }).slice(0, 50);
+
+    if (results.length === 0) {
+      searchResults.classList.remove('show');
+      return;
+    }
+
+    searchResults.innerHTML = results.map(f => {
+      const p = f.properties;
+      const catCfg = CATEGORIES[p.category] || {};
+      const coords = f.geometry.coordinates;
+      return `<div class="sr-item" data-lat="${coords[1]}" data-lng="${coords[0]}">
+        <div>${p.name || 'İsimsiz Nokta'}</div>
+        <div class="sr-cat">${catCfg.icon || ''} ${p.category} · ${p.region || ''}</div>
+      </div>`;
+    }).join('');
+    searchResults.classList.add('show');
+
+    // Click handler
+    searchResults.querySelectorAll('.sr-item').forEach(el => {
+      el.addEventListener('click', function() {
+        const lat = parseFloat(this.dataset.lat);
+        const lng = parseFloat(this.dataset.lng);
+        map.setView([lat, lng], 14);
+        searchResults.classList.remove('show');
+        searchInput.value = this.querySelector('div').textContent;
+      });
+    });
+  }, 200);
+});
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.search-box')) {
+    searchResults.classList.remove('show');
+  }
+});
+
+// ─── Region Buttons ───────────────────────────────────────────────────────
+document.querySelectorAll('.region-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.region-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    
+    const region = this.dataset.region;
+    const view = REGION_VIEWS[region];
+    if (view) {
+      map.flyTo(view.center, view.zoom, { duration: 1 });
+    }
   });
-  
-  if (points.length > 0) {
-    L.heatLayer(points, {
-      radius: 20, blur: 12, maxZoom: 10,
-      gradient: { 0.4: color+'40', 0.6: color+'80', 0.8: color+'cc', 1.0: color }
-    }).addTo(map);
-  }
-}
-
-// ─── Event Handlers ─────────────────────────────────────────────────────
-document.getElementById('baseLayer').addEventListener('change', e => {
-  Object.values(tileLayers).forEach(t => mainMap.removeLayer(t));
-  tileLayers[e.target.value].addTo(mainMap);
 });
 
-document.getElementById('mapView').addEventListener('change', renderMap);
-document.getElementById('mapStyle').addEventListener('change', renderMap);
-
-document.getElementById('fitAll').addEventListener('click', () => {
-  if (allFeatures.length > 0) {
-    const bounds = L.latLngBounds(allFeatures.map(f => {
-      const c = f.geometry.coordinates;
-      return [c[1], c[0]];
-    }));
-    mainMap.fitBounds(bounds.pad(0.1));
-  }
+// ─── Sidebar Toggle (mobile) ──────────────────────────────────────────────
+document.getElementById('sidebarToggle').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.toggle('collapsed');
+  const icon = this.querySelector('i');
+  if (icon) icon.className = icon.className.includes('fa-bars') ? 'fas fa-times' : 'fas fa-bars';
 });
 
-// ─── Init ────────────────────────────────────────────────────────────────
-loadData().then(() => {
-  setTimeout(() => {
-    createMiniMap('hotelMap', 'Otel', '#e74c3c');
-    createMiniMap('cultureMap', 'Kultur_Merkezi', '#e67e22');
-    createMiniMap('natureMap', 'Doga_Alani', '#2ecc71');
-    document.getElementById('fitAll').click();
-  }, 500);
-});
+// ─── Init ─────────────────────────────────────────────────────────────────
+loadData();
 </script>
 </body>
 </html>

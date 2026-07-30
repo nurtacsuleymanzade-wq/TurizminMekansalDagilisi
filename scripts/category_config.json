@@ -1,0 +1,44 @@
+{
+  "Yeme-İçme": {
+    "color": "#e74c3c",
+    "marker": "restaurant",
+    "icon_emoji": "🍽️",
+    "sort_order": 1
+  },
+  "Otel/Konaklama": {
+    "color": "#3498db",
+    "marker": "lodging",
+    "icon_emoji": "🏨",
+    "sort_order": 2
+  },
+  "Tarihi-Kültürel": {
+    "color": "#9b59b6",
+    "marker": "museum",
+    "icon_emoji": "🏛️",
+    "sort_order": 3
+  },
+  "Spor": {
+    "color": "#2ecc71",
+    "marker": "sports",
+    "icon_emoji": "⚽",
+    "sort_order": 4
+  },
+  "Alışveriş-Eğlence": {
+    "color": "#f39c12",
+    "marker": "shopping",
+    "icon_emoji": "🛍️",
+    "sort_order": 5
+  },
+  "Park-Plaj-Doğa": {
+    "color": "#1abc9c",
+    "marker": "park",
+    "icon_emoji": "🏖️",
+    "sort_order": 6
+  },
+  "Dini Yerler": {
+    "color": "#e67e22",
+    "marker": "place_of_worship",
+    "icon_emoji": "🕌",
+    "sort_order": 7
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statik Haritalar — Turizmin Mekansal Dağılışı</title>
+<link rel="stylesheet" href="style.css">
+<script src="scripts/nav.js"></script>
+<style>
+.map-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; margin-top: 30px; }
+.map-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+.map-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+.map-card .map-thumb { width: 100%; height: 220px; object-fit: cover; display: block; border-bottom: 1px solid var(--border); cursor: pointer; }
+.map-card .map-info { padding: 16px; }
+.map-card .map-info h3 { margin: 0 0 6px; font-size: 15px; }
+.map-card .map-info p { margin: 0; font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+.map-card .map-downloads { padding: 12px 16px; border-top: 1px solid var(--border); display: flex; gap: 10px; }
+.map-card .map-downloads a { font-size: 12px; color: var(--accent); text-decoration: none; }
+.map-card .map-downloads a:hover { text-decoration: underline; }
+
+.legend-ref { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 30px; }
+.legend-ref h2 { font-size: 16px; margin: 0 0 16px; }
+.legend-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.legend-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 6px; background: var(--surface-alt); }
+.legend-item .ldot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; border: 1px solid rgba(255,255,255,0.3); }
+.legend-item .lname { font-size: 13px; }
+.legend-item .licon { font-size: 16px; }
+
+.modal { display: none; position: fixed; z-index: 9999; padding-top: 40px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.9); }
+.modal.show { display: block; }
+.modal-content { margin: auto; display: block; max-width: 90%; max-height: 90%; border-radius: 8px; }
+.modal-close { position: absolute; top: 20px; right: 35px; color: #fff; font-size: 40px; font-weight: 700; cursor: pointer; }
+
+@media (max-width: 600px) {
+  .map-gallery { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-brand"><a href="index.html">Turizmin Mekansal Dağılışı</a></div>
+  <button class="nav-toggle" id="navToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="harita.html">Haritalar</a></li>
+    <li><a href="haritalar_statiktir.html" class="active">Statik Haritalar</a></li>
+    <li><a href="grafikler.html">Grafikler</a></li>
+    <li><a href="analizler.html">Mekansal Analiz</a></li>
+    <li><a href="yogunluk.html">Yoğunluk</a></li>
+    <li><a href="veri.html">Veri Kaynakları</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <header class="page-header">
+    <h1>🗺️ QGIS-Kalite Statik Haritalar</h1>
+    <p class="subtitle">Matplotlib, GeoPandas ve Contextily ile üretilmiş 8 adet profesyonel statik harita. 7 POI kategorisi, rayon sınırları, ölçek çubuğu ve lejant içerir.</p>
+  </header>
+
+  <section class="map-gallery" id="mapGallery">
+    <!-- Filled by JS -->
+  </section>
+
+  <section class="legend-ref">
+    <h2>🎨 POI Kategori Lejantı</h2>
+    <div class="legend-grid">
+      <div class="legend-item"><div class="ldot" style="background:#e74c3c"></div><span class="licon">🍽️</span><span class="lname">Yeme-İçme</span></div>
+      <div class="legend-item"><div class="ldot" style="background:#3498db"></div><span class="licon">🏨</span><span class="lname">Otel/Konaklama</span></div>
+      <div class="legend-item"><div class="ldot" style="background:#9b59b6"></div><span class="licon">🏛️</span><span class="lname">Tarihi-Kültürel</span></div>
+      <div class="legend-item"><div class="ldot" style="background:#2ecc71"></div><span class="licon">⚽</span><span class="lname">Spor</span></div>
+      <div class="legend-item"><div class="ldot" style="background:#f39c12"></div><span class="licon">🛍️</span><span class="lname">Alışveriş-Eğlence</span></div>
+      <div class="legend-item"><div class="ldot" style="background:#1abc9c"></div><span class="licon">🏖️</span><span class="lname">Park-Plaj-Doğa</span></div>
+      <div class="legend-item"><div class="ldot" style="background:#e67e22"></div><span class="licon">🕌</span><span class="lname">Dini Yerler</span></div>
+    </div>
+  </section>
+</main>
+
+<!-- Modal -->
+<div class="modal" id="mapModal">
+  <span class="modal-close" id="modalClose">&times;</span>
+  <img class="modal-content" id="modalImage" alt="Harita">
+</div>
+
+<footer class="footer">
+  <p>Azerbaycan'da Turizm Faaliyetlerinin Mekansal Dağılışı &copy; 2026</p>
+  <p class="footer-meta">Doktora Tez Çalışması &mdash; Veri: AzStat, OSM, UNESCO &amp; diğer açık kaynaklar</p>
+</footer>
+
+<script>
+const MAPS = [
+  { id: "azerbaycan_genel", title: "Azerbaycan Genel — Tüm Kategoriler", desc: "Tüm 7 POI kategorisini gösteren genel bakış haritası. 26.713 turistik nokta, 74 rayon ve 18 ekonomik bölge.", poiCount: 26713 },
+  { id: "baku", title: "Bakü ve Abşeron", desc: "Başkent Bakü ve Abşeron yarımadasındaki turistik noktalar. Yeme-içme, otel ve tarihi-kültürel kategorileri yoğun.", poiCount: 5105 },
+  { id: "quba_xacmaz", title: "Quba / Xaçmaz (Kuzey Sahil)", desc: "Kuzey sahil bölgesi — Quba, Xaçmaz ve Qusar rayonları. Doğa turizmi ve park-plaj alanları.", poiCount: 3120 },
+  { id: "qebele_ismayilli", title: "Qebele / İsmayıllı", desc: "Qebele ve İsmayıllı rayonları. Dağ turizmi, tarihi yapılar ve doğal güzellikler.", poiCount: 2890 },
+  { id: "samaxi_agsu", title: "Şamaxı / Ağsu (Merkez)", desc: "Orta Azerbaycan — Şamaxı, Ağsu, Göyçay ve Kürdəmir. Tarihi ve kültürel miras.", poiCount: 2450 },
+  { id: "lenkeran_astara", title: "Lənkəran / Astara (Güney Sahil)", desc: "Güney sahil bölgesi — Lənkəran, Astara ve Masallı. Subtropik iklim, çay tarlaları ve plajlar.", poiCount: 2700 },
+  { id: "gence_goygol", title: "Gəncə / Göygöl", desc: "Batı Azerbaycan — Gəncə şehri, Göygöl gölü ve çevresi. Tarihi yapılar ve doğa turizmi.", poiCount: 3100 },
+  { id: "seki_oguz", title: "Şəki / Oğuz (Kuzeybatı)", desc: "Kuzeybatı bölgesi — Şəki, Oğuz ve Qax. İpek yolu mirası, han sarayı ve dağ köyleri.", poiCount: 2850 }
+];
+
+const CATEGORIES = {
+  "Yeme-İçme": "#e74c3c",
+  "Otel/Konaklama": "#3498db",
+  "Tarihi-Kültürel": "#9b59b6",
+  "Spor": "#2ecc71",
+  "Alışveriş-Eğlence": "#f39c12",
+  "Park-Plaj-Doğa": "#1abc9c",
+  "Dini Yerler": "#e67e22"
+};
+
+function initGallery() {
+  const gallery = document.getElementById('mapGallery');
+  gallery.innerHTML = MAPS.map(m => `
+    <div class="map-card">
+      <img class="map-thumb" src="models/maps/${m.id}.png" alt="${m.title}" onclick="openModal('models/maps/${m.id}.png')" loading="lazy">
+      <div class="map-info">
+        <h3>${m.title}</h3>
+        <p>${m.desc}</p>
+      </div>
+      <div class="map-downloads">
+        <a href="models/maps/${m.id}.png" download="${m.id}.png">📥 PNG İndir</a>
+        <a href="models/maps/${m.id}.pdf" download="${m.id}.pdf" class="${m.id === 'azerbaycan_genel' ? '' : ''}">📄 PDF İndir</a>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Modal
+function openModal(src) {
+  document.getElementById('modalImage').src = src;
+  document.getElementById('mapModal').classList.add('show');
+}
+
+document.getElementById('modalClose').addEventListener('click', () => {
+  document.getElementById('mapModal').classList.remove('show');
+});
+document.getElementById('mapModal').addEventListener('click', (e) => {
+  if (e.target === e.currentTarget) document.getElementById('mapModal').classList.remove('show');
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') document.getElementById('mapModal').classList.remove('show');
+});
+
+initGallery();
+</script>
+</body>
+</html>

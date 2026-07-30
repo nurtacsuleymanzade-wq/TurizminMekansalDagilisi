@@ -1,0 +1,885 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.3976882,
+          46.3205988
+        ]
+      },
+      "properties": {
+        "osm_id": 764946365,
+        "osm_type": "node",
+        "name": "\u0411\u0430\u043d\u044f",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.5786995,
+          50.2392521
+        ]
+      },
+      "properties": {
+        "osm_id": 1237145527,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "sauna",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.0966696,
+          50.4554172
+        ]
+      },
+      "properties": {
+        "osm_id": 1557729970,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.0865414,
+          49.5165993
+        ]
+      },
+      "properties": {
+        "osm_id": 3153526002,
+        "osm_type": "node",
+        "name": "\u0406\u043a\u0456\u0432\u0441\u044c\u043a\u0430 \u043a\u0443\u043f\u0430\u043b\u044c\u043d\u044f",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.9481767,
+          45.6074187
+        ]
+      },
+      "properties": {
+        "osm_id": 4233165789,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1973703,
+          45.2506638
+        ]
+      },
+      "properties": {
+        "osm_id": 4890751952,
+        "osm_type": "node",
+        "name": "\u0421\u0430\u0443\u043d\u0430",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.3964912,
+          45.4710002
+        ]
+      },
+      "properties": {
+        "osm_id": 4890752017,
+        "osm_type": "node",
+        "name": "\u0421\u0430\u0443\u043d\u0430",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "sauna",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.9388712,
+          48.1400172
+        ]
+      },
+      "properties": {
+        "osm_id": 4989277605,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.919122,
+          48.146912
+        ]
+      },
+      "properties": {
+        "osm_id": 4989283172,
+        "osm_type": "node",
+        "name": "\u041c\u0430\u044f\u043a\u043e\u0432\u0441\u043a\u043e\u0433\u043e",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.6936758,
+          47.2064816
+        ]
+      },
+      "properties": {
+        "osm_id": 5708228002,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.1166647,
+          44.6045407
+        ]
+      },
+      "properties": {
+        "osm_id": 7174817675,
+        "osm_type": "node",
+        "name": "\u0411\u0430\u043d\u044f",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.4116121,
+          46.5908159
+        ]
+      },
+      "properties": {
+        "osm_id": 8386346620,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.7453722,
+          47.0670143
+        ]
+      },
+      "properties": {
+        "osm_id": 9346966588,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1627089,
+          50.2973465
+        ]
+      },
+      "properties": {
+        "osm_id": 9425595061,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1257014,
+          46.3577292
+        ]
+      },
+      "properties": {
+        "osm_id": 10699488597,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.294839,
+          46.1989014
+        ]
+      },
+      "properties": {
+        "osm_id": 10816876992,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.3053268,
+          46.101909
+        ]
+      },
+      "properties": {
+        "osm_id": 10887501799,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.4165241,
+          46.1004651
+        ]
+      },
+      "properties": {
+        "osm_id": 10924910304,
+        "osm_type": "node",
+        "name": "\u0411\u0430\u043d\u044f",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.3700844,
+          46.1933833
+        ]
+      },
+      "properties": {
+        "osm_id": 10974266366,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.6305762,
+          46.4721849
+        ]
+      },
+      "properties": {
+        "osm_id": 12003627663,
+        "osm_type": "node",
+        "name": "\u0411\u0430\u043d\u044f",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.3669714,
+          45.7914263
+        ]
+      },
+      "properties": {
+        "osm_id": 13848934157,
+        "osm_type": "node",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1338387,
+          45.0023825
+        ]
+      },
+      "properties": {
+        "osm_id": 145917463,
+        "osm_type": "way",
+        "name": "\u0413\u043e\u0440\u043e\u0434\u0441\u043a\u0430\u044f \u0431\u0430\u043d\u044f",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.1323264,
+          44.9874775
+        ]
+      },
+      "properties": {
+        "osm_id": 147720544,
+        "osm_type": "way",
+        "name": "24 \u0447\u0430\u0441\u0430",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.2589148,
+          48.0994576
+        ]
+      },
+      "properties": {
+        "osm_id": 541603838,
+        "osm_type": "way",
+        "name": "\u0414\u0443\u0448-\u0442\u0443\u0430\u043b\u0435\u0442",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.1050675,
+          47.5158328
+        ]
+      },
+      "properties": {
+        "osm_id": 584921326,
+        "osm_type": "way",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.9480917,
+          50.6450957
+        ]
+      },
+      "properties": {
+        "osm_id": 613986008,
+        "osm_type": "way",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.9586241,
+          44.6093337
+        ]
+      },
+      "properties": {
+        "osm_id": 656298141,
+        "osm_type": "way",
+        "name": "\u0421\u0435\u0440\u0433\u0435\u0435\u0432\u0441\u043a\u0438\u0435 \u0431\u0430\u043d\u0438",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.1222003,
+          48.0443083
+        ]
+      },
+      "properties": {
+        "osm_id": 724307420,
+        "osm_type": "way",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.093705,
+          46.189256
+        ]
+      },
+      "properties": {
+        "osm_id": 732448877,
+        "osm_type": "way",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.9775006,
+          45.4505142
+        ]
+      },
+      "properties": {
+        "osm_id": 736587416,
+        "osm_type": "way",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.3498896,
+          48.7263793
+        ]
+      },
+      "properties": {
+        "osm_id": 744348815,
+        "osm_type": "way",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.32625,
+          48.5278632
+        ]
+      },
+      "properties": {
+        "osm_id": 749219530,
+        "osm_type": "way",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.2998352,
+          47.7407053
+        ]
+      },
+      "properties": {
+        "osm_id": 760849214,
+        "osm_type": "way",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.4482574,
+          44.6162986
+        ]
+      },
+      "properties": {
+        "osm_id": 783426289,
+        "osm_type": "way",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "swimming_pool",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.4192483,
+          46.8316323
+        ]
+      },
+      "properties": {
+        "osm_id": 949912981,
+        "osm_type": "way",
+        "name": "\u0411\u0430\u043d\u044f",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.9021568,
+          46.9552563
+        ]
+      },
+      "properties": {
+        "osm_id": 951962172,
+        "osm_type": "way",
+        "name": "\u0411\u0430\u043d\u044f",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.4578376,
+          47.1240859
+        ]
+      },
+      "properties": {
+        "osm_id": 983498111,
+        "osm_type": "way",
+        "name": "\u0411\u0430\u043d\u044f",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.5601647,
+          45.4239622
+        ]
+      },
+      "properties": {
+        "osm_id": 1196554571,
+        "osm_type": "way",
+        "name": "\u0411\u0430\u043d\u044f",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.8866411,
+          50.0854979
+        ]
+      },
+      "properties": {
+        "osm_id": 1242566758,
+        "osm_type": "way",
+        "name": "\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435 \u0431\u0430\u043d\u0438",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.8866367,
+          50.0855055
+        ]
+      },
+      "properties": {
+        "osm_id": 1242581190,
+        "osm_type": "way",
+        "name": "",
+        "name_az": "",
+        "amenity": "public_bath",
+        "leisure": "",
+        "shop": "",
+        "religion": "",
+        "historic": "",
+        "sport": ""
+      }
+    }
+  ]
+}

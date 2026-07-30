@@ -1,0 +1,55 @@
+Region,Category,Count
+Abşeron,Alışveriş-Eğlence,2
+Abşeron,Tarihi-Kültürel,20
+Abşeron,Yeme-İçme,105
+Aran,Alışveriş-Eğlence,13
+Aran,Otel/Konaklama,28
+Aran,Tarihi-Kültürel,83
+Aran,Yeme-İçme,216
+Bakı,Alışveriş-Eğlence,26
+Bakı,Tarihi-Kültürel,195
+Bakı,Yeme-İçme,1201
+Bilinmeyen,Alışveriş-Eğlence,5029
+Bilinmeyen,Dini Yerler,1508
+Bilinmeyen,Otel/Konaklama,1556
+Bilinmeyen,Park-Plaj-Doğa,6231
+Bilinmeyen,Spor,6453
+Bilinmeyen,Tarihi-Kültürel,2292
+Bilinmeyen,Yeme-İçme,173
+Dağlıq Şirvan,Alışveriş-Eğlence,3
+Dağlıq Şirvan,Park-Plaj-Doğa,1
+Dağlıq Şirvan,Tarihi-Kültürel,38
+Dağlıq Şirvan,Yeme-İçme,97
+Gəncə-Qazax,Alışveriş-Eğlence,13
+Gəncə-Qazax,Otel/Konaklama,11
+Gəncə-Qazax,Tarihi-Kültürel,140
+Gəncə-Qazax,Yeme-İçme,227
+Kəlbəcər-Laçın,Otel/Konaklama,61
+Kəlbəcər-Laçın,Tarihi-Kültürel,12
+Kəlbəcər-Laçın,Yeme-İçme,4
+Lənkəran,Alışveriş-Eğlence,2
+Lənkəran,Tarihi-Kültürel,17
+Lənkəran,Yeme-İçme,24
+Naxçıvan,Alışveriş-Eğlence,3
+Naxçıvan,Tarihi-Kültürel,12
+Naxçıvan,Yeme-İçme,9
+Quba-Xaçmaz,Alışveriş-Eğlence,6
+Quba-Xaçmaz,Tarihi-Kültürel,61
+Quba-Xaçmaz,Yeme-İçme,86
+Yuxarı Qarabağ,Alışveriş-Eğlence,2
+Yuxarı Qarabağ,Otel/Konaklama,350
+Yuxarı Qarabağ,Tarihi-Kültürel,75
+Yuxarı Qarabağ,Yeme-İçme,17
+Şəki-Zaqatala,Alışveriş-Eğlence,8
+Şəki-Zaqatala,Park-Plaj-Doğa,49
+Şəki-Zaqatala,Tarihi-Kültürel,84
+Şəki-Zaqatala,Yeme-İçme,170
+
+TOTAL,,
+Yeme-İçme,Toplam,2329
+Otel/Konaklama,Toplam,2006
+Tarihi-Kültürel,Toplam,3029
+Spor,Toplam,6453
+Alışveriş-Eğlence,Toplam,5107
+Park-Plaj-Doğa,Toplam,6281
+Dini Yerler,Toplam,1508
