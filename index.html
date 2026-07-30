@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azerbaycan'da Turizm Faaliyetlerinin Mekânsal Dağılışı</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">TMD</a>
+            <button class="nav-toggle" aria-label="Menüyü aç/kapat">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                <li><a href="harita.html">Haritalar</a></li>
+                <li><a href="grafikler.html">Grafikler</a></li>
+                <li><a href="analizler.html">Analizler</a></li>
+                <li><a href="veri.html">Veri</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Doktora Tezi · 2025</div>
+            <h1>Azerbaycan'da Turizm<br>Faaliyetlerinin<br><span class="text-accent">Mekânsal Dağılışı</span></h1>
+            <p class="hero-subtitle">Coğrafi Bilgi Sistemleri ve Mekânsal Analiz ile Azerbaycan turizminin<br>zamansal ve mekânsal desenlerinin incelenmesi</p>
+            <div class="hero-actions">
+                <a href="harita.html" class="btn btn-primary">Haritaları Keşfet →</a>
+                <a href="grafikler.html" class="btn btn-secondary">İstatistikleri Gör →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section" id="hakkimda">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Proje Hakkında</span>
+                <h2>Tez Çalışması</h2>
+                <p class="section-desc">Bu web sitesi, doktora tezi kapsamında Azerbaycan turizm faaliyetlerinin mekânsal dağılışını analiz etmek, görselleştirmek ve paylaşmak amacıyla oluşturulmuştur.</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">🎯</div>
+                    <h3>Amaç</h3>
+                    <p>Azerbaycan'da turizm faaliyetlerinin mekânsal ve zamansal desenlerini CBS ve mekânsal istatistik yöntemleriyle analiz etmek.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📊</div>
+                    <h3>Yöntem</h3>
+                    <p>Kernel density, Moran's I, LISA, mekânsal regresyon, erişilebilirlik analizi ve turizm yoğunluk indeksi gibi ileri düzey mekânsal analiz teknikleri.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🗺️</div>
+                    <h3>Kapsam</h3>
+                    <p>Rayon bazında turizm istatistikleri, turistik POI'ler, ulaşım ağı, kültürel ve doğal kaynaklar, nüfus ve sosyoekonomik göstergeler (2005–2025).</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🔬</div>
+                    <h3>Beklenen Çıktılar</h3>
+                    <p>Turizm yoğunluğu haritaları, tarihî değişim analizi, hot spot/cold spot haritaları, turizm gelişim tipolojisi ve mekânsal regresyon modelleri.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Indicators Section -->
+    <section class="section section-dark" id="gostergeler">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Göstergeler</span>
+                <h2>Temel Turizm Göstergeleri</h2>
+            </div>
+            <div class="indicators-grid">
+                <div class="indicator-item">
+                    <span class="indicator-value" data-target="2005">2005</span>
+                    <span class="indicator-label">Başlangıç Yılı</span>
+                </div>
+                <div class="indicator-item">
+                    <span class="indicator-value">~70+</span>
+                    <span class="indicator-label">Rayon / Şehir</span>
+                </div>
+                <div class="indicator-item">
+                    <span class="indicator-value">10+</span>
+                    <span class="indicator-label">Analiz Türü</span>
+                </div>
+                <div class="indicator-item">
+                    <span class="indicator-value">8</span>
+                    <span class="indicator-label">Zaman Kesiti</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Navigation -->
+    <section class="section" id="bolumler">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Bölümler</span>
+                <h2>Web Sitesi Bölümleri</h2>
+            </div>
+            <div class="section-nav-grid">
+                <a href="harita.html" class="section-card">
+                    <div class="card-icon">🗺️</div>
+                    <h3>İnteraktif Haritalar</h3>
+                    <p>Turizm noktaları, yoğunluk haritaları, erişilebilirlik analizleri ve tarihî değişim haritaları.</p>
+                    <span class="card-link">Haritalara Git →</span>
+                </a>
+                <a href="grafikler.html" class="section-card">
+                    <div class="card-icon">📈</div>
+                    <h3>Grafikler ve Tablolar</h3>
+                    <p>Yıllara ve rayonlara göre turist sayıları, doluluk oranları, turizm yoğunluğu ve mevsimsellik.</p>
+                    <span class="card-link">Grafiklere Git →</span>
+                </a>
+                <a href="analizler.html" class="section-card">
+                    <div class="card-icon">🔬</div>
+                    <h3>Mekânsal Analizler</h3>
+                    <p>Kernel density, Moran's I, LISA, Getis-Ord Gi*, mekânsal regresyon ve GWR sonuçları.</p>
+                    <span class="card-link">Analizlere Git →</span>
+                </a>
+                <a href="veri.html" class="section-card">
+                    <div class="card-icon">💾</div>
+                    <h3>Veri Kaynakları</h3>
+                    <p>Kullanılan tüm veri setleri, kaynaklar, metodoloji ve veri kalite raporları.</p>
+                    <span class="card-link">Veriye Git →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Azerbaycan'da Turizm Faaliyetlerinin Mekânsal Dağılışı</h4>
+                    <p>Doktora Tezi · Coğrafya Anabilim Dalı</p>
+                    <p>Nurtac Süleymanzade · 2025</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Hızlı Bağlantılar</h5>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="harita.html">Haritalar</a></li>
+                        <li><a href="grafikler.html">Grafikler</a></li>
+                        <li><a href="analizler.html">Analizler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-source">
+                    <h5>Veri Kaynakları</h5>
+                    <ul>
+                        <li><a href="https://www.stat.gov.az/" target="_blank">Azərbaycan Dövlət Statistika Komitəsi</a></li>
+                        <li><a href="https://tourismboard.az/" target="_blank">Azərbaycan Turizm Bürosu</a></li>
+                        <li><a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Tüm hakları saklıdır. Kaynak gösterilmeden kullanılamaz.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Kaynakları — TMD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">TMD</a>
+            <button class="nav-toggle" aria-label="Menüyü aç/kapat">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="harita.html">Haritalar</a></li>
+                <li><a href="grafikler.html">Grafikler</a></li>
+                <li><a href="analizler.html">Analizler</a></li>
+                <li><a href="veri.html" class="active">Veri</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>💾 Veri Kaynakları</h1>
+            <p>Tez çalışmasında kullanılan tüm veri setleri, kaynak bilgileri, metodoloji ve kalite raporları.</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h2>Veri Toplama Metodolojisi</h2>
+                <p>Veriler aşağıdaki öncelik sırasına göre toplanmaktadır:</p>
+                <ol style="color: var(--text-secondary); line-height: 2; padding-left: 24px;">
+                    <li><strong>Resmî istatistik kurumları</strong> — Azərbaycan Dövlət Statistika Komitəsi (ASIS sistemi, yıllıklar)</li>
+                    <li><strong>Turizm otoriteleri</strong> — Azərbaycan Turizm Bürosu (aylık raporlar)</li>
+                    <li><strong>Açık coğrafi veri kaynakları</strong> — OpenStreetMap (Overpass API), Geofabrik</li>
+                    <li><strong>Uluslararası kuruluşlar</strong> — UNESCO, Protected Planet, UNEP-WCMC</li>
+                    <li><strong>Resmî devlet kurumları</strong> — Mədəniyyət Nazirliyi, Ekoloji Nazirliyi</li>
+                    <li><strong>İklim ve fiziki coğrafya verileri</strong> — ERA5/Copernicus, WorldClim, SRTM</li>
+                </ol>
+            </div>
+
+            <div class="content-card">
+                <h2>Veri Kaynak Kayıt Defteri</h2>
+                <p>Aşağıdaki tablo, kullanılan tüm veri setlerinin kayıt defteridir. Detaylı güncel versiyon için <code>metadata/source_registry.csv</code> dosyasına bakınız.</p>
+                <div class="data-table-wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Veri Seti</th>
+                                <th>Kaynak</th>
+                                <th>Mekânsal Birim</th>
+                                <th>Yıllar</th>
+                                <th>Durum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Turizm İstatistikleri</td>
+                                <td>Devlet Statistika Komitesi</td>
+                                <td>Rayon</td>
+                                <td>2005–2025</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>Aylık Turizm Raporları</td>
+                                <td>Turizm Bürosu</td>
+                                <td>Rayon</td>
+                                <td>2020–2025</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>Turistik POI'ler</td>
+                                <td>OpenStreetMap</td>
+                                <td>Nokta</td>
+                                <td>2024</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>Yol Ağı</td>
+                                <td>OpenStreetMap/Geofabrik</td>
+                                <td>Çizgi</td>
+                                <td>2024</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>İdari Sınırlar</td>
+                                <td>OpenStreetMap/Geofabrik</td>
+                                <td>Rayon</td>
+                                <td>2024</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>UNESCO Dünya Mirası</td>
+                                <td>UNESCO</td>
+                                <td>Nokta/Poligon</td>
+                                <td>2024</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>Korunan Alanlar</td>
+                                <td>Protected Planet</td>
+                                <td>Poligon</td>
+                                <td>2024</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>Kültürel Anıtlar</td>
+                                <td>Kültür Bakanlığı</td>
+                                <td>Nokta</td>
+                                <td>2024</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nüfus ve Sosyoekonomik</td>
+                                <td>Devlet Statistika Komitesi</td>
+                                <td>Rayon</td>
+                                <td>2005–2025</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>İklim Verileri</td>
+                                <td>ERA5/Copernicus</td>
+                                <td>Rayon (zonal)</td>
+                                <td>2005–2025</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sayısal Yükseklik</td>
+                                <td>SRTM/Copernicus DEM</td>
+                                <td>Raster (30m)</td>
+                                <td>2024</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                            <tr>
+                                <td>Arazi Örtüsü</td>
+                                <td>Copernicus Land Cover</td>
+                                <td>Poligon/Raster</td>
+                                <td>2024</td>
+                                <td><span class="status-badge status-pending">Toplanacak</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 8px;">⬆️ <a href="metadata/source_registry.csv" download>source_registry.csv</a> — Detaylı kayıt defterini indir</p>
+            </div>
+
+            <div class="content-card">
+                <h2>Veri Kategorileri</h2>
+
+                <h3 style="margin: 24px 0 12px; font-size: 1.125rem;">1. Turizm İstatistikleri (Ana Bağımlı Değişkenler)</h3>
+                <ul style="color: var(--text-secondary); line-height: 2; padding-left: 24px;">
+                    <li>Otel ve benzeri konaklama tesisi sayısı</li>
+                    <li>Oda sayısı ve yatak kapasitesi</li>
+                    <li>Konaklayan toplam kişi (yerli + yabancı)</li>
+                    <li>Toplam geceleme (yerli + yabancı)</li>
+                    <li>Otel doluluk oranı</li>
+                    <li>Ortalama kalış süresi</li>
+                    <li>Otel gelirleri ve giderleri</li>
+                    <li>Seyahat acentesi ve tur operatörü sayısı</li>
+                    <li>Satılan tur paketi sayısı ve değeri</li>
+                    <li>İç turizm seyahatleri</li>
+                    <li>Aylık turist girişleri</li>
+                </ul>
+
+                <h3 style="margin: 24px 0 12px; font-size: 1.125rem;">2. Turistik POI'ler (Mekânsal Değişkenler)</h3>
+                <ul style="color: var(--text-secondary); line-height: 2; padding-left: 24px;">
+                    <li>Konaklama: Otel, hostel, guest house, apartman</li>
+                    <li>Yeme-İçme: Restoran, kafe</li>
+                    <li>Kültür: Müze, tiyatro, sanat merkezi, tarihi anıt</li>
+                    <li>Doğa: Plaj, park, milli park, termal kaynak, şelale</li>
+                    <li>Rekreasyon: Kayak merkezi, tatil köyü</li>
+                </ul>
+
+                <h3 style="margin: 24px 0 12px; font-size: 1.125rem;">3. Ulaşım ve Erişilebilirlik</h3>
+                <ul style="color: var(--text-secondary); line-height: 2; padding-left: 24px;">
+                    <li>Karayolları ve yol sınıfları</li>
+                    <li>Demiryolları ve tren istasyonları</li>
+                    <li>Havalimanları, deniz limanları</li>
+                    <li>Sınır geçiş noktaları</li>
+                    <li>Şehir ve rayon merkezleri</li>
+                </ul>
+
+                <h3 style="margin: 24px 0 12px; font-size: 1.125rem;">4. Kültürel ve Doğal Kaynaklar</h3>
+                <ul style="color: var(--text-secondary); line-height: 2; padding-left: 24px;">
+                    <li>UNESCO Dünya Mirası alanları (İçerişehir, Gobustan, Şeki)</li>
+                    <li>Devlet tarih-kültür rezervleri</li>
+                    <li>Milli parklar ve tabiatı koruma alanları</li>
+                    <li>Arkeolojik alanlar, kaleler, saraylar</li>
+                    <li>Termal ve mineral su kaynakları</li>
+                </ul>
+
+                <h3 style="margin: 24px 0 12px; font-size: 1.125rem;">5. Nüfus ve Sosyoekonomik Veriler (Açıklayıcı Değişkenler)</h3>
+                <ul style="color: var(--text-secondary); line-height: 2; padding-left: 24px;">
+                    <li>Nüfus (kentsel/kırsal dağılımı)</li>
+                    <li>Nüfus yoğunluğu</li>
+                    <li>Ortalama ücret ve gelir</li>
+                    <li>İstihdam ve işsizlik</li>
+                    <li>Perakende ticaret ve toplu yemek cirosu</li>
+                    <li>Yatırım miktarı</li>
+                    <li>Yol uzunluğu ve internet erişimi</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2>Veri Kalite Raporu</h2>
+                <p>Her veri seti için aşağıdaki kontroller yapılmaktadır:</p>
+                <ul style="color: var(--text-secondary); line-height: 2; padding-left: 24px;">
+                    <li>✅ Kaynak güvenilirliği</li>
+                    <li>✅ Referans yılı ve dönem uyumu</li>
+                    <li>✅ Rayon sınırlarının ilgili yılla uyumu</li>
+                    <li>✅ Eksik değer analizi</li>
+                    <li>✅ Tekrar kayıt kontrolü</li>
+                    <li>✅ Koordinat doğrulama (Azerbaycan sınırları içi)</li>
+                    <li>✅ Rayon adı standardizasyonu</li>
+                    <li>✅ Toplam değerlerin ülke toplamıyla tutarlılığı</li>
+                    <li>✅ Kaynaklar arası tutarlılık (OSM vs resmî veri)</li>
+                </ul>
+                <p style="margin-top: 16px;">Veri kalite raporları <code>data_quality/</code> klasöründe tutulacaktır. Her veri seti aşağıdaki statülerden birini alır: <span class="status-badge status-verified">VERIFIED</span> <span class="status-badge status-partial">PARTIALLY_VERIFIED</span> <span class="status-badge status-unverified">UNVERIFIED</span> <span class="status-badge status-pending">PENDING</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Azerbaycan'da Turizm Faaliyetlerinin Mekânsal Dağılışı</h4>
+                    <p>Doktora Tezi · Coğrafya Anabilim Dalı</p>
+                    <p>Nurtac Süleymanzade · 2025</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Hızlı Bağlantılar</h5>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="harita.html">Haritalar</a></li>
+                        <li><a href="grafikler.html">Grafikler</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+</body>
+</html>

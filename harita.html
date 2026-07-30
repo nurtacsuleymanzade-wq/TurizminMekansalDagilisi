@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnteraktif Haritalar — TMD</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">TMD</a>
+            <button class="nav-toggle" aria-label="Menüyü aç/kapat">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="harita.html" class="active">Haritalar</a></li>
+                <li><a href="grafikler.html">Grafikler</a></li>
+                <li><a href="analizler.html">Analizler</a></li>
+                <li><a href="veri.html">Veri</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>🗺️ İnteraktif Haritalar</h1>
+            <p>Azerbaycan turizm faaliyetlerinin mekânsal dağılışını gösteren interaktif harita katmanları.</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <!-- Harita Türleri -->
+            <div class="content-card">
+                <h2>Turizm Noktaları</h2>
+                <p>Azerbaycan genelinde turistik çekiciliklerin mekânsal dağılımı. Konaklama, yeme-içme, kültürel miras, doğal alanlar ve diğer POI kategorileri ayrı katmanlar halinde gösterilmektedir.</p>
+                <div class="placeholder-map">🗺️ Harita yükleniyor — veriler hazırlandığında interaktif harita burada görünecek</div>
+                <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 8px;">Planlanan katmanlar: Oteller · Tarihi Anıtlar · Müzeler · Restoranlar · Parklar · Plajlar · Termal Kaynaklar · Kayak Merkezleri</p>
+            </div>
+
+            <div class="content-card">
+                <h2>Yoğunluk Haritaları</h2>
+                <p>Kernel Density Estimation (KDE) yöntemiyle hesaplanan turizm noktaları yoğunluk haritaları. Turistik faaliyetlerin hangi bölgelerde kümelenme gösterdiğini görselleştirir.</p>
+                <div class="placeholder-map">🗺️ Yoğunluk haritası — analiz tamamlandığında burada görünecek</div>
+            </div>
+
+            <div class="content-card">
+                <h2>Erişilebilirlik Haritaları</h2>
+                <p>Turizm noktalarına ulaşım sürelerine göre erişilebilirlik analizleri. 30, 60, 120 ve 180 dakikalık servis alanları.</p>
+                <div class="placeholder-map">🗺️ Erişilebilirlik haritası — network analizi tamamlandığında burada görünecek</div>
+            </div>
+
+            <div class="content-card">
+                <h2>Tarihî Değişim Haritaları</h2>
+                <p>2005, 2010, 2015, 2019, 2020, 2022, 2024 ve 2025 yılları için turizm yoğunluğu haritaları. Zaman kaydırıcısı ile yıllar arası karşılaştırma.</p>
+                <div class="placeholder-map">🗺️ Tarihî değişim haritası — zaman serisi verileri hazırlandığında burada görünecek</div>
+                <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 8px;">Planlanan haritalar: Turizm yoğunluğu · Pandemi etkisi (2019→2020) · Toparlanma (2019→2024) · Tesis genişlemesi · Hot spot/Cold spot değişimi</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Azerbaycan'da Turizm Faaliyetlerinin Mekânsal Dağılışı</h4>
+                    <p>Doktora Tezi · Coğrafya Anabilim Dalı</p>
+                    <p>Nurtac Süleymanzade · 2025</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Hızlı Bağlantılar</h5>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="grafikler.html">Grafikler</a></li>
+                        <li><a href="analizler.html">Analizler</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+</body>
+</html>

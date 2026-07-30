@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mekânsal Analizler — TMD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">TMD</a>
+            <button class="nav-toggle" aria-label="Menüyü aç/kapat">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="harita.html">Haritalar</a></li>
+                <li><a href="grafikler.html">Grafikler</a></li>
+                <li><a href="analizler.html" class="active">Analizler</a></li>
+                <li><a href="veri.html">Veri</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>🔬 Mekânsal Analizler</h1>
+            <p>Mekânsal istatistik yöntemleriyle Azerbaycan turizminin mekânsal desenlerinin analizi.</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h2>Kernel Density Estimation (KDE)</h2>
+                <p>Turizm noktalarının mekânsal yoğunluğunu hesaplayarak turistik faaliyetlerin hangi bölgelerde kümelenme gösterdiğini belirler. Bant genişliği optimizasyonu ile hesaplanan yoğunluk yüzeyi, turizm çekim merkezlerini görselleştirir.</p>
+                <div class="placeholder-map">🗺️ KDE haritası — analiz tamamlandığında burada görünecek</div>
+            </div>
+
+            <div class="content-card">
+                <h2>Global Moran's I</h2>
+                <p>Turizm göstergelerinin (turist sayısı, geceleme, yatak kapasitesi) mekânsal otokorelasyonunu ölçer. Pozitif Moran's I değeri, benzer değerlerin mekânsal kümelenme eğiliminde olduğunu gösterir.</p>
+                <div class="placeholder-map">📊 Moran's I sonuçları — analiz tamamlandığında burada görünecek</div>
+                <table class="data-table" style="margin-top: 16px;">
+                    <thead>
+                        <tr>
+                            <th>Gösterge</th>
+                            <th>Yıl</th>
+                            <th>Moran's I</th>
+                            <th>p-değeri</th>
+                            <th>z-puanı</th>
+                            <th>Yorum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6" style="text-align: center; color: var(--text-muted);">Analiz tamamlandığında doldurulacak</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content-card">
+                <h2>LISA (Local Moran's I)</h2>
+                <p>Yerel mekânsal otokorelasyon analizi ile her rayon için kümelenme türünü (Yüksek-Yüksek, Düşük-Düşük, Yüksek-Düşük, Düşük-Yüksek) belirler. Anlamlı kümelenme gösteren rayonlar LISA küme haritasında gösterilir.</p>
+                <div class="placeholder-map">🗺️ LISA kümelenme haritası — analiz tamamlandığında burada görünecek</div>
+            </div>
+
+            <div class="content-card">
+                <h2>Getis-Ord Gi* (Hot Spot / Cold Spot)</h2>
+                <p>İstatistiksel olarak anlamlı sıcak (yüksek değer kümeleri) ve soğuk (düşük değer kümeleri) noktaları belirler. %90, %95 ve %99 güven düzeylerinde sınıflandırma yapılır.</p>
+                <div class="placeholder-map">🗺️ Hot spot haritası — analiz tamamlandığında burada görünecek</div>
+            </div>
+
+            <div class="content-card">
+                <h2>Mekânsal Regresyon Modelleri</h2>
+                <p>Turizm yoğunluğunu açıklamak için OLS (En Küçük Kareler), Spatial Lag Model (SLM) ve Spatial Error Model (SEM) karşılaştırması. AIC, R², Moran testi gibi model performans göstergeleri raporlanır.</p>
+                <div class="placeholder-map">📊 Regresyon sonuçları — analiz tamamlandığında burada görünecek</div>
+                <table class="data-table" style="margin-top: 16px;">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>R²</th>
+                            <th>AIC</th>
+                            <th>Moran I (hata)</th>
+                            <th>En Güçlü Değişken</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="5" style="text-align: center; color: var(--text-muted);">Analiz tamamlandığında doldurulacak</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content-card">
+                <h2>GWR (Coğrafi Ağırlıklı Regresyon)</h2>
+                <p>Değişkenler arasındaki ilişkilerin mekânsal olarak değiştiğini varsayan GWR modeli. Her rayon için yerel katsayı haritaları üretilir.</p>
+                <div class="placeholder-map">🗺️ GWR katsayı haritası — analiz tamamlandığında burada görünecek</div>
+            </div>
+
+            <div class="content-card">
+                <h2>Turizm Gelişim Tipolojisi</h2>
+                <p>Rayonların 2005–2025 dönemindeki turizm gelişimine göre sınıflandırılması: Sürekli büyüyen, gerileyen, pandemi sonrası toparlanan, durağan ve yeni gelişen rayonlar.</p>
+                <div class="placeholder-map">🗺️ Gelişim tipolojisi haritası — analiz tamamlandığında burada görünecek</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Azerbaycan'da Turizm Faaliyetlerinin Mekânsal Dağılışı</h4>
+                    <p>Doktora Tezi · Coğrafya Anabilim Dalı</p>
+                    <p>Nurtac Süleymanzade · 2025</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Hızlı Bağlantılar</h5>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="harita.html">Haritalar</a></li>
+                        <li><a href="grafikler.html">Grafikler</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+</body>
+</html>

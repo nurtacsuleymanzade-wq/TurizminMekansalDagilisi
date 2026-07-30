@@ -1,0 +1,25 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Large data (track via git LFS if needed)
+data/raw/*.shp
+data/raw/*.tif
+data/raw/*.nc
+data/raw/*.gpkg
+*.gdb/

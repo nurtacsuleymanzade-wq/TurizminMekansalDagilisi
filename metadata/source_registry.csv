@@ -1,0 +1,15 @@
+dataset_name,source_url,institution,download_date,reference_years,spatial_unit,file_format,license,original_filename,processing_status,notes
+AzStat_Tourism_Yearbook,https://www.stat.gov.az/,Azərbaycan Dövlət Statistika Komitəsi,,2005-2025,rayon,PDF/XLSX,Open Government Data,,PENDING,Resmi turizm istatistik yilliklari. Otel sayisi, geceleme, yatak kapasitesi vb.
+TourismBoard_Monthly,https://tourismboard.az/,Azərbaycan Turizm Bürosu,,2020-2025,rayon,PDF/XLSX,,,PENDING,Aylik turizm raporlari ve istatistikler
+OSM_Tourism_POI,https://overpass-api.de/api/interpreter,OpenStreetMap,,2024,nokta,GeoJSON,ODbL,,PENDING,Turistik POI katmanlari (otel, muze, plaj, restoran vb.)
+OSM_Road_Network,https://download.geofabrik.de/asia/azerbaijan.html,OpenStreetMap/Geofabrik,,2024,cizgi,Shapefile/GeoJSON,ODbL,,PENDING,Karayollari ve yol siniflari
+OSM_Administrative_Boundaries,https://download.geofabrik.de/asia/azerbaijan.html,OpenStreetMap/Geofabrik,,2024,rayon,Shapefile/GeoJSON,ODbL,,PENDING,Rayon idari sinirlari
+UNESCO_Sites,https://whc.unesco.org/en/list/,UNESCO,,2024,nokta/poligon,GeoJSON,UNESCO OGD,,PENDING,Dunya Mirasi alanlari (Icherisheher, Gobustan, Sheki)
+Protected_Planet_AZ,https://www.protectedplanet.net/,UNEP-WCMC,,2024,poligon,GeoJSON,,,PENDING,Korunan alanlar ve milli parklar
+Culture_Ministry_Monuments,https://kultur.gov.az/,Azərbaycan Mədəniyyət Nazirliyi,,2024,nokta,CSV/GeoJSON,,,PENDING,Tarihi ve kulturel anit kayitlari
+Ecology_Ministry_Nature,https://eco.gov.az/,Ekoloji ve Tebii Servetler Nazirliyi,,2024,nokta/poligon,GeoJSON,,,PENDING,Dogal kaynaklar (milli parklar, rezervler)
+Population_Statistics,https://www.stat.gov.az/,Azərbaycan Dövlət Statistika Komitəsi,,2005-2025,rayon,XLSX/CSV,Open Government Data,,PENDING,Rayon bazinda nufus, kirsal/kentsel nufus, gelir
+ERA5_Climate,https://cds.climate.copernicus.eu/,Copernicus Climate Change Service,,2005-2025,rayon (zonal),NetCDF/GeoTIFF,Copernicus License,,PENDING,Aylik sicaklik, yagis, guneslenme verileri
+SRTM_DEM,https://srtm.csi.cgiar.org/,CGIAR/NASA,,2024,raster (30m),GeoTIFF,Open,,PENDING,Sayisal yukseklik modeli
+Copernicus_LandCover,https://land.copernicus.eu/,European Environment Agency,,2024,poligon/raster,GeoTIFF/GeoJSON,Copernicus License,,PENDING,Arazi ortusu ve kullanim siniflari
+Google_Places_API,,Google,,2024,nokta,JSON/GeoJSON,Google ToS,,PENDING,Turistik isletme dogrulama (rating, review) - SADECE yardimci
