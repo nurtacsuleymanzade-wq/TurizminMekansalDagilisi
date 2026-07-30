@@ -21,8 +21,20 @@ build/
 # Node
 node_modules/
 
-# Large data files (>50MB)
+# Large data files
 data/raw/statistics/*.zip
+data/geojson/gis_osm_*.geojson
+data/geojson/geofabrik_*
+data/geojson/*_final/
+data/geojson/*_raw.json
+data/geojson/*_roads.geojson
+data/geojson/osm_roads.geojson
+data/geojson/osm_buildings.geojson
+data/geojson/osm_landuse.geojson
+
+# Raster data (large raw rasters stay local)
+data/raster/*.tif
+data/raster/*.vrt
 
 # Keep Git keepfiles
 !.gitkeep
@@ -34,6 +46,5 @@ data/raw/statistics/*.zip
 venv/
 env/
 
-# Raw intermediate data
-data/geojson/*_raw.json
+# Raw intermediate
 *.zip

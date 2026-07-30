@@ -122,6 +122,51 @@
     </div>
   </div>
 
+  <div class="panel-box">
+    <h3>⛰️ Copernicus DEM 30m (Sayısal Yükseklik Modeli)</h3>
+    <p style="font-size:13px;color:var(--text-muted);line-height:1.7;">
+      Avrupa Uzay Ajansı (ESA) Copernicus programı kapsamında sağlanan <b>30 metre çözünürlüklü</b>
+      sayısal yükseklik modeli. Azerbaycan geneli için GLO-30 verisi indirilmiş, 
+      eğim (slope), bakı (aspect) ve yükseklik (elevation) raster katmanları 
+      <b>data/raster/</b> dizininde saklanmaktadır. Turizm noktalarının yükseklik dağılımı 
+      analizinde kullanılmıştır.
+    </p>
+  </div>
+
+  <div class="panel-box">
+    <h3>🌍 ESA WorldCover 10m (Arazi Örtüsü)</h3>
+    <p style="font-size:13px;color:var(--text-muted);line-height:1.7;">
+      ESA WorldCover projesi kapsamında <b>10 metre çözünürlüklü</b> arazi örtüsü haritası 
+      (2021 yılı). 12 sınıflı (orman, tarım, kentsel, su, vb.) sınıflandırma içerir. 
+      Turizm alanlarının arazi kullanımı ile ilişkisi incelenmiş, rayon bazında 
+      arazi örtüsü istatistikleri çıkarılmıştır.
+    </p>
+  </div>
+
+  <div class="panel-box">
+    <h3>👥 WorldPop 100m (Nüfus Yoğunluğu)</h3>
+    <p style="font-size:13px;color:var(--text-muted);line-height:1.7;">
+      WorldPop projesinden alınan <b>100 metre çözünürlüklü</b> nüfus yoğunluğu raster verisi 
+      (2020 yılı). Kişi/km² cinsinden tahmini nüfus dağılımı. Turistik nokta 
+      yoğunluğu ile nüfus yoğunluğu arasındaki mekansal korelasyon incelenmiş, 
+      bu değişken ML modellerinde ek özellik olarak kullanılmıştır.
+    </p>
+  </div>
+
+  <div class="panel-box">
+    <h3>🤖 ML Model Çıktıları</h3>
+    <div class="cols">
+      <span class="col">models/model_comparison.json (metrikler)</span>
+      <span class="col">models/all_predictions.csv (tüm tahminler)</span>
+      <span class="col">models/rf_feature_importance.csv</span>
+      <span class="col">models/xgb_feature_importance.csv</span>
+      <span class="col">models/feature_importance.png</span>
+      <span class="col">models/model_comparison.png</span>
+      <span class="col">models/prediction_geojson.json (GeoJSON)</span>
+      <span class="col">models/sar_residual_map.json (GeoJSON)</span>
+    </div>
+  </div>
+
   <!-- Methodology -->
   <div class="section-header">
     <h2>⚙️ Veri Toplama Metodolojisi</h2>
@@ -157,7 +202,10 @@
       <b>Simpson Çeşitlilik:</b> Her rayondaki turizm kategorilerinin çeşitliliği 
       D = 1 − Σ(pi²) formülü ile hesaplandı.<br>
       <b>Panel Veri:</b> 2015-2024 yılları arası AzStat verileri + OSM POI sayımları 
-      birleştirilerek 691 satırlık rayon×yıl paneli oluşturuldu.
+      birleştirilerek 691 satırlık rayon×yıl paneli oluşturuldu.<br>
+      <b>ML Modeller (SAR/RF/XGBoost):</b> 71 rayon için 8 kategori özelliği kullanılarak
+      SAR mekansal gecikme (spreg.ML_Lag), Random Forest (200 ağaç, depth=12) ve XGBoost
+      (200 ağaç, depth=6, lr=0.1) modelleri eğitilmiştir. RF test R²=0.995, XGBoost test R²=0.877.
     </p>
   </div>
 </main>
@@ -194,7 +242,18 @@ const sources = [
   {id:"ANL_003",prog:"Mekansal Analiz",name:"Simpson Çeşitlilik Endeksi",type:"CSV",file:"data/processed/diversity_index.csv",size:"2 KB",status:"✅ Analiz"},
   {id:"ANL_004",prog:"Mekansal Analiz",name:"Rayon Özet İstatistikleri",type:"JSON",file:"data/processed/rayon_summary.json",size:"2 KB",status:"✅ Analiz"},
   {id:"ANL_005",prog:"Mekansal Analiz",name:"Kategori Payları",type:"CSV",file:"data/processed/category_shares.csv",size:"703 B",status:"✅ Analiz"},
-  {id:"UNS_001",prog:"Veri Toplama",name:"UNESCO Dünya Miras",type:"XML",file:"data/unesco_raw.xml",size:"~10 KB",status:"✅ İndirildi"}
+  {id:"UNS_001",prog:"Veri Toplama",name:"UNESCO Dünya Miras",type:"XML",file:"data/unesco_raw.xml",size:"~10 KB",status:"✅ İndirildi"},
+  {id:"ML_001",prog:"ML Modeli",name:"Model Karşılaştırması (JSON)",type:"JSON",file:"models/model_comparison.json",size:"2 KB",status:"✅ Analiz"},
+  {id:"ML_002",prog:"ML Modeli",name:"Tüm Tahminler (CSV)",type:"CSV",file:"models/all_predictions.csv",size:"5 KB",status:"✅ Analiz"},
+  {id:"ML_003",prog:"ML Modeli",name:"RF Değişken Önemi",type:"CSV",file:"models/rf_feature_importance.csv",size:"1 KB",status:"✅ Analiz"},
+  {id:"ML_004",prog:"ML Modeli",name:"XGBoost Değişken Önemi",type:"CSV",file:"models/xgb_feature_importance.csv",size:"1 KB",status:"✅ Analiz"},
+  {id:"ML_005",prog:"ML Modeli",name:"Önem Sıralaması Grafiği",type:"PNG",file:"models/feature_importance.png",size:"45 KB",status:"✅ Analiz"},
+  {id:"ML_006",prog:"ML Modeli",name:"Model Karşılaştırma Grafiği",type:"PNG",file:"models/model_comparison.png",size:"38 KB",status:"✅ Analiz"},
+  {id:"ML_007",prog:"ML Modeli",name:"Tahmin GeoJSON",type:"GeoJSON",file:"models/prediction_geojson.json",size:"12 KB",status:"✅ Analiz"},
+  {id:"ML_008",prog:"ML Modeli",name:"SAR Artık Haritası",type:"GeoJSON",file:"models/sar_residual_map.json",size:"8 KB",status:"✅ Analiz"},
+  {id:"GIS_001",prog:"GIS Verisi",name:"Copernicus DEM 30m",type:"Raster",file:"data/raster/",size:"~500 MB",status:"✅ İndirildi"},
+  {id:"GIS_002",prog:"GIS Verisi",name:"ESA WorldCover 10m",type:"Raster",file:"data/raster/",size:"~200 MB",status:"✅ İndirildi"},
+  {id:"GIS_003",prog:"GIS Verisi",name:"WorldPop 100m",type:"Raster",file:"data/raster/",size:"~50 MB",status:"✅ İndirildi"}
 ];
 
 function render() {

@@ -1,0 +1,1218 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.85,
+          40.45
+        ]
+      },
+      "properties": {
+        "rayon": "Absheron",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.95,
+          40.05
+        ]
+      },
+      "properties": {
+        "rayon": "Agdam",
+        "actual": 36,
+        "predicted": 39.77,
+        "residual": -3.77,
+        "abs_residual": 3.77
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.47,
+          40.63
+        ]
+      },
+      "properties": {
+        "rayon": "Agdash",
+        "actual": 0,
+        "predicted": 7.98,
+        "residual": -7.98,
+        "abs_residual": 7.98
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.37,
+          40.05
+        ]
+      },
+      "properties": {
+        "rayon": "Aghjabadi",
+        "actual": 8,
+        "predicted": 15.11,
+        "residual": -7.11,
+        "abs_residual": 7.11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.45,
+          41.12
+        ]
+      },
+      "properties": {
+        "rayon": "Agstafa",
+        "actual": 0,
+        "predicted": -2.53,
+        "residual": 2.53,
+        "abs_residual": 2.53
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.38,
+          40.57
+        ]
+      },
+      "properties": {
+        "rayon": "Agsu",
+        "actual": 0,
+        "predicted": 12.25,
+        "residual": -12.25,
+        "abs_residual": 12.25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.87,
+          38.43
+        ]
+      },
+      "properties": {
+        "rayon": "Astara",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.45,
+          39.15
+        ]
+      },
+      "properties": {
+        "rayon": "Babek",
+        "actual": 0,
+        "predicted": 8.86,
+        "residual": -8.86,
+        "abs_residual": 8.86
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.87,
+          40.41
+        ]
+      },
+      "properties": {
+        "rayon": "Baku",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.78,
+          41.73
+        ]
+      },
+      "properties": {
+        "rayon": "Balakan",
+        "actual": 0,
+        "predicted": 11.49,
+        "residual": -11.49,
+        "abs_residual": 11.49
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.13,
+          40.38
+        ]
+      },
+      "properties": {
+        "rayon": "Barda",
+        "actual": 13,
+        "predicted": 19.74,
+        "residual": -6.74,
+        "abs_residual": 6.74
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.62,
+          39.78
+        ]
+      },
+      "properties": {
+        "rayon": "Beylagan",
+        "actual": 26,
+        "predicted": 31.19,
+        "residual": -5.19,
+        "abs_residual": 5.19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.53,
+          39.47
+        ]
+      },
+      "properties": {
+        "rayon": "Bilasuvar",
+        "actual": 0,
+        "predicted": 10.77,
+        "residual": -10.77,
+        "abs_residual": 10.77
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.08,
+          40.52
+        ]
+      },
+      "properties": {
+        "rayon": "Dashkasan",
+        "actual": 0,
+        "predicted": 2.04,
+        "residual": -2.04,
+        "abs_residual": 2.04
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.17,
+          39.58
+        ]
+      },
+      "properties": {
+        "rayon": "Fuzuli",
+        "actual": 101,
+        "predicted": 98.22,
+        "residual": 2.78,
+        "abs_residual": 2.78
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.8,
+          40.57
+        ]
+      },
+      "properties": {
+        "rayon": "Gadabay",
+        "actual": 0,
+        "predicted": 2.18,
+        "residual": -2.18,
+        "abs_residual": 2.18
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.36,
+          40.68
+        ]
+      },
+      "properties": {
+        "rayon": "Ganja",
+        "actual": 0,
+        "predicted": 1.71,
+        "residual": -1.71,
+        "abs_residual": 1.71
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.78,
+          40.6
+        ]
+      },
+      "properties": {
+        "rayon": "Goranboy",
+        "actual": 0,
+        "predicted": 2.97,
+        "residual": -2.97,
+        "abs_residual": 2.97
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.73,
+          40.65
+        ]
+      },
+      "properties": {
+        "rayon": "Goychay",
+        "actual": 0,
+        "predicted": 8.63,
+        "residual": -8.63,
+        "abs_residual": 8.63
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.33,
+          40.58
+        ]
+      },
+      "properties": {
+        "rayon": "Goygol",
+        "actual": 0,
+        "predicted": 2.04,
+        "residual": -2.04,
+        "abs_residual": 2.04
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.93,
+          40.03
+        ]
+      },
+      "properties": {
+        "rayon": "Hajigabul",
+        "actual": 0,
+        "predicted": 12.44,
+        "residual": -12.44,
+        "abs_residual": 12.44
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.07,
+          39.87
+        ]
+      },
+      "properties": {
+        "rayon": "Imishli",
+        "actual": 0,
+        "predicted": 8.07,
+        "residual": -8.07,
+        "abs_residual": 8.07
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.15,
+          40.78
+        ]
+      },
+      "properties": {
+        "rayon": "Ismayilli",
+        "actual": 0,
+        "predicted": 11.23,
+        "residual": -11.23,
+        "abs_residual": 11.23
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.0,
+          39.4
+        ]
+      },
+      "properties": {
+        "rayon": "Jabrayil",
+        "actual": 63,
+        "predicted": 63.45,
+        "residual": -0.45,
+        "abs_residual": 0.45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.57,
+          39.2
+        ]
+      },
+      "properties": {
+        "rayon": "Jalilabad",
+        "actual": 0,
+        "predicted": 10.48,
+        "residual": -10.48,
+        "abs_residual": 10.48
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.57,
+          38.95
+        ]
+      },
+      "properties": {
+        "rayon": "Julfa",
+        "actual": 0,
+        "predicted": 7.25,
+        "residual": -7.25,
+        "abs_residual": 7.25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.03,
+          40.1
+        ]
+      },
+      "properties": {
+        "rayon": "Kalbajar",
+        "actual": 0,
+        "predicted": 1.71,
+        "residual": -1.71,
+        "abs_residual": 1.71
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.17,
+          39.45
+        ]
+      },
+      "properties": {
+        "rayon": "Kangarli",
+        "actual": 0,
+        "predicted": 11.86,
+        "residual": -11.86,
+        "abs_residual": 11.86
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8,
+          41.47
+        ]
+      },
+      "properties": {
+        "rayon": "Khachmaz",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.12,
+          40.9
+        ]
+      },
+      "properties": {
+        "rayon": "Khizi",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.8,
+          39.9
+        ]
+      },
+      "properties": {
+        "rayon": "Khojaly",
+        "actual": 72,
+        "predicted": 72.07,
+        "residual": -0.07,
+        "abs_residual": 0.07
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.17,
+          40.33
+        ]
+      },
+      "properties": {
+        "rayon": "Kurdamir",
+        "actual": 0,
+        "predicted": 9.45,
+        "residual": -9.45,
+        "abs_residual": 9.45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.37,
+          39.63
+        ]
+      },
+      "properties": {
+        "rayon": "Lachin",
+        "actual": 23,
+        "predicted": 27.9,
+        "residual": -4.9,
+        "abs_residual": 4.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.83,
+          38.75
+        ]
+      },
+      "properties": {
+        "rayon": "Lankaran",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.42,
+          38.78
+        ]
+      },
+      "properties": {
+        "rayon": "Lerik",
+        "actual": 0,
+        "predicted": 9.91,
+        "residual": -9.91,
+        "abs_residual": 9.91
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.68,
+          39.03
+        ]
+      },
+      "properties": {
+        "rayon": "Masally",
+        "actual": 0,
+        "predicted": 12.15,
+        "residual": -12.15,
+        "abs_residual": 12.15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.05,
+          40.77
+        ]
+      },
+      "properties": {
+        "rayon": "Mingachevir",
+        "actual": 0,
+        "predicted": 7.71,
+        "residual": -7.71,
+        "abs_residual": 7.71
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.82,
+          40.5
+        ]
+      },
+      "properties": {
+        "rayon": "Naftalan",
+        "actual": 15,
+        "predicted": 21.28,
+        "residual": -6.28,
+        "abs_residual": 6.28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.42,
+          39.2
+        ]
+      },
+      "properties": {
+        "rayon": "Nakhchivan",
+        "actual": 0,
+        "predicted": 9.13,
+        "residual": -9.13,
+        "abs_residual": 9.13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.25,
+          39.35
+        ]
+      },
+      "properties": {
+        "rayon": "Neftchala",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.57,
+          41.07
+        ]
+      },
+      "properties": {
+        "rayon": "Oghuz",
+        "actual": 0,
+        "predicted": 10.51,
+        "residual": -10.51,
+        "abs_residual": 10.51
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.97,
+          38.9
+        ]
+      },
+      "properties": {
+        "rayon": "Ordubad",
+        "actual": 0,
+        "predicted": 4.14,
+        "residual": -4.14,
+        "abs_residual": 4.14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.85,
+          40.98
+        ]
+      },
+      "properties": {
+        "rayon": "Qabala",
+        "actual": 0,
+        "predicted": 11.28,
+        "residual": -11.28,
+        "abs_residual": 11.28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.92,
+          41.42
+        ]
+      },
+      "properties": {
+        "rayon": "Qakh",
+        "actual": 0,
+        "predicted": 11.16,
+        "residual": -11.16,
+        "abs_residual": 11.16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.37,
+          41.1
+        ]
+      },
+      "properties": {
+        "rayon": "Qazakh",
+        "actual": 550,
+        "predicted": 12.72,
+        "residual": 537.28,
+        "abs_residual": 537.28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          41.37
+        ]
+      },
+      "properties": {
+        "rayon": "Quba",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.5,
+          39.35
+        ]
+      },
+      "properties": {
+        "rayon": "Qubadli",
+        "actual": 8,
+        "predicted": 13.36,
+        "residual": -5.36,
+        "abs_residual": 5.36
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4,
+          41.43
+        ]
+      },
+      "properties": {
+        "rayon": "Qusar",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          39.93
+        ]
+      },
+      "properties": {
+        "rayon": "Saatly",
+        "actual": 0,
+        "predicted": 11.23,
+        "residual": -11.23,
+        "abs_residual": 11.23
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.48,
+          40.0
+        ]
+      },
+      "properties": {
+        "rayon": "Sabirabad",
+        "actual": 0,
+        "predicted": 11.32,
+        "residual": -11.32,
+        "abs_residual": 11.32
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.98,
+          39.6
+        ]
+      },
+      "properties": {
+        "rayon": "Salyan",
+        "actual": 0,
+        "predicted": 12.36,
+        "residual": -12.36,
+        "abs_residual": 12.36
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.42,
+          40.95
+        ]
+      },
+      "properties": {
+        "rayon": "Samukh",
+        "actual": 0,
+        "predicted": 2.88,
+        "residual": -2.88,
+        "abs_residual": 2.88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.88,
+          39.7
+        ]
+      },
+      "properties": {
+        "rayon": "Sedarak",
+        "actual": 0,
+        "predicted": -1.94,
+        "residual": 1.94,
+        "abs_residual": 1.94
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.87,
+          41.22
+        ]
+      },
+      "properties": {
+        "rayon": "Shabran",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.55,
+          39.4
+        ]
+      },
+      "properties": {
+        "rayon": "Shahbuz",
+        "actual": 0,
+        "predicted": 7.13,
+        "residual": -7.13,
+        "abs_residual": 7.13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.17,
+          41.2
+        ]
+      },
+      "properties": {
+        "rayon": "Shaki",
+        "actual": 0,
+        "predicted": 10.2,
+        "residual": -10.2,
+        "abs_residual": 10.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.93,
+          40.63
+        ]
+      },
+      "properties": {
+        "rayon": "Shamakhi",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.02,
+          40.83
+        ]
+      },
+      "properties": {
+        "rayon": "Shamkir",
+        "actual": 0,
+        "predicted": 0.54,
+        "residual": -0.54,
+        "abs_residual": 0.54
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.15,
+          39.55
+        ]
+      },
+      "properties": {
+        "rayon": "Sharur",
+        "actual": 0,
+        "predicted": 11.93,
+        "residual": -11.93,
+        "abs_residual": 11.93
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.92,
+          39.93
+        ]
+      },
+      "properties": {
+        "rayon": "Shirvan",
+        "actual": 0,
+        "predicted": 12.41,
+        "residual": -12.41,
+        "abs_residual": 12.41
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.75,
+          39.75
+        ]
+      },
+      "properties": {
+        "rayon": "Shusha",
+        "actual": 120,
+        "predicted": 115.35,
+        "residual": 4.65,
+        "abs_residual": 4.65
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.07,
+          41.08
+        ]
+      },
+      "properties": {
+        "rayon": "Siazan",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.67,
+          40.58
+        ]
+      },
+      "properties": {
+        "rayon": "Sumqayit",
+        "actual": 0,
+        "predicted": 12.72,
+        "residual": -12.72,
+        "abs_residual": 12.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.85,
+          40.33
+        ]
+      },
+      "properties": {
+        "rayon": "Tartar",
+        "actual": 50,
+        "predicted": 52.8,
+        "residual": -2.8,
+        "abs_residual": 2.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.62,
+          40.97
+        ]
+      },
+      "properties": {
+        "rayon": "Tovuz",
+        "actual": 0,
+        "predicted": 1.35,
+        "residual": -1.35,
+        "abs_residual": 1.35
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.65,
+          40.52
+        ]
+      },
+      "properties": {
+        "rayon": "Ujar",
+        "actual": 0,
+        "predicted": 8.42,
+        "residual": -8.42,
+        "abs_residual": 8.42
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.23,
+          38.9
+        ]
+      },
+      "properties": {
+        "rayon": "Yardimli",
+        "actual": 0,
+        "predicted": 9.26,
+        "residual": -9.26,
+        "abs_residual": 9.26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.15,
+          40.62
+        ]
+      },
+      "properties": {
+        "rayon": "Yevlakh",
+        "actual": 0,
+        "predicted": 7.91,
+        "residual": -7.91,
+        "abs_residual": 7.91
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.65,
+          39.08
+        ]
+      },
+      "properties": {
+        "rayon": "Zangilan",
+        "actual": 0,
+        "predicted": 2.83,
+        "residual": -2.83,
+        "abs_residual": 2.83
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.65,
+          41.63
+        ]
+      },
+      "properties": {
+        "rayon": "Zaqatala",
+        "actual": 0,
+        "predicted": 3.64,
+        "residual": -3.64,
+        "abs_residual": 3.64
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.72,
+          40.22
+        ]
+      },
+      "properties": {
+        "rayon": "Zardab",
+        "actual": 0,
+        "predicted": 8.27,
+        "residual": -8.27,
+        "abs_residual": 8.27
+      }
+    }
+  ],
+  "metadata": {
+    "title": "SAR Model Artıkları",
+    "description": "SAR (ML_Lag) modeli artık haritası. Pozitif: model düşük tahmin etti, Negatif: model yüksek tahmin etti.",
+    "model": "ML_Lag",
+    "rho": -0.3327792953200772
+  }
+}
