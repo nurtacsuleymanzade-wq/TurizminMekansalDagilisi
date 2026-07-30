@@ -54,7 +54,7 @@
 <main class="container">
   <header class="page-header">
     <h1>🗺️ QGIS-Kalite Statik Haritalar</h1>
-    <p class="subtitle">Matplotlib, GeoPandas ve Contextily ile üretilmiş 8 adet profesyonel statik harita. 7 POI kategorisi, rayon sınırları, ölçek çubuğu ve lejant içerir.</p>
+    <p class="subtitle">Matplotlib, GeoPandas ve Contextily ile üretilmiş 12 adet profesyonel statik harita. 7 POI kategorisi, rayon sınırları, ölçek çubuğu ve lejant içerir.</p>
   </header>
 
   <section class="map-gallery" id="mapGallery">
@@ -88,8 +88,12 @@
 
 <script>
 const MAPS = [
-  { id: "azerbaycan_genel", title: "Azerbaycan Genel — Tüm Kategoriler", desc: "Tüm 7 POI kategorisini gösteren genel bakış haritası. 26.713 turistik nokta, 74 rayon ve 18 ekonomik bölge.", poiCount: 26713 },
-  { id: "baku", title: "Bakü ve Abşeron", desc: "Başkent Bakü ve Abşeron yarımadasındaki turistik noktalar. Yeme-içme, otel ve tarihi-kültürel kategorileri yoğun.", poiCount: 5105 },
+  { id: "azerbaycan_genel", title: "Azerbaycan Genel — Tüm Kategoriler", desc: "Tüm 7 POI kategorisini gösteren genel bakış haritası. 26.893 turistik nokta, 74 rayon ve 18 ekonomik bölge.", poiCount: 26893 },
+  { id: "baku", title: "Bakü ve Abşeron", desc: "Başkent Bakü ve Abşeron yarımadasındaki turistik noktalar. Yeme-içme, otel ve tarihi-kültürel kategorileri yoğun.", poiCount: 1473 },
+  { id: "naxcivan", title: "Naxçıvan Muxtar Respublikası", desc: "Naxçıvan Özerk Cumhuriyeti — nahçıvan şehri ve çevresindeki turistik noktalar. Tarihi ve kültürel miras.", poiCount: 34 },
+  { id: "quba", title: "Quba", desc: "Quba rayonu — kuzey bölgesi, dağ turizmi, Kırmızı Kasaba ve doğal güzellikler.", poiCount: 143 },
+  { id: "qusar", title: "Qusar", desc: "Qusar rayonu — kuzey bölgesi, Şahdağ Kayak Merkezi ve dağ turizmi.", poiCount: 60 },
+  { id: "xacmaz", title: "Xaçmaz", desc: "Xaçmaz rayonu — kuzey sahil bölgesi, Nabran ve Hazar sahili turistik noktaları.", poiCount: 98 },
   { id: "quba_xacmaz", title: "Quba / Xaçmaz (Kuzey Sahil)", desc: "Kuzey sahil bölgesi — Quba, Xaçmaz ve Qusar rayonları. Doğa turizmi ve park-plaj alanları.", poiCount: 3120 },
   { id: "qebele_ismayilli", title: "Qebele / İsmayıllı", desc: "Qebele ve İsmayıllı rayonları. Dağ turizmi, tarihi yapılar ve doğal güzellikler.", poiCount: 2890 },
   { id: "samaxi_agsu", title: "Şamaxı / Ağsu (Merkez)", desc: "Orta Azerbaycan — Şamaxı, Ağsu, Göyçay ve Kürdəmir. Tarihi ve kültürel miras.", poiCount: 2450 },
