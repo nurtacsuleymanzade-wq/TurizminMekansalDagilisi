@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turistik Haritalar — Turizmin Mekansal Dağılışı</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #f5f0e8;
+  color: #333;
+  line-height: 1.6;
+}
+.header {
+  background: linear-gradient(135deg, #1a5276, #2471a3);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.header h1 { font-size: 2rem; margin-bottom: 0.3rem; }
+.header .en { font-size: 1rem; color: #aed6f1; font-style: italic; }
+.header p { margin-top: 0.5rem; color: #d4e6f1; font-size: 0.95rem; }
+.nav-bar {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-bar a {
+  text-decoration: none; color: #2471a3; font-weight: 600;
+  padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.9rem;
+}
+.nav-bar a:hover { background: #eaf2f8; }
+.nav-bar a.active { background: #2471a3; color: white; }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.map-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.map-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+.map-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-bottom: 3px solid #1a5276;
+}
+.map-card .info {
+  padding: 1rem;
+}
+.map-card .info h3 {
+  color: #1a5276;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+.map-card .info .en-name {
+  color: #7f8c8d;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+.map-card .info .meta {
+  color: #95a5a6;
+  font-size: 0.78rem;
+  margin-top: 0.5rem;
+}
+.map-card .info .poi-count {
+  display: inline-block;
+  background: #eaf2f8;
+  color: #2471a3;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox.active { display: flex; }
+.lightbox img {
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 4px;
+}
+.lightbox .close {
+  position: absolute;
+  top: 20px; right: 30px;
+  color: white; font-size: 40px; font-weight: bold;
+  cursor: pointer;
+}
+.lightbox .caption {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+  font-size: 0.85rem;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid { grid-template-columns: 1fr; padding: 1rem; }
+  .header h1 { font-size: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🗺️ Turistik Haritalar</h1>
+  <div class="en">Tourist Maps — Republic of Azerbaijan</div>
+  <p>Azərbaycanın turizm bölgələrinin rəsmi turizm broşürü stilində ətraflı xəritələri</p>
+</div>
+
+<nav class="nav-bar">
+  <a href="index.html">🏠 Ana Səhifə</a>
+  <a href="harita.html">🌍 İnteraktiv Xəritə</a>
+  <a href="haritalar_statiktir.html">🗺️ Statik Xəritələr</a>
+  <a href="tourist_maps.html" class="active">📸 Turistik Xəritələr</a>
+  <a href="analizler.html">📊 Analizlər</a>
+  <a href="oteller.html">🏨 Otellər</a>
+</nav>
+
+<div class="gallery-grid" id="gallery">
+  <!-- Filled by JS -->
+</div>
+
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+  <div class="caption" id="lightbox-caption"></div>
+</div>
+
+<div class="footer">
+  <p>© Turizmin Mekansal Dağılışı — N.T.Süleymanzadə, AzTU 2026</p>
+  <p>Məlumat mənbəyi: OpenStreetMap, AzStat, Azərbaycan.Travel</p>
+</div>
+
+<script>
+const maps = [
+  {
+    file: "models/maps/tourist_v2/quba_tourist.png",
+    title_az: "Quba Şəhəri",
+    title_en: "Guba City — Tourist Map",
+    desc: "Qudyalçay sahili, Qırmızı Qəsəbə, Dağlı kəndi",
+    poi: 30
+  },
+  {
+    file: "models/maps/tourist_v2/quba_qusar_region.png",
+    title_az: "Quba-Qusar Rayonu",
+    title_en: "Guba-Gusar Region Map",
+    desc: "Şahdağ Milli Parkı, Afurca Şəlaləsi, Xınalıq kəndi",
+    poi: 234
+  },
+  {
+    file: "models/maps/tourist_v2/naxcivan_tourist.png",
+    title_az: "Naxçıvan Muxtar Respublikası",
+    title_en: "Nakhchivan Autonomous Republic",
+    desc: "Tarixi İpək Yolu, Möminə Xatun Türbəsi, İlandağ",
+    poi: 36
+  },
+  {
+    file: "models/maps/tourist_v2/qebele_tourist.png",
+    title_az: "Qəbələ Rayonu",
+    title_en: "Gabala Region — Tourist Map",
+    desc: "Tufandağ, Nohur Gölü, Qafqaz dağları",
+    poi: 141
+  },
+  {
+    file: "models/maps/tourist_v2/baku_tourist.png",
+    title_az: "Bakı Şəhəri",
+    title_en: "Baku City — Tourist Map",
+    desc: "İçərişəhər, Dənizkənarı Bulvar, Alov Qüllələri",
+    poi: 1565
+  },
+  {
+    file: "models/maps/tourist_v2/xacmaz_tourist.png",
+    title_az: "Xaçmaz Rayonu",
+    title_en: "Khachmaz Region — Tourist Map",
+    desc: "Nabran, Xəzər sahili, meşəlik ərazilər",
+    poi: 98
+  },
+  {
+    file: "models/maps/tourist_v2/azerbaycan_tourist.png",
+    title_az: "Azərbaycan Respublikası",
+    title_en: "Republic of Azerbaijan — Tourist Map",
+    desc: "Ümumi turizm məkan dağılışı — bütün ölkə",
+    poi: 26893
+  },
+  {
+    file: "models/maps/tourist_v2/lankaran_tourist.png",
+    title_az: "Lənkəran Rayonu",
+    title_en: "Lankaran Region — Tourist Map",
+    desc: "Talış Dağları, İstisu, Xəzər sahili",
+    poi: 64
+  },
+  {
+    file: "models/maps/tourist_v2/sheki_tourist.png",
+    title_az: "Şəki Rayonu",
+    title_en: "Sheki Region — Tourist Map",
+    desc: "Xan Sarayı, Kiş Alban Məbədi, İpək Yolu",
+    poi: 101
+  },
+  {
+    file: "models/maps/tourist_v2/gence_tourist.png",
+    title_az: "Gəncə Şəhəri",
+    title_en: "Ganja City — Tourist Map",
+    desc: "Nizami Məqbərəsi, Göygöl, qədim şəhər",
+    poi: 81
+  }
+];
+
+const gallery = document.getElementById('gallery');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
+
+maps.forEach((m, idx) => {
+  const card = document.createElement('div');
+  card.className = 'map-card';
+  card.onclick = () => {
+    lightbox.classList.add('active');
+    lightboxImg.src = m.file;
+    lightboxCaption.textContent = m.title_az + ' — ' + m.title_en;
+  };
+  card.innerHTML = `
+    <img src="${m.file}" alt="${m.title_az}" loading="lazy">
+    <div class="info">
+      <h3>${m.title_az} <span class="poi-count">${m.poi.toLocaleString()} POI</span></h3>
+      <div class="en-name">${m.title_en}</div>
+      <div class="meta">${m.desc}</div>
+    </div>
+  `;
+  gallery.appendChild(card);
+});
+
+// Close lightbox on Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') lightbox.classList.remove('active');
+});
+</script>
+
+</body>
+</html>
