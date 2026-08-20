@@ -1,0 +1,236 @@
+{
+  "type": "FeatureCollection",
+  "name": "Qusar tourism points — spatially verified source subset",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1347352,
+          41.3186526
+        ]
+      },
+      "properties": {
+        "name": "Skalini",
+        "category": "Diger_Tesis",
+        "subcategory": "Restaurant",
+        "source": "osm_food_drink",
+        "osm_id": "",
+        "region": "Quba-Xaçmaz",
+        "rayon": "",
+        "source_category": "Yeme-İçme",
+        "source_registry": "all_pois_enhanced.geojson",
+        "spatial_rule": "intersects official Qusar rayon boundary (adm1_name1=Qusar)",
+        "verification_status": "SOURCE_SPATIAL_MATCH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.13407,
+          41.3192851
+        ]
+      },
+      "properties": {
+        "name": "Aspen Qril",
+        "category": "Diger_Tesis",
+        "subcategory": "Restaurant",
+        "source": "osm_food_drink",
+        "osm_id": "",
+        "region": "Quba-Xaçmaz",
+        "rayon": "",
+        "source_category": "Yeme-İçme",
+        "source_registry": "all_pois_enhanced.geojson",
+        "spatial_rule": "intersects official Qusar rayon boundary (adm1_name1=Qusar)",
+        "verification_status": "SOURCE_SPATIAL_MATCH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.162768,
+          41.3324202
+        ]
+      },
+      "properties": {
+        "name": "Adalas Restoran",
+        "category": "Diger_Tesis",
+        "subcategory": "Restaurant",
+        "source": "osm_food_drink",
+        "osm_id": "",
+        "region": "Quba-Xaçmaz",
+        "rayon": "",
+        "source_category": "Yeme-İçme",
+        "source_registry": "all_pois_enhanced.geojson",
+        "spatial_rule": "intersects official Qusar rayon boundary (adm1_name1=Qusar)",
+        "verification_status": "SOURCE_SPATIAL_MATCH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3323577,
+          41.3951173
+        ]
+      },
+      "properties": {
+        "name": "Tarihi-Kültürel #",
+        "category": "Tarihi_Anit",
+        "subcategory": "Monument",
+        "source": "osm_tourism_historic",
+        "osm_id": "",
+        "region": "Quba-Xaçmaz",
+        "rayon": "",
+        "source_category": "Tarihi-Kültürel",
+        "source_registry": "all_pois_enhanced.geojson",
+        "spatial_rule": "intersects official Qusar rayon boundary (adm1_name1=Qusar)",
+        "verification_status": "SOURCE_SPATIAL_MATCH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4190793,
+          41.4587795
+        ]
+      },
+      "properties": {
+        "name": "Tarihi-Kültürel #",
+        "category": "Tarihi_Anit",
+        "subcategory": "Memorial",
+        "source": "osm_tourism_historic",
+        "osm_id": "",
+        "region": "Quba-Xaçmaz",
+        "rayon": "",
+        "source_category": "Tarihi-Kültürel",
+        "source_registry": "all_pois_enhanced.geojson",
+        "spatial_rule": "intersects official Qusar rayon boundary (adm1_name1=Qusar)",
+        "verification_status": "SOURCE_SPATIAL_MATCH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.4231857,
+          41.6395315
+        ]
+      },
+      "properties": {
+        "name": "Heydər Əliyev Heykəli",
+        "category": "Tarihi_Anit",
+        "subcategory": "Memorial",
+        "source": "osm_tourism_historic",
+        "osm_id": "",
+        "region": "Quba-Xaçmaz",
+        "rayon": "",
+        "source_category": "Tarihi-Kültürel",
+        "source_registry": "all_pois_enhanced.geojson",
+        "spatial_rule": "intersects official Qusar rayon boundary (adm1_name1=Qusar)",
+        "verification_status": "SOURCE_SPATIAL_MATCH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.0026341,
+          41.277793
+        ]
+      },
+      "properties": {
+        "name": "Mount Shahdag",
+        "category": "Doga_Alani",
+        "subcategory": "",
+        "source": "azerbaijan_travel",
+        "osm_id": null,
+        "region": "Quba-Xacmaz",
+        "rayon": "Quba",
+        "source_category": "Park-Plaj-Doğa",
+        "source_registry": "all_pois_enhanced.geojson",
+        "spatial_rule": "intersects official Qusar rayon boundary (adm1_name1=Qusar)",
+        "verification_status": "SOURCE_SPATIAL_MATCH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1458756,
+          41.321232
+        ]
+      },
+      "properties": {
+        "name": "Enjoy winter and summer adventures at Shahdag",
+        "category": "Doga_Alani",
+        "subcategory": "",
+        "source": "azerbaijan_travel",
+        "osm_id": null,
+        "region": "Quba-Xacmaz",
+        "rayon": "Gusar",
+        "source_category": "Park-Plaj-Doğa",
+        "source_registry": "all_pois_enhanced.geojson",
+        "spatial_rule": "intersects official Qusar rayon boundary (adm1_name1=Qusar)",
+        "verification_status": "SOURCE_SPATIAL_MATCH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.0113889,
+          41.2777778
+        ]
+      },
+      "properties": {
+        "name": "Şahdağ",
+        "category": "Doga_Alani",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "osm_id": null,
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "source_category": "Park-Plaj-Doğa",
+        "source_registry": "all_pois_enhanced.geojson",
+        "spatial_rule": "intersects official Qusar rayon boundary (adm1_name1=Qusar)",
+        "verification_status": "SOURCE_SPATIAL_MATCH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.2245526,
+          41.3514599
+        ]
+      },
+      "properties": {
+        "name": "Deluxe Park Qusar Resort & Spa Hotel",
+        "category": "Otel",
+        "subcategory": "",
+        "source": "google_mymaps",
+        "osm_id": null,
+        "region": "Unknown",
+        "rayon": "Unknown",
+        "source_category": "Otel/Konaklama",
+        "source_registry": "all_pois_enhanced.geojson",
+        "spatial_rule": "intersects official Qusar rayon boundary (adm1_name1=Qusar)",
+        "verification_status": "SOURCE_SPATIAL_MATCH"
+      }
+    }
+  ]
+}
