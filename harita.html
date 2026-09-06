@@ -372,7 +372,15 @@ body { background: #0a0e17; }
     <div id="mainMap"></div>
     <div class="map-legend" id="mapLegend">
       <h4>Kategoriler</h4>
-      <div id="legendItems"></div>
+      <div id="legendItems">
+        <div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div>🍽️ Yeme-İçme</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#3498db"></div>🏨 Otel/Konaklama</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#9b59b6"></div>🏛️ Tarihi-Kültürel</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#2ecc71"></div>⚽ Spor</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#f39c12"></div>🛍️ Alışveriş-Eğlence</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#1abc9c"></div>🏖️ Park-Plaj-Doğa</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#e67e22"></div>🕌 Dini Yerler</div>
+      </div>
     </div>
   </div>
 </div>
@@ -415,27 +423,23 @@ const map = L.map('mainMap', {
 
 // Base layers
 const tileLayers = {
-  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; CARTO'
+  streets: L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }),
-  light: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; CARTO'
-  }),
-  streets: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
+  topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+    maxZoom: 17, attribution: '&copy; <a href="https://opentopomap.org">OpenTopoMap</a> contributors'
   }),
   satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 18, attribution: '&copy; Esri'
   })
 };
-tileLayers.light.addTo(map);
+tileLayers.streets.addTo(map);
 L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
 
-// Layer control for basemaps
+// Layer control for basemaps — public tiles only; no API key required
 L.control.layers({
-  'Koyu Tema': tileLayers.dark,
-  'Açık Tema': tileLayers.light,
-  'Sokak': tileLayers.streets,
+  'OpenStreetMap': tileLayers.streets,
+  'Topografik': tileLayers.topo,
   'Uydu': tileLayers.satellite
 }, null, { position: 'topright' }).addTo(map);
 
