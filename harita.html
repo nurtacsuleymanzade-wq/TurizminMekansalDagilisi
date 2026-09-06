@@ -229,6 +229,22 @@ body { background: #0a0e17; }
   border: 1px solid rgba(255,255,255,0.3);
 }
 
+.data-status {
+  margin-top: 8px;
+  padding: 7px 9px;
+  border-radius: 6px;
+  background: rgba(59,130,246,0.12);
+  border: 1px solid rgba(59,130,246,0.25);
+  color: #93c5fd;
+  font-size: 10px;
+  line-height: 1.35;
+}
+.data-status.error {
+  color: #fecaca;
+  background: rgba(239,68,68,0.12);
+  border-color: rgba(239,68,68,0.35);
+}
+
 /* Remove default Leaflet attribution styling issues */
 .leaflet-container { background: #0a0e17; }
 .leaflet-control-zoom a { background: #1a1f2e !important; color: var(--text-panel) !important; border-color: var(--panel-border) !important; }
@@ -307,7 +323,7 @@ body { background: #0a0e17; }
   <aside class="map-sidebar" id="sidebar">
     <div class="sidebar-header">
       <h2><i class="fas fa-map-marked-alt" style="color:var(--accent)"></i> Turizm POI Haritası</h2>
-      <p class="subtitle">7 kategoride 26.893 turistik nokta (OSM + Azərbaycan.Travel + Google My Maps)</p>
+      <p class="subtitle">7 kategoride 3.640 aday kayıt (ülke sınırı içi; OSM + Azərbaycan.Travel + Google My Maps)</p>
     </div>
 
     <!-- Search -->
@@ -319,7 +335,8 @@ body { background: #0a0e17; }
     <!-- Stats -->
     <div class="sidebar-stats">
       <div class="total-count" id="totalCount">0</div>
-      <div class="total-label">Toplam Turizm POI Noktası</div>
+      <div class="total-label">Azerbaycan sınırı içindeki aday POI</div>
+      <div class="data-status" id="dataStatus" role="status">Veri yükleniyor…</div>
     </div>
 
     <!-- Region buttons -->
@@ -411,7 +428,8 @@ const tileLayers = {
     maxZoom: 18, attribution: '&copy; Esri'
   })
 };
-tileLayers.dark.addTo(map);
+tileLayers.light.addTo(map);
+L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
 
 // Layer control for basemaps
 L.control.layers({
@@ -462,19 +480,29 @@ function getClusterIcon(cat) {
 
 // ─── Load Data ────────────────────────────────────────────────────────────
 async function loadData() {
+  const status = document.getElementById('dataStatus');
   try {
-    const resp = await fetch('data/geojson/all_pois_enhanced.geojson');
+    const resp = await fetch('data/geojson/all_pois_azerbaijan_candidates.geojson', { cache: 'no-store' });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status} — veri dosyası bulunamadı`);
     const data = await resp.json();
-    allFeatures = data.features || [];
-    console.log(`Loaded ${allFeatures.length} features`);
-    document.getElementById('totalCount').textContent = allFeatures.length.toLocaleString();
+    allFeatures = (data.features || []).filter(f => {
+      const c = f.geometry?.coordinates;
+      return f.geometry?.type === 'Point' && Array.isArray(c) && c.length >= 2 &&
+        Number.isFinite(c[0]) && Number.isFinite(c[1]);
+    });
+    const sourceCount = new Set(allFeatures.map(f => f.properties?.source).filter(Boolean)).size;
+    console.log(`Loaded ${allFeatures.length} Azerbaijan candidate features from ${sourceCount} sources`);
+    document.getElementById('totalCount').textContent = allFeatures.length.toLocaleString('tr-TR');
+    status.textContent = `${allFeatures.length.toLocaleString('tr-TR')} aday kayıt • ülke sınırı içinde • ${sourceCount} kaynak`;
     buildMarkers();
     updateCategoryList();
     updateLegend();
     renderMap();
   } catch(e) {
     console.error('Failed to load data:', e);
-    document.getElementById('totalCount').textContent = 'ERR';
+    document.getElementById('totalCount').textContent = '—';
+    status.textContent = `Veri yüklenemedi: ${e.message}`;
+    status.classList.add('error');
   }
 }
 
