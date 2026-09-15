@@ -104,20 +104,7 @@
   </main>
 
   <footer class="footer"><span>Kaynak: Azerbaijan Tourism Master GIS’in yayınlanabilir kartografik türevleri</span><span>WGS 84 web görünümü · OSM altlık © OpenStreetMap contributors</span></footer>
-
-  <script type="module">
-    import maplibregl from "./assets/nova-atlas/maplibre-gl.mjs";
-    // MapLibre 6 worker (same folder as shared.mjs)
-    maplibregl.workerUrl = new URL("./assets/nova-atlas/maplibre-gl-worker.mjs", import.meta.url).href;
-    window.maplibregl = maplibregl;
-    await new Promise((resolve, reject) => {
-      const s = document.createElement("script");
-      s.src = "assets/nova-atlas/app.js?v=2";
-      s.onload = resolve;
-      s.onerror = reject;
-      document.body.appendChild(s);
-    });
-  </script>
-
+  <script src="assets/nova-atlas/maplibre-gl.js?v=6.9.1"></script>
+  <script src="assets/nova-atlas/app.js?v=3"></script>
 </body>
 </html>
