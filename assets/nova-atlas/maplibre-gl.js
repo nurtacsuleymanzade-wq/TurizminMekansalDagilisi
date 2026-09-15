@@ -25910,3 +25910,4 @@ maplibre-gl/dist/maplibre-gl.mjs:
   * @license 3-Clause BSD. Full text of license: https://github.com/maplibre/maplibre-gl-js/blob/v6.9.1/LICENSE.txt
   *)
 */
+try{maplibregl=maplibregl.default||maplibregl;}catch(e){}
