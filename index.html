@@ -30,10 +30,10 @@
     <h1>Azerbaycan'da Turizm Faaliyetlerinin<br><span class="accent-text">Mekansal Dağılışı</span></h1>
     <p class="subtitle">Doktora Tez Çalışması &mdash; Veri Tabanlı Mekansal Analiz ve Görselleştirme</p>
     <div class="hero-stats" id="heroStats">
-      <div class="hero-stat"><span class="num">3.640</span><span class="lbl">POI (OSM + Azərbaycan.Travel + Google My Maps)</span></div>
-      <div class="hero-stat"><span class="num">74</span><span class="lbl">Rayon</span></div>
+      <div class="hero-stat"><span class="num">142</span><span class="lbl">Atlas Core POI</span></div>
+      <div class="hero-stat"><span class="num">79</span><span class="lbl">İdari Birim</span></div>
       <div class="hero-stat"><span class="num">12</span><span class="lbl">Statik Harita</span></div>
-      <div class="hero-stat"><span class="num">7</span><span class="lbl">POI Kategorisi</span></div>
+      <div class="hero-stat"><span class="num">5</span><span class="lbl">Tez Ana Grubu</span></div>
     </div>
   </header>
 
@@ -41,7 +41,7 @@
     <a href="harita.html" class="card">
       <div class="card-icon">🏛️</div>
       <h3>İnteraktif Haritalar</h3>
-      <p>Leaflet.js ile 7 kategoride, Azerbaycan sınırı içindeki 3.640 aday kaydın interaktif haritası. Kategori filtreleri, arama ve kümeleme.</p>
+      <p>MapLibre ile DEM/rölyef, hidrografya, rayon sınırları, tez kategorileri ve ölçeğe bağlı ulaşım katmanları. Rayon araması ve açılır bilgi kartları.</p>
       <span class="card-link">Haritaları Keşfet →</span>
     </a>
 
@@ -88,14 +88,14 @@
       <li><strong>Veri Entegrasyonu:</strong> 14 farklı kaynaktan toplanan verilerin birleştirilmesi ve standartlaştırılması</li>
       <li><strong>Mekansal Analiz:</strong> Getis-Ord Gi* hotspot, SAR Lag, RF, XGBoost modelleri ile turizm yoğunluğu tahmini</li>
       <li><strong>Panel Veri:</strong> 2015-2024 dönemi için rayon×yıl panel verisinin oluşturulması</li>
-      <li><strong>Görselleştirme:</strong> Leaflet.js ve Chart.js ile interaktif harita ve grafiklerin sunulması</li>
+      <li><strong>Görselleştirme:</strong> MapLibre GL JS ve Chart.js ile interaktif harita ve grafiklerin sunulması</li>
     </ul>
   </section>
 
   <section class="content-section">
     <h2>📊 Güncel Durum</h2>
     <table class="status-table">
-      <tr><td>🗺️ İnteraktif Haritalar</td><td>⚠️ Aday envanter (7 kategori, 3.640 kayıt)</td></tr>
+      <tr><td>🗺️ İnteraktif Haritalar</td><td>✅ Nova Atlas (142 Atlas Core; ölçeğe bağlı envanter ve ulaşım)</td></tr>
       <tr><td>🗺️ QGIS-Kalite Statik Haritalar</td><td>✅ Tamamlandı (12 harita)</td></tr>
       <tr><td>📊 Grafikler &amp; Veri Görsel.</td><td>✅ Tamamlandı</td></tr>
       <tr><td>🔬 Hot Spot (Getis-Ord Gi*)</td><td>✅ Tamamlandı</td></tr>

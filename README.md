@@ -33,7 +33,7 @@ Bu proje, Azerbaycan'da turizm faaliyetlerinin mekânsal dağılışını analiz
 | Bölüm | Açıklama |
 |-------|----------|
 | **Ana Sayfa** | Proje özeti, temel göstergeler ve bölüm navigasyonu |
-| **Haritalar** | İnteraktif haritalar (turizm noktaları, yoğunluk, erişilebilirlik, tarihî değişim) |
+| **Haritalar** | MapLibre tabanlı interaktif turizm atlası: rölyef, idari sınırlar, hidrografya, tez kategorileri ve ölçeğe bağlı ulaşım katmanları |
 | **Grafikler** | Zamansal trendler, rayon karşılaştırmaları, mevsimsellik, dağılım grafikleri |
 | **Analizler** | Mekânsal istatistik sonuçları, regresyon modelleri, yorumlar |
 | **Veri** | Veri kaynakları, metodoloji, kayıt defteri ve kalite raporları |
@@ -41,13 +41,19 @@ Bu proje, Azerbaycan'da turizm faaliyetlerinin mekânsal dağılışını analiz
 ## 🛠️ Kullanılan Teknolojiler
 
 - **Frontend:** HTML5, CSS3, JavaScript (vanilla)
-- **Haritalama:** Leaflet.js
+- **Haritalama:** MapLibre GL JS (ana akademik atlas görünümü); Leaflet.js (eski/yardımcı görünümler)
 - **Grafikler:** Chart.js
 - **Harita Taban Haritası:** OpenStreetMap / CartoDB
 - **Barındırma:** GitHub Pages
 - **Veri İşleme:** Python (pandas, geopandas, pysal, matplotlib, seaborn)
 
-> **Not:** Dinamik içerik (haritalar, grafikler, veri tabloları) mevcut veriler toplandıkça ve analizler tamamlandıkça eklenecektir.
+> **Gizlilik notu:** GitHub Pages çıktısı yalnız yayınlanabilir kartografik türevleri içerir. Google sanal saha doğrulama kimlikleri, özel doğrulama yükleri, API anahtarları ve VPS master veritabanı bu depoya aktarılmaz.
+
+### İnteraktif Nova Atlas
+
+`harita.html` ülke görünümünde sakin DEM/rölyef, rayon sınırları, ana hidrografya, Atlas Core seçkisi ve ana ulaşım ağını gösterir. Yakınlaştırıldığında ayrıntılı doğal, kültürel, konaklama ve yeme-içme envanteri açılır. Tertiary/yerel/servis/iz yollarından oluşan 149.351 geometrilik **Yan yollar** katmanı performans için varsayılan olarak kapalıdır ve kullanıcı tarafından ayrı açılıp kapatılabilir.
+
+Statik yayın paketi `scripts/build_public_atlas_bundle.py` ile oluşturulur. Script, özel Google sanal saha alanlarını dışarıda bırakır ve arama indeksini yalnız yayımlanan alanlardan üretir.
 
 ## 📊 Veri Kaynakları
 
